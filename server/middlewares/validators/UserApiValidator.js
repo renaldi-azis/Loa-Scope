@@ -1,3 +1,2 @@
-/**
  * @description User API Validator
  */
