@@ -9,6 +9,7 @@ const routeMiddleware = (routeName, next) => {
   const { userData } = store.state.authStore;
   if (!userData) return next();
   if (userData.role === 'Admin') {
+// Temp comment
     const allowedRouteNames = [
       'users-page',
     ];

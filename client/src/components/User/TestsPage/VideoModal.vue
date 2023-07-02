@@ -1,1 +1,1 @@
-<template>
+  <v-dialog
