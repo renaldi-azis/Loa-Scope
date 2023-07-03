@@ -1,3 +1,1 @@
-'use strict';
-// Temp comment
 

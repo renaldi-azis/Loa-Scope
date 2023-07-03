@@ -3,6 +3,7 @@
 
 
 "@hapi/hoek@^9.0.0":
+  "integrity" "sha512-EwaJS7RjoXUZ2cXXKZZxZqieGtc7RbvQhUy8FwDoMQtxWVi14tFjeFCYPZAM1mBCpOpiBpyaZbb9NeHc7eGKgw=="
   "resolved" "https://registry.npmjs.org/@hapi/hoek/-/hoek-9.0.4.tgz"
   "version" "9.0.4"
 

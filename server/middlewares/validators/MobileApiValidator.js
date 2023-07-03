@@ -1,3 +1,2 @@
-/**
  * @description Mobile API Validator
  */
