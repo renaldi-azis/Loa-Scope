@@ -1,4 +1,4 @@
 'use strict';
-// Temp comment
 
+// Temp comment
 module.exports = (sequelize, DataTypes) => {

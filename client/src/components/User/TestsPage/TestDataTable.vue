@@ -7,3 +7,4 @@
           <div class="ml-2">LoaScope Test Data</div>
         </div>
       </v-toolbar-title>
+      <v-spacer></v-spacer>

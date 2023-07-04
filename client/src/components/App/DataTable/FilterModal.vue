@@ -12,5 +12,5 @@
           <div
             v-for="(filterGroup, groupIndex) in filterGroups"
             :key="`filter-group-${groupIndex}`"
-          >
             <v-card class="px-6 py-4">
+              <div
