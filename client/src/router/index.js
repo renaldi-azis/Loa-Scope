@@ -8,7 +8,6 @@ Vue.use(VueRouter);
 const routeMiddleware = (routeName, next) => {
   const { userData } = store.state.authStore;
   if (!userData) return next();
-  if (userData.role === 'Admin') {
     const allowedRouteNames = [
       'users-page',
     ];

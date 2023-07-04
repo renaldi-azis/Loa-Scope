@@ -6,3 +6,4 @@
           <v-icon>mdi-home-analytics</v-icon>
           <div class="ml-2">LoaScope Test Data</div>
         </div>
+      </v-toolbar-title>
