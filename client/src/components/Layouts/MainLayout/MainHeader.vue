@@ -1,2 +1,2 @@
-  <v-app-bar app dark clipped-left color="primary">
+<template>
     <v-app-bar-nav-icon
