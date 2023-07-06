@@ -10,7 +10,7 @@
         <v-divider></v-divider>
         <v-card-text>
           <div
-            :key="`filter-group-${groupIndex}`"
+            v-for="(filterGroup, groupIndex) in filterGroups"
           >
             <v-card class="px-6 py-4">
               <div
