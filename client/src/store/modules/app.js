@@ -1,1 +1,2 @@
 const initialState = {
+  isMenuSidebarOpen: null,

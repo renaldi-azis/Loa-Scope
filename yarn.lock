@@ -53,6 +53,7 @@
   dependencies:
     "@types/ms" "*"
 
+"@types/ms@*":
   "integrity" "sha512-iiUgKzV9AuaEkZqkOLDIvlQiL6ltuZd9tGcW3gwpnX8JbuiuhFlEGmmFXEXkN50Cvq7Os88IY2v0dkDqXYWVgA=="
   "resolved" "https://registry.npmjs.org/@types/ms/-/ms-0.7.31.tgz"
   "version" "0.7.31"
@@ -89,3 +90,9 @@
 
 "ansi-regex@^5.0.1":
   "integrity" "sha512-quJQXlTSUGL2LH9SUXo8VwsY4soanhgo6LNSm84E1LBcE8s3O0wpdiRzyR9z/ZZJMlMWv37qOOb9pdJlMUEKFQ=="
+  "resolved" "https://registry.npmjs.org/ansi-regex/-/ansi-regex-5.0.1.tgz"
+  "version" "5.0.1"
+
+"aproba@^1.0.3 || ^2.0.0":
+  "integrity" "sha512-lYe4Gx7QT+MKGbDsA+Z+he/Wtef0BiwDOlK/XkBrdfsh9J/jPPXbX0tE9x9cl27Tmu5gg3QUbUrQYa/y+KOHPQ=="
+  "resolved" "https://registry.npmjs.org/aproba/-/aproba-2.0.0.tgz"

@@ -3,3 +3,7 @@
  */
 
 /** Dependencies */
+const _ = require('lodash');
+const bcrypt = require('bcrypt');
+const { Op } = require('sequelize');
+

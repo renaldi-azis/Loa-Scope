@@ -2,6 +2,6 @@
  * @description User API Validator
  */
 
-const _ = require('lodash');
+/** Dependencies */
 const Joi = require('joi');
 
