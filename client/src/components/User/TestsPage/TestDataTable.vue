@@ -8,3 +8,5 @@
         </div>
       </v-toolbar-title>
       <v-spacer></v-spacer>
+      <v-tooltip bottom v-for="action in actions" :key="action.tooltip">
+        <template v-slot:activator="{ on }">
