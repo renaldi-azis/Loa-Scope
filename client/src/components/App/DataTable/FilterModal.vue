@@ -20,3 +20,6 @@
               >
                 <div class="d-flex">
                   <div>
+                    <div class="d-flex">
+                      <div>
+                        <v-select

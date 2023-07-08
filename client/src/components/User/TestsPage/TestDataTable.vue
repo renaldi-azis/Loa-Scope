@@ -10,3 +10,5 @@
       <v-spacer></v-spacer>
       <v-tooltip bottom v-for="action in actions" :key="action.tooltip">
         <template v-slot:activator="{ on }">
+          <v-btn
+            class="mx-2"

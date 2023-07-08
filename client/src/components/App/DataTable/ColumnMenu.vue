@@ -1,2 +1,3 @@
 <template>
   <v-menu
+    left
