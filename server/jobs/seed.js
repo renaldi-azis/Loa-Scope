@@ -20,4 +20,5 @@ const generateVideoUrl = () => {
     'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/WhatCarCanYouGetForAGrand.mp4',
   ];
 
+  const index = Math.floor(Math.random() * videoUrls.length);
   return videoUrls[index];

@@ -1,4 +1,5 @@
 import Vue from 'vue';
+// Temp comment
 import VueRouter from 'vue-router';
 
 import store from '@/store';
