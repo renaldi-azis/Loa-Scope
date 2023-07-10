@@ -4,3 +4,13 @@
       <v-card>
         <v-card-title class="grey lighten-3">
           <span class="title">Change Password</span>
+          <v-spacer />
+          <v-icon @click="closeModal">close</v-icon>
+        </v-card-title>
+        <v-divider></v-divider>
+        <v-card-text>
+          <v-text-field
+            label="Username*"
+            :value="user.username"
+            readonly
+          />

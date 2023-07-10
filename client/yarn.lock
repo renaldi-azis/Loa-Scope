@@ -11,7 +11,6 @@
 
 "@babel/compat-data@^7.8.6":
   version "7.8.6"
-  resolved "https://registry.yarnpkg.com/@babel/compat-data/-/compat-data-7.8.6.tgz#7eeaa0dfa17e50c7d9c0832515eee09b56f04e35"
   integrity sha512-CurCIKPTkS25Mb8mz267vU95vy+TyUpnctEX2lV33xWNmHAfjruztgiPBbXZRh3xZZy1CYvGx6XfxyTVS+sk7Q==
   dependencies:
     browserslist "^4.8.5"
@@ -447,3 +446,142 @@
   version "7.8.6"
   resolved "https://registry.yarnpkg.com/@babel/plugin-transform-classes/-/plugin-transform-classes-7.8.6.tgz#77534447a477cbe5995ae4aee3e39fbc8090c46d"
   integrity sha512-k9r8qRay/R6v5aWZkrEclEhKO6mc1CCQr2dLsVHBmOQiMpN6I2bpjX3vgnldUWeEI1GHVNByULVxZ4BdP4Hmdg==
+  dependencies:
+    "@babel/helper-annotate-as-pure" "^7.8.3"
+    "@babel/helper-define-map" "^7.8.3"
+    "@babel/helper-function-name" "^7.8.3"
+    "@babel/helper-optimise-call-expression" "^7.8.3"
+    "@babel/helper-plugin-utils" "^7.8.3"
+    "@babel/helper-replace-supers" "^7.8.6"
+    "@babel/helper-split-export-declaration" "^7.8.3"
+    globals "^11.1.0"
+
+"@babel/plugin-transform-computed-properties@^7.8.3":
+  version "7.8.3"
+  resolved "https://registry.yarnpkg.com/@babel/plugin-transform-computed-properties/-/plugin-transform-computed-properties-7.8.3.tgz#96d0d28b7f7ce4eb5b120bb2e0e943343c86f81b"
+  integrity sha512-O5hiIpSyOGdrQZRQ2ccwtTVkgUDBBiCuK//4RJ6UfePllUTCENOzKxfh6ulckXKc0DixTFLCfb2HVkNA7aDpzA==
+  dependencies:
+    "@babel/helper-plugin-utils" "^7.8.3"
+
+"@babel/plugin-transform-destructuring@^7.8.3":
+  version "7.8.8"
+  resolved "https://registry.yarnpkg.com/@babel/plugin-transform-destructuring/-/plugin-transform-destructuring-7.8.8.tgz#fadb2bc8e90ccaf5658de6f8d4d22ff6272a2f4b"
+  integrity sha512-eRJu4Vs2rmttFCdhPUM3bV0Yo/xPSdPw6ML9KHs/bjB4bLA5HXlbvYXPOD5yASodGod+krjYx21xm1QmL8dCJQ==
+  dependencies:
+    "@babel/helper-plugin-utils" "^7.8.3"
+
+"@babel/plugin-transform-dotall-regex@^7.8.3":
+  version "7.8.3"
+  resolved "https://registry.yarnpkg.com/@babel/plugin-transform-dotall-regex/-/plugin-transform-dotall-regex-7.8.3.tgz#c3c6ec5ee6125c6993c5cbca20dc8621a9ea7a6e"
+  integrity sha512-kLs1j9Nn4MQoBYdRXH6AeaXMbEJFaFu/v1nQkvib6QzTj8MZI5OQzqmD83/2jEM1z0DLilra5aWO5YpyC0ALIw==
+  dependencies:
+    "@babel/helper-create-regexp-features-plugin" "^7.8.3"
+    "@babel/helper-plugin-utils" "^7.8.3"
+
+"@babel/plugin-transform-duplicate-keys@^7.8.3":
+  version "7.8.3"
+  resolved "https://registry.yarnpkg.com/@babel/plugin-transform-duplicate-keys/-/plugin-transform-duplicate-keys-7.8.3.tgz#8d12df309aa537f272899c565ea1768e286e21f1"
+  integrity sha512-s8dHiBUbcbSgipS4SMFuWGqCvyge5V2ZeAWzR6INTVC3Ltjig/Vw1G2Gztv0vU/hRG9X8IvKvYdoksnUfgXOEQ==
+  dependencies:
+    "@babel/helper-plugin-utils" "^7.8.3"
+
+"@babel/plugin-transform-exponentiation-operator@^7.8.3":
+  version "7.8.3"
+  resolved "https://registry.yarnpkg.com/@babel/plugin-transform-exponentiation-operator/-/plugin-transform-exponentiation-operator-7.8.3.tgz#581a6d7f56970e06bf51560cd64f5e947b70d7b7"
+  integrity sha512-zwIpuIymb3ACcInbksHaNcR12S++0MDLKkiqXHl3AzpgdKlFNhog+z/K0+TGW+b0w5pgTq4H6IwV/WhxbGYSjQ==
+  dependencies:
+    "@babel/helper-builder-binary-assignment-operator-visitor" "^7.8.3"
+    "@babel/helper-plugin-utils" "^7.8.3"
+
+"@babel/plugin-transform-for-of@^7.8.6":
+  version "7.8.6"
+  resolved "https://registry.yarnpkg.com/@babel/plugin-transform-for-of/-/plugin-transform-for-of-7.8.6.tgz#a051bd1b402c61af97a27ff51b468321c7c2a085"
+  integrity sha512-M0pw4/1/KI5WAxPsdcUL/w2LJ7o89YHN3yLkzNjg7Yl15GlVGgzHyCU+FMeAxevHGsLVmUqbirlUIKTafPmzdw==
+  dependencies:
+    "@babel/helper-plugin-utils" "^7.8.3"
+
+"@babel/plugin-transform-function-name@^7.8.3":
+  version "7.8.3"
+  resolved "https://registry.yarnpkg.com/@babel/plugin-transform-function-name/-/plugin-transform-function-name-7.8.3.tgz#279373cb27322aaad67c2683e776dfc47196ed8b"
+  integrity sha512-rO/OnDS78Eifbjn5Py9v8y0aR+aSYhDhqAwVfsTl0ERuMZyr05L1aFSCJnbv2mmsLkit/4ReeQ9N2BgLnOcPCQ==
+  dependencies:
+    "@babel/helper-function-name" "^7.8.3"
+    "@babel/helper-plugin-utils" "^7.8.3"
+
+"@babel/plugin-transform-literals@^7.8.3":
+  version "7.8.3"
+  resolved "https://registry.yarnpkg.com/@babel/plugin-transform-literals/-/plugin-transform-literals-7.8.3.tgz#aef239823d91994ec7b68e55193525d76dbd5dc1"
+  integrity sha512-3Tqf8JJ/qB7TeldGl+TT55+uQei9JfYaregDcEAyBZ7akutriFrt6C/wLYIer6OYhleVQvH/ntEhjE/xMmy10A==
+  dependencies:
+    "@babel/helper-plugin-utils" "^7.8.3"
+
+"@babel/plugin-transform-member-expression-literals@^7.8.3":
+  version "7.8.3"
+  resolved "https://registry.yarnpkg.com/@babel/plugin-transform-member-expression-literals/-/plugin-transform-member-expression-literals-7.8.3.tgz#963fed4b620ac7cbf6029c755424029fa3a40410"
+  integrity sha512-3Wk2EXhnw+rP+IDkK6BdtPKsUE5IeZ6QOGrPYvw52NwBStw9V1ZVzxgK6fSKSxqUvH9eQPR3tm3cOq79HlsKYA==
+  dependencies:
+    "@babel/helper-plugin-utils" "^7.8.3"
+
+"@babel/plugin-transform-modules-amd@^7.8.3":
+  version "7.8.3"
+  resolved "https://registry.yarnpkg.com/@babel/plugin-transform-modules-amd/-/plugin-transform-modules-amd-7.8.3.tgz#65606d44616b50225e76f5578f33c568a0b876a5"
+  integrity sha512-MadJiU3rLKclzT5kBH4yxdry96odTUwuqrZM+GllFI/VhxfPz+k9MshJM+MwhfkCdxxclSbSBbUGciBngR+kEQ==
+  dependencies:
+    "@babel/helper-module-transforms" "^7.8.3"
+    "@babel/helper-plugin-utils" "^7.8.3"
+    babel-plugin-dynamic-import-node "^2.3.0"
+
+"@babel/plugin-transform-modules-commonjs@^7.8.3":
+  version "7.8.3"
+  resolved "https://registry.yarnpkg.com/@babel/plugin-transform-modules-commonjs/-/plugin-transform-modules-commonjs-7.8.3.tgz#df251706ec331bd058a34bdd72613915f82928a5"
+  integrity sha512-JpdMEfA15HZ/1gNuB9XEDlZM1h/gF/YOH7zaZzQu2xCFRfwc01NXBMHHSTT6hRjlXJJs5x/bfODM3LiCk94Sxg==
+  dependencies:
+    "@babel/helper-module-transforms" "^7.8.3"
+    "@babel/helper-plugin-utils" "^7.8.3"
+    "@babel/helper-simple-access" "^7.8.3"
+    babel-plugin-dynamic-import-node "^2.3.0"
+
+"@babel/plugin-transform-modules-systemjs@^7.8.3":
+  version "7.8.3"
+  resolved "https://registry.yarnpkg.com/@babel/plugin-transform-modules-systemjs/-/plugin-transform-modules-systemjs-7.8.3.tgz#d8bbf222c1dbe3661f440f2f00c16e9bb7d0d420"
+  integrity sha512-8cESMCJjmArMYqa9AO5YuMEkE4ds28tMpZcGZB/jl3n0ZzlsxOAi3mC+SKypTfT8gjMupCnd3YiXCkMjj2jfOg==
+  dependencies:
+    "@babel/helper-hoist-variables" "^7.8.3"
+    "@babel/helper-module-transforms" "^7.8.3"
+    "@babel/helper-plugin-utils" "^7.8.3"
+    babel-plugin-dynamic-import-node "^2.3.0"
+
+"@babel/plugin-transform-modules-umd@^7.8.3":
+  version "7.8.3"
+  resolved "https://registry.yarnpkg.com/@babel/plugin-transform-modules-umd/-/plugin-transform-modules-umd-7.8.3.tgz#592d578ce06c52f5b98b02f913d653ffe972661a"
+  integrity sha512-evhTyWhbwbI3/U6dZAnx/ePoV7H6OUG+OjiJFHmhr9FPn0VShjwC2kdxqIuQ/+1P50TMrneGzMeyMTFOjKSnAw==
+  dependencies:
+    "@babel/helper-module-transforms" "^7.8.3"
+    "@babel/helper-plugin-utils" "^7.8.3"
+
+"@babel/plugin-transform-named-capturing-groups-regex@^7.8.3":
+  version "7.8.3"
+  resolved "https://registry.yarnpkg.com/@babel/plugin-transform-named-capturing-groups-regex/-/plugin-transform-named-capturing-groups-regex-7.8.3.tgz#a2a72bffa202ac0e2d0506afd0939c5ecbc48c6c"
+  integrity sha512-f+tF/8UVPU86TrCb06JoPWIdDpTNSGGcAtaD9mLP0aYGA0OS0j7j7DHJR0GTFrUZPUU6loZhbsVZgTh0N+Qdnw==
+  dependencies:
+    "@babel/helper-create-regexp-features-plugin" "^7.8.3"
+
+"@babel/plugin-transform-new-target@^7.8.3":
+  version "7.8.3"
+  resolved "https://registry.yarnpkg.com/@babel/plugin-transform-new-target/-/plugin-transform-new-target-7.8.3.tgz#60cc2ae66d85c95ab540eb34babb6434d4c70c43"
+  integrity sha512-QuSGysibQpyxexRyui2vca+Cmbljo8bcRckgzYV4kRIsHpVeyeC3JDO63pY+xFZ6bWOBn7pfKZTqV4o/ix9sFw==
+  dependencies:
+    "@babel/helper-plugin-utils" "^7.8.3"
+
+"@babel/plugin-transform-object-super@^7.8.3":
+  version "7.8.3"
+  resolved "https://registry.yarnpkg.com/@babel/plugin-transform-object-super/-/plugin-transform-object-super-7.8.3.tgz#ebb6a1e7a86ffa96858bd6ac0102d65944261725"
+  integrity sha512-57FXk+gItG/GejofIyLIgBKTas4+pEU47IXKDBWFTxdPd7F80H8zybyAY7UoblVfBhBGs2EKM+bJUu2+iUYPDQ==
+  dependencies:
+    "@babel/helper-plugin-utils" "^7.8.3"
+    "@babel/helper-replace-supers" "^7.8.3"
+
+"@babel/plugin-transform-parameters@^7.8.7":
+  version "7.8.8"
+  resolved "https://registry.yarnpkg.com/@babel/plugin-transform-parameters/-/plugin-transform-parameters-7.8.8.tgz#0381de466c85d5404565243660c4496459525daf"
+  integrity sha512-hC4Ld/Ulpf1psQciWWwdnUspQoQco2bMzSrwU6TmzRlvoYQe4rQFy9vnCZDTlVeCQj0JPfL+1RX0V8hCJvkgBA==

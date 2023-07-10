@@ -1,5 +1,6 @@
 'use strict';
 
-module.exports = (sequelize, DataTypes) => {
 // Temp comment
+module.exports = (sequelize, DataTypes) => {
   const Test = sequelize.define(
+    'Test',

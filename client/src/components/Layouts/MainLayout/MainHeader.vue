@@ -3,3 +3,4 @@
     <v-app-bar-nav-icon
       text-color="white"
       @click="$store.dispatch('appStore/setMenuSidebarOpen', !appState.isMenuSidebarOpen)"
+    />

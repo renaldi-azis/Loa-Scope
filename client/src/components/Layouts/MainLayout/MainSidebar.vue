@@ -4,3 +4,4 @@
     app
     dark
     fixed
+    clipped

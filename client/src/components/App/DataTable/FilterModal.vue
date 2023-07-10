@@ -23,3 +23,6 @@
                     <div class="d-flex">
                       <div>
                         <v-select
+                          label="Column"
+                          :items="columns"
+                          :rules="getValidators('Column', ['required'])"

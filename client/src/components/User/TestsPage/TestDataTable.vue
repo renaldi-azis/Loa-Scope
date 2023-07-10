@@ -12,3 +12,5 @@
         <template v-slot:activator="{ on }">
           <v-btn
             class="mx-2"
+            fab
+            dark
