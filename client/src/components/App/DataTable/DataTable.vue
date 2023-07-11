@@ -4,3 +4,4 @@
     :headers="visibleColumns"
     :items="items"
     :loading="loading"
+    @click:row="(row) => $emit('click:row', row)"

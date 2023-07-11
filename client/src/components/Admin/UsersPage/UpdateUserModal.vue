@@ -5,4 +5,4 @@
         <v-card-title class="grey lighten-3">
           <span class="title">Update User</span>
           <v-spacer />
-          <v-icon @click="closeModal">close</v-icon>
+        </v-card-title>
