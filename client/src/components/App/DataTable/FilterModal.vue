@@ -4,6 +4,7 @@
       <v-card>
         <v-card-title>
           <span class="title">Filter</span>
+          <v-spacer />
           <v-icon @click="closeModal">close</v-icon>
         </v-card-title>
         <v-divider></v-divider>
@@ -14,7 +15,6 @@
           >
             <v-card class="px-6 py-4">
               <div
-                v-for="(filter, filterIndex) in filterGroup"
                 :key="`filter-${filterIndex}`"
               >
                 <div class="d-flex">
