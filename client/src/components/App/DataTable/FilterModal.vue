@@ -15,6 +15,7 @@
           >
             <v-card class="px-6 py-4">
               <div
+                v-for="(filter, filterIndex) in filterGroup"
                 :key="`filter-${filterIndex}`"
               >
                 <div class="d-flex">
@@ -28,3 +29,7 @@
                           v-model="filter.column"
                           @change="onChangeColumn(groupIndex, filterIndex)"
                         />
+                      </div>
+                      <div class="ml-2">
+                        <v-select
+                          label="Condition"

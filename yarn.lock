@@ -161,3 +161,21 @@
   "version" "5.0.1"
   dependencies:
     "@mapbox/node-pre-gyp" "^1.0.0"
+    "node-addon-api" "^3.1.0"
+
+"body-parser@1.20.0":
+  "integrity" "sha512-DfJ+q6EPcGKZD1QWUjSpqp+Q7bDQTsQIF4zfUAtZ6qk+H/3/QRhg9CEp39ss+/T2vw0+HaidC0ecJj/DRLIaKg=="
+  "resolved" "https://registry.npmjs.org/body-parser/-/body-parser-1.20.0.tgz"
+  "version" "1.20.0"
+  dependencies:
+    "bytes" "3.1.2"
+    "content-type" "~1.0.4"
+    "debug" "2.6.9"
+    "depd" "2.0.0"
+    "destroy" "1.2.0"
+    "http-errors" "2.0.0"
+    "iconv-lite" "0.4.24"
+    "on-finished" "2.4.1"
+    "qs" "6.10.3"
+    "raw-body" "2.5.1"
+    "type-is" "~1.6.18"

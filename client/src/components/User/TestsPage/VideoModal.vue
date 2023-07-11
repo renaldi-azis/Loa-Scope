@@ -4,3 +4,4 @@
     v-model="status.isModalOpen"
     @click:outside="closeModal"
   >
+    <v-card>

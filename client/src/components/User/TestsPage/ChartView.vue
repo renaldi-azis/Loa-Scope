@@ -17,3 +17,5 @@
         <v-spacer />
         <div>
           <v-select label="Greater than" :items="wormCountTicks" v-model="minWormCount" />
+        </div>
+        <div class="ml-2">

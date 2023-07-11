@@ -4,3 +4,4 @@
       text-color="white"
       @click="$store.dispatch('appStore/setMenuSidebarOpen', !appState.isMenuSidebarOpen)"
     />
+    <v-spacer />

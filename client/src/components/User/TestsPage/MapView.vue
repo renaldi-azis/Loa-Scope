@@ -1,3 +1,4 @@
+<template>
   <v-card>
     <v-toolbar flat color="grey lighten-3">
       <v-toolbar-title>
@@ -14,4 +15,5 @@
           <v-select
             label="Greater than"
             :items="wormCountTicks"
-            v-model="minWormCount"
+            @change="selectedMarkerData = null"
+          />

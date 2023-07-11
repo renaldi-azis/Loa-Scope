@@ -6,3 +6,4 @@
           <span class="title">Create User</span>
           <v-spacer />
           <v-icon @click="closeModal">close</v-icon>
+        </v-card-title>
