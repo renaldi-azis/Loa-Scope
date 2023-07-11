@@ -26,3 +26,4 @@
                           label="Column"
                           :items="columns"
                           :rules="getValidators('Column', ['required'])"
+                          v-model="filter.column"

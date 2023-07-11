@@ -4,3 +4,4 @@
       <v-card>
         <v-card-title class="grey lighten-3">
           <span class="title">Update User</span>
+          <v-spacer />
