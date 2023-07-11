@@ -4,7 +4,6 @@
       <v-card>
         <v-card-title>
           <span class="title">Filter</span>
-          <v-spacer />
           <v-icon @click="closeModal">close</v-icon>
         </v-card-title>
         <v-divider></v-divider>
@@ -27,3 +26,5 @@
                           :items="columns"
                           :rules="getValidators('Column', ['required'])"
                           v-model="filter.column"
+                          @change="onChangeColumn(groupIndex, filterIndex)"
+                        />

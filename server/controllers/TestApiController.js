@@ -3,3 +3,4 @@
  */
 
 /** Dependencies */
+const { Op } = require('sequelize');

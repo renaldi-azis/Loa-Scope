@@ -15,3 +15,4 @@
           <v-select
             label="Greater than"
             :items="wormCountTicks"
+            v-model="minWormCount"
