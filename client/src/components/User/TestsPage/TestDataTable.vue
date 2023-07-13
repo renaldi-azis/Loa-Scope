@@ -12,6 +12,7 @@
         <template v-slot:activator="{ on }">
           <v-btn
             class="mx-2"
+            fab
             dark
             small
             color="primary"
@@ -20,3 +21,4 @@
           >
             <v-icon dark v-html="action.icon" />
           </v-btn>
+        </template>

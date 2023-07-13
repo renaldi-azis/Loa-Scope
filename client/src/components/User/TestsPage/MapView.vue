@@ -22,3 +22,4 @@
         <div class="ml-2">
           <v-select
             label="Less than"
+            :items="wormCountTicks"

@@ -12,6 +12,7 @@
           <div
             v-for="(filterGroup, groupIndex) in filterGroups"
             :key="`filter-group-${groupIndex}`"
+          >
             <v-card class="px-6 py-4">
               <div
                 v-for="(filter, filterIndex) in filterGroup"
@@ -31,9 +32,11 @@
                       </div>
                       <div class="ml-2">
                         <v-select
-                          label="Condition"
                           :items="getColumnConditions(filter.column)"
                           :rules="getValidators('Condition', ['required'])"
                           v-model="filter.condition"
                           @change="onChangeCondition(groupIndex, filterIndex)"
                         />
+                      </div>
+                    </div>
+                    <div class="d-flex" v-if="getColumnType(filter.column) === 'string'">
