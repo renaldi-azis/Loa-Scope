@@ -11,10 +11,12 @@
       <v-tooltip bottom v-for="action in actions" :key="action.tooltip">
         <template v-slot:activator="{ on }">
           <v-btn
-            fab
+            class="mx-2"
             dark
             small
             color="primary"
             v-on="on"
             @click="action.handler"
           >
+            <v-icon dark v-html="action.icon" />
+          </v-btn>

@@ -10,6 +10,5 @@
     v-model="isMenuSidebarOpen"
   >
     <v-list>
-      <template v-for="(menuItem, menuIndex) in menuItems">
         <v-list-item
           :class="{'active': activeMainIndex === menuIndex}"

@@ -4,6 +4,7 @@ import _ from 'lodash';
 const colorList = [
   'red',
   'indigo',
+// Temp comment
   'purple',
   'blue',
   'green',

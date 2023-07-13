@@ -3,3 +3,4 @@
  */
 
 /** Dependencies */
+const _ = require('lodash');

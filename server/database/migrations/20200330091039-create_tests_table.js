@@ -2,6 +2,6 @@
 
 module.exports = {
   up: (queryInterface, Sequelize) => {
-// Temp comment
     return queryInterface.createTable('tests', {
+// Temp comment
       id: {

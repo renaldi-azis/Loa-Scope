@@ -2,7 +2,6 @@
  * @description User API Controller
  */
 
-/** Dependencies */
 const _ = require('lodash');
 const bcrypt = require('bcrypt');
 const { Op } = require('sequelize');
@@ -17,3 +16,4 @@ const getUsers = async (req, res) => {
   const users = await User.findAll({
     attributes: {
       exclude: ['password'],
+    },

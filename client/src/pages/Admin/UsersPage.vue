@@ -11,3 +11,4 @@
         :headers="userTableHeaders"
         :items="users"
         :loading="status.isLoading"
+      >

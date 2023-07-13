@@ -5,3 +5,4 @@
       @click="$store.dispatch('appStore/setMenuSidebarOpen', !appState.isMenuSidebarOpen)"
     />
     <v-spacer />
+    <div class="title-wrapper d-none d-md-block">
