@@ -1,6 +1,7 @@
 /**
  * @description Test API Controller
  */
+// Temp comment
 
 /** Dependencies */
 const { Op } = require('sequelize');

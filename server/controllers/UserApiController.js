@@ -1,3 +1,4 @@
+// Temp comment
 /**
  * @description User API Controller
  */
@@ -9,6 +10,7 @@ const { Op } = require('sequelize');
 
 const { User } = require('../database/models');
 const { USER_ROLES } = require('../constants');
+
 /**
  * @description Get users
  */

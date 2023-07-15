@@ -1,4 +1,3 @@
-/**
  * @description Profile API Validator
  */
 

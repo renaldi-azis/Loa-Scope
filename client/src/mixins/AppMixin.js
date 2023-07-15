@@ -11,5 +11,6 @@ const colorList = [
   'pink',
 ];
 
+export default {
   computed: {
     ...mapState('appStore', {

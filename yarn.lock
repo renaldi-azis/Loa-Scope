@@ -219,3 +219,5 @@
   "version" "1.0.2"
   dependencies:
     "function-bind" "^1.1.1"
+    "get-intrinsic" "^1.0.2"
+

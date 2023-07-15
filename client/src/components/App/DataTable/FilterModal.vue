@@ -32,6 +32,7 @@
                       </div>
                       <div class="ml-2">
                         <v-select
+                          label="Condition"
                           :items="getColumnConditions(filter.column)"
                           :rules="getValidators('Condition', ['required'])"
                           v-model="filter.condition"

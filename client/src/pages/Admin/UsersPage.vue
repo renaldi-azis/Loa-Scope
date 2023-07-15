@@ -12,3 +12,4 @@
         :items="users"
         :loading="status.isLoading"
       >
+        <template v-slot:item.createdAt="{ item }">
