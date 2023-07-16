@@ -8,3 +8,4 @@
           </v-card-title>
           <v-card-text>
             <v-text-field
+              prepend-inner-icon="person"
