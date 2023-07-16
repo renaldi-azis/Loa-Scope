@@ -1,4 +1,5 @@
 /**
+ * @description User API Validator
  */
 
 /** Dependencies */
