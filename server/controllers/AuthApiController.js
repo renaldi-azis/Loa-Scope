@@ -1,3 +1,2 @@
 /**
- * @description Auth API Controller
  */
