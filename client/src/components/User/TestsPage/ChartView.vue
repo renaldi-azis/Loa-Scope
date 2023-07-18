@@ -25,3 +25,5 @@
       <bar-chart
         :chart-data="chartData"
         :options="chartOptions"
+        style="height: 400px;"
+      />

@@ -24,3 +24,4 @@
         </template>
         <span>{{ action.tooltip }}</span>
       </v-tooltip>
+    </v-toolbar>

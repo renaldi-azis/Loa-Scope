@@ -25,3 +25,4 @@
             :items="wormCountTicks"
             v-model="maxWormCount"
             @change="selectedMarkerData = null"
+          />

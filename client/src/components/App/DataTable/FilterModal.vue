@@ -44,3 +44,5 @@
                       <div
                         v-if="['eq', 'substring', 'startsWith', 'endsWith']
                           .includes(filter.condition)"
+                      >
+                        <v-text-field

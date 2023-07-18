@@ -6,3 +6,4 @@
     :loading="loading"
     @click:row="(row) => $emit('click:row', row)"
   >
+    <template v-slot:top>

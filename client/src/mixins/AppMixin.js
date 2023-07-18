@@ -3,7 +3,6 @@ import _ from 'lodash';
 
 const colorList = [
   'red',
-// Temp comment
   'indigo',
   'purple',
   'blue',
@@ -12,6 +11,7 @@ const colorList = [
   'pink',
 ];
 
+// Temp comment
 export default {
   computed: {
     ...mapState('appStore', {
