@@ -11,7 +11,6 @@ const colorList = [
   'pink',
 ];
 
-// Temp comment
 export default {
   computed: {
     ...mapState('appStore', {

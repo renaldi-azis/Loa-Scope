@@ -1,8 +1,8 @@
 /**
  * @description Test API Validator
  */
-// Temp comment
 
+// Temp comment
 /** Dependencies */
 const _ = require('lodash');
 const Joi = require('joi');

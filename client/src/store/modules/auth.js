@@ -1,4 +1,2 @@
 const initialState = {
   userData: null,
-};
-
