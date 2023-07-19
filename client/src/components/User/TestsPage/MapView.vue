@@ -24,4 +24,5 @@
             label="Less than"
             :items="wormCountTicks"
             v-model="maxWormCount"
+            @change="selectedMarkerData = null"
           />

@@ -1,3 +1,3 @@
 <template>
   <v-app>
-    <main-sidebar></main-sidebar>
+    <main-header></main-header>
