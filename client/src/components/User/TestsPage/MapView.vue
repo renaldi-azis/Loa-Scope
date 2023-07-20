@@ -11,7 +11,6 @@
     <v-card-text>
       <div class="d-flex">
         <v-spacer />
-        <div>
           <v-select
             label="Greater than"
             :items="wormCountTicks"
@@ -26,3 +25,4 @@
             v-model="maxWormCount"
             @change="selectedMarkerData = null"
           />
+        </div>

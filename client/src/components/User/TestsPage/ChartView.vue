@@ -11,6 +11,7 @@
     <v-card-text>
       <div class="d-flex align-center mb-4">
         <div class="d-none d-md-block legend">
+          <div>Total records: <b>{{ data.length }}</b></div>
           <div>Selected records: <b>{{ filteredData.length }}</b></div>
         </div>
         <v-spacer />
@@ -26,3 +27,4 @@
         :options="chartOptions"
         style="height: 400px;"
       />
+    </v-card-text>

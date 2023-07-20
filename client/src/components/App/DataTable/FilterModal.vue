@@ -46,3 +46,5 @@
                           .includes(filter.condition)"
                       >
                         <v-text-field
+                          label="Value"
+                          :rules="getValidators('Value', ['required'])"
