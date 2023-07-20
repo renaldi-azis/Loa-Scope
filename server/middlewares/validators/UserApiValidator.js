@@ -26,4 +26,3 @@ const createUser = async (req, res, next) => {
     password: Joi.string().min(6).label('Password'),
     filter: Joi.string().allow(null, '').label('Filter string'),
   });
-  const { value, error } = schema.validate(reqData);
