@@ -14,3 +14,4 @@
       >
         <template v-slot:item.createdAt="{ item }">
           {{ item.createdAt | dateFormatter('MMMM DD, YYYY hh:mm A') }}
+        </template>
