@@ -1,5 +1,6 @@
 /**
  * @description User API Controller
+ */
 
 /** Dependencies */
 const _ = require('lodash');
