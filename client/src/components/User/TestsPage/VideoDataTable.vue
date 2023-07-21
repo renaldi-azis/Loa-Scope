@@ -7,3 +7,4 @@
           <div class="ml-2">LoaScope Video Data</div>
         </div>
       </v-toolbar-title>
+    </v-toolbar>

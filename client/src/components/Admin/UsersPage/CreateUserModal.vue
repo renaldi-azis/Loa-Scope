@@ -4,10 +4,10 @@
       <v-card>
         <v-card-title class="grey lighten-3">
           <span class="title">Create User</span>
-          <v-spacer />
           <v-icon @click="closeModal">close</v-icon>
         </v-card-title>
         <v-divider></v-divider>
         <v-card-text>
           <v-text-field
             label="Username*"
+            :rules="getValidators('Username', ['required'])"

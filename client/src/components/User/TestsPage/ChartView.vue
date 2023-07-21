@@ -13,6 +13,7 @@
         <div class="d-none d-md-block legend">
           <div>Total records: <b>{{ data.length }}</b></div>
           <div>Selected records: <b>{{ filteredData.length }}</b></div>
+        </div>
         <v-spacer />
         <div>
           <v-select label="Greater than" :items="wormCountTicks" v-model="minWormCount" />
@@ -27,3 +28,4 @@
         style="height: 400px;"
       />
     </v-card-text>
+  </v-card>
