@@ -1,4 +1,5 @@
 <template>
+  <div class="fill-width">
     <v-card>
       <v-toolbar flat color="grey lighten-3">
         <v-toolbar-title>Users</v-toolbar-title>
@@ -14,3 +15,4 @@
         <template v-slot:item.createdAt="{ item }">
           {{ item.createdAt | dateFormatter('MMMM DD, YYYY hh:mm A') }}
         </template>
+        <template v-slot:item.action="{ item }">

@@ -6,7 +6,6 @@ import store from '@/store';
 Vue.use(VueRouter);
 
 const routeMiddleware = (routeName, next) => {
-  const { userData } = store.state.authStore;
   if (!userData) return next();
   if (userData.role === 'Admin') {
     const allowedRouteNames = [
@@ -16,6 +15,7 @@ const routeMiddleware = (routeName, next) => {
       return next({ name: 'users-page' });
     }
   } else if (userData.role === 'User') {
+    const allowedRouteNames = [
       'tests-page',
     ];
     if (!allowedRouteNames.includes(routeName)) {

@@ -49,3 +49,4 @@
                           label="Value"
                           :rules="getValidators('Value', ['required'])"
                           v-model="filter.value"
+                        />
