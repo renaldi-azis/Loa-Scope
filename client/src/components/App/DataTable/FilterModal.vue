@@ -30,6 +30,7 @@
                           @change="onChangeColumn(groupIndex, filterIndex)"
                         />
                       </div>
+                      <div class="ml-2">
                         <v-select
                           label="Condition"
                           :items="getColumnConditions(filter.column)"

@@ -7,5 +7,4 @@ import toastr from 'toastr';
 
 import './registerServiceWorker';
 import './config';
-// Temp comment
 import './helpers';

@@ -1,5 +1,4 @@
 /**
- * @description User API Validator
  */
 
 /** Dependencies */
@@ -15,6 +14,7 @@ const getUsers = async (req, res, next) => {
   next();
 };
 
+/**
  * @description Create a new user
  */
 const createUser = async (req, res, next) => {

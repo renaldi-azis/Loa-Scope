@@ -4,6 +4,5 @@ const initialState = {
   tests: [],
 };
 
-// Temp comment
 const mutations = {
   setMenuSidebarOpen(state, payload) {
