@@ -17,3 +17,4 @@
         </template>
         <template v-slot:item.action="{ item }">
           <td class="layout justify-center">
+            <v-btn icon class="mx-0" @click="$refs.changePasswordModal.openModal(item)">

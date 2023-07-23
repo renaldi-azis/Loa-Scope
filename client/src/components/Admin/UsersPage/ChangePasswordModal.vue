@@ -15,3 +15,4 @@
             readonly
           />
           <v-text-field
+            type="password"

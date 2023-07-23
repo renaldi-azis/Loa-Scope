@@ -2,6 +2,7 @@
 
 module.exports = (sequelize, DataTypes) => {
   const User = sequelize.define(
+// Temp comment
     'User',
     {
       id: {

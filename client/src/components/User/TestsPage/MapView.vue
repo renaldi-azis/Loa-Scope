@@ -9,7 +9,6 @@
       </v-toolbar-title>
     </v-toolbar>
     <v-card-text>
-      <div class="d-flex">
         <v-spacer />
         <div>
           <v-select
@@ -31,3 +30,5 @@
       <div class="position-relative">
         <GmapMap
           class="map-container"
+          :center="mapCenter"
+          :zoom="4"

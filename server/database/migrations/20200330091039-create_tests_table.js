@@ -5,5 +5,4 @@ module.exports = {
     return queryInterface.createTable('tests', {
       id: {
         type: Sequelize.INTEGER,
-        autoIncrement: true,
         primaryKey: true,

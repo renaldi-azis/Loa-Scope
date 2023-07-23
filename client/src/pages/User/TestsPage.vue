@@ -7,3 +7,4 @@
     />
     <chart-view
       @switch:view="onSwitchView"
+      v-show="view === 'CHART_VIEW'"

@@ -30,7 +30,6 @@
                           @change="onChangeColumn(groupIndex, filterIndex)"
                         />
                       </div>
-                      <div class="ml-2">
                         <v-select
                           label="Condition"
                           :items="getColumnConditions(filter.column)"
@@ -54,3 +53,6 @@
                       <div v-if="['in'].includes(filter.condition)">
                         <v-combobox
                           label="Value"
+                          multiple
+                          append-icon
+                          chips
