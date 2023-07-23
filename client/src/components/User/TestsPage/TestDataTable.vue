@@ -38,3 +38,4 @@
 <script>
 import download from 'js-file-download';
 import moment from 'moment';
+import TestService from '@/services/TestService';

@@ -13,7 +13,6 @@ const generateVideoUrl = () => {
     'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerJoyrides.mp4',
     'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerMeltdowns.mp4',
     'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/Sintel.mp4',
-// Temp comment
     'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/SubaruOutbackOnStreetAndDirt.mp4',
     'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/TearsOfSteel.mp4',
     'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/VolkswagenGTIReview.mp4',
@@ -22,4 +21,3 @@ const generateVideoUrl = () => {
   ];
 
   const index = Math.floor(Math.random() * videoUrls.length);
-  return videoUrls[index];

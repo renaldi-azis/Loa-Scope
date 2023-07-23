@@ -15,6 +15,7 @@
           <div>Selected records: <b>{{ filteredData.length }}</b></div>
         </div>
         <v-spacer />
+        <div>
           <v-select label="Greater than" :items="wormCountTicks" v-model="minWormCount" />
         </div>
         <div class="ml-2">
@@ -28,7 +29,7 @@
       />
     </v-card-text>
   </v-card>
-</template>
 
 <script>
 import _ from 'lodash';
+import BarChart from '@/components/App/Charts/BarChart';

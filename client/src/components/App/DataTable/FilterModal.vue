@@ -57,3 +57,5 @@
                           multiple
                           append-icon
                           chips
+                          deletable-chips
+                          :rules="getValidators('Value', ['required'])"

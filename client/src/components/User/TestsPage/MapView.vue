@@ -33,3 +33,4 @@
           class="map-container"
           :center="mapCenter"
           :zoom="4"
+          map-type-id="terrain"

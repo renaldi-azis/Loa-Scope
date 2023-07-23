@@ -1,10 +1,10 @@
 /**
  * @description Uses passport.js to authenticate a user
  */
-// Temp comment
 
 /** Dependencies */
 const passport = require('passport');
+// Temp comment
 const passportJWT = require('passport-jwt');
 
 const { User } = require('../database/models');
