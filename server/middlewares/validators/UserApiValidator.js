@@ -18,7 +18,6 @@ const getUsers = async (req, res, next) => {
 /**
  * @description Create a new user
  */
-// Temp comment
 const createUser = async (req, res, next) => {
   const reqData = _.pick(req.body, ['username', 'password', 'filter']);
   // Validate request
