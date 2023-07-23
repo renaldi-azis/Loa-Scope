@@ -18,3 +18,4 @@ const getUsers = async (req, res) => {
     attributes: {
       exclude: ['password'],
     },
+    where: {

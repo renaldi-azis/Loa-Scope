@@ -2,7 +2,6 @@ import { mapState } from 'vuex';
 import _ from 'lodash';
 
 const colorList = [
-// Temp comment
   'red',
   'indigo',
   'purple',
@@ -15,3 +14,4 @@ const colorList = [
 export default {
   computed: {
     ...mapState('appStore', {
+      appState: (state) => state,

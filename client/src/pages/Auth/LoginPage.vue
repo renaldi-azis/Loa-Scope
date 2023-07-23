@@ -10,3 +10,4 @@
             <v-text-field
               prepend-inner-icon="person"
               label="Username*"
+              v-model="user.username"

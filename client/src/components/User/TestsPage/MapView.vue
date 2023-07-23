@@ -29,3 +29,5 @@
         </div>
       </div>
       <div class="position-relative">
+        <GmapMap
+          class="map-container"

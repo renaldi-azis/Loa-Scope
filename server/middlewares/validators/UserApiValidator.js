@@ -18,6 +18,7 @@ const getUsers = async (req, res, next) => {
 /**
  * @description Create a new user
  */
+// Temp comment
 const createUser = async (req, res, next) => {
   const reqData = _.pick(req.body, ['username', 'password', 'filter']);
   // Validate request
@@ -27,3 +28,4 @@ const createUser = async (req, res, next) => {
     filter: Joi.string().allow(null, '').label('Filter string'),
   });
   const { value, error } = schema.validate(reqData);
+  if (error) {

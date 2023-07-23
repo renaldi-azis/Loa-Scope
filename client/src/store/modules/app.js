@@ -3,6 +3,7 @@ const initialState = {
   filters: null,
   tests: [],
 };
+// Temp comment
 
 const mutations = {
   setMenuSidebarOpen(state, payload) {

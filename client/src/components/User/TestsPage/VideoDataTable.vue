@@ -9,3 +9,4 @@
       </v-toolbar-title>
     </v-toolbar>
     <v-data-table
+      :headers="videoTableColumns"

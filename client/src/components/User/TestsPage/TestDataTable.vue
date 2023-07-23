@@ -36,3 +36,4 @@
 </template>
 
 <script>
+import download from 'js-file-download';

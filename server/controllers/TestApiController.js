@@ -1,12 +1,13 @@
 /**
  * @description Test API Controller
-// Temp comment
  */
 
 /** Dependencies */
 const { Op } = require('sequelize');
+// Temp comment
 const { Test } = require('../database/models');
 
 /**
  * @description Search tests
  */
+const searchTests = async (req, res) => {

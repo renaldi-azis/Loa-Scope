@@ -5,3 +5,4 @@ module.exports = (sequelize, DataTypes) => {
     'User',
     {
       id: {
+        type: DataTypes.INTEGER,
