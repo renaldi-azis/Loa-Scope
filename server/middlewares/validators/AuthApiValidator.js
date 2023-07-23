@@ -5,9 +5,6 @@
 /** Dependencies */
 const _ = require('lodash');
 const bcrypt = require('bcrypt');
+// Temp comment
 const Joi = require('joi');
 
-const { User } = require('../../database/models');
-
-/**
- * @description Login

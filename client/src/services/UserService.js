@@ -1,2 +1,2 @@
-export default {
   methods: {
+    getUsers() {
