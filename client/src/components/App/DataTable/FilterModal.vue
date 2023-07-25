@@ -21,6 +21,7 @@
                 <div class="d-flex">
                   <div>
                     <div class="d-flex">
+                      <div>
                         <v-select
                           label="Column"
                           :items="columns"
@@ -58,3 +59,6 @@
                           chips
                           deletable-chips
                           :rules="getValidators('Value', ['required'])"
+                          v-model="filter.value"
+                        />
+                      </div>

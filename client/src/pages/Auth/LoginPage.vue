@@ -12,3 +12,4 @@
               label="Username*"
               v-model="user.username"
               :rules="getValidators('Username', ['required'])"
+            >

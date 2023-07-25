@@ -1,6 +1,7 @@
 <template>
   <div class="fill-width">
     <v-card>
+      <v-toolbar flat color="grey lighten-3">
         <v-toolbar-title>Users</v-toolbar-title>
         <v-spacer></v-spacer>
         <v-btn color="warning" @click="$refs.createUserModal.openModal()">New User</v-btn>
@@ -19,3 +20,4 @@
             <v-btn icon class="mx-0" @click="$refs.changePasswordModal.openModal(item)">
               <v-icon color="warning">security</v-icon>
             </v-btn>
+            <v-btn icon class="mx-0" @click="$refs.updateUserModal.openModal(item)">

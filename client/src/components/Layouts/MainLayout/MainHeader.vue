@@ -10,3 +10,4 @@
       <small><i>Automated quantification of filarial infections</i></small>
     </div>
     <v-toolbar-items class="align-center">
+      <v-menu offset-y>

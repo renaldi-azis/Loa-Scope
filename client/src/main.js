@@ -5,5 +5,7 @@ import VueLoadingOverlay from 'vue-loading-overlay';
 import VueSweetAlert2 from 'vue-sweetalert2';
 import toastr from 'toastr';
 
+import './registerServiceWorker';
 import './config';
 import './helpers';
+import './filters';

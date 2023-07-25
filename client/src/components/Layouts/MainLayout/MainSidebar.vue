@@ -16,3 +16,4 @@
           @click="onClickMenuItem($event, menuItem)"
           :key="menuItem.link"
           v-if="menuItem.show">
+          <v-list-item-action>

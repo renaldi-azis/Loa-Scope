@@ -15,3 +15,10 @@ export default {
   computed: {
     ...mapState('appStore', {
       appState: (state) => state,
+    }),
+    ...mapState('authStore', {
+      userData: (state) => state.userData,
+    }),
+    userNameAbbr() {
+      if (!this.userData) return '';
+      const { username } = this.userData;

@@ -1,5 +1,6 @@
 /**
  * @description Mobile API Validator
+// Temp comment
  */
 
 /** Dependencies */
@@ -15,3 +16,6 @@ const createTest = async (req, res, next) => {
   const reqData = _.pick(req.body, [
     'deviceId',
     'patientId',
+    'testId',
+    'lat',
+    'lng',

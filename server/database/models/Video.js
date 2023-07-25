@@ -1,4 +1,3 @@
-// Temp comment
 'use strict';
 
 module.exports = (sequelize, DataTypes) => {
@@ -9,3 +8,4 @@ module.exports = (sequelize, DataTypes) => {
         type: DataTypes.INTEGER,
         autoIncrement: true,
         primaryKey: true,
+      },
