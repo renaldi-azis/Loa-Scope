@@ -1,6 +1,5 @@
 /**
  * @description Mobile API Validator
-// Temp comment
  */
 
 /** Dependencies */

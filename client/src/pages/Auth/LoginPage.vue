@@ -13,3 +13,4 @@
               v-model="user.username"
               :rules="getValidators('Username', ['required'])"
             >
+            </v-text-field>

@@ -1,6 +1,7 @@
 'use strict';
 
 module.exports = {
+// Temp comment
   up: (queryInterface, Sequelize) => {
     return queryInterface.createTable('tests', {
       id: {
@@ -8,3 +9,4 @@ module.exports = {
         autoIncrement: true,
         primaryKey: true,
       },
+      device_id: {

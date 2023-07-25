@@ -31,6 +31,7 @@
       :loading="status.isLoading"
       @click:row="(row) => $emit('click:row', row)"
       @filter="onFilter"
+    />
   </v-card>
 </template>
 
@@ -39,3 +40,4 @@ import download from 'js-file-download';
 import moment from 'moment';
 import TestService from '@/services/TestService';
 import DataTable from '@/components/App/DataTable/DataTable.vue';
+

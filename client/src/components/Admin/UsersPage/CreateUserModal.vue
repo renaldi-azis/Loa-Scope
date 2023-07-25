@@ -15,3 +15,4 @@
             v-model="user.username"
           />
           <v-text-field
+            type="password"

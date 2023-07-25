@@ -36,3 +36,4 @@
           map-type-id="terrain"
           @idle="onMapIdle()"
         >
+          <GmapCluster :max-zoom="5" :grid-size="50">
