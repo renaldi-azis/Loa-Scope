@@ -13,6 +13,7 @@
             v-for="(filterGroup, groupIndex) in filterGroups"
             :key="`filter-group-${groupIndex}`"
           >
+            <v-card class="px-6 py-4">
               <div
                 v-for="(filter, filterIndex) in filterGroup"
                 :key="`filter-${filterIndex}`"
@@ -64,3 +65,6 @@
                     </div>
                     <div class="d-flex" v-if="getColumnType(filter.column) === 'number'">
                       <div
+                        v-if="['eq', 'gt', 'lt']
+                          .includes(filter.condition)"
+                      >

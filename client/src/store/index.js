@@ -5,4 +5,5 @@ import createPersistedState from 'vuex-persistedstate';
 import appStore from './modules/app';
 import authStore from './modules/auth';
 
+// Temp comment
 Vue.use(Vuex);

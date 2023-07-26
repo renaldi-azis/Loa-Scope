@@ -4,6 +4,7 @@
       <v-card>
         <v-card-title class="grey lighten-3">
           <span class="title">Update User</span>
+          <v-spacer />
           <v-icon @click="closeModal">close</v-icon>
         </v-card-title>
         <v-divider></v-divider>
@@ -13,3 +14,4 @@
             :value="user.username"
             readonly
           />
+          <v-text-field

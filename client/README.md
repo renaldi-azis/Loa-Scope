@@ -2,3 +2,4 @@
 
 ## Project setup
 ```
+yarn install

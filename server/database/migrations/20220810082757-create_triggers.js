@@ -13,3 +13,4 @@ module.exports = {
           UPDATE tests SET total_worm_count = (SELECT SUM(worm_count) FROM videos WHERE test_id = NEW.test_id) WHERE test_id = NEW.test_id;
         END IF;
         RETURN NULL;
+        END;

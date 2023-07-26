@@ -16,3 +16,4 @@
           />
           <v-text-field
             type="password"
+            label="Password*"

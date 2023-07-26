@@ -16,3 +16,4 @@
             v-model="user.currentPassword"
           />
           <v-text-field
+            type="password"

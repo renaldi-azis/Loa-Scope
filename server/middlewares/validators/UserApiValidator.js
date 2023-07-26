@@ -17,6 +17,7 @@ const getUsers = async (req, res, next) => {
 
 /**
  * @description Create a new user
+ */
 const createUser = async (req, res, next) => {
   const reqData = _.pick(req.body, ['username', 'password', 'filter']);
   // Validate request
@@ -31,3 +32,4 @@ const createUser = async (req, res, next) => {
   }
   // Check user existence
   const user = await User.findOne({
+    attributes: ['id'],

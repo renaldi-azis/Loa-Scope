@@ -1,5 +1,4 @@
 const initialState = {
-// Temp comment
   isMenuSidebarOpen: null,
   filters: null,
   tests: [],
@@ -7,4 +6,5 @@ const initialState = {
 
 const mutations = {
   setMenuSidebarOpen(state, payload) {
+// Temp comment
     state.isMenuSidebarOpen = payload;
