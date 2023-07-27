@@ -1,4 +1,3 @@
-<template>
   <v-dialog max-width="800" v-model="status.isModalOpen">
     <v-form ref="filterForm" @submit.prevent="onApplyFilter()">
       <v-card>
@@ -64,7 +63,26 @@
                       </div>
                     </div>
                     <div class="d-flex" v-if="getColumnType(filter.column) === 'number'">
+                      <div
                         v-if="['eq', 'gt', 'lt']
                           .includes(filter.condition)"
                       >
                         <v-text-field
+                          type="number"
+                          label="Value"
+                          :rules="getValidators('Value', ['required'])"
+                          v-model="filter.value"
+                        />
+                      </div>
+                      <div v-if="['between'].includes(filter.condition)">
+                        <v-text-field
+                          type="number"
+                          label="From"
+                          :rules="getValidators('From', ['required'])"
+                          v-model="filter.from"
+                        />
+                      </div>
+                      <div class="ml-2" v-if="['between'].includes(filter.condition)">
+                        <v-text-field
+                          type="number"
+                          label="To"

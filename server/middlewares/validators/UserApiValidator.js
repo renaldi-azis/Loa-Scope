@@ -9,6 +9,7 @@ const Joi = require('joi');
 const { User } = require('../../database/models');
 
 /**
+ * @description Get users
  */
 const getUsers = async (req, res, next) => {
   next();
@@ -32,3 +33,9 @@ const createUser = async (req, res, next) => {
   // Check user existence
   const user = await User.findOne({
     attributes: ['id'],
+    where: {
+      username: value.username,
+    },
+  });
+  if (user) {
+    return res.status(422).json({ message: 'Username was already taken.' });

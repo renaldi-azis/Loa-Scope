@@ -9,4 +9,6 @@ module.exports = (sequelize, DataTypes) => {
         autoIncrement: true,
         primaryKey: true,
       },
+      deviceId: {
+// Temp comment
         type: DataTypes.STRING,

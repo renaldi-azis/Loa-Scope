@@ -28,6 +28,7 @@
           />
         </div>
       </div>
+      <div class="position-relative">
         <GmapMap
           class="map-container"
           :center="mapCenter"
@@ -39,3 +40,4 @@
             <GmapMarker
               :position="position"
               :clickable="true"
+              @click="onClickMapMarker(position, index)"

@@ -12,3 +12,4 @@
     <v-toolbar-items class="align-center">
       <v-menu offset-y>
         <template v-slot:activator="{ on }">
+          <v-btn text v-on="on">

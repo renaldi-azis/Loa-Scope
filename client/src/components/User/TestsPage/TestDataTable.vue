@@ -21,6 +21,7 @@
           >
             <v-icon dark v-html="action.icon" />
           </v-btn>
+        </template>
         <span>{{ action.tooltip }}</span>
       </v-tooltip>
     </v-toolbar>
@@ -41,3 +42,4 @@ import TestService from '@/services/TestService';
 import DataTable from '@/components/App/DataTable/DataTable.vue';
 
 export default {
+  name: 'TestDataTable',

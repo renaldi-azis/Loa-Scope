@@ -1,3 +1,3 @@
 <template>
   <v-app>
-      <v-container fluid fill-height fill-screen>
+    <v-content class="grey darken-3">
