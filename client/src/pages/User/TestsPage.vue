@@ -6,6 +6,7 @@
       v-show="view === 'TEST_DATA_TABLE'"
     />
     <chart-view
+      @switch:view="onSwitchView"
       v-show="view === 'CHART_VIEW'"
     />
     <map-view

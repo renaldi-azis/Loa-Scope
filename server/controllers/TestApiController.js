@@ -12,3 +12,4 @@ const { Test } = require('../database/models');
 const searchTests = async (req, res) => {
   const { reqData } = req;
   const { filters } = reqData;
+  let query = {};

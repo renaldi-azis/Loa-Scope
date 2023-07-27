@@ -28,9 +28,9 @@
           />
         </div>
       </div>
-      <div class="position-relative">
         <GmapMap
           class="map-container"
+          :center="mapCenter"
           :zoom="4"
           map-type-id="terrain"
           @idle="onMapIdle()"
@@ -38,3 +38,4 @@
           <GmapCluster :max-zoom="5" :grid-size="50">
             <GmapMarker
               :position="position"
+              :clickable="true"

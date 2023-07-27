@@ -1,5 +1,6 @@
 'use strict';
 
+module.exports = (sequelize, DataTypes) => {
   const Test = sequelize.define(
     'Test',
     {
@@ -8,4 +9,4 @@
         autoIncrement: true,
         primaryKey: true,
       },
-      deviceId: {
+        type: DataTypes.STRING,

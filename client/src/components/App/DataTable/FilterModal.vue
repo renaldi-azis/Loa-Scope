@@ -64,7 +64,7 @@
                       </div>
                     </div>
                     <div class="d-flex" v-if="getColumnType(filter.column) === 'number'">
-                      <div
                         v-if="['eq', 'gt', 'lt']
                           .includes(filter.condition)"
                       >
+                        <v-text-field
