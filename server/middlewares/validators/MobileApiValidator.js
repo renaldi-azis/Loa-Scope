@@ -14,6 +14,7 @@ const { Test, Video } = require('../../database/models');
 const createTest = async (req, res, next) => {
   const reqData = _.pick(req.body, [
     'deviceId',
+    'patientId',
     'testId',
     'lat',
     'lng',

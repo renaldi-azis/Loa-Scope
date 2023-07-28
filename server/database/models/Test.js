@@ -9,5 +9,4 @@ module.exports = (sequelize, DataTypes) => {
         autoIncrement: true,
         primaryKey: true,
       },
-      deviceId: {
         type: DataTypes.STRING,
