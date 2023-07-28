@@ -7,7 +7,6 @@
     />
     <chart-view
       @switch:view="onSwitchView"
-      v-show="view === 'CHART_VIEW'"
     />
     <map-view
       @switch:view="onSwitchView"

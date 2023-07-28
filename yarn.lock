@@ -350,6 +350,7 @@
     "safe-buffer" "^5.0.1"
 
 "ee-first@1.1.1":
+  "integrity" "sha512-WMwm9LhRUo+WUaRN+vRuETqG89IgZphVSNkdFgeb6sS/E4OrDIN7t48CAewSHXc6C8lefD8KKfr5vY61brQlow=="
   "resolved" "https://registry.npmjs.org/ee-first/-/ee-first-1.1.1.tgz"
   "version" "1.1.1"
 
@@ -358,7 +359,6 @@
   "resolved" "https://registry.npmjs.org/emoji-regex/-/emoji-regex-8.0.0.tgz"
   "version" "8.0.0"
 
-"encodeurl@~1.0.2":
   "integrity" "sha512-TPJXq8JqFaVYm2CWmPvnP2Iyo4ZSM7/QKcSmuMLDObfpH5fi7RUGmd/rTDf+rut/saiDiQEeVTNgAmJEdAOx0w=="
   "resolved" "https://registry.npmjs.org/encodeurl/-/encodeurl-1.0.2.tgz"
   "version" "1.0.2"

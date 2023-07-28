@@ -21,3 +21,4 @@ export default {
     }),
     userNameAbbr() {
       if (!this.userData) return '';
+      const { username } = this.userData;
