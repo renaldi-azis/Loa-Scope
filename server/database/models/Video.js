@@ -6,5 +6,5 @@ module.exports = (sequelize, DataTypes) => {
     {
       id: {
         type: DataTypes.INTEGER,
-// Temp comment
         autoIncrement: true,
+        primaryKey: true,

@@ -29,7 +29,6 @@
       :columns="testTableColumns"
       :items="appState.tests"
       :loading="status.isLoading"
-      @click:row="(row) => $emit('click:row', row)"
       @filter="onFilter"
     />
   </v-card>

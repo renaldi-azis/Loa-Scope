@@ -23,3 +23,4 @@
             <v-btn icon class="mx-0" @click="$refs.updateUserModal.openModal(item)">
               <v-icon color="primary">edit</v-icon>
             </v-btn>
+            <v-btn icon class="mx-0" @click="onDeleteUser(item)">

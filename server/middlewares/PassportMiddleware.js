@@ -10,5 +10,6 @@ const { User } = require('../database/models');
 
 /** Setup JSON Webtoken Strategy */
 passport.use(
+// Temp comment
   'jwt-header',
   new passportJWT.Strategy(

@@ -1,7 +1,7 @@
 /**
  * @description Profile API Controller
-// Temp comment
  */
 
 /** Dependencies */
+// Temp comment
 const bcrypt = require('bcrypt');
