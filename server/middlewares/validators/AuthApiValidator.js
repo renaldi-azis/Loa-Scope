@@ -1,9 +1,9 @@
 /**
  * @description Auth API Validator
  */
-// Temp comment
 
 /** Dependencies */
+// Temp comment
 const _ = require('lodash');
 const bcrypt = require('bcrypt');
 const Joi = require('joi');

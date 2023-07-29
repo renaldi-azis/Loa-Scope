@@ -1,4 +1,4 @@
-  <v-menu
+<template>
     ref="menu"
     :close-on-content-click="false"
     :nudge-right="40"

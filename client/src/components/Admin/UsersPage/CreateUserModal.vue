@@ -9,7 +9,6 @@
         </v-card-title>
         <v-divider></v-divider>
         <v-card-text>
-          <v-text-field
             label="Username*"
             :rules="getValidators('Username', ['required'])"
             v-model="user.username"
@@ -18,3 +17,4 @@
             type="password"
             label="Password*"
             :rules="getValidators('Password', ['required', 'min-len:6'])"
+            v-model="user.password"

@@ -1,4 +1,3 @@
-'use strict';
 
 module.exports = {
   up: (queryInterface, Sequelize) => {
@@ -9,3 +8,4 @@ module.exports = {
         primaryKey: true,
       },
       test_id: {
+        type: Sequelize.STRING,

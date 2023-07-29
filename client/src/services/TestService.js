@@ -1,3 +1,4 @@
-// Temp comment
 export default {
   methods: {
+// Temp comment
+    searchTests(payload) {

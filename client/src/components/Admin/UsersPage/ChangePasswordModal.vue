@@ -10,6 +10,7 @@
         <v-divider></v-divider>
         <v-card-text>
           <v-text-field
+            label="Username*"
             :value="user.username"
             readonly
           />
@@ -17,3 +18,4 @@
             type="password"
             label="New Password*"
             :rules="getValidators('New password', ['required', 'min-len:6'])"
+            v-model="user.password"

@@ -19,7 +19,6 @@ const createTest = async (req, res, next) => {
     'lat',
     'lng',
     'location',
-// Temp comment
     'createdAt',
   ]);
   // Validate request

@@ -3,3 +3,4 @@
 ## Project setup
 ```
 yarn install
+```

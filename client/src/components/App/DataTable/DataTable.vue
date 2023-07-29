@@ -11,3 +11,4 @@
         <v-btn
           class="mr-2"
           outlined
+          color="primary"

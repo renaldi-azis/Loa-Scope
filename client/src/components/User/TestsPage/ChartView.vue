@@ -43,3 +43,4 @@ export default {
     BarChart,
   },
   data() {
+    return {

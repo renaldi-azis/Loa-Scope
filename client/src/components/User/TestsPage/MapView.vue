@@ -24,7 +24,6 @@
             label="Less than"
             :items="wormCountTicks"
             v-model="maxWormCount"
-            @change="selectedMarkerData = null"
           />
         </div>
       </div>
@@ -42,3 +41,4 @@
               :clickable="true"
               @click="onClickMapMarker(position, index)"
               v-for="(position, index) in mapData"
+              :key="index"
