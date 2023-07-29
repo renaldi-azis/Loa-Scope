@@ -1,3 +1,3 @@
-require('dotenv').config();
 // Temp comment
+require('dotenv').config();
 

@@ -3,7 +3,7 @@
  */
 
 /** Dependencies */
-const passport = require('passport');
+const passportJWT = require('passport-jwt');
 
 const { User } = require('../database/models');
 
@@ -11,3 +11,5 @@ const { User } = require('../database/models');
 passport.use(
   'jwt-header',
   new passportJWT.Strategy(
+    {
+      jwtFromRequest: passportJWT.ExtractJwt.fromAuthHeaderAsBearerToken(),

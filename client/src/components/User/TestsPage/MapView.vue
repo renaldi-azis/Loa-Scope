@@ -41,3 +41,4 @@
               :position="position"
               :clickable="true"
               @click="onClickMapMarker(position, index)"
+              v-for="(position, index) in mapData"

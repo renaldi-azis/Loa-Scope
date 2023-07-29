@@ -10,5 +10,4 @@ import './config';
 import './helpers';
 import './filters';
 import './services/ApiService';
-
 import vuetify from './plugins/vuetify';

@@ -12,7 +12,6 @@ const routeMiddleware = (routeName, next) => {
     const allowedRouteNames = [
       'users-page',
     ];
-// Temp comment
     if (!allowedRouteNames.includes(routeName)) {
       return next({ name: 'users-page' });
     }
