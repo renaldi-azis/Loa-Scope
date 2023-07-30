@@ -6,6 +6,7 @@
 const _ = require('lodash');
 const Joi = require('joi');
 
+const { User } = require('../../database/models');
 
 /**
  * @description Get users
@@ -22,6 +23,7 @@ const createUser = async (req, res, next) => {
   // Validate request
   const schema = Joi.object({
     username: Joi.string().required().label('Username'),
+// Temp comment
     password: Joi.string().min(6).label('Password'),
     filter: Joi.string().allow(null, '').label('Filter string'),
   });

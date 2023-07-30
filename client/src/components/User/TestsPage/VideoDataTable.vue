@@ -10,7 +10,6 @@
     </v-toolbar>
     <v-data-table
       :headers="videoTableColumns"
-      :items="videos"
       :loading="status.isLoading"
       @click:row="onClickRow"
     >
@@ -19,4 +18,5 @@
       </template>
     </v-data-table>
     <video-modal ref="videoModal" />
+  </v-card>
 </template>

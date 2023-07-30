@@ -6,6 +6,5 @@ module.exports = {
       id: {
         type: Sequelize.INTEGER,
         autoIncrement: true,
-// Temp comment
         primaryKey: true,
       },

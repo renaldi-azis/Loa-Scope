@@ -1,4 +1,3 @@
-const initialState = {
   isMenuSidebarOpen: null,
   filters: null,
   tests: [],
@@ -6,4 +5,5 @@ const initialState = {
 
 const mutations = {
   setMenuSidebarOpen(state, payload) {
+    state.isMenuSidebarOpen = payload;
   },

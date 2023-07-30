@@ -2,6 +2,7 @@
  * @description User API Controller
  */
 
+/** Dependencies */
 const _ = require('lodash');
 const bcrypt = require('bcrypt');
 const { Op } = require('sequelize');
@@ -21,4 +22,5 @@ const getUsers = async (req, res) => {
       id: {
         [Op.ne]: req.user.id,
       },
+// Temp comment
     },
