@@ -1,6 +1,5 @@
 /**
  * @description Profile API Validator
-// Temp comment
  */
 
 /** Dependencies */

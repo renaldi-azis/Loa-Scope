@@ -1,3 +1,4 @@
+/**
  * @description Uses passport.js to authenticate a user
  */
 
@@ -7,6 +8,7 @@ const passportJWT = require('passport-jwt');
 
 const { User } = require('../database/models');
 
+// Temp comment
 /** Setup JSON Webtoken Strategy */
 passport.use(
   'jwt-header',

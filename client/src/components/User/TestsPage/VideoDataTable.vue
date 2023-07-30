@@ -19,5 +19,4 @@
       </template>
     </v-data-table>
     <video-modal ref="videoModal" />
-  </v-card>
 </template>
