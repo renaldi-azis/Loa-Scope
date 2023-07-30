@@ -4,7 +4,6 @@
       <v-card>
         <v-card-title class="grey lighten-3">
           <span class="title">Change Password</span>
-          <v-spacer />
           <v-icon @click="closeModal">close</v-icon>
         </v-card-title>
         <v-divider></v-divider>
@@ -14,6 +13,7 @@
             label="Current Password*"
             :rules="getValidators('Current password', ['required'])"
             v-model="user.currentPassword"
+          />
           <v-text-field
             type="password"
             label="New Password*"

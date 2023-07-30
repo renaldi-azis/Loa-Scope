@@ -25,6 +25,7 @@
             :items="wormCountTicks"
             v-model="maxWormCount"
             @change="selectedMarkerData = null"
+          />
         </div>
       </div>
       <div class="position-relative">
