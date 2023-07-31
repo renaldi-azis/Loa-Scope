@@ -61,3 +61,7 @@
                           :rules="getValidators('Value', ['required'])"
                           v-model="filter.value"
                         />
+                      </div>
+                    </div>
+                    <div class="d-flex" v-if="getColumnType(filter.column) === 'number'">
+                      <div

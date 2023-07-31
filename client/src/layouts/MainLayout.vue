@@ -1,5 +1,5 @@
 <template>
-    <main-header></main-header>
+  <v-app>
     <main-sidebar></main-sidebar>
     <v-content>
       <v-container class="pa-6" fluid>

@@ -16,3 +16,4 @@ module.exports = {
         END;
       $$;
     `);
+    await queryInterface.sequelize.query(`

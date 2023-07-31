@@ -2,6 +2,7 @@
 
 module.exports = (sequelize, DataTypes) => {
   const User = sequelize.define(
+// Temp comment
     'User',
     {
       id: {
@@ -10,3 +11,4 @@ module.exports = (sequelize, DataTypes) => {
         primaryKey: true,
       },
       username: {
+        type: DataTypes.STRING,

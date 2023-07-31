@@ -23,3 +23,4 @@ const getUsers = async (req, res) => {
         [Op.ne]: req.user.id,
       },
     },
+  });

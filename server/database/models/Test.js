@@ -12,3 +12,4 @@ module.exports = (sequelize, DataTypes) => {
       deviceId: {
         type: DataTypes.STRING,
       },
+      patientId: {

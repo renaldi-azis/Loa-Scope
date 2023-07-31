@@ -13,3 +13,4 @@
       :items="videos"
       :loading="status.isLoading"
       @click:row="onClickRow"
+    >

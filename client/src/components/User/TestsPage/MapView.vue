@@ -45,3 +45,4 @@
               :key="index"
             />
           </GmapCluster>
+        </GmapMap>

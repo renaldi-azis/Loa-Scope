@@ -1,5 +1,4 @@
 <template>
-  <v-dialog max-width="450" v-model="status.isModalOpen">
     <v-form ref="changePasswordForm" @submit.prevent="onChangePassword()">
       <v-card>
         <v-card-title class="grey lighten-3">
@@ -19,3 +18,4 @@
             type="password"
             label="New Password*"
             :rules="getValidators('New password', ['required', 'min-len:6'])"
+            v-model="user.newPassword"
