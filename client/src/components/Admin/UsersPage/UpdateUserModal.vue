@@ -16,3 +16,4 @@
           />
           <v-text-field
             label="Filter"
+            v-model="user.filter"

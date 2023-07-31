@@ -55,3 +55,7 @@
                         <v-combobox
                           label="Value"
                           multiple
+                          append-icon
+                          chips
+                          deletable-chips
+                          :rules="getValidators('Value', ['required'])"

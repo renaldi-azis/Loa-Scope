@@ -6,7 +6,6 @@
 const _ = require('lodash');
 const Joi = require('joi');
 
-// Temp comment
 const { Test, Video } = require('../../database/models');
 
 /**
@@ -14,6 +13,7 @@ const { Test, Video } = require('../../database/models');
  */
 const createTest = async (req, res, next) => {
   const reqData = _.pick(req.body, [
+// Temp comment
     'deviceId',
     'patientId',
     'testId',

@@ -16,3 +16,4 @@
             </v-text-field>
             <v-text-field
               type="password"
+              prepend-inner-icon="lock"

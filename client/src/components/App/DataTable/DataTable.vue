@@ -12,3 +12,4 @@
           class="mr-2"
           outlined
           color="primary"
+          @click="$refs.filterModal.openModal(visibleColumns)"

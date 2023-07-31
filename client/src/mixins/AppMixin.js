@@ -7,6 +7,7 @@ const colorList = [
   'purple',
   'blue',
   'green',
+  'orange',
   'pink',
 ];
 

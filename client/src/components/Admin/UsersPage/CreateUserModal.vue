@@ -2,6 +2,7 @@
   <v-dialog max-width="450" v-model="status.isModalOpen">
     <v-form ref="createUserForm" @submit.prevent="onCreateUser()">
       <v-card>
+        <v-card-title class="grey lighten-3">
           <span class="title">Create User</span>
           <v-spacer />
           <v-icon @click="closeModal">close</v-icon>
@@ -11,7 +12,6 @@
           <v-text-field
             label="Username*"
             :rules="getValidators('Username', ['required'])"
-            v-model="user.username"
           />
           <v-text-field
             type="password"

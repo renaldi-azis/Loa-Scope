@@ -43,3 +43,5 @@
               @click="onClickMapMarker(position, index)"
               v-for="(position, index) in mapData"
               :key="index"
+            />
+          </GmapCluster>

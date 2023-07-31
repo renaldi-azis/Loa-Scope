@@ -1,3 +1,4 @@
+'use strict';
 
 module.exports = (sequelize, DataTypes) => {
   const Video = sequelize.define(
@@ -8,3 +9,4 @@ module.exports = (sequelize, DataTypes) => {
         autoIncrement: true,
         primaryKey: true,
       },
+      testId: {

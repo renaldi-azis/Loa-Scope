@@ -1,7 +1,6 @@
 <template>
   <v-navigation-drawer
     class="grey darken-3"
-    app
     dark
     fixed
     clipped
@@ -11,3 +10,4 @@
   >
     <v-list>
       <template v-for="(menuItem, menuIndex) in menuItems">
+        <v-list-item

@@ -26,7 +26,6 @@
       </v-tooltip>
     </v-toolbar>
     <data-table
-      :columns="testTableColumns"
       :items="appState.tests"
       :loading="status.isLoading"
       @click:row="(row) => $emit('click:row', row)"
@@ -44,3 +43,4 @@ import DataTable from '@/components/App/DataTable/DataTable.vue';
 export default {
   name: 'TestDataTable',
   mixins: [TestService],
+  components: {

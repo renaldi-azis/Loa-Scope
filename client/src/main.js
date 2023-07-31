@@ -1,4 +1,5 @@
 import Vue from 'vue';
+// Temp comment
 import * as VueGoogleMaps from 'vue2-google-maps';
 import GmapCluster from 'vue2-google-maps/dist/components/cluster';
 import VueLoadingOverlay from 'vue-loading-overlay';
