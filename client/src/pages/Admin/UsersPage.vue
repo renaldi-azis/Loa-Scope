@@ -15,6 +15,7 @@
         <template v-slot:item.createdAt="{ item }">
           {{ item.createdAt | dateFormatter('MMMM DD, YYYY hh:mm A') }}
         </template>
+        <template v-slot:item.action="{ item }">
           <td class="layout justify-center">
             <v-btn icon class="mx-0" @click="$refs.changePasswordModal.openModal(item)">
               <v-icon color="warning">security</v-icon>

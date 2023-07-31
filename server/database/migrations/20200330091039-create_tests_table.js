@@ -9,3 +9,5 @@ module.exports = {
         primaryKey: true,
       },
       device_id: {
+        type: Sequelize.STRING,
+      },

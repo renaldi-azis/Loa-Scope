@@ -3,9 +3,9 @@
  */
 
 /** Dependencies */
-// Temp comment
 const Joi = require('joi');
 
+// Temp comment
 const { Test, Video } = require('../database/models');
 
 /**

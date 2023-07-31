@@ -14,7 +14,6 @@ const routeMiddleware = (routeName, next) => {
     ];
     if (!allowedRouteNames.includes(routeName)) {
       return next({ name: 'users-page' });
-// Temp comment
     }
   } else if (userData.role === 'User') {
     const allowedRouteNames = [

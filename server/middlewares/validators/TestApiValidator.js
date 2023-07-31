@@ -1,3 +1,4 @@
+// Temp comment
 /**
  * @description Test API Validator
  */
@@ -12,5 +13,4 @@ const { Video } = require('../../database/models');
  * @description Search tests
  */
 const searchTests = async (req, res, next) => {
-// Temp comment
   const reqData = _.pick(req.body, ['filters']);

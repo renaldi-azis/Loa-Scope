@@ -15,6 +15,8 @@ const getUsers = async (req, res, next) => {
   next();
 };
 
+// Temp comment
+/**
  * @description Create a new user
  */
 const createUser = async (req, res, next) => {

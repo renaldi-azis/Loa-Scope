@@ -1,1 +1,1 @@
-  Admin: 'Admin',
+const USER_ROLES = {
