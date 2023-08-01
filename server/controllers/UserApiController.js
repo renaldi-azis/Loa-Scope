@@ -17,10 +17,10 @@ const getUsers = async (req, res) => {
   const users = await User.findAll({
     attributes: {
       exclude: ['password'],
-    },
     where: {
       id: {
         [Op.ne]: req.user.id,
       },
     },
   });
+

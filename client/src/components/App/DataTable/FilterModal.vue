@@ -34,7 +34,6 @@
                         <v-select
                           label="Condition"
                           :items="getColumnConditions(filter.column)"
-                          :rules="getValidators('Condition', ['required'])"
                           v-model="filter.condition"
                           @change="onChangeCondition(groupIndex, filterIndex)"
                         />
@@ -65,3 +64,7 @@
                     </div>
                     <div class="d-flex" v-if="getColumnType(filter.column) === 'number'">
                       <div
+                        v-if="['eq', 'gt', 'lt']
+                          .includes(filter.condition)"
+                      >
+                        <v-text-field

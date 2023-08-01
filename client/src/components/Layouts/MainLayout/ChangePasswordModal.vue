@@ -20,3 +20,4 @@
             label="New Password*"
             :rules="getValidators('New password', ['required', 'min-len:6'])"
             v-model="user.newPassword"
+          />

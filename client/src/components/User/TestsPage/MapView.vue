@@ -30,6 +30,7 @@
       </div>
       <div class="position-relative">
         <GmapMap
+          class="map-container"
           :center="mapCenter"
           :zoom="4"
           map-type-id="terrain"
@@ -45,3 +46,5 @@
             />
           </GmapCluster>
         </GmapMap>
+        <div class="test-detail" v-if="selectedMarkerData">
+          <div class="d-flex mb-4">

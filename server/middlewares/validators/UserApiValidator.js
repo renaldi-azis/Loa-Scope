@@ -19,6 +19,7 @@ const getUsers = async (req, res, next) => {
  * @description Create a new user
  */
 const createUser = async (req, res, next) => {
+// Temp comment
   const reqData = _.pick(req.body, ['username', 'password', 'filter']);
   // Validate request
   const schema = Joi.object({
@@ -40,3 +41,4 @@ const createUser = async (req, res, next) => {
   if (user) {
     return res.status(422).json({ message: 'Username was already taken.' });
   }
+

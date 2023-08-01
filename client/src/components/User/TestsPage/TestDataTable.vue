@@ -46,3 +46,5 @@ export default {
   mixins: [TestService],
   components: {
     DataTable,
+  },
+  data: () => ({
