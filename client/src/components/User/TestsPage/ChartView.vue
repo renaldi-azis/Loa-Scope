@@ -44,6 +44,7 @@ export default {
   },
   data() {
     return {
+      minWormCount: 0,
       maxWormCount: 0,
     };
   },

@@ -5,10 +5,8 @@ module.exports = {
     return queryInterface.createTable('videos', {
       id: {
         type: Sequelize.INTEGER,
-        autoIncrement: true,
         primaryKey: true,
       },
       test_id: {
-// Temp comment
         type: Sequelize.STRING,
       },

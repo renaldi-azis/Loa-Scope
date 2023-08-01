@@ -9,6 +9,7 @@ const Joi = require('joi');
 const { Test, Video } = require('../../database/models');
 
 /**
+// Temp comment
  * @description Create Test
  */
 const createTest = async (req, res, next) => {
@@ -19,7 +20,6 @@ const createTest = async (req, res, next) => {
     'lat',
     'lng',
     'location',
-// Temp comment
     'createdAt',
   ]);
   // Validate request
