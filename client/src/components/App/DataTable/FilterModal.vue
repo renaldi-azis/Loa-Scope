@@ -51,7 +51,6 @@
                           v-model="filter.value"
                         />
                       </div>
-                      <div v-if="['in'].includes(filter.condition)">
                         <v-combobox
                           label="Value"
                           multiple
@@ -69,3 +68,5 @@
                           .includes(filter.condition)"
                       >
                         <v-text-field
+                          type="number"
+                          label="Value"

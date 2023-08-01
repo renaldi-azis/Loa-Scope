@@ -10,7 +10,6 @@ const { Test, Video } = require('../../database/models');
 
 /**
  * @description Create Test
-// Temp comment
  */
 const createTest = async (req, res, next) => {
   const reqData = _.pick(req.body, [
@@ -19,3 +18,11 @@ const createTest = async (req, res, next) => {
     'testId',
     'lat',
     'lng',
+    'location',
+// Temp comment
+    'createdAt',
+  ]);
+  // Validate request
+  const schema = Joi.object({
+    deviceId: Joi.string().required().label('Device ID'),
+    patientId: Joi.string().required().label('Patient ID'),

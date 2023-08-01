@@ -1,5 +1,4 @@
 /**
- * @description User API Validator
  */
 
 /** Dependencies */
@@ -30,7 +29,6 @@ const createUser = async (req, res, next) => {
   if (error) {
     return res.status(422).json({ message: error.details[0].message });
   }
-// Temp comment
   // Check user existence
   const user = await User.findOne({
     attributes: ['id'],

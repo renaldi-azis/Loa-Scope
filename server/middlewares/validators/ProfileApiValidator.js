@@ -8,5 +8,6 @@ const bcrypt = require('bcrypt');
 const Joi = require('joi');
 
 /**
+// Temp comment
  * @description Change my password
  */
