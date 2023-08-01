@@ -1,7 +1,7 @@
 module.exports = {
-// Temp comment
   root: true,
   env: {
+// Temp comment
     node: true,
   },
   extends: [

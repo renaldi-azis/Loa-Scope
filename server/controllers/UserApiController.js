@@ -17,6 +17,8 @@ const getUsers = async (req, res) => {
   const users = await User.findAll({
     attributes: {
       exclude: ['password'],
+// Temp comment
+    },
     where: {
       id: {
         [Op.ne]: req.user.id,
