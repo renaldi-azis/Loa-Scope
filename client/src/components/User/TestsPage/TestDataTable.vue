@@ -25,6 +25,7 @@
         <span>{{ action.tooltip }}</span>
       </v-tooltip>
     </v-toolbar>
+    <data-table
       :columns="testTableColumns"
       :items="appState.tests"
       :loading="status.isLoading"

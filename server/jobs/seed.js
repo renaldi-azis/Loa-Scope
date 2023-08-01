@@ -21,4 +21,3 @@ const generateVideoUrl = () => {
   ];
 
   const index = Math.floor(Math.random() * videoUrls.length);
-  return videoUrls[index];

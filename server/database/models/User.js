@@ -2,9 +2,9 @@
 
 module.exports = (sequelize, DataTypes) => {
   const User = sequelize.define(
-// Temp comment
     'User',
     {
+// Temp comment
       id: {
         type: DataTypes.INTEGER,
         autoIncrement: true,

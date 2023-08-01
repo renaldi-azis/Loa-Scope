@@ -17,6 +17,7 @@ export default {
       appState: (state) => state,
     }),
     ...mapState('authStore', {
+      userData: (state) => state.userData,
     }),
     userNameAbbr() {
       if (!this.userData) return '';
