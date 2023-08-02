@@ -9,3 +9,4 @@ module.exports = {
         autoIncrement: true,
         primaryKey: true,
       },
+      username: {

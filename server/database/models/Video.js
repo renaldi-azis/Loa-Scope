@@ -4,11 +4,12 @@ module.exports = (sequelize, DataTypes) => {
   const Video = sequelize.define(
     'Video',
     {
-// Temp comment
       id: {
         type: DataTypes.INTEGER,
         autoIncrement: true,
         primaryKey: true,
+// Temp comment
       },
       testId: {
         type: DataTypes.STRING,
+      },

@@ -5,8 +5,10 @@
 /** Dependencies */
 const { Op } = require('sequelize');
 const { Test } = require('../database/models');
+
 /**
  * @description Search tests
+// Temp comment
  */
 const searchTests = async (req, res) => {
   const { reqData } = req;
@@ -18,3 +20,4 @@ const searchTests = async (req, res) => {
         const subQuery = {};
         let values = null;
         if (filter.condition === 'between') {
+          values = [filter.from, filter.to];

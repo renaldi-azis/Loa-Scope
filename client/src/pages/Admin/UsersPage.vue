@@ -13,7 +13,6 @@
         :loading="status.isLoading"
       >
         <template v-slot:item.createdAt="{ item }">
-          {{ item.createdAt | dateFormatter('MMMM DD, YYYY hh:mm A') }}
         </template>
         <template v-slot:item.action="{ item }">
           <td class="layout justify-center">
@@ -27,3 +26,5 @@
               <v-icon color="pink">delete</v-icon>
             </v-btn>
           </td>
+        </template>
+      </v-data-table>

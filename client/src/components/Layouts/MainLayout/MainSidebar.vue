@@ -1,7 +1,6 @@
 <template>
   <v-navigation-drawer
     class="grey darken-3"
-    app
     dark
     fixed
     clipped
@@ -16,3 +15,5 @@
           @click="onClickMenuItem($event, menuItem)"
           :key="menuItem.link"
           v-if="menuItem.show">
+          <v-list-item-action>
+            <v-icon size="30" v-text="menuItem.icon"></v-icon>

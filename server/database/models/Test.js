@@ -10,7 +10,7 @@ module.exports = (sequelize, DataTypes) => {
         primaryKey: true,
       },
       deviceId: {
-// Temp comment
         type: DataTypes.STRING,
       },
       patientId: {
+        type: DataTypes.STRING,

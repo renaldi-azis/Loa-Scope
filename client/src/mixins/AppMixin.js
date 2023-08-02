@@ -8,7 +8,6 @@ const colorList = [
   'blue',
   'green',
   'orange',
-  'pink',
 ];
 
 export default {
@@ -22,3 +21,4 @@ export default {
     userNameAbbr() {
       if (!this.userData) return '';
       const { username } = this.userData;
+      return username[0].toUpperCase();

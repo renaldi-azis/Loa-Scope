@@ -9,7 +9,6 @@ const Joi = require('joi');
 const { Test, Video } = require('../../database/models');
 
 /**
-// Temp comment
  * @description Create Test
  */
 const createTest = async (req, res, next) => {
@@ -26,3 +25,4 @@ const createTest = async (req, res, next) => {
   const schema = Joi.object({
     deviceId: Joi.string().required().label('Device ID'),
     patientId: Joi.string().required().label('Patient ID'),
+    testId: Joi.string().required().label('Test ID'),

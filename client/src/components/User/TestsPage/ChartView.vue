@@ -49,3 +49,5 @@ export default {
     };
   },
   computed: {
+    data() {
+      return this.appState.tests;

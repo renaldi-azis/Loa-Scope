@@ -5,3 +5,4 @@
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
+    "prettier": "prettier --write server server.js"

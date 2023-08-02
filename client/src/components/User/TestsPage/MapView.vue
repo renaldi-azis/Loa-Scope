@@ -48,3 +48,5 @@
         </GmapMap>
         <div class="test-detail" v-if="selectedMarkerData">
           <div class="d-flex mb-4">
+            <h3 class="mb-0">{{ selectedMarkerData.address }}</h3>
+            <v-spacer />
