@@ -49,3 +49,5 @@ export default {
   },
   data: () => ({
     status: {
+      isLoading: false,
+    },

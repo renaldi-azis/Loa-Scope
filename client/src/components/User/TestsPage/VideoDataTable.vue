@@ -16,3 +16,5 @@
     >
       <template v-slot:item.recordedAt="{ item }">
         {{ item.recordedAt | dateFormatter('YYYY-MM-DD hh:mm:ss A') }}
+      </template>
+    </v-data-table>

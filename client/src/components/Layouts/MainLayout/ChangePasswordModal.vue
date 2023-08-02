@@ -22,3 +22,4 @@
             v-model="user.newPassword"
           />
           <v-text-field
+            type="password"

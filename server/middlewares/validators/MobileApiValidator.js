@@ -26,3 +26,4 @@ const createTest = async (req, res, next) => {
     deviceId: Joi.string().required().label('Device ID'),
     patientId: Joi.string().required().label('Patient ID'),
     testId: Joi.string().required().label('Test ID'),
+    lat: Joi.number().optional().allow(null).label('Latitude'),

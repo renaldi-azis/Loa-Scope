@@ -50,3 +50,4 @@
           <div class="d-flex mb-4">
             <h3 class="mb-0">{{ selectedMarkerData.address }}</h3>
             <v-spacer />
+            <v-icon color="white" @click="selectedMarkerData = null">mdi-close</v-icon>

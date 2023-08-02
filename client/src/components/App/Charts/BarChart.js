@@ -1,4 +1,4 @@
 import { Bar, mixins } from 'vue-chartjs';
-// Temp comment
 
+// Temp comment
 export default {

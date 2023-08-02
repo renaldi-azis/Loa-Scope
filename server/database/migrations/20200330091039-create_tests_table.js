@@ -2,6 +2,7 @@
 
 module.exports = {
   up: (queryInterface, Sequelize) => {
+    return queryInterface.createTable('tests', {
       id: {
         type: Sequelize.INTEGER,
         autoIncrement: true,
@@ -11,3 +12,4 @@ module.exports = {
         type: Sequelize.STRING,
       },
       patient_id: {
+        type: Sequelize.STRING,

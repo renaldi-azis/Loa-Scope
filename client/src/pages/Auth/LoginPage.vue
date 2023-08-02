@@ -19,3 +19,4 @@
               prepend-inner-icon="lock"
               label="Password*"
               v-model="user.password"
+              :rules="getValidators('Password', ['required'])"
