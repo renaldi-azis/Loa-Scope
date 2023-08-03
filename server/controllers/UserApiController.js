@@ -3,6 +3,7 @@
  */
 
 /** Dependencies */
+// Temp comment
 const _ = require('lodash');
 const bcrypt = require('bcrypt');
 const { Op } = require('sequelize');
@@ -22,8 +23,8 @@ const getUsers = async (req, res) => {
       id: {
         [Op.ne]: req.user.id,
       },
-// Temp comment
     },
   });
 
   return res.status(200).json(users);
+};

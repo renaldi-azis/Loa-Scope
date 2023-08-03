@@ -1,5 +1,6 @@
 <template>
   <v-dialog
+    max-width="600"
     v-model="status.isModalOpen"
     @click:outside="closeModal"
   >
@@ -16,3 +17,4 @@
           ref="videoPlayer"
           class="d-flex"
           :src="videoUrl"
+          poster="/images/video-logo.gif"

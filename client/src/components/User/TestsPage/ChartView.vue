@@ -52,3 +52,5 @@ export default {
     data() {
       return this.appState.tests;
     },
+    filteredData() {
+      return this.data.filter((item) => item.totalWormCount >= this.minWormCount

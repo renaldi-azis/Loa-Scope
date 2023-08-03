@@ -10,10 +10,11 @@
     </v-toolbar>
     <v-data-table
       :headers="videoTableColumns"
+      :items="videos"
       :loading="status.isLoading"
-      @click:row="onClickRow"
     >
       <template v-slot:item.recordedAt="{ item }">
         {{ item.recordedAt | dateFormatter('YYYY-MM-DD hh:mm:ss A') }}
       </template>
     </v-data-table>
+    <video-modal ref="videoModal" />

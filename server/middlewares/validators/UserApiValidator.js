@@ -43,3 +43,4 @@ const createUser = async (req, res, next) => {
 
   req.reqData = value;
   next();
+};
