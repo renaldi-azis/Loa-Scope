@@ -14,5 +14,6 @@
 
       <div class="video-wrapper">
         <video
+          ref="videoPlayer"
           class="d-flex"
           :src="videoUrl"

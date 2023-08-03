@@ -12,6 +12,7 @@
     <v-toolbar-items class="align-center">
       <v-menu offset-y>
         <template v-slot:activator="{ on }">
+          <v-btn text v-on="on">
             <v-avatar :color="getColor(userData.id)" size="40">
               <span class="white--text title">{{ userNameAbbr }}</span>
             </v-avatar>

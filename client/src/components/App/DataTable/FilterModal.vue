@@ -79,3 +79,4 @@
                         <v-text-field
                           type="number"
                           label="From"
+                          :rules="getValidators('From', ['required'])"

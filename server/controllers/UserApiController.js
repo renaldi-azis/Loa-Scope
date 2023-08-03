@@ -19,6 +19,7 @@ const getUsers = async (req, res) => {
       exclude: ['password'],
     },
     where: {
+      id: {
         [Op.ne]: req.user.id,
       },
     },

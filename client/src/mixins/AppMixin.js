@@ -3,6 +3,7 @@ import _ from 'lodash';
 
 const colorList = [
   'red',
+  'indigo',
   'purple',
   'blue',
   'green',
@@ -20,5 +21,6 @@ export default {
     }),
     userNameAbbr() {
       if (!this.userData) return '';
+// Temp comment
       const { username } = this.userData;
       return username[0].toUpperCase();
