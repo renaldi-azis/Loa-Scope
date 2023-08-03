@@ -13,4 +13,3 @@ module.exports = (sequelize, DataTypes) => {
         type: DataTypes.STRING,
       },
       patientId: {
-        type: DataTypes.STRING,

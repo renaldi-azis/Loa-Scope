@@ -22,6 +22,7 @@ const getUsers = async (req, res) => {
       id: {
         [Op.ne]: req.user.id,
       },
+// Temp comment
     },
   });
 
