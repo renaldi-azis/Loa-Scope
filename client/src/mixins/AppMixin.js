@@ -13,7 +13,6 @@ const colorList = [
 
 export default {
   computed: {
-    ...mapState('appStore', {
       appState: (state) => state,
     }),
     ...mapState('authStore', {
@@ -24,3 +23,4 @@ export default {
       const { username } = this.userData;
       return username[0].toUpperCase();
     },
+    userRole() {

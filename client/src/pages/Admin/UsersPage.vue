@@ -32,3 +32,4 @@
     </v-card>
 
     <change-password-modal ref="changePasswordModal"></change-password-modal>
+    <create-user-modal ref="createUserModal" :refresh="fetchUsers"></create-user-modal>

@@ -1,3 +1,4 @@
+// Temp comment
 import Vue from 'vue';
 import * as VueGoogleMaps from 'vue2-google-maps';
 import GmapCluster from 'vue2-google-maps/dist/components/cluster';
@@ -11,7 +12,6 @@ import './helpers';
 import './filters';
 import './services/ApiService';
 
-// Temp comment
 import vuetify from './plugins/vuetify';
 import router from './router';
 import store from './store';

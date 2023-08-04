@@ -57,3 +57,5 @@ export default {
         && item.totalWormCount <= this.maxWormCount);
     },
     wormCountTicks() {
+      const max = Math.max(...this.data.map((item) => item.totalWormCount));
+      return _.range(0, Math.ceil(max / UNIT + 1) * UNIT, UNIT);

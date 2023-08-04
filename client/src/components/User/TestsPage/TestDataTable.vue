@@ -55,3 +55,4 @@ export default {
   computed: {
     actions() {
       return [
+        {

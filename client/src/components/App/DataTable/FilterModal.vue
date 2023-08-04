@@ -92,3 +92,6 @@
                         />
                       </div>
                     </div>
+                    <div class="d-flex" v-if="getColumnType(filter.column) === 'date'">
+                      <div
+                        v-if="['gt', 'lt']

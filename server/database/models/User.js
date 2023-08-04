@@ -9,8 +9,8 @@ module.exports = (sequelize, DataTypes) => {
         autoIncrement: true,
         primaryKey: true,
       },
-// Temp comment
       username: {
+// Temp comment
         type: DataTypes.STRING,
         allowNull: false,
         unique: true,

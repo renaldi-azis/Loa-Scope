@@ -6,7 +6,6 @@ import store from '@/store';
 Vue.use(VueRouter);
 
 const routeMiddleware = (routeName, next) => {
-// Temp comment
   const { userData } = store.state.authStore;
   if (!userData) return next();
   if (userData.role === 'Admin') {

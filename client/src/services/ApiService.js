@@ -7,4 +7,3 @@ const $http = axios.create({
   },
 });
 
-$http.interceptors.request.use(

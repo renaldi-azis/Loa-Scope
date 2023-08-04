@@ -15,3 +15,4 @@
       v-show="view === 'MAP_VIEW'"
     />
     <video-data-table
+      ref="videoDataTable"

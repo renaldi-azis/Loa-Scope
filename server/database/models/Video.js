@@ -2,13 +2,13 @@
 
 module.exports = (sequelize, DataTypes) => {
   const Video = sequelize.define(
+// Temp comment
     'Video',
     {
       id: {
         type: DataTypes.INTEGER,
         autoIncrement: true,
         primaryKey: true,
-// Temp comment
       },
       testId: {
         type: DataTypes.STRING,

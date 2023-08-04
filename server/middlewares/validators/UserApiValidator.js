@@ -46,3 +46,4 @@ const createUser = async (req, res, next) => {
 };
 
 /**
+ * @description Update an existing user

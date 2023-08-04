@@ -19,5 +19,6 @@
             v-model="user.filter"
           />
         </v-card-text>
+        <v-divider></v-divider>
         <v-card-actions>
           <v-spacer></v-spacer>

@@ -17,9 +17,9 @@
           :key="menuItem.link"
           v-if="menuItem.show">
           <v-list-item-action>
-            <v-icon size="30" v-text="menuItem.icon"></v-icon>
           </v-list-item-action>
           <v-list-item-title>{{ menuItem.title }}</v-list-item-title>
         </v-list-item>
       </template>
     </v-list>
+  </v-navigation-drawer>

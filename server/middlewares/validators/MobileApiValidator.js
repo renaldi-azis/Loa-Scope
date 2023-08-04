@@ -6,7 +6,6 @@
 const _ = require('lodash');
 const Joi = require('joi');
 
-const { Test, Video } = require('../../database/models');
 
 /**
  * @description Create Test
@@ -29,3 +28,4 @@ const createTest = async (req, res, next) => {
     lat: Joi.number().optional().allow(null).label('Latitude'),
     lng: Joi.number().optional().allow(null).label('Longitude'),
     location: Joi.string().optional().allow(null).label('Location'),
+    createdAt: Joi.string().required().label('Created At'),
