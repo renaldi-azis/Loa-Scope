@@ -29,4 +29,6 @@
           </td>
         </template>
       </v-data-table>
+    </v-card>
 
+    <change-password-modal ref="changePasswordModal"></change-password-modal>

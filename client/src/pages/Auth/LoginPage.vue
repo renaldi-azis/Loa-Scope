@@ -21,3 +21,4 @@
               v-model="user.password"
               :rules="getValidators('Password', ['required'])"
             >
+            </v-text-field>

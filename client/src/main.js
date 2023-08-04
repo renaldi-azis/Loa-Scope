@@ -11,6 +11,8 @@ import './helpers';
 import './filters';
 import './services/ApiService';
 
+// Temp comment
 import vuetify from './plugins/vuetify';
 import router from './router';
 import store from './store';
+import AppMixin from './mixins/AppMixin';

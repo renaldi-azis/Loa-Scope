@@ -17,3 +17,4 @@ passport.use(
       secretOrKey: process.env.INTERNAL_JWT_SECRET,
     },
     async (jwtPayload, done) => {
+      try {

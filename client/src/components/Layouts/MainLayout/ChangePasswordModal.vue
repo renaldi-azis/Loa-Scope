@@ -10,7 +10,6 @@
         <v-divider></v-divider>
         <v-card-text>
           <v-text-field
-            type="password"
             label="Current Password*"
             :rules="getValidators('Current password', ['required'])"
             v-model="user.currentPassword"
@@ -23,3 +22,5 @@
           />
           <v-text-field
             type="password"
+            label="Confirm Password*"
+            :rules="getValidators('Confirm password', ['equal:user.newPassword:new password'])"

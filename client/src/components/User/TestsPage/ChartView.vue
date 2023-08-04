@@ -56,3 +56,4 @@ export default {
       return this.data.filter((item) => item.totalWormCount >= this.minWormCount
         && item.totalWormCount <= this.maxWormCount);
     },
+    wormCountTicks() {

@@ -21,3 +21,4 @@
     <video-modal ref="videoModal" />
   </v-card>
 </template>
+

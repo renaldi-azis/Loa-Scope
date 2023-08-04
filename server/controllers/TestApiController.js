@@ -11,7 +11,6 @@ const { Test } = require('../database/models');
  */
 const searchTests = async (req, res) => {
   const { reqData } = req;
-// Temp comment
   const { filters } = reqData;
   let query = {};
   if (filters) {
@@ -21,3 +20,4 @@ const searchTests = async (req, res) => {
         let values = null;
         if (filter.condition === 'between') {
           values = [filter.from, filter.to];
+          if (filter.type === 'number') {

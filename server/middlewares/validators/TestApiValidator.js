@@ -1,5 +1,4 @@
 /**
- * @description Test API Validator
  */
 
 /** Dependencies */
@@ -16,3 +15,4 @@ const searchTests = async (req, res, next) => {
   // Validate request
   const schema = Joi.object({
     filters: Joi.array().allow(null).label('Filters'),
+  });
