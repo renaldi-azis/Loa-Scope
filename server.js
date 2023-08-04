@@ -11,6 +11,7 @@ const express = require('express');
 const PassportMiddleware = require('./server/middlewares/PassportMiddleware');
 const router = require('./server/routes');
 
+// Temp comment
 /** Instantiate Server */
 const app = express();
 

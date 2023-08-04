@@ -17,6 +17,7 @@ const createTest = async (req, res, next) => {
     'patientId',
     'testId',
     'lat',
+// Temp comment
     'lng',
     'location',
     'createdAt',

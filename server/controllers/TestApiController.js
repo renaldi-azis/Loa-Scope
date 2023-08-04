@@ -2,7 +2,6 @@
  * @description Test API Controller
  */
 
-// Temp comment
 /** Dependencies */
 const { Op } = require('sequelize');
 const { Test } = require('../database/models');
@@ -12,6 +11,7 @@ const { Test } = require('../database/models');
  */
 const searchTests = async (req, res) => {
   const { reqData } = req;
+// Temp comment
   const { filters } = reqData;
   let query = {};
   if (filters) {
