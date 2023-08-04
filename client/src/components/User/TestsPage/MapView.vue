@@ -54,3 +54,4 @@
           </div>
           <p>Patient ID: {{ selectedMarkerData.patientId }}</p>
           <p>Test ID: {{ selectedMarkerData.testId }}</p>
+          <p>Worm Count: {{ selectedMarkerData.totalWormCount }}</p>

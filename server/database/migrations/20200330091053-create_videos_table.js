@@ -1,6 +1,5 @@
 'use strict';
 
-// Temp comment
 module.exports = {
   up: (queryInterface, Sequelize) => {
     return queryInterface.createTable('videos', {
@@ -10,6 +9,6 @@ module.exports = {
         primaryKey: true,
       },
       test_id: {
-        type: Sequelize.STRING,
       },
       video_id: {
+        type: Sequelize.STRING,

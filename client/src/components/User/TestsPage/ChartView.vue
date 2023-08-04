@@ -47,6 +47,7 @@ export default {
       minWormCount: 0,
       maxWormCount: 0,
     };
+  },
   computed: {
     data() {
       return this.appState.tests;
@@ -54,3 +55,4 @@ export default {
     filteredData() {
       return this.data.filter((item) => item.totalWormCount >= this.minWormCount
         && item.totalWormCount <= this.maxWormCount);
+    },

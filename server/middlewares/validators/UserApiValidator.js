@@ -20,7 +20,6 @@ const getUsers = async (req, res, next) => {
  */
 const createUser = async (req, res, next) => {
   const reqData = _.pick(req.body, ['username', 'password', 'filter']);
-// Temp comment
   // Validate request
   const schema = Joi.object({
     username: Joi.string().required().label('Username'),
@@ -32,7 +31,6 @@ const createUser = async (req, res, next) => {
     return res.status(422).json({ message: error.details[0].message });
   }
   // Check user existence
-  const user = await User.findOne({
     attributes: ['id'],
     where: {
       username: value.username,

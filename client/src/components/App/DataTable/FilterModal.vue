@@ -87,3 +87,5 @@
                         <v-text-field
                           type="number"
                           label="To"
+                          :rules="getValidators('To', ['required'])"
+                          v-model="filter.to"

@@ -7,11 +7,11 @@ module.exports = {
         type: Sequelize.INTEGER,
         autoIncrement: true,
         primaryKey: true,
-// Temp comment
       },
       device_id: {
         type: Sequelize.STRING,
       },
       patient_id: {
+// Temp comment
         type: Sequelize.STRING,
       },
