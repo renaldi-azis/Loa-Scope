@@ -2,6 +2,7 @@
   <v-navigation-drawer
     class="grey darken-3"
     app
+    dark
     fixed
     clipped
     left
@@ -19,3 +20,4 @@
             <v-icon size="30" v-text="menuItem.icon"></v-icon>
           </v-list-item-action>
           <v-list-item-title>{{ menuItem.title }}</v-list-item-title>
+        </v-list-item>

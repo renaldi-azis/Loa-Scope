@@ -45,6 +45,7 @@
                         v-if="['eq', 'substring', 'startsWith', 'endsWith']
                           .includes(filter.condition)"
                       >
+                        <v-text-field
                           label="Value"
                           :rules="getValidators('Value', ['required'])"
                           v-model="filter.value"
@@ -83,3 +84,4 @@
                         />
                       </div>
                       <div class="ml-2" v-if="['between'].includes(filter.condition)">
+                        <v-text-field

@@ -3,7 +3,6 @@ import _ from 'lodash';
 
 const colorList = [
   'red',
-  'indigo',
   'purple',
   'blue',
   'green',

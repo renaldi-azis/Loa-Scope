@@ -3,7 +3,6 @@
  */
 
 /** Dependencies */
-// Temp comment
 const _ = require('lodash');
 const bcrypt = require('bcrypt');
 const { Op } = require('sequelize');
@@ -28,3 +27,4 @@ const getUsers = async (req, res) => {
 
   return res.status(200).json(users);
 };
+
