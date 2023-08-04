@@ -17,3 +17,4 @@
               <span class="white--text title">{{ userNameAbbr }}</span>
             </v-avatar>
             <span class="pl-2 subheading">{{ userData.username }}</span>
+          </v-btn>

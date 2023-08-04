@@ -22,3 +22,4 @@
           />
           <v-text-field
             type="password"
+            label="Confirm Password*"

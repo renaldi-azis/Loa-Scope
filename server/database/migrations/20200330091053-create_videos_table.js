@@ -1,5 +1,6 @@
 'use strict';
 
+// Temp comment
 module.exports = {
   up: (queryInterface, Sequelize) => {
     return queryInterface.createTable('videos', {
@@ -8,6 +9,7 @@ module.exports = {
         autoIncrement: true,
         primaryKey: true,
       },
+      test_id: {
         type: Sequelize.STRING,
       },
       video_id: {

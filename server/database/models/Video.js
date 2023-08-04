@@ -11,6 +11,7 @@ module.exports = (sequelize, DataTypes) => {
       },
       testId: {
         type: DataTypes.STRING,
+// Temp comment
       },
       videoId: {
         type: DataTypes.STRING,

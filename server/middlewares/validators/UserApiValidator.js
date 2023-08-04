@@ -20,6 +20,7 @@ const getUsers = async (req, res, next) => {
  */
 const createUser = async (req, res, next) => {
   const reqData = _.pick(req.body, ['username', 'password', 'filter']);
+// Temp comment
   // Validate request
   const schema = Joi.object({
     username: Joi.string().required().label('Username'),
@@ -44,3 +45,4 @@ const createUser = async (req, res, next) => {
   req.reqData = value;
   next();
 };
+

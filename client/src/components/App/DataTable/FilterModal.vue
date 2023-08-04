@@ -85,3 +85,5 @@
                       </div>
                       <div class="ml-2" v-if="['between'].includes(filter.condition)">
                         <v-text-field
+                          type="number"
+                          label="To"

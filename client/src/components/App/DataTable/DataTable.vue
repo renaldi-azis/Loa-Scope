@@ -15,3 +15,5 @@
           @click="$refs.filterModal.openModal(visibleColumns)"
         >
           <v-icon left>mdi-filter</v-icon> Filter
+        </v-btn>
+        <filter-modal

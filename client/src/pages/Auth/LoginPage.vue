@@ -20,3 +20,4 @@
               label="Password*"
               v-model="user.password"
               :rules="getValidators('Password', ['required'])"
+            >

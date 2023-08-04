@@ -13,3 +13,4 @@ const getApiBaseURL = () => {
   if (hostname.includes(DEV_HOSTNAME)) {
     return DEV_API_URL;
   }
+  return PROD_API_URL;
