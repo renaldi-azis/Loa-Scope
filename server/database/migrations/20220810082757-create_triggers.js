@@ -20,3 +20,4 @@ module.exports = {
       CREATE TRIGGER after_test_insert
         AFTER INSERT ON tests FOR EACH ROW
         EXECUTE PROCEDURE update_test_after_test_events();
+    `);

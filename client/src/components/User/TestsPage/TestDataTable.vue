@@ -56,3 +56,4 @@ export default {
     actions() {
       return [
         {
+          tooltip: 'Chart',

@@ -1,4 +1,5 @@
 /**
+ * @description Mobile API Controller
  */
 
 /** Dependencies */
@@ -13,3 +14,4 @@ const createTest = async (req, res) => {
   const { reqData } = req;
 
   const test = await Test.create({
+    deviceId: reqData.deviceId,

@@ -39,7 +39,6 @@ const createUser = async (req, res, next) => {
   });
   if (user) {
     return res.status(422).json({ message: 'Username was already taken.' });
-  }
 
   req.reqData = value;
   next();
@@ -47,3 +46,4 @@ const createUser = async (req, res, next) => {
 
 /**
  * @description Update an existing user
+ */

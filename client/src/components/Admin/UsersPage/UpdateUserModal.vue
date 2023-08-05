@@ -22,3 +22,4 @@
         <v-divider></v-divider>
         <v-card-actions>
           <v-spacer></v-spacer>
+          <v-btn type="submit" color="primary" :loading="status.isSaving">Save</v-btn>

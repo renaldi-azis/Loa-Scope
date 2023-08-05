@@ -5,7 +5,6 @@
 /** Dependencies */
 require('dotenv').config();
 const axios = require('axios');
-// Temp comment
 const cors = require('cors');
 const express = require('express');
 
@@ -17,3 +16,4 @@ const app = express();
 
 /** Load routes */
 app.use(cors());
+app.use(express.json({}));

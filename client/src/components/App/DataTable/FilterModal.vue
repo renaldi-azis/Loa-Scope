@@ -95,3 +95,6 @@
                     <div class="d-flex" v-if="getColumnType(filter.column) === 'date'">
                       <div
                         v-if="['gt', 'lt']
+                          .includes(filter.condition)"
+                      >
+                        <v-date-picker2

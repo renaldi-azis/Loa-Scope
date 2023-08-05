@@ -58,3 +58,4 @@
           <p>
             Video Count: {{ selectedMarkerData.videoCount }}
             <a
+              href="#"

@@ -22,3 +22,4 @@
               :rules="getValidators('Password', ['required'])"
             >
             </v-text-field>
+          </v-card-text>

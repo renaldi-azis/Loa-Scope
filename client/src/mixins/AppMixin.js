@@ -13,6 +13,7 @@ const colorList = [
 
 export default {
   computed: {
+    ...mapState('appStore', {
       appState: (state) => state,
     }),
     ...mapState('authStore', {

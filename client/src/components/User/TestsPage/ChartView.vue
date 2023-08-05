@@ -15,7 +15,6 @@
           <div>Selected records: <b>{{ filteredData.length }}</b></div>
         </div>
         <v-spacer />
-        <div>
           <v-select label="Greater than" :items="wormCountTicks" v-model="minWormCount" />
         </div>
         <div class="ml-2">
@@ -59,3 +58,4 @@ export default {
     wormCountTicks() {
       const max = Math.max(...this.data.map((item) => item.totalWormCount));
       return _.range(0, Math.ceil(max / UNIT + 1) * UNIT, UNIT);
+    },
