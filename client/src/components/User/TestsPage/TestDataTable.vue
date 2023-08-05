@@ -13,7 +13,6 @@
           <v-btn
             class="mx-2"
             fab
-            dark
             small
             color="primary"
             v-on="on"
