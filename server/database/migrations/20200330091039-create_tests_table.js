@@ -7,6 +7,7 @@ module.exports = {
         type: Sequelize.INTEGER,
         autoIncrement: true,
         primaryKey: true,
+      },
       device_id: {
         type: Sequelize.STRING,
       },

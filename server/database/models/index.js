@@ -1,4 +1,3 @@
-// Temp comment
 'use strict';
 
 const fs = require('fs');
@@ -10,3 +9,4 @@ const config = require(__dirname + '/../config')[env];
 const db = {};
 
 let sequelize;
+if (config.use_env_variable) {

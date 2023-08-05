@@ -98,3 +98,6 @@
                           .includes(filter.condition)"
                       >
                         <v-date-picker2
+                          label="Value"
+                          :rules="getValidators('Value', ['required'])"
+                          v-model="filter.value"

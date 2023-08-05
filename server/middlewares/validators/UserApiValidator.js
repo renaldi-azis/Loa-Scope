@@ -48,3 +48,4 @@ const createUser = async (req, res, next) => {
 /**
  * @description Update an existing user
  */
+const updateUser = async (req, res, next) => {

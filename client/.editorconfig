@@ -1,1 +1,2 @@
 [*.{js,jsx,ts,tsx,vue}]
+indent_style = space

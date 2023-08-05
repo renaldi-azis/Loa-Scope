@@ -17,3 +17,4 @@ const searchTests = async (req, res, next) => {
   const schema = Joi.object({
     filters: Joi.array().allow(null).label('Filters'),
   });
+  const { value, error } = schema.validate(reqData);

@@ -29,3 +29,5 @@ import VideoModal from './VideoModal.vue';
 export default {
   name: 'VideoDataTable',
   mixins: [TestService],
+  components: {
+    VideoModal,
