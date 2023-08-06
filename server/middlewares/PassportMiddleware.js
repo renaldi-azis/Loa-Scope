@@ -2,7 +2,6 @@
  * @description Uses passport.js to authenticate a user
  */
 
-// Temp comment
 /** Dependencies */
 const passport = require('passport');
 const passportJWT = require('passport-jwt');
@@ -14,7 +13,6 @@ passport.use(
   'jwt-header',
   new passportJWT.Strategy(
     {
-      jwtFromRequest: passportJWT.ExtractJwt.fromAuthHeaderAsBearerToken(),
       secretOrKey: process.env.INTERNAL_JWT_SECRET,
     },
     async (jwtPayload, done) => {

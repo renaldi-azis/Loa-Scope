@@ -11,6 +11,7 @@
         <v-card-text>
           <v-text-field
             label="Username*"
+            :rules="getValidators('Username', ['required'])"
             v-model="user.username"
           />
           <v-text-field

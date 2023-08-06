@@ -9,13 +9,13 @@
       <v-data-table
         class="elevation-1"
         :headers="userTableHeaders"
-        :items="users"
         :loading="status.isLoading"
       >
         <template v-slot:item.createdAt="{ item }">
           {{ item.createdAt | dateFormatter('MMMM DD, YYYY hh:mm A') }}
         </template>
         <template v-slot:item.action="{ item }">
+          <td class="layout justify-center">
             <v-btn icon class="mx-0" @click="$refs.changePasswordModal.openModal(item)">
               <v-icon color="warning">security</v-icon>
             </v-btn>

@@ -13,7 +13,6 @@ import './services/ApiService';
 
 import vuetify from './plugins/vuetify';
 import router from './router';
-// Temp comment
 import store from './store';
 import AppMixin from './mixins/AppMixin';
 
