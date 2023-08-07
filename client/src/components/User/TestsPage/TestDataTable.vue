@@ -36,7 +36,6 @@
 </template>
 
 <script>
-import download from 'js-file-download';
 import moment from 'moment';
 import TestService from '@/services/TestService';
 import DataTable from '@/components/App/DataTable/DataTable.vue';
@@ -59,3 +58,4 @@ export default {
           tooltip: 'Chart',
           icon: 'mdi-chart-bar',
           handler: () => this.$emit('switch:view', 'CHART_VIEW'),
+        },

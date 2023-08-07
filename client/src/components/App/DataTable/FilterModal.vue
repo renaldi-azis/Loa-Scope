@@ -8,7 +8,6 @@
           <v-icon @click="closeModal">close</v-icon>
         </v-card-title>
         <v-divider></v-divider>
-        <v-card-text>
           <div
             v-for="(filterGroup, groupIndex) in filterGroups"
             :key="`filter-group-${groupIndex}`"
@@ -102,3 +101,5 @@
                           :rules="getValidators('Value', ['required'])"
                           v-model="filter.value"
                         />
+                      </div>
+                      <div v-if="['between'].includes(filter.condition)">

@@ -61,3 +61,5 @@ export default {
       return _.range(0, Math.ceil(max / UNIT + 1) * UNIT, UNIT);
     },
     chartData() {
+      const minIndex = this.minWormCount / UNIT;
+      const maxIndex = this.maxWormCount / UNIT;

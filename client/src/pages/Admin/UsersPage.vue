@@ -9,6 +9,7 @@
       <v-data-table
         class="elevation-1"
         :headers="userTableHeaders"
+        :items="users"
         :loading="status.isLoading"
       >
         <template v-slot:item.createdAt="{ item }">
@@ -33,3 +34,4 @@
     <change-password-modal ref="changePasswordModal"></change-password-modal>
     <create-user-modal ref="createUserModal" :refresh="fetchUsers"></create-user-modal>
     <update-user-modal ref="updateUserModal" :refresh="fetchUsers"></update-user-modal>
+  </div>

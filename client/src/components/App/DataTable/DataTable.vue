@@ -18,3 +18,4 @@
         </v-btn>
         <filter-modal
           ref="filterModal"
+          :columns="tableColumns"

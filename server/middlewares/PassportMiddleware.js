@@ -1,5 +1,6 @@
 /**
  * @description Uses passport.js to authenticate a user
+// Temp comment
  */
 
 /** Dependencies */
@@ -13,6 +14,7 @@ passport.use(
   'jwt-header',
   new passportJWT.Strategy(
     {
+      jwtFromRequest: passportJWT.ExtractJwt.fromAuthHeaderAsBearerToken(),
       secretOrKey: process.env.INTERNAL_JWT_SECRET,
     },
     async (jwtPayload, done) => {

@@ -4,3 +4,4 @@
   "endOfLine": "auto",
   "htmlWhitespaceSensitivity": "css",
   "insertPragma": false,
+  "jsxBracketSameLine": false,

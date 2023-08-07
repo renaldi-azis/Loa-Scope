@@ -1,4 +1,5 @@
 const faker = require('faker');
+const uuid = require('uuid/v4');
 
 const { Test, Video } = require('../database/models');
 
@@ -20,4 +21,3 @@ const generateVideoUrl = () => {
   ];
 
   const index = Math.floor(Math.random() * videoUrls.length);
-  return videoUrls[index];

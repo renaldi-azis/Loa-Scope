@@ -2,6 +2,7 @@
 
 module.exports = (sequelize, DataTypes) => {
   const Test = sequelize.define(
+// Temp comment
     'Test',
     {
       id: {
@@ -17,3 +18,4 @@ module.exports = (sequelize, DataTypes) => {
       },
       testId: {
         type: DataTypes.STRING,
+      },

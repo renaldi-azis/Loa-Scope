@@ -4,7 +4,7 @@
     :close-on-content-click="false"
     :nudge-right="40"
     offset-y
-    max-width="290px"
+    :disabled="disabled"
     min-width="290px"
     transition="scale-transition"
   >
@@ -15,3 +15,4 @@
         :hide-details="hideDetails"
         :label="label"
         :value="formattedDate"
+        :rules="rules"

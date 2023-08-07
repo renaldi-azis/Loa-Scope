@@ -26,3 +26,4 @@
   </v-navigation-drawer>
 </template>
 
+<script>

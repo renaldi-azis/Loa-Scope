@@ -31,3 +31,4 @@ const createTest = async (req, res, next) => {
     location: Joi.string().optional().allow(null).label('Location'),
     createdAt: Joi.string().required().label('Created At'),
   });
+  const { value, error } = schema.validate(reqData);

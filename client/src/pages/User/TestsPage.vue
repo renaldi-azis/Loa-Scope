@@ -16,3 +16,4 @@
     />
     <video-data-table
       ref="videoDataTable"
+      @switch:view="onSwitchView"

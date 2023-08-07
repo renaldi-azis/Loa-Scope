@@ -26,7 +26,9 @@ const getUsers = async (req, res) => {
   });
 
   return res.status(200).json(users);
+};
 
 /**
  * @description Create a new user
  */
+const createUser = async (req, res) => {
