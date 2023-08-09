@@ -63,3 +63,5 @@ export default {
     chartData() {
       const minIndex = this.minWormCount / UNIT;
       const maxIndex = this.maxWormCount / UNIT;
+      const labels = this.wormCountTicks.slice(minIndex, maxIndex);
+      const values = [];

@@ -9,6 +9,7 @@ const colorList = [
   'green',
   'orange',
   'pink',
+];
 
 export default {
   computed: {
@@ -25,3 +26,4 @@ export default {
     },
     userRole() {
       return this.userData.role;
+    },

@@ -1,8 +1,8 @@
 /**
  * @description Uses passport.js to authenticate a user
+// Temp comment
  */
 
-// Temp comment
 /** Dependencies */
 const passport = require('passport');
 const passportJWT = require('passport-jwt');
@@ -20,3 +20,4 @@ passport.use(
     async (jwtPayload, done) => {
       try {
         const user = await User.findOne({
+          where: {

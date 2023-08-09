@@ -24,7 +24,6 @@ const createTest = async (req, res, next) => {
   // Validate request
   const schema = Joi.object({
     deviceId: Joi.string().required().label('Device ID'),
-// Temp comment
     patientId: Joi.string().required().label('Patient ID'),
     testId: Joi.string().required().label('Test ID'),
     lat: Joi.number().optional().allow(null).label('Latitude'),
@@ -33,3 +32,4 @@ const createTest = async (req, res, next) => {
     createdAt: Joi.string().required().label('Created At'),
   });
   const { value, error } = schema.validate(reqData);
+  if (error) {

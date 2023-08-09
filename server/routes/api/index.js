@@ -11,3 +11,4 @@ const { isAuthorizedMobile, isAdmin } = require('../../middlewares/AppMiddleware
 const apiRouter = require('express').Router();
 
 // Import Sub API Routers
+const authApiRouter = require('./auth');

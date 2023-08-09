@@ -89,7 +89,6 @@
                           label="To"
                           :rules="getValidators('To', ['required'])"
                           v-model="filter.to"
-                        />
                       </div>
                     </div>
                     <div class="d-flex" v-if="getColumnType(filter.column) === 'date'">
@@ -106,3 +105,5 @@
                       <div v-if="['between'].includes(filter.condition)">
                         <v-date-picker2
                           label="From"
+                          :rules="getValidators('From', ['required'])"
+                          v-model="filter.from"

@@ -12,7 +12,6 @@ module.exports = (sequelize, DataTypes) => {
       deviceId: {
         type: DataTypes.STRING,
       },
-      patientId: {
         type: DataTypes.STRING,
       },
       testId: {

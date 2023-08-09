@@ -60,3 +60,5 @@ export default {
           icon: 'mdi-chart-bar',
           handler: () => this.$emit('switch:view', 'CHART_VIEW'),
         },
+        {
+          tooltip: 'Map',
