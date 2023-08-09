@@ -1,7 +1,7 @@
-// Temp comment
 /**
  * @description Define Mobile API Routes
  */
 
+// Temp comment
 // Mobile API Router
 const mobileApiRouter = require('express').Router();

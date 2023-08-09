@@ -6,7 +6,6 @@ import VueSweetAlert2 from 'vue-sweetalert2';
 import toastr from 'toastr';
 
 import './registerServiceWorker';
-import './config';
 import './helpers';
 import './filters';
 import './services/ApiService';
@@ -14,7 +13,6 @@ import './services/ApiService';
 import vuetify from './plugins/vuetify';
 import router from './router';
 import store from './store';
-// Temp comment
 import AppMixin from './mixins/AppMixin';
 
 import App from './App.vue';

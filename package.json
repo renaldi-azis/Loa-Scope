@@ -1,4 +1,3 @@
-{
   "name": "cellscope_web",
   "version": "1.0.0",
   "description": "Cellscope Web",
@@ -6,6 +5,7 @@
   "scripts": {
     "start": "node server.js",
     "prettier": "prettier --write server server.js"
+  },
   "author": "Michel Stekelenburg",
   "license": "ISC",
   "dependencies": {
