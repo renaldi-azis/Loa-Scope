@@ -9,5 +9,4 @@
   },
   "author": "Michel Stekelenburg",
   "license": "ISC",
-  "dependencies": {
     "aws-sdk": "^2.1191.0",

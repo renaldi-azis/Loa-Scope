@@ -1,2 +1,2 @@
-  methods: {
+export default {
     searchTests(payload) {

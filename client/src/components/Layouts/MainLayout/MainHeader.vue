@@ -9,13 +9,16 @@
       <div class="title">LoaScope {{isUser ? 'Data' : 'Admin'}} Portal</div>
       <small><i>Automated quantification of filarial infections</i></small>
     </div>
-    <v-toolbar-items class="align-center">
       <v-menu offset-y>
         <template v-slot:activator="{ on }">
           <v-btn text v-on="on">
             <v-avatar :color="getColor(userData.id)" size="40">
               <span class="white--text title">{{ userNameAbbr }}</span>
+            </v-avatar>
             <span class="pl-2 subheading">{{ userData.username }}</span>
           </v-btn>
         </template>
         <v-list>
+          <v-list-item @click="$refs.changePasswordModal.openModal()">
+            <v-list-item-title>Change Password</v-list-item-title>
+          </v-list-item>

@@ -9,7 +9,6 @@ const colorList = [
   'green',
   'orange',
   'pink',
-];
 
 export default {
   computed: {

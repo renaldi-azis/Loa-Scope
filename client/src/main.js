@@ -16,3 +16,5 @@ import router from './router';
 import store from './store';
 import AppMixin from './mixins/AppMixin';
 
+import App from './App.vue';
+

@@ -8,6 +8,7 @@
           <v-icon @click="closeModal">close</v-icon>
         </v-card-title>
         <v-divider></v-divider>
+        <v-card-text>
           <div
             v-for="(filterGroup, groupIndex) in filterGroups"
             :key="`filter-group-${groupIndex}`"
@@ -103,3 +104,5 @@
                         />
                       </div>
                       <div v-if="['between'].includes(filter.condition)">
+                        <v-date-picker2
+                          label="From"
