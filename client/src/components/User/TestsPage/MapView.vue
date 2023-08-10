@@ -9,6 +9,7 @@
       </v-toolbar-title>
     </v-toolbar>
     <v-card-text>
+      <div class="d-flex">
         <v-spacer />
         <div>
           <v-select

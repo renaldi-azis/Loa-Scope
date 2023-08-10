@@ -5,7 +5,6 @@
 /** Dependencies */
 const { Op } = require('sequelize');
 const { Test } = require('../database/models');
-
 /**
  * @description Search tests
  */
@@ -20,4 +19,5 @@ const searchTests = async (req, res) => {
         let values = null;
         if (filter.condition === 'between') {
           values = [filter.from, filter.to];
+          if (filter.type === 'number') {
             values = values.map(value => +value);

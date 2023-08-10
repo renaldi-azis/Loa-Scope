@@ -4,6 +4,7 @@
     v-model="status.isModalOpen"
     @click:outside="closeModal"
   >
+    <v-card>
       <v-card-title class="grey lighten-3">
         <span class="title">LoaScope Video</span>
         <v-spacer />
@@ -20,4 +21,3 @@
           width="100%"
           preload="auto"
           controls
-          autoplay

@@ -21,7 +21,6 @@
           >
             <v-icon dark v-html="action.icon" />
           </v-btn>
-        </template>
         <span>{{ action.tooltip }}</span>
       </v-tooltip>
     </v-toolbar>

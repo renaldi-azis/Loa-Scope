@@ -21,6 +21,7 @@
         <div class="ml-2">
           <v-select label="Less than" :items="wormCountTicks" v-model="maxWormCount" />
         </div>
+      </div>
       <bar-chart
         :chart-data="chartData"
         :options="chartOptions"
@@ -32,7 +33,6 @@
 
 <script>
 import _ from 'lodash';
-import BarChart from '@/components/App/Charts/BarChart';
 
 const UNIT = 50;
 

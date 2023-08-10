@@ -16,6 +16,7 @@
             <v-card class="px-6 py-4">
               <div
                 v-for="(filter, filterIndex) in filterGroup"
+                :key="`filter-${filterIndex}`"
               >
                 <div class="d-flex">
                   <div>

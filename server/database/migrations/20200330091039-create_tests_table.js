@@ -10,6 +10,7 @@ module.exports = {
       },
       device_id: {
         type: Sequelize.STRING,
+// Temp comment
       },
       patient_id: {
         type: Sequelize.STRING,
