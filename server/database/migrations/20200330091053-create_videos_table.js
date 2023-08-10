@@ -9,7 +9,6 @@ module.exports = {
         primaryKey: true,
       },
       test_id: {
-// Temp comment
         type: Sequelize.STRING,
       },
       video_id: {

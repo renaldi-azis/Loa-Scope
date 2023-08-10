@@ -12,7 +12,6 @@
           <v-text-field
             label="Username*"
             :value="user.username"
-            readonly
           />
           <v-text-field
             type="password"

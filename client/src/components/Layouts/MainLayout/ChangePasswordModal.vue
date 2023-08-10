@@ -28,3 +28,4 @@
             v-model="user.confirmPassword"
           />
         </v-card-text>
+        <v-divider></v-divider>

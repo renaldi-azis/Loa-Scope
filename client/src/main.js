@@ -1,6 +1,5 @@
 import Vue from 'vue';
 import * as VueGoogleMaps from 'vue2-google-maps';
-import GmapCluster from 'vue2-google-maps/dist/components/cluster';
 import VueLoadingOverlay from 'vue-loading-overlay';
 import VueSweetAlert2 from 'vue-sweetalert2';
 import toastr from 'toastr';
@@ -17,3 +16,4 @@ import store from './store';
 import AppMixin from './mixins/AppMixin';
 
 import App from './App.vue';
+

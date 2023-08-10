@@ -33,6 +33,7 @@
 
 <script>
 import _ from 'lodash';
+import BarChart from '@/components/App/Charts/BarChart';
 
 const UNIT = 50;
 
@@ -64,3 +65,4 @@ export default {
       const maxIndex = this.maxWormCount / UNIT;
       const labels = this.wormCountTicks.slice(minIndex, maxIndex);
       const values = [];
+      for (let i = 0; i < labels.length; i += 1) {

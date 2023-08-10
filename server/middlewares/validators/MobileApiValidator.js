@@ -32,3 +32,4 @@ const createTest = async (req, res, next) => {
     createdAt: Joi.string().required().label('Created At'),
   });
   const { value, error } = schema.validate(reqData);
+  if (error) {

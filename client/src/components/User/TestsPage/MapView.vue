@@ -44,7 +44,6 @@
               v-for="(position, index) in mapData"
               :key="index"
             />
-          </GmapCluster>
         </GmapMap>
         <div class="test-detail" v-if="selectedMarkerData">
           <div class="d-flex mb-4">
@@ -64,3 +63,4 @@
             >
               (View)
             </a>
+          </p>

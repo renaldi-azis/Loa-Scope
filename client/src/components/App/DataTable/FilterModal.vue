@@ -35,7 +35,6 @@
                           label="Condition"
                           :items="getColumnConditions(filter.column)"
                           :rules="getValidators('Condition', ['required'])"
-                          v-model="filter.condition"
                           @change="onChangeCondition(groupIndex, filterIndex)"
                         />
                       </div>
@@ -108,3 +107,5 @@
                           label="From"
                           :rules="getValidators('From', ['required'])"
                           v-model="filter.from"
+                        />
+                      </div>

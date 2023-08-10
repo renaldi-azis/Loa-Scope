@@ -36,3 +36,4 @@
     <update-user-modal ref="updateUserModal" :refresh="fetchUsers"></update-user-modal>
   </div>
 </template>
+
