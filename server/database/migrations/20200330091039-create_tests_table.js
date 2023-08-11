@@ -16,3 +16,4 @@ module.exports = {
       },
       test_id: {
         type: Sequelize.STRING,
+      },

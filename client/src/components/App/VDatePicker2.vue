@@ -1,3 +1,4 @@
+<template>
   <v-menu
     ref="menu"
     :close-on-content-click="false"
@@ -16,3 +17,8 @@
         :label="label"
         :value="formattedDate"
         :rules="rules"
+        v-on="on"
+      />
+    </template>
+    <v-date-picker scrollable :value="value" @input="onChangeDate">
+      <v-spacer v-if="!required"></v-spacer>

@@ -19,3 +19,4 @@
         <filter-modal
           ref="filterModal"
           :columns="tableColumns"
+          @filter="(filters) => $emit('filter', filters)"

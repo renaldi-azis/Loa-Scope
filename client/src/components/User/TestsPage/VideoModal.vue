@@ -21,3 +21,4 @@
           width="100%"
           preload="auto"
           controls
+          autoplay

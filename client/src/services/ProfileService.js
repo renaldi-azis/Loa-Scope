@@ -1,3 +1,3 @@
-// Temp comment
 export default {
+// Temp comment
   methods: {

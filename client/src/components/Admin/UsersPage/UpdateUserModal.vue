@@ -14,7 +14,6 @@
             :value="user.username"
             readonly
           />
-          <v-text-field
             label="Filter"
             v-model="user.filter"
           />
@@ -25,3 +24,4 @@
           <v-btn type="submit" color="primary" :loading="status.isSaving">Save</v-btn>
         </v-card-actions>
       </v-card>
+    </v-form>

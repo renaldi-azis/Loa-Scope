@@ -35,6 +35,7 @@
                           label="Condition"
                           :items="getColumnConditions(filter.column)"
                           :rules="getValidators('Condition', ['required'])"
+                          v-model="filter.condition"
                           @change="onChangeCondition(groupIndex, filterIndex)"
                         />
                       </div>
@@ -109,3 +110,5 @@
                           v-model="filter.from"
                         />
                       </div>
+                      <div class="ml-2" v-if="['between'].includes(filter.condition)">
+                        <v-date-picker2

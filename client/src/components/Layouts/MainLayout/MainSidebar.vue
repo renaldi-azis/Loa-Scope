@@ -28,3 +28,4 @@
 
 <script>
 export default {
+  name: 'MainSidebar',
