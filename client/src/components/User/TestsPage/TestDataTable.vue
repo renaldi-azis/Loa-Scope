@@ -64,3 +64,4 @@ export default {
           tooltip: 'Map',
           icon: 'mdi-map-marker',
           handler: () => this.$emit('switch:view', 'MAP_VIEW'),
+        },

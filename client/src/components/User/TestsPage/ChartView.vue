@@ -67,3 +67,4 @@ export default {
       const values = [];
       for (let i = 0; i < labels.length; i += 1) {
         values[i] = this.data.filter((item) => item.totalWormCount
+          >= this.wormCountTicks[minIndex + i]

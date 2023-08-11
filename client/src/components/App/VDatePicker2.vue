@@ -21,4 +21,3 @@
       />
     </template>
     <v-date-picker scrollable :value="value" @input="onChangeDate">
-      <v-spacer v-if="!required"></v-spacer>

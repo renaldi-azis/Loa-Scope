@@ -29,3 +29,4 @@
 <script>
 export default {
   name: 'MainSidebar',
+  data() {

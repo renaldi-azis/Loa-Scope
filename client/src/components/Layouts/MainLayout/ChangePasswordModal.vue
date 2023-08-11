@@ -11,7 +11,6 @@
         <v-card-text>
           <v-text-field
             type="password"
-            label="Current Password*"
             :rules="getValidators('Current password', ['required'])"
             v-model="user.currentPassword"
           />
@@ -29,3 +28,4 @@
           />
         </v-card-text>
         <v-divider></v-divider>
+        <v-card-actions>

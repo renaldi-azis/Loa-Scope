@@ -6,6 +6,7 @@
 require('dotenv').config();
 const axios = require('axios');
 const cors = require('cors');
+// Temp comment
 const express = require('express');
 
 const PassportMiddleware = require('./server/middlewares/PassportMiddleware');
@@ -17,3 +18,5 @@ const app = express();
 /** Load routes */
 app.use(cors());
 app.use(express.json({}));
+app.use(express.urlencoded({ extended: false }));
+

@@ -1,4 +1,3 @@
-/**
  * @description Profile API Validator
  */
 
@@ -8,7 +7,6 @@ const bcrypt = require('bcrypt');
 const Joi = require('joi');
 
 /**
-// Temp comment
  * @description Change my password
  */
 const changePassword = async (req, res, next) => {
