@@ -13,7 +13,6 @@ const searchTests = async (req, res) => {
   const { reqData } = req;
   const { filters } = reqData;
   let query = {};
-  if (filters) {
     const andQuery = filters.map(filterGroup => {
       const orQueries = filterGroup.map(filter => {
         const subQuery = {};

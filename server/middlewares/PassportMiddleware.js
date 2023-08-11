@@ -7,13 +7,11 @@ const passport = require('passport');
 const passportJWT = require('passport-jwt');
 
 const { User } = require('../database/models');
-// Temp comment
 
 /** Setup JSON Webtoken Strategy */
 passport.use(
   'jwt-header',
   new passportJWT.Strategy(
-    {
       jwtFromRequest: passportJWT.ExtractJwt.fromAuthHeaderAsBearerToken(),
       secretOrKey: process.env.INTERNAL_JWT_SECRET,
     },

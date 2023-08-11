@@ -1,8 +1,10 @@
 /**
+// Temp comment
  * @description Profile API Controller
  */
 
 /** Dependencies */
+const bcrypt = require('bcrypt');
 
 /**
  * @description Change my password

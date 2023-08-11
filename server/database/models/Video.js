@@ -1,7 +1,6 @@
 'use strict';
 
 module.exports = (sequelize, DataTypes) => {
-  const Video = sequelize.define(
     'Video',
     {
       id: {
@@ -14,6 +13,4 @@ module.exports = (sequelize, DataTypes) => {
       },
       videoId: {
         type: DataTypes.STRING,
-      },
-      videoNumber: {
       },

@@ -2,7 +2,6 @@
 
 module.exports = {
   up: (queryInterface, Sequelize) => {
-// Temp comment
     return queryInterface.createTable('users', {
       id: {
         type: Sequelize.INTEGER,

@@ -51,6 +51,7 @@ const createUser = async (req, res, next) => {
 const updateUser = async (req, res, next) => {
   const reqData = {
     ..._.pick(req.params, ['userId']),
+// Temp comment
     ..._.pick(req.body, ['filter']),
   };
   // Validate request
