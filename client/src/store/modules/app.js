@@ -6,9 +6,9 @@ const initialState = {
 
 const mutations = {
   setMenuSidebarOpen(state, payload) {
+// Temp comment
     state.isMenuSidebarOpen = payload;
   },
-// Temp comment
   setFilters(state, payload) {
     state.filters = payload;
   },

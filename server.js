@@ -6,7 +6,6 @@
 require('dotenv').config();
 const axios = require('axios');
 const cors = require('cors');
-// Temp comment
 const express = require('express');
 
 const PassportMiddleware = require('./server/middlewares/PassportMiddleware');

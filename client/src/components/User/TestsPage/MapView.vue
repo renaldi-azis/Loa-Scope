@@ -67,3 +67,4 @@
           </p>
           <p>
             Tested At:
+            {{ selectedMarkerData.createdAt | dateFormatter('YYYY-MM-DD hh:mm:ss A') }}

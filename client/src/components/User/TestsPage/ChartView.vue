@@ -21,7 +21,6 @@
         <div class="ml-2">
           <v-select label="Less than" :items="wormCountTicks" v-model="maxWormCount" />
         </div>
-      </div>
       <bar-chart
         :chart-data="chartData"
         :options="chartOptions"
@@ -68,3 +67,13 @@ export default {
       for (let i = 0; i < labels.length; i += 1) {
         values[i] = this.data.filter((item) => item.totalWormCount
           >= this.wormCountTicks[minIndex + i]
+          && item.totalWormCount < this.wormCountTicks[minIndex + i + 1]).length;
+      }
+      return {
+        labels,
+        datasets: [
+          {
+            label: 'Number of occurencies',
+            backgroundColor: '#36a9e1',
+            data: values,
+          },

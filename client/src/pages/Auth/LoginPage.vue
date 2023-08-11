@@ -26,3 +26,4 @@
           <v-card-actions>
             <v-btn
               type="submit"
+              large
