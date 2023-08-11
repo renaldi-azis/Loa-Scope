@@ -1,4 +1,3 @@
-/**
  * @description Test API Validator
  */
 

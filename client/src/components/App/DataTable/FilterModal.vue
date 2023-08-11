@@ -74,7 +74,6 @@
                           :rules="getValidators('Value', ['required'])"
                           v-model="filter.value"
                         />
-                      </div>
                       <div v-if="['between'].includes(filter.condition)">
                         <v-text-field
                           type="number"

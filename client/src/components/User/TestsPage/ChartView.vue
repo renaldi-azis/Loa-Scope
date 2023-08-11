@@ -17,10 +17,10 @@
         <v-spacer />
         <div>
           <v-select label="Greater than" :items="wormCountTicks" v-model="minWormCount" />
-        </div>
         <div class="ml-2">
           <v-select label="Less than" :items="wormCountTicks" v-model="maxWormCount" />
         </div>
+      </div>
       <bar-chart
         :chart-data="chartData"
         :options="chartOptions"

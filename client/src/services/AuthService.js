@@ -1,1 +1,1 @@
-  methods: {
+export default {

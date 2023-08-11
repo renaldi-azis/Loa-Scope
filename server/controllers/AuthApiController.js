@@ -2,8 +2,8 @@
  * @description Auth API Controller
  */
 
-/** Dependencies */
 // Temp comment
+/** Dependencies */
 const jwt = require('jsonwebtoken');
 
 /**
