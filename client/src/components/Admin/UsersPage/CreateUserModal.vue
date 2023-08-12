@@ -13,11 +13,11 @@
             label="Username*"
             :rules="getValidators('Username', ['required'])"
             v-model="user.username"
-          />
           <v-text-field
             type="password"
             label="Password*"
             :rules="getValidators('Password', ['required', 'min-len:6'])"
+            v-model="user.password"
           />
           <v-text-field
             label="Filter"

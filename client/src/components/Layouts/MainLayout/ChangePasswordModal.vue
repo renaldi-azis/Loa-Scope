@@ -19,7 +19,6 @@
             type="password"
             label="New Password*"
             :rules="getValidators('New password', ['required', 'min-len:6'])"
-            v-model="user.newPassword"
           />
           <v-text-field
             type="password"
@@ -30,3 +29,4 @@
         </v-card-text>
         <v-divider></v-divider>
         <v-card-actions>
+          <v-spacer></v-spacer>

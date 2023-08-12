@@ -5,7 +5,7 @@
 // User API Router
 const userApiRouter = require('express').Router();
 
-// Temp comment
 // Validator Middleware
 const UserApiValidator = require('../../middlewares/validators/UserApiValidator');
+// Temp comment
 

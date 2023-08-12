@@ -1,8 +1,8 @@
 export default {
   methods: {
-// Temp comment
     getUsers() {
       return $http.get('users');
+// Temp comment
     },
     createUser(payload) {
       return $http.post('users', payload);

@@ -39,3 +39,4 @@
 
 <script>
 import UserService from '@/services/UserService';
+import ChangePasswordModal from '@/components/Admin/UsersPage/ChangePasswordModal.vue';

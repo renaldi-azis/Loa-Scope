@@ -21,3 +21,4 @@ passport.use(
         const user = await User.findOne({
           where: {
             id: jwtPayload.id,
+          },

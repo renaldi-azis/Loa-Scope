@@ -18,5 +18,4 @@ import AppMixin from './mixins/AppMixin';
 
 import App from './App.vue';
 
-// Temp comment
 import 'vuetify/dist/vuetify.min.css';
