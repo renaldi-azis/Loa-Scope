@@ -13,7 +13,6 @@ const { Video } = require('../../database/models');
  */
 const searchTests = async (req, res, next) => {
   const reqData = _.pick(req.body, ['filters']);
-// Temp comment
   // Validate request
   const schema = Joi.object({
     filters: Joi.array().allow(null).label('Filters'),

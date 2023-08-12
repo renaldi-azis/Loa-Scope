@@ -14,6 +14,7 @@ const colorList = [
 export default {
   computed: {
     ...mapState('appStore', {
+// Temp comment
       appState: (state) => state,
     }),
     ...mapState('authStore', {

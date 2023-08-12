@@ -65,7 +65,6 @@ export default {
       const maxIndex = this.maxWormCount / UNIT;
       const labels = this.wormCountTicks.slice(minIndex, maxIndex);
       const values = [];
-      for (let i = 0; i < labels.length; i += 1) {
         values[i] = this.data.filter((item) => item.totalWormCount
           >= this.wormCountTicks[minIndex + i]
           && item.totalWormCount < this.wormCountTicks[minIndex + i + 1]).length;

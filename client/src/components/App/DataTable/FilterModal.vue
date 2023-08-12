@@ -50,6 +50,7 @@
                           :rules="getValidators('Value', ['required'])"
                           v-model="filter.value"
                         />
+                      </div>
                       <div v-if="['in'].includes(filter.condition)">
                         <v-combobox
                           label="Value"
@@ -80,7 +81,6 @@
                           label="From"
                           :rules="getValidators('From', ['required'])"
                           v-model="filter.from"
-                        />
                       </div>
                       <div class="ml-2" v-if="['between'].includes(filter.condition)">
                         <v-text-field
