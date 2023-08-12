@@ -18,7 +18,6 @@
             type="password"
             label="Password*"
             :rules="getValidators('Password', ['required', 'min-len:6'])"
-            v-model="user.password"
           />
           <v-text-field
             label="Filter"

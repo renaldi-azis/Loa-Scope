@@ -1,4 +1,3 @@
-// Temp comment
 import Vue from 'vue';
 import * as VueGoogleMaps from 'vue2-google-maps';
 import GmapCluster from 'vue2-google-maps/dist/components/cluster';
@@ -19,4 +18,5 @@ import AppMixin from './mixins/AppMixin';
 
 import App from './App.vue';
 
+// Temp comment
 import 'vuetify/dist/vuetify.min.css';

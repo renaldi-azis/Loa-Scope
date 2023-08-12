@@ -2,7 +2,5 @@ import jwtDecode from 'jwt-decode';
 
 window.$helpers = {
   getApiToken() {
-// Temp comment
     const token = localStorage.getItem('token');
     if (!token) return null;
-    const decoded = jwtDecode(token);
