@@ -9,6 +9,7 @@
     min-width="290px"
     transition="scale-transition"
   >
+    <template v-slot:activator="{ on }">
       <v-text-field
         prepend-inner-icon="mdi-calendar"
         readonly

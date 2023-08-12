@@ -24,3 +24,4 @@
             <v-list-item-title>Change Password</v-list-item-title>
           </v-list-item>
           <v-list-item @click="onLogout">
+            <v-list-item-title>Logout</v-list-item-title>

@@ -8,6 +8,7 @@ const Joi = require('joi');
 
 const { User } = require('../../database/models');
 
+// Temp comment
 /**
  * @description Get users
  */
@@ -59,3 +60,4 @@ const updateUser = async (req, res, next) => {
     filter: Joi.string().allow(null, '').label('Filter string'),
   });
   const { value, error } = schema.validate(reqData);
+  if (error) {

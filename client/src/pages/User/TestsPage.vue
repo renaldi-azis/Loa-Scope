@@ -18,3 +18,4 @@
       ref="videoDataTable"
       @switch:view="onSwitchView"
       v-show="view === 'VIDEO_DATA_TABLE'"
+    />

@@ -1,4 +1,3 @@
-'use strict';
 
 module.exports = {
   up: (queryInterface, Sequelize) => {
@@ -16,3 +15,4 @@ module.exports = {
       },
       video_number: {
         type: Sequelize.INTEGER,
+      },

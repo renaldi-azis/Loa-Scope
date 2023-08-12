@@ -2,6 +2,7 @@ const initialState = {
   isMenuSidebarOpen: null,
   filters: null,
   tests: [],
+};
 
 const mutations = {
   setMenuSidebarOpen(state, payload) {
@@ -12,3 +13,4 @@ const mutations = {
   },
   setTests(state, payload) {
     state.tests = payload;
+  },

@@ -58,6 +58,7 @@ export default {
         {
           tooltip: 'Chart',
           icon: 'mdi-chart-bar',
+          handler: () => this.$emit('switch:view', 'CHART_VIEW'),
         },
         {
           tooltip: 'Map',
@@ -66,3 +67,4 @@ export default {
         },
         {
           tooltip: 'Export as CSV',
+          icon: 'mdi-download',

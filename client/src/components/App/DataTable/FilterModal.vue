@@ -50,7 +50,6 @@
                           :rules="getValidators('Value', ['required'])"
                           v-model="filter.value"
                         />
-                      </div>
                       <div v-if="['in'].includes(filter.condition)">
                         <v-combobox
                           label="Value"
@@ -118,3 +117,6 @@
                         />
                       </div>
                     </div>
+                  </div>
+                  <v-spacer />
+                  <v-btn-toggle class="mt-5">

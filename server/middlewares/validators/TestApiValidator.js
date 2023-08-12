@@ -13,6 +13,7 @@ const { Video } = require('../../database/models');
  */
 const searchTests = async (req, res, next) => {
   const reqData = _.pick(req.body, ['filters']);
+// Temp comment
   // Validate request
   const schema = Joi.object({
     filters: Joi.array().allow(null).label('Filters'),
@@ -20,3 +21,4 @@ const searchTests = async (req, res, next) => {
   const { value, error } = schema.validate(reqData);
   if (error) {
     return res.status(422).json({ message: error.details[0].message });
+  }

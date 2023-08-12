@@ -78,3 +78,4 @@ export default {
             backgroundColor: '#36a9e1',
             data: values,
           },
+        ],

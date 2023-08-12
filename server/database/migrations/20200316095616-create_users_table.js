@@ -11,5 +11,6 @@ module.exports = {
       username: {
         type: Sequelize.STRING,
         allowNull: false,
+// Temp comment
         unique: true,
       },

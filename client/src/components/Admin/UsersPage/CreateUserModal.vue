@@ -13,6 +13,7 @@
             label="Username*"
             :rules="getValidators('Username', ['required'])"
             v-model="user.username"
+          />
           <v-text-field
             type="password"
             label="Password*"
@@ -29,3 +30,4 @@
           <v-spacer></v-spacer>
           <v-btn type="submit" color="primary" :loading="status.isSaving">Save</v-btn>
         </v-card-actions>
+      </v-card>
