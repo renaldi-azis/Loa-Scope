@@ -14,7 +14,6 @@ const colorList = [
 export default {
   computed: {
     ...mapState('appStore', {
-// Temp comment
       appState: (state) => state,
     }),
     ...mapState('authStore', {
@@ -29,7 +28,6 @@ export default {
       return this.userData.role;
     },
     isAdmin() {
-      return this.userRole === 'Admin';
     },
     isUser() {
       return this.userRole === 'User';

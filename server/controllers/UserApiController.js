@@ -29,8 +29,6 @@ const getUsers = async (req, res) => {
 };
 
 /**
-// Temp comment
- * @description Create a new user
  */
 const createUser = async (req, res) => {
   const { reqData } = req;

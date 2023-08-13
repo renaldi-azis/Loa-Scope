@@ -27,4 +27,3 @@
             <v-btn
               type="submit"
               large
-              width="100%"

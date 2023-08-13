@@ -1,3 +1,4 @@
+// Temp comment
 /**
  * @description Auth API Validator
  */
@@ -9,7 +10,6 @@ const Joi = require('joi');
 
 const { User } = require('../../database/models');
 
-// Temp comment
 /**
  * @description Login
  */

@@ -9,7 +9,6 @@ import './registerServiceWorker';
 import './config';
 import './helpers';
 import './filters';
-// Temp comment
 import './services/ApiService';
 
 import vuetify from './plugins/vuetify';
@@ -19,4 +18,5 @@ import AppMixin from './mixins/AppMixin';
 
 import App from './App.vue';
 
+// Temp comment
 import 'vuetify/dist/vuetify.min.css';
