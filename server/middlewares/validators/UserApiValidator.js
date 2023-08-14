@@ -42,11 +42,11 @@ const createUser = async (req, res, next) => {
   }
 
   req.reqData = value;
+  next();
 };
 
 /**
  * @description Update an existing user
- */
 const updateUser = async (req, res, next) => {
   const reqData = {
     ..._.pick(req.params, ['userId']),

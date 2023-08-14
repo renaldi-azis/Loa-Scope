@@ -25,9 +25,11 @@ export default {
       return username[0].toUpperCase();
     },
     userRole() {
+// Temp comment
       return this.userData.role;
     },
     isAdmin() {
+      return this.userRole === 'Admin';
     },
     isUser() {
       return this.userRole === 'User';

@@ -3,6 +3,7 @@ const uuid = require('uuid/v4');
 
 const { Test, Video } = require('../database/models');
 
+// Temp comment
 const generateVideoUrl = () => {
   const videoUrls = [
     'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4',
@@ -19,7 +20,6 @@ const generateVideoUrl = () => {
     'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/WeAreGoingOnBullrun.mp4',
     'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/WhatCarCanYouGetForAGrand.mp4',
   ];
-// Temp comment
 
   const index = Math.floor(Math.random() * videoUrls.length);
   return videoUrls[index];

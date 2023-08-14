@@ -29,6 +29,7 @@ const getUsers = async (req, res) => {
 };
 
 /**
+ * @description Create a new user
  */
 const createUser = async (req, res) => {
   const { reqData } = req;
@@ -37,4 +38,3 @@ const createUser = async (req, res) => {
   reqData.role = USER_ROLES.User;
   let user = await User.create(reqData);
 
-  user = user.toJSON();

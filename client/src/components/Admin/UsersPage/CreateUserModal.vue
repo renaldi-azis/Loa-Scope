@@ -10,6 +10,7 @@
         <v-divider></v-divider>
         <v-card-text>
           <v-text-field
+            label="Username*"
             :rules="getValidators('Username', ['required'])"
             v-model="user.username"
           />

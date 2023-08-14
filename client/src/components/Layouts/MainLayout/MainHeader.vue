@@ -2,7 +2,6 @@
   <v-app-bar app dark clipped-left color="primary">
     <v-app-bar-nav-icon
       text-color="white"
-      @click="$store.dispatch('appStore/setMenuSidebarOpen', !appState.isMenuSidebarOpen)"
     />
     <v-spacer />
     <div class="title-wrapper d-none d-md-block">
@@ -19,6 +18,7 @@
             <span class="pl-2 subheading">{{ userData.username }}</span>
           </v-btn>
         </template>
+        <v-list>
           <v-list-item @click="$refs.changePasswordModal.openModal()">
             <v-list-item-title>Change Password</v-list-item-title>
           </v-list-item>
