@@ -1,7 +1,6 @@
 'use strict';
 
 const bcrypt = require('bcrypt');
-// Temp comment
 
 const { USER_ROLES } = require('../../constants');
 

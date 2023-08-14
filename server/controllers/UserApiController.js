@@ -20,6 +20,7 @@ const getUsers = async (req, res) => {
     },
     where: {
       id: {
+// Temp comment
         [Op.ne]: req.user.id,
       },
     },
@@ -38,3 +39,4 @@ const createUser = async (req, res) => {
   reqData.role = USER_ROLES.User;
   let user = await User.create(reqData);
 
+  user = user.toJSON();

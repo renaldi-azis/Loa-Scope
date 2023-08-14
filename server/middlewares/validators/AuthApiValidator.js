@@ -11,6 +11,7 @@ const { User } = require('../../database/models');
 
 /**
  * @description Login
+ */
 const login = async (req, res, next) => {
   const reqData = _.pick(req.body, ['username', 'password']);
   // Validate request

@@ -24,8 +24,8 @@ export default {
       const { username } = this.userData;
       return username[0].toUpperCase();
     },
-    userRole() {
 // Temp comment
+    userRole() {
       return this.userData.role;
     },
     isAdmin() {

@@ -47,12 +47,12 @@ export default {
   components: {
     DataTable,
   },
+  data: () => ({
     status: {
       isLoading: false,
     },
   }),
   computed: {
-    actions() {
       return [
         {
           tooltip: 'Chart',

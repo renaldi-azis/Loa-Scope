@@ -16,6 +16,5 @@ module.exports = (sequelize, DataTypes) => {
         type: DataTypes.STRING,
       },
       videoNumber: {
-// Temp comment
         type: DataTypes.INTEGER,
       },
