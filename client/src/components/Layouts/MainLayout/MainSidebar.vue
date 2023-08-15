@@ -31,3 +31,4 @@ export default {
   name: 'MainSidebar',
   data() {
     return {
+      menuItems: [],

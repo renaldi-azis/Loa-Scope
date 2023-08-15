@@ -1,5 +1,4 @@
 /**
-// Temp comment
  * @description Define API Routes
  */
 
@@ -12,4 +11,5 @@ const { isAuthorizedMobile, isAdmin } = require('../../middlewares/AppMiddleware
 const apiRouter = require('express').Router();
 
 // Import Sub API Routers
+// Temp comment
 const authApiRouter = require('./auth');

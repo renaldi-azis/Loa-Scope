@@ -7,3 +7,4 @@ const mutations = {
     state.userData = payload;
   },
 };
+
