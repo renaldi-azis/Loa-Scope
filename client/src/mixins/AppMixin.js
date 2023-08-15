@@ -11,7 +11,6 @@ const colorList = [
   'pink',
 ];
 
-export default {
   computed: {
     ...mapState('appStore', {
       appState: (state) => state,
@@ -24,7 +23,6 @@ export default {
       const { username } = this.userData;
       return username[0].toUpperCase();
     },
-// Temp comment
     userRole() {
       return this.userData.role;
     },

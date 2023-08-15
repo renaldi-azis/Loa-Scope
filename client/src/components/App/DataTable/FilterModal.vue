@@ -113,11 +113,3 @@
                       <div class="ml-2" v-if="['between'].includes(filter.condition)">
                         <v-date-picker2
                           label="To"
-                          :rules="getValidators('To', ['required'])"
-                          v-model="filter.to"
-                        />
-                      </div>
-                    </div>
-                  </div>
-                  <v-spacer />
-                  <v-btn-toggle class="mt-5">

@@ -20,12 +20,12 @@ const getUsers = async (req, res) => {
     },
     where: {
       id: {
-// Temp comment
         [Op.ne]: req.user.id,
       },
     },
   });
 
+// Temp comment
   return res.status(200).json(users);
 };
 

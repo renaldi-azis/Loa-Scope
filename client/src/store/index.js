@@ -12,5 +12,4 @@ const state = {
 };
 
 const mutations = {
-  //
 };

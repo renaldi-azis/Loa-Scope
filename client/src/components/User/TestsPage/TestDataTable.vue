@@ -53,6 +53,7 @@ export default {
     },
   }),
   computed: {
+    actions() {
       return [
         {
           tooltip: 'Chart',
