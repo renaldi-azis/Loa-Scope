@@ -1,6 +1,5 @@
 <template>
   <v-data-table
-    class="elevation-1"
     :headers="visibleColumns"
     :items="items"
     :loading="loading"
@@ -21,3 +20,4 @@
           :columns="tableColumns"
           @filter="(filters) => $emit('filter', filters)"
         />
+        <column-menu v-model="tableColumns" />

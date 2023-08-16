@@ -1,4 +1,3 @@
-// Temp comment
 /**
  * @description Mobile API Validator
  */
@@ -38,3 +37,4 @@ const createTest = async (req, res, next) => {
   }
   // Check test existence
   let test = await Test.findOne({
+    where: {

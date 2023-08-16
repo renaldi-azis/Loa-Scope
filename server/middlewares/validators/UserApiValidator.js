@@ -60,3 +60,4 @@ const updateUser = async (req, res, next) => {
   });
   const { value, error } = schema.validate(reqData);
   if (error) {
+    return res.status(422).json({ message: error.details[0].message });

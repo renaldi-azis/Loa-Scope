@@ -72,3 +72,4 @@
         </div>
         <div class="indicator-container" v-if="status.isLoading">
           <v-progress-circular :size="50" color="white" indeterminate/>
+        </div>

@@ -6,7 +6,6 @@
 const _ = require('lodash');
 const bcrypt = require('bcrypt');
 const { Op } = require('sequelize');
-
 const { User } = require('../database/models');
 const { USER_ROLES } = require('../constants');
 
@@ -39,3 +38,4 @@ const createUser = async (req, res) => {
   let user = await User.create(reqData);
 
   user = user.toJSON();
+  delete user.password;

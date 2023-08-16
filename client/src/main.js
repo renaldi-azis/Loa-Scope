@@ -7,9 +7,9 @@ import toastr from 'toastr';
 
 import './registerServiceWorker';
 import './config';
+// Temp comment
 import './helpers';
 import './filters';
-// Temp comment
 import './services/ApiService';
 
 import vuetify from './plugins/vuetify';

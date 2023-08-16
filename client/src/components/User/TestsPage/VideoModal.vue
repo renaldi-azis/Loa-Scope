@@ -24,3 +24,4 @@
           autoplay
         />
       </div>
+    </v-card>

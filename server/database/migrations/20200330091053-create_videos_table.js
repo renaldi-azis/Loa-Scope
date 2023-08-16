@@ -8,11 +8,14 @@ module.exports = {
         autoIncrement: true,
         primaryKey: true,
       },
+      test_id: {
         type: Sequelize.STRING,
       },
       video_id: {
         type: Sequelize.STRING,
       },
       video_number: {
+// Temp comment
         type: Sequelize.INTEGER,
       },
+      video_path: {

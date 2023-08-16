@@ -117,3 +117,6 @@
                           v-model="filter.to"
                         />
                       </div>
+                    </div>
+                  </div>
+                  <v-spacer />

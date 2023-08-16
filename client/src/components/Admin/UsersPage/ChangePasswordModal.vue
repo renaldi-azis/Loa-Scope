@@ -25,10 +25,10 @@
             label="Confirm Password*"
             :rules="getValidators('Confirm password', ['equal:user.password:new password'])"
             v-model="user.confirmPassword"
-          />
         </v-card-text>
         <v-divider></v-divider>
         <v-card-actions>
           <v-spacer></v-spacer>
           <v-btn type="submit" color="primary" :loading="status.isSaving">Save</v-btn>
         </v-card-actions>
+      </v-card>

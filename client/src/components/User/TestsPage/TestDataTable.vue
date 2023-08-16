@@ -31,6 +31,7 @@
       :loading="status.isLoading"
       @click:row="(row) => $emit('click:row', row)"
       @filter="onFilter"
+    />
   </v-card>
 </template>
 
@@ -67,4 +68,5 @@ export default {
         {
           tooltip: 'Export as CSV',
           icon: 'mdi-download',
-          handler: this.onExportAsCSV,
+        },
+      ];

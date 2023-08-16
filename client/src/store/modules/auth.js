@@ -8,3 +8,4 @@ const mutations = {
   },
 };
 
+const actions = {
