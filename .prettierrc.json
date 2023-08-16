@@ -5,3 +5,4 @@
   "htmlWhitespaceSensitivity": "css",
   "insertPragma": false,
   "jsxBracketSameLine": false,
+  "jsxSingleQuote": false,

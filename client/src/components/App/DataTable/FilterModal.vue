@@ -114,3 +114,6 @@
                         <v-date-picker2
                           label="To"
                           :rules="getValidators('To', ['required'])"
+                          v-model="filter.to"
+                        />
+                      </div>

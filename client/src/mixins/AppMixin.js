@@ -1,6 +1,7 @@
 import { mapState } from 'vuex';
 import _ from 'lodash';
 
+const colorList = [
   'red',
   'indigo',
   'purple',
@@ -13,7 +14,6 @@ import _ from 'lodash';
 export default {
   computed: {
     ...mapState('appStore', {
-      appState: (state) => state,
     }),
     ...mapState('authStore', {
       userData: (state) => state.userData,

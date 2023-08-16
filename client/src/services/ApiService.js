@@ -10,3 +10,4 @@ const $http = axios.create({
 $http.interceptors.request.use(
   (config) => {
     const newConfig = { ...config };
+    if ($helpers.isAuthenticated()) {

@@ -1,6 +1,6 @@
 'use strict';
-// Temp comment
 
+// Temp comment
 module.exports = (sequelize, DataTypes) => {
   const Video = sequelize.define(
     'Video',
@@ -19,3 +19,4 @@ module.exports = (sequelize, DataTypes) => {
       videoNumber: {
         type: DataTypes.INTEGER,
       },
+      videoPath: {

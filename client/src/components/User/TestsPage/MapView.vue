@@ -25,6 +25,7 @@
             :items="wormCountTicks"
             v-model="maxWormCount"
             @change="selectedMarkerData = null"
+          />
         </div>
       </div>
       <div class="position-relative">
@@ -70,3 +71,4 @@
           </p>
         </div>
         <div class="indicator-container" v-if="status.isLoading">
+          <v-progress-circular :size="50" color="white" indeterminate/>
