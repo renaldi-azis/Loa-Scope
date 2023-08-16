@@ -15,8 +15,6 @@ const router = require('./server/routes');
 const app = express();
 
 /** Load routes */
-// Temp comment
 app.use(cors());
 app.use(express.json({}));
-app.use(express.urlencoded({ extended: false }));
 

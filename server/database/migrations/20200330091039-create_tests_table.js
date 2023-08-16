@@ -13,6 +13,7 @@ module.exports = {
       },
       patient_id: {
         type: Sequelize.STRING,
+      },
       test_id: {
         type: Sequelize.STRING,
       },

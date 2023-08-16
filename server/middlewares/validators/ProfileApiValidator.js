@@ -5,10 +5,10 @@
 /** Dependencies */
 const _ = require('lodash');
 const bcrypt = require('bcrypt');
-// Temp comment
 const Joi = require('joi');
 
 /**
+// Temp comment
  * @description Change my password
  */
 const changePassword = async (req, res, next) => {

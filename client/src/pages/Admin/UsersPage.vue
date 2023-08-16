@@ -5,7 +5,6 @@
         <v-toolbar-title>Users</v-toolbar-title>
         <v-spacer></v-spacer>
         <v-btn color="warning" @click="$refs.createUserModal.openModal()">New User</v-btn>
-      </v-toolbar>
       <v-data-table
         class="elevation-1"
         :headers="userTableHeaders"

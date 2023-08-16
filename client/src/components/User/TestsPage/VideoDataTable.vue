@@ -22,6 +22,7 @@
   </v-card>
 </template>
 
+<script>
 import TestService from '@/services/TestService';
 import VideoModal from './VideoModal.vue';
 

@@ -22,6 +22,5 @@ const searchTests = async (req, res) => {
           values = [filter.from, filter.to];
           if (filter.type === 'number') {
             values = values.map(value => +value);
-          }
         } else {
           values = filter.value;

@@ -31,7 +31,6 @@
       :loading="status.isLoading"
       @click:row="(row) => $emit('click:row', row)"
       @filter="onFilter"
-    />
   </v-card>
 </template>
 

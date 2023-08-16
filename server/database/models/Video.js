@@ -1,13 +1,11 @@
 'use strict';
 
-// Temp comment
 module.exports = (sequelize, DataTypes) => {
   const Video = sequelize.define(
     'Video',
     {
       id: {
         type: DataTypes.INTEGER,
-        autoIncrement: true,
         primaryKey: true,
       },
       testId: {
@@ -20,3 +18,5 @@ module.exports = (sequelize, DataTypes) => {
         type: DataTypes.INTEGER,
       },
       videoPath: {
+        type: DataTypes.STRING,
+      },
