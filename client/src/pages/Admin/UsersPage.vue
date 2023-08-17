@@ -8,7 +8,6 @@
       </v-toolbar>
       <v-data-table
         class="elevation-1"
-        :headers="userTableHeaders"
         :items="users"
         :loading="status.isLoading"
       >

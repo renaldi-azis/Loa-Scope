@@ -25,7 +25,6 @@ const getUsers = async (req, res) => {
     },
   });
 
-// Temp comment
   return res.status(200).json(users);
 };
 

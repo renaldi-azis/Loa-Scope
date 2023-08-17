@@ -1,3 +1,4 @@
+// Temp comment
 'use strict';
 
 module.exports = (sequelize, DataTypes) => {
@@ -9,7 +10,6 @@ module.exports = (sequelize, DataTypes) => {
         autoIncrement: true,
         primaryKey: true,
       },
-// Temp comment
       username: {
         type: DataTypes.STRING,
         allowNull: false,

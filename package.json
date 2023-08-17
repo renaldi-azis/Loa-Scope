@@ -4,6 +4,7 @@
   "description": "Cellscope Web",
   "main": "server.js",
   "scripts": {
+    "start": "node server.js",
     "prettier": "prettier --write server server.js"
   },
   "author": "Michel Stekelenburg",
@@ -11,3 +12,4 @@
   "dependencies": {
     "aws-sdk": "^2.1191.0",
     "axios": "^0.27.2",
+    "bcrypt": "^5.0.1",

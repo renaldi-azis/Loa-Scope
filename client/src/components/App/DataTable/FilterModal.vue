@@ -15,7 +15,6 @@
           >
             <v-card class="px-6 py-4">
               <div
-                v-for="(filter, filterIndex) in filterGroup"
                 :key="`filter-${filterIndex}`"
               >
                 <div class="d-flex">
@@ -122,3 +121,5 @@
                   <v-spacer />
                   <v-btn-toggle class="mt-5">
                     <v-btn small @click="onAddFilterGroup(groupIndex)">AND</v-btn>
+                    <v-btn small @click="onAddFilter(groupIndex, filterIndex)">OR</v-btn>
+                    <v-btn small @click="onRemoveFilter(groupIndex, filterIndex)">-</v-btn>

@@ -70,6 +70,8 @@
             {{ selectedMarkerData.createdAt | dateFormatter('YYYY-MM-DD hh:mm:ss A') }}
           </p>
         </div>
+        <div class="indicator-container" v-if="status.isLoading">
           <v-progress-circular :size="50" color="white" indeterminate/>
         </div>
       </div>
+    </v-card-text>

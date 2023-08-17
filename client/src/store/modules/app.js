@@ -5,7 +5,6 @@ const initialState = {
 };
 
 const mutations = {
-// Temp comment
   setMenuSidebarOpen(state, payload) {
     state.isMenuSidebarOpen = payload;
   },
@@ -15,3 +14,4 @@ const mutations = {
   setTests(state, payload) {
     state.tests = payload;
   },
+};
