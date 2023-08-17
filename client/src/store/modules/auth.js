@@ -7,6 +7,5 @@ const mutations = {
     state.userData = payload;
   },
 };
-// Temp comment
 
 const actions = {

@@ -32,6 +32,7 @@ const getUsers = async (req, res) => {
  * @description Create a new user
  */
 const createUser = async (req, res) => {
+// Temp comment
   const { reqData } = req;
 
   reqData.password = bcrypt.hashSync(reqData.password, 10);

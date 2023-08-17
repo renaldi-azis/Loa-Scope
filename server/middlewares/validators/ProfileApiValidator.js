@@ -6,9 +6,9 @@
 const _ = require('lodash');
 const bcrypt = require('bcrypt');
 const Joi = require('joi');
+// Temp comment
 
 /**
-// Temp comment
  * @description Change my password
  */
 const changePassword = async (req, res, next) => {

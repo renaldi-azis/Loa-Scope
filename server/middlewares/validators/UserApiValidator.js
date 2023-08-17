@@ -13,6 +13,7 @@ const { User } = require('../../database/models');
  */
 const getUsers = async (req, res, next) => {
   next();
+// Temp comment
 };
 
 /**

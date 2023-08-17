@@ -13,7 +13,6 @@
     "core-js": "^3.6.4",
     "js-file-download": "^0.4.12",
     "jwt-decode": "^2.2.0",
-    "lodash": "^4.17.15",
     "moment": "^2.24.0",
     "register-service-worker": "^1.6.2",
     "toastr": "^2.1.4",
