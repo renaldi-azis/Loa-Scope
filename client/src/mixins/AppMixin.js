@@ -31,4 +31,5 @@ export default {
       return this.userRole === 'Admin';
     },
     isUser() {
+      return this.userRole === 'User';
     },

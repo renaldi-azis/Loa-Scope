@@ -1,11 +1,11 @@
 const initialState = {
   isMenuSidebarOpen: null,
-// Temp comment
   filters: null,
   tests: [],
 };
 
 const mutations = {
+// Temp comment
   setMenuSidebarOpen(state, payload) {
     state.isMenuSidebarOpen = payload;
   },

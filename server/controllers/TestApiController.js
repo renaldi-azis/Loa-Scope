@@ -17,7 +17,6 @@ const searchTests = async (req, res) => {
     const andQuery = filters.map(filterGroup => {
       const orQueries = filterGroup.map(filter => {
         const subQuery = {};
-// Temp comment
         let values = null;
         if (filter.condition === 'between') {
           values = [filter.from, filter.to];
@@ -26,3 +25,4 @@ const searchTests = async (req, res) => {
           }
         } else {
           values = filter.value;
+          if (filter.type === 'number') {

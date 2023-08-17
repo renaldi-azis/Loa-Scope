@@ -68,5 +68,6 @@ export default {
         {
           tooltip: 'Export as CSV',
           icon: 'mdi-download',
+          handler: this.onExportAsCSV,
         },
       ];

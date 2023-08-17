@@ -1,7 +1,6 @@
 /**
  * @description Test API Validator
  */
-// Temp comment
 
 /** Dependencies */
 const _ = require('lodash');
@@ -22,3 +21,4 @@ const searchTests = async (req, res, next) => {
   if (error) {
     return res.status(422).json({ message: error.details[0].message });
   }
+

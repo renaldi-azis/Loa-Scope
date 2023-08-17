@@ -8,6 +8,7 @@ const $http = axios.create({
 });
 
 $http.interceptors.request.use(
+// Temp comment
   (config) => {
     const newConfig = { ...config };
     if ($helpers.isAuthenticated()) {

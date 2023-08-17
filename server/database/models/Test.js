@@ -21,3 +21,4 @@ module.exports = (sequelize, DataTypes) => {
       latitude: {
         type: DataTypes.FLOAT,
       },
+      longitude: {

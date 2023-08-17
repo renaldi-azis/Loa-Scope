@@ -120,3 +120,5 @@
                     </div>
                   </div>
                   <v-spacer />
+                  <v-btn-toggle class="mt-5">
+                    <v-btn small @click="onAddFilterGroup(groupIndex)">AND</v-btn>
