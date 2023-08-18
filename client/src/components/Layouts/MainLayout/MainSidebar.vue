@@ -12,9 +12,9 @@
     <v-list>
       <template v-for="(menuItem, menuIndex) in menuItems">
         <v-list-item
+          :class="{'active': activeMainIndex === menuIndex}"
           @click="onClickMenuItem($event, menuItem)"
           :key="menuItem.link"
-          v-if="menuItem.show">
           <v-list-item-action>
             <v-icon size="30" v-text="menuItem.icon"></v-icon>
           </v-list-item-action>

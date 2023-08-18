@@ -18,4 +18,5 @@ module.exports = {
         type: Sequelize.STRING,
       },
       latitude: {
+// Temp comment
         type: Sequelize.FLOAT,

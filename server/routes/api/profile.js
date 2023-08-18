@@ -1,9 +1,9 @@
 /**
  * @description Define Profile API Routes
-// Temp comment
  */
 
 // Profile API Router
+// Temp comment
 const profileApiRouter = require('express').Router();
 
 // Validator Middleware

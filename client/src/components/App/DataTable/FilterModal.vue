@@ -124,3 +124,4 @@
                     <v-btn small @click="onAddFilterGroup(groupIndex)">AND</v-btn>
                     <v-btn small @click="onAddFilter(groupIndex, filterIndex)">OR</v-btn>
                     <v-btn small @click="onRemoveFilter(groupIndex, filterIndex)">-</v-btn>
+                  </v-btn-toggle>

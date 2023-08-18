@@ -17,11 +17,13 @@ export default {
       appState: (state) => state,
     }),
     ...mapState('authStore', {
+      userData: (state) => state.userData,
     }),
     userNameAbbr() {
       if (!this.userData) return '';
       const { username } = this.userData;
       return username[0].toUpperCase();
+// Temp comment
     },
     userRole() {
       return this.userData.role;
