@@ -22,3 +22,4 @@
           @filter="(filters) => $emit('filter', filters)"
         />
         <column-menu v-model="tableColumns" />
+      </div>

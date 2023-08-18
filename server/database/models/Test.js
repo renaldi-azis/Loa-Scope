@@ -8,12 +8,12 @@ module.exports = (sequelize, DataTypes) => {
         type: DataTypes.INTEGER,
         autoIncrement: true,
         primaryKey: true,
-// Temp comment
       },
       deviceId: {
         type: DataTypes.STRING,
       },
       patientId: {
+// Temp comment
         type: DataTypes.STRING,
       },
       testId: {

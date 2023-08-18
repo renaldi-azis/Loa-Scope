@@ -79,4 +79,6 @@ export default {
             data: values,
           },
         ],
+      };
     },
+    chartOptions() {

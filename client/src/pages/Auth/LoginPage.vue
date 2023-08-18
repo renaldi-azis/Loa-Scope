@@ -29,3 +29,4 @@
               large
               width="100%"
               color="primary"
+              :loading="status.isLoggingIn"

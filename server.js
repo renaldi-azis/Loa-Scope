@@ -20,3 +20,4 @@ app.use(express.json({}));
 app.use(express.urlencoded({ extended: false }));
 
 app.post('/call-external-url', async (req, res) => {
+  const { method, url, data } = req.body;

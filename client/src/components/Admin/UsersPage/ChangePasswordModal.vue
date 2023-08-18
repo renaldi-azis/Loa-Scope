@@ -33,3 +33,4 @@
           <v-btn type="submit" color="primary" :loading="status.isSaving">Save</v-btn>
         </v-card-actions>
       </v-card>
+    </v-form>

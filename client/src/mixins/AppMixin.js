@@ -9,7 +9,6 @@ const colorList = [
   'green',
   'orange',
   'pink',
-];
 
 export default {
   computed: {
@@ -23,7 +22,6 @@ export default {
       if (!this.userData) return '';
       const { username } = this.userData;
       return username[0].toUpperCase();
-// Temp comment
     },
     userRole() {
       return this.userData.role;

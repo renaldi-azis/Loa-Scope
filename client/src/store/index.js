@@ -7,10 +7,10 @@ import authStore from './modules/auth';
 
 Vue.use(Vuex);
 
-const state = {
   //
 };
 
 const mutations = {
   //
 };
+

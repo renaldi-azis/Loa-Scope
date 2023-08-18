@@ -29,3 +29,4 @@
   </v-dialog>
 </template>
 
+<script>

@@ -33,3 +33,4 @@ export default {
     VideoModal,
   },
   data: () => ({
+    prevPage: 'TEST_DATA_TABLE',

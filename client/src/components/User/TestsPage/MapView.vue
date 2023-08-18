@@ -75,3 +75,5 @@
         </div>
       </div>
     </v-card-text>
+  </v-card>
+</template>

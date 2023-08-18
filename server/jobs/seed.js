@@ -1,7 +1,6 @@
 const faker = require('faker');
 const uuid = require('uuid/v4');
 
-// Temp comment
 const { Test, Video } = require('../database/models');
 
 const generateVideoUrl = () => {
