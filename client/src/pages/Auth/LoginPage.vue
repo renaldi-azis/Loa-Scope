@@ -13,7 +13,6 @@
               v-model="user.username"
               :rules="getValidators('Username', ['required'])"
             >
-            </v-text-field>
             <v-text-field
               type="password"
               prepend-inner-icon="lock"
@@ -30,3 +29,4 @@
               width="100%"
               color="primary"
               :loading="status.isLoggingIn"
+            >

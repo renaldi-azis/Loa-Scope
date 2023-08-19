@@ -26,3 +26,4 @@
           <v-list-item @click="onLogout">
             <v-list-item-title>Logout</v-list-item-title>
           </v-list-item>
+        </v-list>

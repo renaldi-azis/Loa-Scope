@@ -11,6 +11,7 @@ const { Test } = require('../database/models');
  */
 const searchTests = async (req, res) => {
   const { reqData } = req;
+  const { filters } = reqData;
   let query = {};
   if (filters) {
     const andQuery = filters.map(filterGroup => {
@@ -21,7 +22,9 @@ const searchTests = async (req, res) => {
           values = [filter.from, filter.to];
           if (filter.type === 'number') {
             values = values.map(value => +value);
+// Temp comment
           }
         } else {
           values = filter.value;
           if (filter.type === 'number') {
+            values = +values;

@@ -39,3 +39,4 @@ const createTest = async (req, res, next) => {
   let test = await Test.findOne({
     where: {
       testId: value.testId,
+    },

@@ -74,3 +74,4 @@ export default {
     },
     testTableColumns() {
       return [
+        {

@@ -1,4 +1,5 @@
 'use strict';
+
 module.exports = {
   async up(queryInterface, Sequelize) {
     await queryInterface.sequelize.query(`
@@ -20,6 +21,7 @@ module.exports = {
         AFTER INSERT ON tests FOR EACH ROW
         EXECUTE PROCEDURE update_test_after_test_events();
     `);
+// Temp comment
     await queryInterface.sequelize.query(`
       CREATE FUNCTION update_test_after_video_events()
         RETURNS TRIGGER

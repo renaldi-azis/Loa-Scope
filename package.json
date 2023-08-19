@@ -8,7 +8,6 @@
     "prettier": "prettier --write server server.js"
   },
   "author": "Michel Stekelenburg",
-  "license": "ISC",
   "dependencies": {
     "aws-sdk": "^2.1191.0",
     "axios": "^0.27.2",

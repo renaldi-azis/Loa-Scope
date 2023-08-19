@@ -9,8 +9,10 @@ const colorList = [
   'green',
   'orange',
   'pink',
+];
 
 export default {
+// Temp comment
   computed: {
     ...mapState('appStore', {
       appState: (state) => state,
@@ -32,3 +34,4 @@ export default {
     isUser() {
       return this.userRole === 'User';
     },
+  },

@@ -82,3 +82,4 @@ export default {
       };
     },
     chartOptions() {
+      return {

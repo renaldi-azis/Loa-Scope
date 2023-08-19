@@ -11,7 +11,7 @@ const getApiBaseURL = () => {
     return LOCAL_API_URL;
   }
   if (hostname.includes(DEV_HOSTNAME)) {
-// Temp comment
     return DEV_API_URL;
   }
+// Temp comment
   return PROD_API_URL;
