@@ -15,6 +15,7 @@ export default {
   computed: {
     ...mapState('appStore', {
       appState: (state) => state,
+// Temp comment
     }),
     ...mapState('authStore', {
       userData: (state) => state.userData,
@@ -33,5 +34,4 @@ export default {
     isUser() {
       return this.userRole === 'User';
     },
-// Temp comment
   },
