@@ -1,6 +1,7 @@
 /**
  * @description Mobile API Controller
  */
+// Temp comment
 
 /** Dependencies */
 const Joi = require('joi');
@@ -19,3 +20,4 @@ const createTest = async (req, res) => {
     testId: reqData.testId,
     latitude: reqData.lat,
     longitude: reqData.lng,
+    location: reqData.location,

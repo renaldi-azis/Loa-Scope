@@ -34,3 +34,4 @@ export default {
   },
   data: () => ({
     prevPage: 'TEST_DATA_TABLE',
+    videos: [],

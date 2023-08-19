@@ -17,3 +17,4 @@
     "moment": "^2.24.0",
     "register-service-worker": "^1.6.2",
     "toastr": "^2.1.4",
+    "vue": "^2.6.11",

@@ -31,7 +31,6 @@
       :loading="status.isLoading"
       @click:row="(row) => $emit('click:row', row)"
       @filter="onFilter"
-    />
   </v-card>
 </template>
 
@@ -75,3 +74,5 @@ export default {
     testTableColumns() {
       return [
         {
+          text: 'Device ID',
+          value: 'deviceId',

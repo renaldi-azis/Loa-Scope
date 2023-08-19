@@ -40,3 +40,4 @@ const createTest = async (req, res, next) => {
     where: {
       testId: value.testId,
     },
+  });

@@ -83,3 +83,4 @@ export default {
     },
     chartOptions() {
       return {
+        responsive: true,

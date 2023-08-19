@@ -15,3 +15,4 @@ const mutations = {
     state.tests = payload;
   },
 };
+

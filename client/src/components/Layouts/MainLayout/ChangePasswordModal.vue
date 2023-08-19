@@ -35,3 +35,4 @@
         </v-card-actions>
       </v-card>
     </v-form>
+  </v-dialog>

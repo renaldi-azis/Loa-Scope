@@ -40,6 +40,7 @@
             <GmapMarker
               :position="position"
               :clickable="true"
+              @click="onClickMapMarker(position, index)"
               v-for="(position, index) in mapData"
               :key="index"
             />
@@ -77,3 +78,5 @@
   </v-card>
 </template>
 
+<script>
+import _ from 'lodash';

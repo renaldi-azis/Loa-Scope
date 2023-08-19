@@ -22,6 +22,7 @@
             </v-btn>
             <v-btn icon class="mx-0" @click="$refs.updateUserModal.openModal(item)">
               <v-icon color="primary">edit</v-icon>
+            </v-btn>
             <v-btn icon class="mx-0" @click="onDeleteUser(item)">
               <v-icon color="pink">delete</v-icon>
             </v-btn>
@@ -35,10 +36,10 @@
     <update-user-modal ref="updateUserModal" :refresh="fetchUsers"></update-user-modal>
   </div>
 </template>
-
 <script>
 import UserService from '@/services/UserService';
 import ChangePasswordModal from '@/components/Admin/UsersPage/ChangePasswordModal.vue';
 import CreateUserModal from '@/components/Admin/UsersPage/CreateUserModal.vue';
 import UpdateUserModal from '@/components/Admin/UsersPage/UpdateUserModal.vue';
 
+export default {

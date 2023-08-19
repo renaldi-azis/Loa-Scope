@@ -131,3 +131,6 @@
                   <div class="px-4 blue--text">OR</div>
                   <hr class="or-divider" />
                 </div>
+              </div>
+            </v-card>
+            <div class="d-flex align-center my-2" v-if="groupIndex < filterGroups.length - 1">

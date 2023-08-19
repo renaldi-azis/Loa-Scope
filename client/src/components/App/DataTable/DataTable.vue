@@ -23,3 +23,4 @@
         />
         <column-menu v-model="tableColumns" />
       </div>
+    </template>
