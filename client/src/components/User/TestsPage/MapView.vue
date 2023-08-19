@@ -71,6 +71,7 @@
           </p>
         </div>
         <div class="indicator-container" v-if="status.isLoading">
+          <v-progress-circular :size="50" color="white" indeterminate/>
         </div>
       </div>
     </v-card-text>
@@ -81,3 +82,4 @@
 import _ from 'lodash';
 
 const UNIT = 50;
+

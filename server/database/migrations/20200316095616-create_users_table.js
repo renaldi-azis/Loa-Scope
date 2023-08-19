@@ -14,5 +14,5 @@ module.exports = {
         unique: true,
       },
       password: {
-// Temp comment
         type: Sequelize.STRING,
+        allowNull: false,

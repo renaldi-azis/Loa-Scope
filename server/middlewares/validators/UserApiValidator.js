@@ -38,6 +38,7 @@ const createUser = async (req, res, next) => {
     },
   });
   if (user) {
+// Temp comment
     return res.status(422).json({ message: 'Username was already taken.' });
   }
 
@@ -55,6 +56,7 @@ const updateUser = async (req, res, next) => {
   };
   // Validate request
   const schema = Joi.object({
+    userId: Joi.number().min(1).label('User ID'),
     filter: Joi.string().allow(null, '').label('Filter string'),
   });
   const { value, error } = schema.validate(reqData);
@@ -63,3 +65,4 @@ const updateUser = async (req, res, next) => {
   }
   // Check user existence
   const user = await User.findOne({
+    where: {

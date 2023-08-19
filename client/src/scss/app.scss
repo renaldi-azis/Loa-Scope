@@ -4,7 +4,6 @@
 html {
   overflow-y: auto !important;
 }
-
 .cursor-pointer {
   cursor: pointer;
 }
@@ -14,3 +13,4 @@ html {
 }
 
 // Transition Effects
+.fade-enter-active, .fade-leave-active {

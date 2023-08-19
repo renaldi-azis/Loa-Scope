@@ -84,3 +84,4 @@ export default {
     chartOptions() {
       return {
         responsive: true,
+        maintainAspectRatio: false,

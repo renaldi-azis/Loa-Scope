@@ -1,5 +1,4 @@
 /**
-// Temp comment
  * @description Profile API Validator
  */
 
@@ -14,3 +13,4 @@ const Joi = require('joi');
 const changePassword = async (req, res, next) => {
   const reqData = _.pick(req.body, ['currentPassword', 'newPassword']);
   // Validate request
+  const schema = Joi.object({

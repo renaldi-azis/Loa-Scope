@@ -1,5 +1,4 @@
 <template>
-  <v-dialog max-width="800" v-model="status.isModalOpen">
     <v-form ref="filterForm" @submit.prevent="onApplyFilter()">
       <v-card>
         <v-card-title>
@@ -134,3 +133,6 @@
               </div>
             </v-card>
             <div class="d-flex align-center my-2" v-if="groupIndex < filterGroups.length - 1">
+              <hr class="and-divider" />
+              <div class="px-4 red--text">AND</div>
+              <hr class="and-divider" />

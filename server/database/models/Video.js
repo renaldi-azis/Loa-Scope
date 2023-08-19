@@ -9,6 +9,7 @@ module.exports = (sequelize, DataTypes) => {
         autoIncrement: true,
         primaryKey: true,
       },
+// Temp comment
       testId: {
         type: DataTypes.STRING,
       },
@@ -19,7 +20,6 @@ module.exports = (sequelize, DataTypes) => {
         type: DataTypes.INTEGER,
       },
       videoPath: {
-// Temp comment
         type: DataTypes.STRING,
       },
       videoUrl: {

@@ -41,3 +41,4 @@ const createTest = async (req, res, next) => {
       testId: value.testId,
     },
   });
+  if (test) {

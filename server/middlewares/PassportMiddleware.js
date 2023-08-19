@@ -3,7 +3,6 @@
  */
 
 /** Dependencies */
-// Temp comment
 const passport = require('passport');
 const passportJWT = require('passport-jwt');
 
@@ -22,7 +21,7 @@ passport.use(
         const user = await User.findOne({
           where: {
             id: jwtPayload.id,
-          },
         });
         return done(null, user);
       } catch (error) {
+        return done(error);

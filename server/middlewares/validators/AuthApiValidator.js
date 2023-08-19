@@ -18,3 +18,5 @@ const login = async (req, res, next) => {
   const schema = Joi.object({
     username: Joi.string().required().label('Username'),
     password: Joi.string().required().label('Password'),
+// Temp comment
+  });

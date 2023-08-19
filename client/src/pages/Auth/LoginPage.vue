@@ -31,3 +31,4 @@
               color="primary"
               :loading="status.isLoggingIn"
             >
+              Login Now

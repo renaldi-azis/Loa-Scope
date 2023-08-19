@@ -27,3 +27,4 @@ const searchTests = async (req, res) => {
           values = filter.value;
           if (filter.type === 'number') {
             values = +values;
+          }

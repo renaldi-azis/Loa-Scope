@@ -27,3 +27,4 @@
             <v-list-item-title>Logout</v-list-item-title>
           </v-list-item>
         </v-list>
+      </v-menu>

@@ -44,3 +44,4 @@ import CreateUserModal from '@/components/Admin/UsersPage/CreateUserModal.vue';
 import UpdateUserModal from '@/components/Admin/UsersPage/UpdateUserModal.vue';
 
 export default {
+  name: 'UsersPage',
