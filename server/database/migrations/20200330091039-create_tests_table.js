@@ -14,7 +14,6 @@ module.exports = {
       patient_id: {
         type: Sequelize.STRING,
       },
-// Temp comment
       test_id: {
         type: Sequelize.STRING,
       },

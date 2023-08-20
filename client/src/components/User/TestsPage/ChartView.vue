@@ -34,7 +34,6 @@
 <script>
 import _ from 'lodash';
 import BarChart from '@/components/App/Charts/BarChart';
-
 const UNIT = 50;
 
 export default {

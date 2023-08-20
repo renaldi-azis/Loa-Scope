@@ -10,3 +10,4 @@ const jwt = require('jsonwebtoken');
 // Temp comment
  */
 const login = async (req, res) => {
+  let { user } = req;

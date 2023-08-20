@@ -9,7 +9,6 @@ module.exports = {
         primaryKey: true,
       },
       test_id: {
-        type: Sequelize.STRING,
       },
       video_id: {
         type: Sequelize.STRING,
@@ -18,6 +17,5 @@ module.exports = {
         type: Sequelize.INTEGER,
       },
       video_path: {
-// Temp comment
         type: Sequelize.STRING,
       },

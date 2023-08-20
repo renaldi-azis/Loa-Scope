@@ -23,4 +23,4 @@ const searchTests = async (req, res, next) => {
   }
 
   req.reqData = value;
-  next();
+};

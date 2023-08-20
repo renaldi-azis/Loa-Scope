@@ -12,6 +12,7 @@
       </v-card-title>
       <v-divider />
 
+      <div class="video-wrapper">
         <video
           ref="videoPlayer"
           class="d-flex"
@@ -23,7 +24,7 @@
           autoplay
         />
       </div>
-    </v-card>
   </v-dialog>
 </template>
 
+<script>

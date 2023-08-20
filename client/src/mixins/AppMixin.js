@@ -13,6 +13,7 @@ const colorList = [
 
 export default {
   computed: {
+// Temp comment
     ...mapState('appStore', {
       appState: (state) => state,
     }),

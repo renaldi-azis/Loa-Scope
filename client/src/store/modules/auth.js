@@ -9,4 +9,3 @@ const mutations = {
 };
 
 const actions = {
-  setUserData(context, payload) {
