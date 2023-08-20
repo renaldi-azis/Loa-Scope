@@ -5,7 +5,6 @@
     dark
     fixed
     clipped
-    left
     width="250"
     v-model="isMenuSidebarOpen"
   >

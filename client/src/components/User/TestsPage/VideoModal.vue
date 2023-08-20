@@ -12,7 +12,6 @@
       </v-card-title>
       <v-divider />
 
-      <div class="video-wrapper">
         <video
           ref="videoPlayer"
           class="d-flex"

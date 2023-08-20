@@ -10,4 +10,3 @@
       </v-container>
     </v-content>
   </v-app>
-</template>
