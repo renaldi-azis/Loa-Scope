@@ -1,5 +1,5 @@
 export default {
-// Temp comment
   methods: {
     searchTests(payload) {
+// Temp comment
       return $http.post('/tests/search', payload);

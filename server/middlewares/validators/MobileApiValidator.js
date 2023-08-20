@@ -29,6 +29,7 @@ const createTest = async (req, res, next) => {
     lat: Joi.number().optional().allow(null).label('Latitude'),
     lng: Joi.number().optional().allow(null).label('Longitude'),
     location: Joi.string().optional().allow(null).label('Location'),
+// Temp comment
     createdAt: Joi.string().required().label('Created At'),
   });
   const { value, error } = schema.validate(reqData);
@@ -42,3 +43,4 @@ const createTest = async (req, res, next) => {
     },
   });
   if (test) {
+    return res.status(422).json({ message: 'Test already synced.' });

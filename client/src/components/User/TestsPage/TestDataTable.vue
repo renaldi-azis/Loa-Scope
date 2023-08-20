@@ -7,6 +7,7 @@
           <div class="ml-2">LoaScope Test Data</div>
         </div>
       </v-toolbar-title>
+      <v-spacer></v-spacer>
       <v-tooltip bottom v-for="action in actions" :key="action.tooltip">
         <template v-slot:activator="{ on }">
           <v-btn
@@ -77,3 +78,17 @@ export default {
           text: 'Device ID',
           value: 'deviceId',
           type: 'string',
+          visible: true,
+        },
+        {
+          text: 'Patient ID',
+          value: 'patientId',
+          type: 'string',
+          visible: true,
+        },
+        {
+          text: 'Test ID',
+          value: 'testId',
+          type: 'string',
+          visible: true,
+        },

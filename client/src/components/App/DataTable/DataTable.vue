@@ -24,3 +24,4 @@
         <column-menu v-model="tableColumns" />
       </div>
     </template>
+    <template v-slot:item.executedAt="{ item }">

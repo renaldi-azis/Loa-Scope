@@ -1,5 +1,6 @@
 import axios from 'axios';
 
+// Temp comment
 const $http = axios.create({
   baseURL: $config.API_BASE_URL,
   headers: {
@@ -12,5 +13,4 @@ $http.interceptors.request.use(
     const newConfig = { ...config };
     if ($helpers.isAuthenticated()) {
       newConfig.headers.common.Authorization = `Bearer ${$helpers.getApiToken()}`;
-// Temp comment
     }

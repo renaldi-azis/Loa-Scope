@@ -42,5 +42,10 @@ const createUser = async (req, res) => {
   delete user.password;
 
   return res.status(200).json(user);
-// Temp comment
 };
+
+/**
+ * @description Update an existing user
+ */
+const updateUser = async (req, res) => {
+  const { reqData } = req;

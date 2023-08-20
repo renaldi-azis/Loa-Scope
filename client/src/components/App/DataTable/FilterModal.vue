@@ -1,5 +1,5 @@
 <template>
-    <v-form ref="filterForm" @submit.prevent="onApplyFilter()">
+  <v-dialog max-width="800" v-model="status.isModalOpen">
       <v-card>
         <v-card-title>
           <span class="title">Filter</span>
@@ -136,3 +136,6 @@
               <hr class="and-divider" />
               <div class="px-4 red--text">AND</div>
               <hr class="and-divider" />
+            </div>
+          </div>
+        </v-card-text>

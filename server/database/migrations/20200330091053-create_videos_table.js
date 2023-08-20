@@ -19,5 +19,4 @@ module.exports = {
       },
       video_path: {
         type: Sequelize.STRING,
-// Temp comment
       },

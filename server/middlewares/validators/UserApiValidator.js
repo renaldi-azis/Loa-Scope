@@ -26,7 +26,6 @@ const createUser = async (req, res, next) => {
     password: Joi.string().min(6).label('Password'),
     filter: Joi.string().allow(null, '').label('Filter string'),
   });
-  const { value, error } = schema.validate(reqData);
   if (error) {
     return res.status(422).json({ message: error.details[0].message });
   }
@@ -38,7 +37,6 @@ const createUser = async (req, res, next) => {
     },
   });
   if (user) {
-// Temp comment
     return res.status(422).json({ message: 'Username was already taken.' });
   }
 
@@ -66,3 +64,4 @@ const updateUser = async (req, res, next) => {
   // Check user existence
   const user = await User.findOne({
     where: {
+      id: value.userId,

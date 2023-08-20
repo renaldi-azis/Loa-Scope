@@ -45,3 +45,4 @@ import UpdateUserModal from '@/components/Admin/UsersPage/UpdateUserModal.vue';
 
 export default {
   name: 'UsersPage',
+  mixins: [UserService],
