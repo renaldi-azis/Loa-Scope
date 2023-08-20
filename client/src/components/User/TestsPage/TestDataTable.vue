@@ -47,7 +47,6 @@ export default {
   components: {
     DataTable,
   },
-  data: () => ({
     status: {
       isLoading: false,
     },

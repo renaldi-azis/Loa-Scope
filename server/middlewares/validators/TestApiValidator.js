@@ -1,4 +1,3 @@
-/**
  * @description Test API Validator
  */
 
@@ -18,7 +17,6 @@ const searchTests = async (req, res, next) => {
     filters: Joi.array().allow(null).label('Filters'),
   });
   const { value, error } = schema.validate(reqData);
-// Temp comment
   if (error) {
     return res.status(422).json({ message: error.details[0].message });
   }

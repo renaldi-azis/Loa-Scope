@@ -11,7 +11,6 @@ const mutations = {
   setFilters(state, payload) {
     state.filters = payload;
   },
-// Temp comment
   setTests(state, payload) {
     state.tests = payload;
   },

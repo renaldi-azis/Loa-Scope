@@ -1,5 +1,6 @@
 <template>
   <v-dialog max-width="800" v-model="status.isModalOpen">
+    <v-form ref="filterForm" @submit.prevent="onApplyFilter()">
       <v-card>
         <v-card-title>
           <span class="title">Filter</span>
@@ -32,7 +33,6 @@
                       <div class="ml-2">
                         <v-select
                           label="Condition"
-                          :items="getColumnConditions(filter.column)"
                           :rules="getValidators('Condition', ['required'])"
                           v-model="filter.condition"
                           @change="onChangeCondition(groupIndex, filterIndex)"
