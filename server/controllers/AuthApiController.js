@@ -7,7 +7,6 @@ const jwt = require('jsonwebtoken');
 
 /**
  * @description Login
-// Temp comment
  */
 const login = async (req, res) => {
   let { user } = req;

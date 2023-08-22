@@ -21,3 +21,4 @@ const createTest = async (req, res) => {
     longitude: reqData.lng,
     location: reqData.location,
     executedAt: reqData.createdAt,
+  });

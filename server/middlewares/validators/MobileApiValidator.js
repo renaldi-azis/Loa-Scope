@@ -2,7 +2,6 @@
  * @description Mobile API Validator
  */
 
-/** Dependencies */
 const _ = require('lodash');
 const Joi = require('joi');
 
@@ -43,3 +42,4 @@ const createTest = async (req, res, next) => {
   });
   if (test) {
     return res.status(422).json({ message: 'Test already synced.' });
+  }

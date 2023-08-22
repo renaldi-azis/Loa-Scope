@@ -19,3 +19,4 @@ const login = async (req, res, next) => {
     username: Joi.string().required().label('Username'),
     password: Joi.string().required().label('Password'),
   });
+  const { value, error } = schema.validate(reqData);

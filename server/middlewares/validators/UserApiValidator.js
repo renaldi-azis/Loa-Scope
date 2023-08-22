@@ -67,3 +67,4 @@ const updateUser = async (req, res, next) => {
     where: {
       id: value.userId,
     },
+  });

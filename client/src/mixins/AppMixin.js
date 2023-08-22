@@ -13,7 +13,6 @@ const colorList = [
 
 export default {
   computed: {
-// Temp comment
     ...mapState('appStore', {
       appState: (state) => state,
     }),
@@ -36,3 +35,4 @@ export default {
     },
   },
   methods: {
+    getValidators(fieldLabel, rules) {

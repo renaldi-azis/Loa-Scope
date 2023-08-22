@@ -36,3 +36,4 @@ export default {
     prevPage: 'TEST_DATA_TABLE',
     videos: [],
     status: {
+      isLoading: false,

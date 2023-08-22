@@ -25,7 +25,6 @@
           </v-card-text>
           <v-card-actions>
             <v-btn
-              type="submit"
               large
               width="100%"
               color="primary"

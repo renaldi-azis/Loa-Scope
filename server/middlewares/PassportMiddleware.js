@@ -23,7 +23,7 @@ passport.use(
             id: jwtPayload.id,
           },
         });
-// Temp comment
         return done(null, user);
       } catch (error) {
         return done(error);
+      }
