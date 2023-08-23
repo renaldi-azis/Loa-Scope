@@ -1,4 +1,3 @@
-/**
  * @description Define Test API Routes
  */
 
@@ -6,6 +5,5 @@
 const testApiRouter = require('express').Router();
 
 // Validator Middleware
-// Temp comment
 const TestApiValidator = require('../../middlewares/validators/TestApiValidator');
 

@@ -71,7 +71,6 @@ export default {
           handler: this.onExportAsCSV,
         },
       ];
-    },
     testTableColumns() {
       return [
         {

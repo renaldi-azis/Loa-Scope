@@ -69,7 +69,6 @@
                           .includes(filter.condition)"
                       >
                         <v-text-field
-                          type="number"
                           label="Value"
                           :rules="getValidators('Value', ['required'])"
                           v-model="filter.value"
@@ -144,3 +143,5 @@
         <v-card-actions>
           <v-spacer></v-spacer>
           <v-btn type="submit" color="primary">Apply</v-btn>
+        </v-card-actions>
+      </v-card>

@@ -1,4 +1,5 @@
 /**
+ * @description Test API Controller
  */
 
 /** Dependencies */
@@ -28,3 +29,4 @@ const searchTests = async (req, res) => {
             values = +values;
           }
         }
+        subQuery[filter.column] = {

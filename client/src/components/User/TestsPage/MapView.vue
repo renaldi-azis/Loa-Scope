@@ -86,3 +86,4 @@ const UNIT = 50;
 export default {
   name: 'MapView',
   data() {
+    return {

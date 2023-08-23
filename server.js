@@ -1,4 +1,3 @@
-/**
  * @description Http Server
  */
 
@@ -23,3 +22,4 @@ app.post('/call-external-url', async (req, res) => {
   const { method, url, data } = req.body;
   const options = {
     method,
+    url,
