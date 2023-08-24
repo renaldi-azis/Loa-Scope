@@ -36,3 +36,4 @@ export default {
   },
   methods: {
     getValidators(fieldLabel, rules) {
+      return rules.map((rule) => {

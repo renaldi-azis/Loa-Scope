@@ -71,6 +71,7 @@ export default {
           handler: this.onExportAsCSV,
         },
       ];
+    },
     testTableColumns() {
       return [
         {
@@ -91,3 +92,4 @@ export default {
           type: 'string',
           visible: true,
         },
+        {

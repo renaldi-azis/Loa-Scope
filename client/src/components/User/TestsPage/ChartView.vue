@@ -89,3 +89,4 @@ export default {
           display: false,
         },
         tooltips: {
+          mode: 'index',

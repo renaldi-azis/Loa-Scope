@@ -3,6 +3,7 @@
  */
 
 /** Dependencies */
+// Temp comment
 const passport = require('passport');
 
 const { isAuthorizedMobile, isAdmin } = require('../../middlewares/AppMiddleware');
@@ -14,3 +15,4 @@ const apiRouter = require('express').Router();
 const authApiRouter = require('./auth');
 const mobileApiRouter = require('./mobile');
 const profileApiRouter = require('./profile');
+const testApiRouter = require('./tests');

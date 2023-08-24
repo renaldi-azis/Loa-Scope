@@ -69,6 +69,7 @@
                           .includes(filter.condition)"
                       >
                         <v-text-field
+                          type="number"
                           label="Value"
                           :rules="getValidators('Value', ['required'])"
                           v-model="filter.value"
@@ -108,7 +109,6 @@
                           :rules="getValidators('From', ['required'])"
                           v-model="filter.from"
                         />
-                      </div>
                       <div class="ml-2" v-if="['between'].includes(filter.condition)">
                         <v-date-picker2
                           label="To"
@@ -145,3 +145,6 @@
           <v-btn type="submit" color="primary">Apply</v-btn>
         </v-card-actions>
       </v-card>
+    </v-form>
+  </v-dialog>
+</template>

@@ -6,6 +6,7 @@
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint"
+  },
   "dependencies": {
     "axios": "^0.19.2",
     "chart.js": "^2.9.3",
@@ -18,3 +19,4 @@
     "toastr": "^2.1.4",
     "vue": "^2.6.11",
     "vue-chartjs": "^3.5.1",
+    "vue-loading-overlay": "^3.3.2",

@@ -5,6 +5,7 @@
     dark
     fixed
     clipped
+    left
     width="250"
     v-model="isMenuSidebarOpen"
   >
@@ -38,3 +39,4 @@ export default {
       get() {
         return this.appState.isMenuSidebarOpen;
       },
+      set(newValue) {

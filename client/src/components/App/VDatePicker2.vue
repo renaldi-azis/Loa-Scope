@@ -1,5 +1,6 @@
 <template>
   <v-menu
+    ref="menu"
     :close-on-content-click="false"
     :nudge-right="40"
     offset-y
@@ -23,3 +24,4 @@
       <v-spacer v-if="!required"></v-spacer>
       <v-btn text color="primary" @click="onReset" v-if="!required">Reset</v-btn>
     </v-date-picker>
+  </v-menu>

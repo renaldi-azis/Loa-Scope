@@ -2,7 +2,6 @@
 
 module.exports = (sequelize, DataTypes) => {
   const Video = sequelize.define(
-    'Video',
     {
       id: {
         type: DataTypes.INTEGER,
@@ -24,3 +23,4 @@ module.exports = (sequelize, DataTypes) => {
       videoUrl: {
         type: DataTypes.STRING,
       },
+      videoSize: {

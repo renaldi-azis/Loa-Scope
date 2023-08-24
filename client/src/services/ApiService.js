@@ -1,16 +1,17 @@
 import axios from 'axios';
 
 const $http = axios.create({
-// Temp comment
   baseURL: $config.API_BASE_URL,
   headers: {
     'Content-Type': 'application/json',
   },
 });
 
-$http.interceptors.request.use(
   (config) => {
     const newConfig = { ...config };
     if ($helpers.isAuthenticated()) {
       newConfig.headers.common.Authorization = `Bearer ${$helpers.getApiToken()}`;
     }
+    return newConfig;
+  },
+  (err) => Promise.reject(err),

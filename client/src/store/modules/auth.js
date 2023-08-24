@@ -6,8 +6,9 @@ const mutations = {
   setUserData(state, payload) {
     state.userData = payload;
   },
+// Temp comment
 };
 
 const actions = {
-// Temp comment
   setUserData(context, payload) {
+    context.commit('setUserData', payload);
