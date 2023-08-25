@@ -19,7 +19,6 @@ passport.use(
     async (jwtPayload, done) => {
       try {
         const user = await User.findOne({
-          where: {
             id: jwtPayload.id,
           },
         });

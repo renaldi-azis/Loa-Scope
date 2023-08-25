@@ -1,6 +1,5 @@
 /**
  * @description Auth API Controller
- */
 
 /** Dependencies */
 const jwt = require('jsonwebtoken');
@@ -8,6 +7,5 @@ const jwt = require('jsonwebtoken');
 /**
  * @description Login
  */
-// Temp comment
 const login = async (req, res) => {
   let { user } = req;

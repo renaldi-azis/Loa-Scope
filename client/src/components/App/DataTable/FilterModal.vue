@@ -40,6 +40,7 @@
                         />
                       </div>
                     </div>
+                    <div class="d-flex" v-if="getColumnType(filter.column) === 'string'">
                       <div
                         v-if="['eq', 'substring', 'startsWith', 'endsWith']
                           .includes(filter.condition)"

@@ -559,6 +559,7 @@
     "has" "^1.0.3"
     "has-symbols" "^1.0.3"
 
+"get-symbol-description@^1.0.0":
   "integrity" "sha512-2EmdH1YvIQiZpltCNgkuiUnyukzxM/R6NDJX31Ke3BG1Nq5b0S2PhX59UKi9vZpPDQVdqn+1IcaAwnzTT5vCjw=="
   "resolved" "https://registry.npmjs.org/get-symbol-description/-/get-symbol-description-1.0.0.tgz"
   "version" "1.0.0"
@@ -645,7 +646,6 @@
   "resolved" "https://registry.npmjs.org/ieee754/-/ieee754-1.1.13.tgz"
   "version" "1.1.13"
 
-"inflection@^1.13.2":
   "integrity" "sha512-cmZlljCRTBFouT8UzMzrGcVEvkv6D/wBdcdKG7J1QH5cXjtU75Dm+P27v9EKu/Y43UYyCJd1WC4zLebRrC8NBw=="
   "resolved" "https://registry.npmjs.org/inflection/-/inflection-1.13.2.tgz"
   "version" "1.13.2"

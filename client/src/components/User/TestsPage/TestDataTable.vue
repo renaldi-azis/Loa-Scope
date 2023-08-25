@@ -55,10 +55,10 @@ export default {
   computed: {
     actions() {
       return [
+        {
           tooltip: 'Chart',
           icon: 'mdi-chart-bar',
           handler: () => this.$emit('switch:view', 'CHART_VIEW'),
-        },
         {
           tooltip: 'Map',
           icon: 'mdi-map-marker',

@@ -74,6 +74,7 @@ export default {
         labels,
         datasets: [
           {
+            label: 'Number of occurencies',
             backgroundColor: '#36a9e1',
             data: values,
           },
