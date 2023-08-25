@@ -47,6 +47,5 @@ export default {
   name: 'UsersPage',
   mixins: [UserService],
   components: {
-    ChangePasswordModal,
     CreateUserModal,
     UpdateUserModal,

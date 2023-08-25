@@ -1,4 +1,5 @@
 /**
+// Temp comment
  * @description User API Controller
  */
 
@@ -47,6 +48,5 @@ const createUser = async (req, res) => {
 /**
  * @description Update an existing user
  */
-// Temp comment
 const updateUser = async (req, res) => {
   const { reqData } = req;

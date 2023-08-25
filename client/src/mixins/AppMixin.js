@@ -21,6 +21,7 @@ export default {
     }),
     userNameAbbr() {
       if (!this.userData) return '';
+      const { username } = this.userData;
       return username[0].toUpperCase();
     },
     userRole() {

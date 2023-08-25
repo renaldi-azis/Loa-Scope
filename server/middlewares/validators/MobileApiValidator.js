@@ -1,6 +1,5 @@
 /**
  * @description Mobile API Validator
- */
 
 /** Dependencies */
 const _ = require('lodash');
