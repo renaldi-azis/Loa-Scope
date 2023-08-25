@@ -90,3 +90,4 @@ export default {
         },
         tooltips: {
           mode: 'index',
+          intersect: false,

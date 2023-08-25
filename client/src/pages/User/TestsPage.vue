@@ -23,3 +23,5 @@
 </template>
 
 <script>
+import TestDataTable from '@/components/User/TestsPage/TestDataTable.vue';
+import VideoDataTable from '@/components/User/TestsPage/VideoDataTable.vue';

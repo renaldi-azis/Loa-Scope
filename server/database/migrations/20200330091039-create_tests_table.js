@@ -11,7 +11,6 @@ module.exports = {
       device_id: {
         type: Sequelize.STRING,
       },
-      patient_id: {
         type: Sequelize.STRING,
       },
       test_id: {

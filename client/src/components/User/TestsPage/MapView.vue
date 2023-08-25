@@ -88,3 +88,4 @@ export default {
   data() {
     return {
       mapCenter: {
+        lat: 3.891300262206071,

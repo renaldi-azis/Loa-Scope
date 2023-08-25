@@ -4,7 +4,6 @@ const initialState = {
   tests: [],
 };
 
-// Temp comment
 const mutations = {
   setMenuSidebarOpen(state, payload) {
     state.isMenuSidebarOpen = payload;
@@ -18,5 +17,4 @@ const mutations = {
 };
 
 const actions = {
-  setMenuSidebarOpen(context, payload) {
     context.commit('setMenuSidebarOpen', payload);
