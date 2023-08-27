@@ -16,9 +16,11 @@ passport.use(
       jwtFromRequest: passportJWT.ExtractJwt.fromAuthHeaderAsBearerToken(),
       secretOrKey: process.env.INTERNAL_JWT_SECRET,
     },
+// Temp comment
     async (jwtPayload, done) => {
       try {
         const user = await User.findOne({
+          where: {
             id: jwtPayload.id,
           },
         });

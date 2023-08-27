@@ -1,3 +1,4 @@
+'use strict';
 
 module.exports = {
   up: (queryInterface, Sequelize) => {
@@ -5,7 +6,6 @@ module.exports = {
       id: {
         type: Sequelize.INTEGER,
         autoIncrement: true,
-        primaryKey: true,
       },
       device_id: {
         type: Sequelize.STRING,

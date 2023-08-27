@@ -34,6 +34,7 @@ export default {
       menuItems: [],
     };
   },
+  computed: {
     isMenuSidebarOpen: {
       get() {
         return this.appState.isMenuSidebarOpen;

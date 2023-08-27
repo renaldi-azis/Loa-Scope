@@ -646,6 +646,7 @@
   "resolved" "https://registry.npmjs.org/ieee754/-/ieee754-1.1.13.tgz"
   "version" "1.1.13"
 
+"inflection@^1.13.2":
   "integrity" "sha512-cmZlljCRTBFouT8UzMzrGcVEvkv6D/wBdcdKG7J1QH5cXjtU75Dm+P27v9EKu/Y43UYyCJd1WC4zLebRrC8NBw=="
   "resolved" "https://registry.npmjs.org/inflection/-/inflection-1.13.2.tgz"
   "version" "1.13.2"

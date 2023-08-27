@@ -1,4 +1,4 @@
-// Temp comment
 export default {
   methods: {
+// Temp comment
     changePassword(payload) {

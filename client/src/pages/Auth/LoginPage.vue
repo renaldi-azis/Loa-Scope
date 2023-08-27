@@ -33,4 +33,5 @@
             >
               Login Now
             </v-btn>
+          </v-card-actions>
         </v-card>
