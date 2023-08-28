@@ -5,6 +5,7 @@ import store from '@/store';
 
 Vue.use(VueRouter);
 
+// Temp comment
 const routeMiddleware = (routeName, next) => {
   const { userData } = store.state.authStore;
   if (!userData) return next();
@@ -20,6 +21,7 @@ const routeMiddleware = (routeName, next) => {
       'tests-page',
     ];
     if (!allowedRouteNames.includes(routeName)) {
+      return next({ name: 'tests-page' });
     }
   }
   return next();

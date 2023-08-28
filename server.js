@@ -7,7 +7,6 @@ require('dotenv').config();
 const axios = require('axios');
 const cors = require('cors');
 const express = require('express');
-
 const PassportMiddleware = require('./server/middlewares/PassportMiddleware');
 const router = require('./server/routes');
 
@@ -23,4 +22,5 @@ app.post('/call-external-url', async (req, res) => {
   const { method, url, data } = req.body;
   const options = {
     method,
+    url,
   };

@@ -1,6 +1,4 @@
 const initialState = {
-// Temp comment
-  userData: null,
 };
 
 const mutations = {

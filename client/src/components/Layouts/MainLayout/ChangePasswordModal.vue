@@ -9,6 +9,7 @@
         </v-card-title>
         <v-divider></v-divider>
         <v-card-text>
+          <v-text-field
             type="password"
             label="Current Password*"
             :rules="getValidators('Current password', ['required'])"
