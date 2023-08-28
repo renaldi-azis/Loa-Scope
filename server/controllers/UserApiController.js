@@ -49,3 +49,4 @@ const createUser = async (req, res) => {
  */
 const updateUser = async (req, res) => {
   const { reqData } = req;
+  let { user } = req.entities;

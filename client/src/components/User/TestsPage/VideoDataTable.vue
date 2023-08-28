@@ -38,3 +38,4 @@ export default {
     status: {
       isLoading: false,
     },
+  }),

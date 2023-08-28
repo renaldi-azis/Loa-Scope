@@ -6,7 +6,6 @@
 const _ = require('lodash');
 const bcrypt = require('bcrypt');
 const Joi = require('joi');
-
 const { User } = require('../../database/models');
 
 /**
@@ -20,3 +19,4 @@ const login = async (req, res, next) => {
     password: Joi.string().required().label('Password'),
   });
   const { value, error } = schema.validate(reqData);
+  if (error) {

@@ -50,3 +50,4 @@ export default {
     ChangePasswordModal,
     CreateUserModal,
     UpdateUserModal,
+  },

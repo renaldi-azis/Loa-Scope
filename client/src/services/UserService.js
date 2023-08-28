@@ -3,8 +3,8 @@ export default {
     getUsers() {
       return $http.get('users');
     },
-// Temp comment
     createUser(payload) {
+// Temp comment
       return $http.post('users', payload);
     },
     updateUser(userId, payload) {

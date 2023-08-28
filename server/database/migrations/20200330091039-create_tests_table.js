@@ -6,12 +6,12 @@ module.exports = {
       id: {
         type: Sequelize.INTEGER,
         autoIncrement: true,
+        primaryKey: true,
       },
       device_id: {
         type: Sequelize.STRING,
       },
       patient_id: {
-        type: Sequelize.STRING,
       },
       test_id: {
         type: Sequelize.STRING,
@@ -22,3 +22,8 @@ module.exports = {
       longitude: {
         type: Sequelize.FLOAT,
       },
+      location: {
+        type: Sequelize.STRING,
+      },
+      total_worm_count: {
+        type: Sequelize.INTEGER,

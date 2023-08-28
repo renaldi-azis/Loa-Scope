@@ -19,7 +19,6 @@ module.exports = (sequelize, DataTypes) => {
         type: DataTypes.STRING,
       },
       latitude: {
-// Temp comment
         type: DataTypes.FLOAT,
       },
       longitude: {
@@ -27,3 +26,4 @@ module.exports = (sequelize, DataTypes) => {
       },
       location: {
         type: DataTypes.STRING,
+      },

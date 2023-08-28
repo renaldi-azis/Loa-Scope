@@ -9,6 +9,7 @@ module.exports = (sequelize, DataTypes) => {
         autoIncrement: true,
         primaryKey: true,
       },
+      username: {
         type: DataTypes.STRING,
         allowNull: false,
         unique: true,
@@ -16,6 +17,7 @@ module.exports = (sequelize, DataTypes) => {
       password: {
         type: DataTypes.STRING,
         allowNull: false,
+// Temp comment
       },
       role: {
         type: DataTypes.STRING,

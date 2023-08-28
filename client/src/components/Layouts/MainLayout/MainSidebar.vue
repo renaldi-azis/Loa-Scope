@@ -13,7 +13,6 @@
       <template v-for="(menuItem, menuIndex) in menuItems">
         <v-list-item
           :class="{'active': activeMainIndex === menuIndex}"
-          @click="onClickMenuItem($event, menuItem)"
           :key="menuItem.link"
           v-if="menuItem.show">
           <v-list-item-action>
@@ -40,3 +39,4 @@ export default {
         return this.appState.isMenuSidebarOpen;
       },
       set(newValue) {
+        this.$store.dispatch('appStore/setMenuSidebarOpen', newValue);
