@@ -53,7 +53,6 @@ const updateUser = async (req, res, next) => {
     ..._.pick(req.params, ['userId']),
     ..._.pick(req.body, ['filter']),
   };
-  // Validate request
   const schema = Joi.object({
     userId: Joi.number().min(1).label('User ID'),
     filter: Joi.string().allow(null, '').label('Filter string'),

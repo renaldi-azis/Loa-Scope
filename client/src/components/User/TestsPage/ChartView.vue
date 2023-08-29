@@ -40,7 +40,6 @@ const UNIT = 50;
 export default {
   name: 'ChartView',
   components: {
-    BarChart,
   },
   data() {
     return {

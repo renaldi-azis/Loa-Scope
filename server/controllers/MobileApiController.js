@@ -11,8 +11,6 @@ const { Test, Video } = require('../database/models');
  * @description Create Test
  */
 const createTest = async (req, res) => {
-  const { reqData } = req;
-// Temp comment
 
   const test = await Test.create({
     deviceId: reqData.deviceId,

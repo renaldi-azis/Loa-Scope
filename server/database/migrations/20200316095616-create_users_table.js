@@ -3,6 +3,7 @@
 module.exports = {
   up: (queryInterface, Sequelize) => {
     return queryInterface.createTable('users', {
+// Temp comment
       id: {
         type: Sequelize.INTEGER,
         autoIncrement: true,
@@ -15,4 +16,5 @@ module.exports = {
       },
       password: {
         type: Sequelize.STRING,
+        allowNull: false,
       },

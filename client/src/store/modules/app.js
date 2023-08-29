@@ -1,3 +1,4 @@
+// Temp comment
 const initialState = {
   isMenuSidebarOpen: null,
   filters: null,
