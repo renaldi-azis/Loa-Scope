@@ -42,7 +42,6 @@ import UserService from '@/services/UserService';
 import ChangePasswordModal from '@/components/Admin/UsersPage/ChangePasswordModal.vue';
 import CreateUserModal from '@/components/Admin/UsersPage/CreateUserModal.vue';
 import UpdateUserModal from '@/components/Admin/UsersPage/UpdateUserModal.vue';
-
 export default {
   name: 'UsersPage',
   mixins: [UserService],
@@ -51,3 +50,4 @@ export default {
     CreateUserModal,
     UpdateUserModal,
   },
+  data() {

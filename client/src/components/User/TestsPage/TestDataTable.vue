@@ -78,3 +78,5 @@ export default {
           text: 'Device ID',
           value: 'deviceId',
           type: 'string',
+          visible: true,
+        },

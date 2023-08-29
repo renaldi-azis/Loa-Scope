@@ -8,7 +8,6 @@ module.exports = {
         autoIncrement: true,
         primaryKey: true,
       },
-      device_id: {
         type: Sequelize.STRING,
       },
       patient_id: {

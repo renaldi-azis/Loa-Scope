@@ -40,6 +40,7 @@ const UNIT = 50;
 export default {
   name: 'ChartView',
   components: {
+    BarChart,
   },
   data() {
     return {
@@ -91,3 +92,4 @@ export default {
           mode: 'index',
           intersect: false,
           displayColors: false,
+          titleFontSize: 16,
