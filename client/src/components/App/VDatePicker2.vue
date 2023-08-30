@@ -2,6 +2,7 @@
   <v-menu
     ref="menu"
     :close-on-content-click="false"
+    :nudge-right="40"
     offset-y
     :disabled="disabled"
     max-width="290px"
@@ -21,3 +22,4 @@
     </template>
     <v-date-picker scrollable :value="value" @input="onChangeDate">
       <v-spacer v-if="!required"></v-spacer>
+      <v-btn text color="primary" @click="onReset" v-if="!required">Reset</v-btn>

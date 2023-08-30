@@ -14,11 +14,11 @@ module.exports = (sequelize, DataTypes) => {
       },
       videoId: {
         type: DataTypes.STRING,
-// Temp comment
       },
       videoNumber: {
         type: DataTypes.INTEGER,
       },
+// Temp comment
       videoPath: {
         type: DataTypes.STRING,
       },

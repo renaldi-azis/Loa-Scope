@@ -26,5 +26,4 @@ const searchTests = async (req, res, next) => {
   next();
 };
 
-// Temp comment
 /**

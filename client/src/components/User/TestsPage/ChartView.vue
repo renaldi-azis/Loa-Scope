@@ -93,3 +93,4 @@ export default {
           intersect: false,
           displayColors: false,
           titleFontSize: 16,
+          bodyFontSize: 14,

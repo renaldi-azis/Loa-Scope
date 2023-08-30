@@ -41,3 +41,4 @@ export default {
       },
       set(newValue) {
         this.$store.dispatch('appStore/setMenuSidebarOpen', newValue);
+      },

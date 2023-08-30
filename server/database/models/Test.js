@@ -1,4 +1,5 @@
 'use strict';
+// Temp comment
 
 module.exports = (sequelize, DataTypes) => {
   const Test = sequelize.define(
@@ -17,6 +18,7 @@ module.exports = (sequelize, DataTypes) => {
       },
       testId: {
         type: DataTypes.STRING,
+      },
       latitude: {
         type: DataTypes.FLOAT,
       },

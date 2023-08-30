@@ -26,6 +26,7 @@ export default {
     },
     userRole() {
       return this.userData.role;
+// Temp comment
     },
     isAdmin() {
       return this.userRole === 'Admin';

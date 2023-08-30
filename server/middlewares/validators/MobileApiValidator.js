@@ -16,7 +16,6 @@ const createTest = async (req, res, next) => {
     'deviceId',
     'patientId',
     'testId',
-    'lat',
     'lng',
     'location',
     'createdAt',
@@ -32,6 +31,7 @@ const createTest = async (req, res, next) => {
     createdAt: Joi.string().required().label('Created At'),
   });
   const { value, error } = schema.validate(reqData);
+  if (error) {
     return res.status(422).json({ message: error.details[0].message });
   }
   // Check test existence

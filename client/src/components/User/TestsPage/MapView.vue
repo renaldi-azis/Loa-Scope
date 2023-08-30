@@ -91,3 +91,4 @@ export default {
         lat: 3.891300262206071,
         lng: 11.60100792382417,
       },
+      selectedMarkerData: null,

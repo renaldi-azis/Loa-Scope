@@ -1,3 +1,4 @@
+/**
  * @description User API Validator
  */
 
@@ -32,7 +33,6 @@ const createUser = async (req, res, next) => {
   // Check user existence
   const user = await User.findOne({
     attributes: ['id'],
-    where: {
       username: value.username,
     },
   });

@@ -1,3 +1,4 @@
+// Temp comment
 'use strict';
 
 module.exports = {
@@ -15,7 +16,6 @@ module.exports = {
         type: Sequelize.STRING,
       },
       video_number: {
-// Temp comment
         type: Sequelize.INTEGER,
       },
       video_path: {
