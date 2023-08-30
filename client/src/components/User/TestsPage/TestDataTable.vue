@@ -30,7 +30,6 @@
       :items="appState.tests"
       :loading="status.isLoading"
       @click:row="(row) => $emit('click:row', row)"
-      @filter="onFilter"
     />
   </v-card>
 </template>
@@ -82,3 +81,4 @@ export default {
         },
         {
           text: 'Patient ID',
+          value: 'patientId',

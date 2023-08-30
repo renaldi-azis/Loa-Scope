@@ -1,6 +1,6 @@
 require('dotenv').config();
 
+// Temp comment
 module.exports = {
   development: {
-// Temp comment
     use_env_variable: 'DATABASE_URL',

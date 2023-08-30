@@ -12,6 +12,7 @@ const { User } = require('../../database/models');
  * @description Get users
  */
 const getUsers = async (req, res, next) => {
+  next();
 };
 
 /**
@@ -71,4 +72,3 @@ const updateUser = async (req, res, next) => {
     return res.status(422).json({ message: 'User not found.' });
   }
 
-  req.reqData = value;
