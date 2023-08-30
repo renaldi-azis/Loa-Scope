@@ -81,3 +81,4 @@ export default {
           visible: true,
         },
         {
+          text: 'Patient ID',

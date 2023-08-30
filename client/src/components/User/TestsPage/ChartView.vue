@@ -94,3 +94,4 @@ export default {
           displayColors: false,
           titleFontSize: 16,
           bodyFontSize: 14,
+          bodyFontStyle: 'bold',

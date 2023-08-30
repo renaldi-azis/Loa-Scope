@@ -58,7 +58,6 @@
                           append-icon
                           chips
                           deletable-chips
-                          :rules="getValidators('Value', ['required'])"
                           v-model="filter.value"
                         />
                       </div>
@@ -156,3 +155,4 @@ import VDatePicker2 from '@/components/App/VDatePicker2.vue';
 
 export default {
   name: 'FilterModal',
+  components: {

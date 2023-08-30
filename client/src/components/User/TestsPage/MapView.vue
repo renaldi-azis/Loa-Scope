@@ -37,7 +37,6 @@
           @idle="onMapIdle()"
         >
           <GmapCluster :max-zoom="5" :grid-size="50">
-            <GmapMarker
               :position="position"
               :clickable="true"
               @click="onClickMapMarker(position, index)"
@@ -92,3 +91,4 @@ export default {
         lng: 11.60100792382417,
       },
       selectedMarkerData: null,
+      minWormCount: 0,

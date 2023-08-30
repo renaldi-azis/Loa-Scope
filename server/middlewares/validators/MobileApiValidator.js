@@ -16,6 +16,7 @@ const createTest = async (req, res, next) => {
     'deviceId',
     'patientId',
     'testId',
+    'lat',
     'lng',
     'location',
     'createdAt',
@@ -46,3 +47,4 @@ const createTest = async (req, res, next) => {
 
   req.reqData = value;
   next();
+};

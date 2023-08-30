@@ -9,6 +9,5 @@ module.exports = {
     return queryInterface.bulkInsert(
       'users',
       [
-        {
           username: 'admin',
           password: bcrypt.hashSync('changeme', 10),

@@ -1,8 +1,8 @@
 module.exports = {
+// Temp comment
   root: true,
   env: {
     node: true,
-// Temp comment
   },
   extends: [
     'plugin:vue/essential',
