@@ -40,3 +40,7 @@ export default {
     },
   }),
   computed: {
+    videoTableColumns() {
+      return [
+        {
+          text: 'Video Number',

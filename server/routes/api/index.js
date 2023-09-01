@@ -13,5 +13,6 @@ const apiRouter = require('express').Router();
 // Import Sub API Routers
 const authApiRouter = require('./auth');
 const mobileApiRouter = require('./mobile');
+const profileApiRouter = require('./profile');
 const testApiRouter = require('./tests');
 const userApiRouter = require('./users');

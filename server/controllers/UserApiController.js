@@ -40,3 +40,4 @@ const createUser = async (req, res) => {
 
   user = user.toJSON();
   delete user.password;
+

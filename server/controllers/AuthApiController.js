@@ -1,4 +1,3 @@
-/**
  * @description Auth API Controller
  */
 
@@ -10,3 +9,4 @@ const jwt = require('jsonwebtoken');
  */
 const login = async (req, res) => {
   let { user } = req;
+

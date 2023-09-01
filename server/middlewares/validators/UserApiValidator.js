@@ -65,10 +65,10 @@ const updateUser = async (req, res, next) => {
   // Check user existence
   const user = await User.findOne({
     where: {
-      id: value.userId,
     },
   });
   if (!user) {
     return res.status(422).json({ message: 'User not found.' });
   }
 
+  req.reqData = value;

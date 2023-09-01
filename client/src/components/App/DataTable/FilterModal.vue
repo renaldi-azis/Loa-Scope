@@ -157,3 +157,5 @@ import VDatePicker2 from '@/components/App/VDatePicker2.vue';
 export default {
   name: 'FilterModal',
   components: {
+    VDatePicker2,
+  },

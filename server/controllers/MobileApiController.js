@@ -1,8 +1,8 @@
 /**
  * @description Mobile API Controller
+// Temp comment
  */
 
-// Temp comment
 /** Dependencies */
 const Joi = require('joi');
 

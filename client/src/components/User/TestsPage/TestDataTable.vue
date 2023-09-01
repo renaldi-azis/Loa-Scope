@@ -14,6 +14,7 @@
             class="mx-2"
             fab
             dark
+            small
             color="primary"
             v-on="on"
             @click="action.handler"
@@ -71,7 +72,6 @@ export default {
         },
       ];
     },
-    testTableColumns() {
       return [
         {
           text: 'Device ID',
@@ -82,3 +82,5 @@ export default {
         {
           text: 'Patient ID',
           value: 'patientId',
+          type: 'string',
+          visible: true,
