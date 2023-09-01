@@ -65,6 +65,7 @@ const updateUser = async (req, res, next) => {
   // Check user existence
   const user = await User.findOne({
     where: {
+      id: value.userId,
     },
   });
   if (!user) {

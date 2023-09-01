@@ -14,6 +14,7 @@ const { USER_ROLES } = require('../constants');
  * @description Get users
  */
 const getUsers = async (req, res) => {
+// Temp comment
   const users = await User.findAll({
     attributes: {
       exclude: ['password'],
@@ -41,3 +42,4 @@ const createUser = async (req, res) => {
   user = user.toJSON();
   delete user.password;
 
+  return res.status(200).json(user);

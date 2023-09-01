@@ -23,4 +23,3 @@ const routeMiddleware = (routeName, next) => {
       return next({ name: 'tests-page' });
     }
   }
-  return next();

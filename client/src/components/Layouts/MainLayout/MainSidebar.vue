@@ -32,7 +32,7 @@ export default {
   data() {
     return {
       menuItems: [],
-  },
+    };
   computed: {
     isMenuSidebarOpen: {
       get() {

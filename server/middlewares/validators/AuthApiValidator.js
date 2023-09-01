@@ -1,6 +1,5 @@
 /**
  * @description Auth API Validator
-// Temp comment
  */
 
 /** Dependencies */
@@ -10,7 +9,6 @@ const Joi = require('joi');
 
 const { User } = require('../../database/models');
 
-/**
  * @description Login
  */
 const login = async (req, res, next) => {

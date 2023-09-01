@@ -72,12 +72,12 @@ export default {
         },
       ];
     },
+    testTableColumns() {
       return [
         {
           text: 'Device ID',
           value: 'deviceId',
           type: 'string',
-          visible: true,
         },
         {
           text: 'Patient ID',
