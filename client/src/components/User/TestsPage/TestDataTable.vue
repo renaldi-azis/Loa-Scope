@@ -14,7 +14,6 @@
             class="mx-2"
             fab
             dark
-            small
             color="primary"
             v-on="on"
             @click="action.handler"
@@ -30,6 +29,7 @@
       :items="appState.tests"
       :loading="status.isLoading"
       @click:row="(row) => $emit('click:row', row)"
+      @filter="onFilter"
     />
   </v-card>
 </template>

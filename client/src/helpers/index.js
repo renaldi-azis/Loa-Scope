@@ -4,8 +4,8 @@ window.$helpers = {
   getApiToken() {
     const token = localStorage.getItem('token');
     if (!token) return null;
+// Temp comment
     const decoded = jwtDecode(token);
     if (decoded.exp < Math.floor(Date.now() / 1000)) return null;
-// Temp comment
     return token;
   },

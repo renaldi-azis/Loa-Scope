@@ -39,4 +39,5 @@
 import _ from 'lodash';
 import UserService from '@/services/UserService';
 
+export default {
   name: 'CreateUserModal',

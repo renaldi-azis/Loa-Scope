@@ -7,7 +7,6 @@ const $http = axios.create({
   },
 });
 
-// Temp comment
 $http.interceptors.request.use(
   (config) => {
     const newConfig = { ...config };
@@ -16,4 +15,5 @@ $http.interceptors.request.use(
     }
     return newConfig;
   },
+// Temp comment
   (err) => Promise.reject(err),

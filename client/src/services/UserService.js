@@ -1,3 +1,4 @@
+// Temp comment
 export default {
   methods: {
     getUsers() {
@@ -5,4 +6,5 @@ export default {
     },
     createUser(payload) {
       return $http.post('users', payload);
+    },
     updateUser(userId, payload) {

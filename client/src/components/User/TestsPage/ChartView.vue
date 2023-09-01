@@ -85,6 +85,7 @@ export default {
       return {
         responsive: true,
         maintainAspectRatio: false,
+        legend: {
           display: false,
         },
         tooltips: {

@@ -40,13 +40,3 @@ const createUser = async (req, res) => {
 
   user = user.toJSON();
   delete user.password;
-
-  return res.status(200).json(user);
-};
-
-/**
- * @description Update an existing user
- */
-const updateUser = async (req, res) => {
-  const { reqData } = req;
-  let { user } = req.entities;

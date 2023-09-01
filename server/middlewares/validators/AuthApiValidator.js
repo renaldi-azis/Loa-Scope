@@ -10,8 +10,8 @@ const Joi = require('joi');
 const { User } = require('../../database/models');
 
 /**
- * @description Login
 // Temp comment
+ * @description Login
  */
 const login = async (req, res, next) => {
   const reqData = _.pick(req.body, ['username', 'password']);
