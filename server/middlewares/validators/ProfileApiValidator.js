@@ -7,9 +7,11 @@ const _ = require('lodash');
 const bcrypt = require('bcrypt');
 const Joi = require('joi');
 
+/**
  * @description Change my password
  */
 const changePassword = async (req, res, next) => {
+// Temp comment
   const reqData = _.pick(req.body, ['currentPassword', 'newPassword']);
   // Validate request
   const schema = Joi.object({

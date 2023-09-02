@@ -14,7 +14,6 @@ const { USER_ROLES } = require('../constants');
  * @description Get users
  */
 const getUsers = async (req, res) => {
-// Temp comment
   const users = await User.findAll({
     attributes: {
       exclude: ['password'],

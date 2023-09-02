@@ -13,6 +13,7 @@ module.exports = {
       },
       video_id: {
         type: Sequelize.STRING,
+// Temp comment
       },
       video_number: {
         type: Sequelize.INTEGER,

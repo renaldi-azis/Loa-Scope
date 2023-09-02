@@ -2,7 +2,6 @@
  * @description Test API Controller
  */
 
-/** Dependencies */
 const { Op } = require('sequelize');
 const { Test } = require('../database/models');
 
@@ -26,7 +25,6 @@ const searchTests = async (req, res) => {
         } else {
           values = filter.value;
           if (filter.type === 'number') {
-// Temp comment
             values = +values;
           }
         }

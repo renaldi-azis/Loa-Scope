@@ -3,6 +3,7 @@
     <v-form ref="createUserForm" @submit.prevent="onCreateUser()">
       <v-card>
         <v-card-title class="grey lighten-3">
+          <span class="title">Create User</span>
           <v-spacer />
           <v-icon @click="closeModal">close</v-icon>
         </v-card-title>
@@ -19,7 +20,6 @@
             :rules="getValidators('Password', ['required', 'min-len:6'])"
             v-model="user.password"
           />
-          <v-text-field
             label="Filter"
             v-model="user.filter"
           />

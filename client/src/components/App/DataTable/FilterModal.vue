@@ -78,7 +78,6 @@
                       <div v-if="['between'].includes(filter.condition)">
                         <v-text-field
                           type="number"
-                          label="From"
                           :rules="getValidators('From', ['required'])"
                           v-model="filter.from"
                         />

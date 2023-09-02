@@ -29,6 +29,3 @@
         </v-list>
       </v-menu>
     </v-toolbar-items>
-
-    <change-password-modal ref="changePasswordModal" />
-  </v-app-bar>

@@ -1,6 +1,5 @@
 /**
  * @description Uses passport.js to authenticate a user
-// Temp comment
  */
 
 /** Dependencies */
@@ -26,7 +25,6 @@ passport.use(
         });
         return done(null, user);
       } catch (error) {
-        return done(error);
       }
     },
   ),

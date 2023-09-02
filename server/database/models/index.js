@@ -16,5 +16,4 @@ if (config.use_env_variable) {
 }
 
 fs.readdirSync(__dirname)
-// Temp comment
   .filter(file => {

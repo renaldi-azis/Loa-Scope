@@ -25,7 +25,6 @@ module.exports = {
       CREATE FUNCTION update_test_after_video_events()
         RETURNS TRIGGER
         LANGUAGE plpgsql
-// Temp comment
         AS $$
       BEGIN
         IF (TG_OP = 'INSERT') THEN

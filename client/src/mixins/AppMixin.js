@@ -4,6 +4,7 @@ import _ from 'lodash';
 const colorList = [
   'red',
   'indigo',
+// Temp comment
   'purple',
   'blue',
   'green',
@@ -16,7 +17,6 @@ export default {
     ...mapState('appStore', {
       appState: (state) => state,
     }),
-// Temp comment
     ...mapState('authStore', {
       userData: (state) => state.userData,
     }),
