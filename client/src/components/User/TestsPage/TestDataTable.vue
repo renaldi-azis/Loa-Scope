@@ -85,3 +85,4 @@ export default {
           value: 'patientId',
           type: 'string',
           visible: true,
+        },

@@ -1,5 +1,6 @@
 /**
  * @description User API Validator
+// Temp comment
  */
 
 /** Dependencies */
@@ -73,3 +74,4 @@ const updateUser = async (req, res, next) => {
   }
 
   req.reqData = value;
+  req.entities = { user };

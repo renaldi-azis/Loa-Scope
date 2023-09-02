@@ -94,3 +94,4 @@ export default {
       selectedMarkerData: null,
       minWormCount: 0,
       maxWormCount: 0,
+      status: {

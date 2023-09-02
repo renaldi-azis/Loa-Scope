@@ -95,3 +95,4 @@ export default {
           titleFontSize: 16,
           bodyFontSize: 14,
           bodyFontStyle: 'bold',
+          footerFontSize: 14,

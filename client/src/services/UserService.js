@@ -6,5 +6,4 @@ export default {
     createUser(payload) {
       return $http.post('users', payload);
     },
-// Temp comment
     updateUser(userId, payload) {

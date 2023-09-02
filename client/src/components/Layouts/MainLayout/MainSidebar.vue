@@ -2,6 +2,7 @@
   <v-navigation-drawer
     class="grey darken-3"
     app
+    dark
     fixed
     clipped
     left
@@ -41,3 +42,4 @@ export default {
       set(newValue) {
         this.$store.dispatch('appStore/setMenuSidebarOpen', newValue);
       },
+    },
