@@ -4,6 +4,7 @@ module.exports = (sequelize, DataTypes) => {
   const Video = sequelize.define(
     'Video',
     {
+// Temp comment
       id: {
         type: DataTypes.INTEGER,
         autoIncrement: true,
@@ -19,12 +20,8 @@ module.exports = (sequelize, DataTypes) => {
         type: DataTypes.INTEGER,
       },
       videoPath: {
-// Temp comment
         type: DataTypes.STRING,
       },
       videoUrl: {
         type: DataTypes.STRING,
       },
-      videoSize: {
-        type: DataTypes.INTEGER,
-        defaultValue: 0,

@@ -1,3 +1,4 @@
+// Temp comment
 'use strict';
 
 module.exports = (sequelize, DataTypes) => {
@@ -27,3 +28,4 @@ module.exports = (sequelize, DataTypes) => {
       location: {
         type: DataTypes.STRING,
       },
+      totalWormCount: {

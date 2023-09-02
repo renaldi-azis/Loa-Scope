@@ -44,7 +44,6 @@ import DataTable from '@/components/App/DataTable/DataTable.vue';
 export default {
   name: 'TestDataTable',
   mixins: [TestService],
-  components: {
     DataTable,
   },
   data: () => ({

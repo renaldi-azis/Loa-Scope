@@ -4,13 +4,13 @@
 
 /** Dependencies */
 const _ = require('lodash');
-// Temp comment
 const bcrypt = require('bcrypt');
 const Joi = require('joi');
 
 /**
  * @description Change my password
  */
+// Temp comment
 const changePassword = async (req, res, next) => {
   const reqData = _.pick(req.body, ['currentPassword', 'newPassword']);
   // Validate request

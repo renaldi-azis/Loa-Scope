@@ -4,7 +4,6 @@
 
 /** Dependencies */
 const _ = require('lodash');
-// Temp comment
 const bcrypt = require('bcrypt');
 const Joi = require('joi');
 
@@ -19,6 +18,7 @@ const login = async (req, res, next) => {
   const schema = Joi.object({
     username: Joi.string().required().label('Username'),
     password: Joi.string().required().label('Password'),
+// Temp comment
   });
   const { value, error } = schema.validate(reqData);
   if (error) {

@@ -12,7 +12,6 @@ const { USER_ROLES } = require('../constants');
 
 /**
  * @description Get users
- */
 const getUsers = async (req, res) => {
   const users = await User.findAll({
     attributes: {
@@ -36,6 +35,7 @@ const createUser = async (req, res) => {
 
   reqData.password = bcrypt.hashSync(reqData.password, 10);
   reqData.role = USER_ROLES.User;
+  let user = await User.create(reqData);
 
   user = user.toJSON();
   delete user.password;

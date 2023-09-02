@@ -5,6 +5,7 @@
         <v-card-title class="grey lighten-3">
           <span class="title">Change Password</span>
           <v-spacer />
+          <v-icon @click="closeModal">close</v-icon>
         </v-card-title>
         <v-divider></v-divider>
         <v-card-text>
@@ -29,7 +30,6 @@
         </v-card-text>
         <v-divider></v-divider>
         <v-card-actions>
-          <v-spacer></v-spacer>
           <v-btn type="submit" color="primary" :loading="status.isSaving">Save</v-btn>
         </v-card-actions>
       </v-card>

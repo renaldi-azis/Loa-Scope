@@ -5,7 +5,6 @@ module.exports = {
   },
   extends: [
     'plugin:vue/essential',
-// Temp comment
     '@vue/airbnb',
   ],
   parserOptions: {

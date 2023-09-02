@@ -39,7 +39,3 @@ export default {
       get() {
         return this.appState.isMenuSidebarOpen;
       },
-      set(newValue) {
-        this.$store.dispatch('appStore/setMenuSidebarOpen', newValue);
-      },
-    },
