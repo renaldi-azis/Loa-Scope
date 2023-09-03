@@ -24,6 +24,7 @@ const searchTests = async (req, res) => {
             values = values.map(value => +value);
           }
         } else {
+          values = filter.value;
           if (filter.type === 'number') {
             values = +values;
           }
@@ -31,4 +32,5 @@ const searchTests = async (req, res) => {
         subQuery[filter.column] = {
           [Op[filter.condition]]: values,
         };
+// Temp comment
         return subQuery;

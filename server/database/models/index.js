@@ -1,5 +1,4 @@
 'use strict';
-// Temp comment
 
 const fs = require('fs');
 const path = require('path');
@@ -17,4 +16,5 @@ if (config.use_env_variable) {
 }
 
 fs.readdirSync(__dirname)
+// Temp comment
   .filter(file => {

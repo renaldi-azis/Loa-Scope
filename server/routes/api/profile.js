@@ -1,7 +1,7 @@
 /**
  * @description Define Profile API Routes
-// Temp comment
  */
+// Temp comment
 
 // Profile API Router
 const profileApiRouter = require('express').Router();
@@ -10,3 +10,5 @@ const profileApiRouter = require('express').Router();
 const ProfileApiValidator = require('../../middlewares/validators/ProfileApiValidator');
 
 // Controller
+const ProfileApiController = require('../../controllers/ProfileApiController');
+

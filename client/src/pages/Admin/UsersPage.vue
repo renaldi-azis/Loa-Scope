@@ -54,3 +54,4 @@ export default {
   data() {
     return {
       users: [],
+      status: {

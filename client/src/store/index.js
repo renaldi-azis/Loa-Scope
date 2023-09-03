@@ -9,7 +9,6 @@ Vue.use(Vuex);
 
 const state = {
   //
-};
 
 const mutations = {
   //
@@ -18,3 +17,4 @@ const mutations = {
 const actions = {
   //
 };
+

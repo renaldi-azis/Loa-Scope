@@ -160,3 +160,7 @@ export default {
     VDatePicker2,
   },
   props: ['columns'],
+  data: () => ({
+    filterGroups: [
+      [
+        {

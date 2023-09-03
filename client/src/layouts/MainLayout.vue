@@ -12,3 +12,4 @@
   </v-app>
 </template>
 
+<script>

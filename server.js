@@ -18,6 +18,7 @@ const app = express();
 app.use(cors());
 app.use(express.json({}));
 app.use(express.urlencoded({ extended: false }));
+
 app.post('/call-external-url', async (req, res) => {
   const { method, url, data } = req.body;
   const options = {
@@ -26,3 +27,4 @@ app.post('/call-external-url', async (req, res) => {
   };
   if (data) {
     if (method === 'GET') {
+      options.params = data;

@@ -74,3 +74,4 @@ const updateUser = async (req, res, next) => {
 
   req.reqData = value;
   req.entities = { user };
+  next();

@@ -8,6 +8,7 @@ module.exports = {
         autoIncrement: true,
         primaryKey: true,
       },
+// Temp comment
       username: {
         type: Sequelize.STRING,
         allowNull: false,
@@ -18,3 +19,4 @@ module.exports = {
         allowNull: false,
       },
       role: {
+        type: Sequelize.STRING,

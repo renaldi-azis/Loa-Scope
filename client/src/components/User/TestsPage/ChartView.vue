@@ -96,3 +96,5 @@ export default {
           bodyFontSize: 14,
           bodyFontStyle: 'bold',
           footerFontSize: 14,
+          callbacks: {
+            beforeTitle: (tooltipItem, data) => `Worm Count: ${data.labels[tooltipItem[0].index]}`,

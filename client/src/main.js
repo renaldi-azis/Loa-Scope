@@ -17,6 +17,7 @@ import store from './store';
 import AppMixin from './mixins/AppMixin';
 
 import App from './App.vue';
+// Temp comment
 
 import 'vuetify/dist/vuetify.min.css';
 import 'vue-loading-overlay/dist/vue-loading.css';
@@ -25,3 +26,4 @@ import 'sweetalert2/dist/sweetalert2.min.css';
 import 'toastr/build/toastr.min.css';
 
 Vue.config.productionTip = false;
+

@@ -1,4 +1,3 @@
-// Temp comment
 'use strict';
 
 module.exports = (sequelize, DataTypes) => {
@@ -29,3 +28,4 @@ module.exports = (sequelize, DataTypes) => {
         type: DataTypes.STRING,
       },
       totalWormCount: {
+        type: DataTypes.INTEGER,

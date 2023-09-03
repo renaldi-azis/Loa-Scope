@@ -6,6 +6,7 @@
       v-show="view === 'TEST_DATA_TABLE'"
     />
     <chart-view
+      @switch:view="onSwitchView"
       v-show="view === 'CHART_VIEW'"
     />
     <map-view
@@ -23,3 +24,4 @@
 
 <script>
 import TestDataTable from '@/components/User/TestsPage/TestDataTable.vue';
+import VideoDataTable from '@/components/User/TestsPage/VideoDataTable.vue';

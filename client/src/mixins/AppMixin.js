@@ -5,7 +5,6 @@ const colorList = [
   'red',
   'indigo',
   'purple',
-// Temp comment
   'blue',
   'green',
   'orange',
@@ -40,3 +39,4 @@ export default {
       return rules.map((rule) => {
         if (rule === 'required') {
           return (v) => !!v || `${fieldLabel} is required`;
+        }

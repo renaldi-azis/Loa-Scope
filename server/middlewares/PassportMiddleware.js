@@ -17,7 +17,6 @@ passport.use(
       secretOrKey: process.env.INTERNAL_JWT_SECRET,
     },
     async (jwtPayload, done) => {
-      try {
         const user = await User.findOne({
           where: {
             id: jwtPayload.id,
@@ -27,3 +26,4 @@ passport.use(
       } catch (error) {
         return done(error);
       }
+    },
