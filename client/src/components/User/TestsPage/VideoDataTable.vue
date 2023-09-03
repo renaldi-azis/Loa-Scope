@@ -20,6 +20,7 @@
     </v-data-table>
     <video-modal ref="videoModal" />
   </v-card>
+</template>
 
 <script>
 import TestService from '@/services/TestService';
@@ -43,3 +44,4 @@ export default {
       return [
         {
           text: 'Video Number',
+          value: 'videoNumber',

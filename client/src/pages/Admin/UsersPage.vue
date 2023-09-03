@@ -55,3 +55,4 @@ export default {
     return {
       users: [],
       status: {
+        isLoading: false,

@@ -45,3 +45,4 @@ const createUser = async (req, res) => {
 };
 
 /**
+ * @description Update an existing user

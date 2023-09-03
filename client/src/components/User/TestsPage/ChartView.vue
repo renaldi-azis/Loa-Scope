@@ -98,3 +98,4 @@ export default {
           footerFontSize: 14,
           callbacks: {
             beforeTitle: (tooltipItem, data) => `Worm Count: ${data.labels[tooltipItem[0].index]}`,
+            title: () => '',

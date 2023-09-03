@@ -1,6 +1,7 @@
 {
   "name": "cellscope_web",
   "version": "1.0.0",
+  "description": "Cellscope Web",
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
@@ -15,3 +16,4 @@
     "cors": "^2.8.5",
     "dotenv": "^16.0.1",
     "express": "^4.18.1",
+    "faker": "^6.6.6",

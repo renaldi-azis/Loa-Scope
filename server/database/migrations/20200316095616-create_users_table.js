@@ -1,4 +1,5 @@
 'use strict';
+// Temp comment
 
 module.exports = {
   up: (queryInterface, Sequelize) => {
@@ -8,7 +9,6 @@ module.exports = {
         autoIncrement: true,
         primaryKey: true,
       },
-// Temp comment
       username: {
         type: Sequelize.STRING,
         allowNull: false,

@@ -54,7 +54,6 @@
           </div>
           <p>Patient ID: {{ selectedMarkerData.patientId }}</p>
           <p>Test ID: {{ selectedMarkerData.testId }}</p>
-          <p>Worm Count: {{ selectedMarkerData.totalWormCount }}</p>
           <p>
             Video Count: {{ selectedMarkerData.videoCount }}
             <a
@@ -96,3 +95,5 @@ export default {
       maxWormCount: 0,
       status: {
         isLoading: true,
+      },
+    };

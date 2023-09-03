@@ -18,3 +18,4 @@
           color="primary"
           v-model="column.visible"
         />
+      </v-list-item>

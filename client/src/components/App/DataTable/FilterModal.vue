@@ -164,3 +164,5 @@ export default {
     filterGroups: [
       [
         {
+          column: '',
+          condition: '',

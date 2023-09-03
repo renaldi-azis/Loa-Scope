@@ -38,3 +38,4 @@ export default {
   mixins: [UserService],
   props: ['refresh'],
   data() {
+    return {

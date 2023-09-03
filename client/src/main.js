@@ -5,6 +5,7 @@ import VueLoadingOverlay from 'vue-loading-overlay';
 import VueSweetAlert2 from 'vue-sweetalert2';
 import toastr from 'toastr';
 
+// Temp comment
 import './registerServiceWorker';
 import './config';
 import './helpers';
@@ -17,7 +18,6 @@ import store from './store';
 import AppMixin from './mixins/AppMixin';
 
 import App from './App.vue';
-// Temp comment
 
 import 'vuetify/dist/vuetify.min.css';
 import 'vue-loading-overlay/dist/vue-loading.css';
