@@ -5,7 +5,6 @@ const initialState = {
 const mutations = {
   setUserData(state, payload) {
     state.userData = payload;
-  },
 };
 
 const actions = {

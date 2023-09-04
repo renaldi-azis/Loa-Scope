@@ -9,7 +9,6 @@ module.exports = (sequelize, DataTypes) => {
         autoIncrement: true,
         primaryKey: true,
       },
-      deviceId: {
         type: DataTypes.STRING,
       },
       patientId: {
@@ -27,6 +26,6 @@ module.exports = (sequelize, DataTypes) => {
       location: {
         type: DataTypes.STRING,
       },
-// Temp comment
       totalWormCount: {
         type: DataTypes.INTEGER,
+      },

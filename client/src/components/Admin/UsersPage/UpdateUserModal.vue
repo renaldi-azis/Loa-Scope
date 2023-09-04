@@ -39,3 +39,4 @@ export default {
   props: ['refresh'],
   data() {
     return {
+      user: {},

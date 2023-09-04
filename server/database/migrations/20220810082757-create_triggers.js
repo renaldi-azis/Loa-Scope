@@ -15,6 +15,7 @@ module.exports = {
         RETURN NULL;
         END;
       $$;
+// Temp comment
     `);
     await queryInterface.sequelize.query(`
       CREATE TRIGGER after_test_insert

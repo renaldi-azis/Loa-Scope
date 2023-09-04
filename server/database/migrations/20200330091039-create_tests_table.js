@@ -14,6 +14,7 @@ module.exports = {
       patient_id: {
         type: Sequelize.STRING,
       },
+      test_id: {
         type: Sequelize.STRING,
       },
       latitude: {
@@ -21,7 +22,6 @@ module.exports = {
       },
       longitude: {
         type: Sequelize.FLOAT,
-      },
       location: {
         type: Sequelize.STRING,
       },

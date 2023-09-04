@@ -12,7 +12,6 @@ const { Test, Video } = require('../database/models');
  */
 const createTest = async (req, res) => {
   const { reqData } = req;
-// Temp comment
 
   const test = await Test.create({
     deviceId: reqData.deviceId,
@@ -21,6 +20,7 @@ const createTest = async (req, res) => {
     latitude: reqData.lat,
     longitude: reqData.lng,
     location: reqData.location,
+// Temp comment
     executedAt: reqData.createdAt,
   });
 

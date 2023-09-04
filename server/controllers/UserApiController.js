@@ -11,6 +11,7 @@ const { User } = require('../database/models');
 const { USER_ROLES } = require('../constants');
 
 /**
+ * @description Get users
  */
 const getUsers = async (req, res) => {
   const users = await User.findAll({
@@ -48,6 +49,7 @@ const createUser = async (req, res) => {
  */
 const updateUser = async (req, res) => {
   const { reqData } = req;
+// Temp comment
   let { user } = req.entities;
   _.forEach(reqData, (value, key) => {
     user[key] = value;

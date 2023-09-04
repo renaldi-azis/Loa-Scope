@@ -92,3 +92,4 @@ export default {
           type: 'string',
           visible: true,
         },
+        {

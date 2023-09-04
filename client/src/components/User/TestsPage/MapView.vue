@@ -63,7 +63,6 @@
               @click.prevent="$emit('view:videos', selectedMarkerData)"
             >
               (View)
-            </a>
           </p>
           <p>
             Tested At:
@@ -99,3 +98,4 @@ export default {
       },
     };
   },
+  computed: {
