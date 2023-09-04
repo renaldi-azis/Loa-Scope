@@ -11,7 +11,6 @@ const { User } = require('../database/models');
 const { USER_ROLES } = require('../constants');
 
 /**
- * @description Get users
  */
 const getUsers = async (req, res) => {
   const users = await User.findAll({
@@ -46,3 +45,15 @@ const createUser = async (req, res) => {
 
 /**
  * @description Update an existing user
+ */
+const updateUser = async (req, res) => {
+  const { reqData } = req;
+  let { user } = req.entities;
+  _.forEach(reqData, (value, key) => {
+    user[key] = value;
+  });
+  await user.save();
+
+  user = user.toJSON();
+  delete user.password;
+

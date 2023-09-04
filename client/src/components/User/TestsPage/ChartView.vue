@@ -25,7 +25,6 @@
       <bar-chart
         :chart-data="chartData"
         :options="chartOptions"
-        style="height: 400px;"
       />
     </v-card-text>
   </v-card>
@@ -99,3 +98,5 @@ export default {
           callbacks: {
             beforeTitle: (tooltipItem, data) => `Worm Count: ${data.labels[tooltipItem[0].index]}`,
             title: () => '',
+            afterTitle: (tooltipItem, data) => `Number of occurencies: ${data.datasets[0].data[tooltipItem[0].index]}`,
+            label: () => '',

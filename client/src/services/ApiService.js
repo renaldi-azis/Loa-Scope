@@ -6,7 +6,6 @@ const $http = axios.create({
     'Content-Type': 'application/json',
   },
 });
-
 $http.interceptors.request.use(
   (config) => {
     const newConfig = { ...config };
@@ -16,3 +15,4 @@ $http.interceptors.request.use(
     return newConfig;
   },
   (err) => Promise.reject(err),
+);

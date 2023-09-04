@@ -1,5 +1,6 @@
 import { mapState } from 'vuex';
 import _ from 'lodash';
+
 const colorList = [
   'red',
   'indigo',
@@ -39,3 +40,4 @@ export default {
         if (rule === 'required') {
           return (v) => !!v || `${fieldLabel} is required`;
         }
+        if (rule === 'email') {

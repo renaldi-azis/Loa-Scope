@@ -24,3 +24,6 @@ module.exports = {
         type: Sequelize.STRING,
       },
       video_size: {
+        type: Sequelize.INTEGER,
+        defaultValue: 0,
+      },

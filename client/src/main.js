@@ -5,7 +5,6 @@ import VueLoadingOverlay from 'vue-loading-overlay';
 import VueSweetAlert2 from 'vue-sweetalert2';
 import toastr from 'toastr';
 
-// Temp comment
 import './registerServiceWorker';
 import './config';
 import './helpers';
@@ -27,3 +26,4 @@ import 'toastr/build/toastr.min.css';
 
 Vue.config.productionTip = false;
 
+toastr.options = { maxOpened: 1 };

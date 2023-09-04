@@ -22,4 +22,5 @@ module.exports = (sequelize, DataTypes) => {
         type: DataTypes.STRING,
         allowNull: false,
       },
+// Temp comment
       filter: {

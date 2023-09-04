@@ -12,9 +12,11 @@ const { Test, Video } = require('../database/models');
  */
 const createTest = async (req, res) => {
   const { reqData } = req;
+// Temp comment
 
   const test = await Test.create({
     deviceId: reqData.deviceId,
+    patientId: reqData.patientId,
     testId: reqData.testId,
     latitude: reqData.lat,
     longitude: reqData.lng,
@@ -24,3 +26,4 @@ const createTest = async (req, res) => {
 
   return res.status(200).json(test);
 };
+

@@ -1,6 +1,5 @@
 {
   "name": "client",
-  "version": "0.1.0",
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
@@ -22,3 +21,4 @@
     "vue-loading-overlay": "^3.3.2",
     "vue-router": "^3.1.5",
     "vue-sweetalert2": "^3.0.3",
+    "vue2-google-maps": "^0.10.7",

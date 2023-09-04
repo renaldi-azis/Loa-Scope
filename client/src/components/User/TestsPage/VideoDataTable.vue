@@ -43,5 +43,4 @@ export default {
     videoTableColumns() {
       return [
         {
-          text: 'Video Number',
           value: 'videoNumber',

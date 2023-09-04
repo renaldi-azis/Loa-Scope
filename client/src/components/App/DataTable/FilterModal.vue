@@ -26,7 +26,6 @@
                           label="Column"
                           :items="columns"
                           :rules="getValidators('Column', ['required'])"
-                          v-model="filter.column"
                           @change="onChangeColumn(groupIndex, filterIndex)"
                         />
                       </div>
@@ -166,3 +165,6 @@ export default {
         {
           column: '',
           condition: '',
+          value: '',
+        },
+      ],

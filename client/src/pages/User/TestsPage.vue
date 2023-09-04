@@ -1,7 +1,6 @@
 <template>
   <div class="fill-width">
     <test-data-table
-      @switch:view="onSwitchView"
       @click:row="(row) => $refs.videoDataTable.load(row, 'TEST_DATA_TABLE')"
       v-show="view === 'TEST_DATA_TABLE'"
     />
@@ -25,3 +24,4 @@
 <script>
 import TestDataTable from '@/components/User/TestsPage/TestDataTable.vue';
 import VideoDataTable from '@/components/User/TestsPage/VideoDataTable.vue';
+import ChartView from '@/components/User/TestsPage/ChartView.vue';

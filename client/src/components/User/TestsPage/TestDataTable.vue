@@ -90,3 +90,5 @@ export default {
           text: 'Test ID',
           value: 'testId',
           type: 'string',
+          visible: true,
+        },
