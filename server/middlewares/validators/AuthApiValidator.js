@@ -6,7 +6,6 @@
 const _ = require('lodash');
 const bcrypt = require('bcrypt');
 const Joi = require('joi');
-
 const { User } = require('../../database/models');
 
 /**
@@ -23,3 +22,4 @@ const login = async (req, res, next) => {
   if (error) {
     return res.status(422).json({ message: error.details[0].message });
   }
+  // Check user existence

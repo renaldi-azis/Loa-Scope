@@ -169,3 +169,6 @@ export default {
           value: '',
         },
       ],
+    ],
+    status: {
+      isModalOpen: false,

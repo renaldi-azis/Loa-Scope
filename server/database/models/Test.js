@@ -6,7 +6,6 @@ module.exports = (sequelize, DataTypes) => {
     {
       id: {
         type: DataTypes.INTEGER,
-// Temp comment
         autoIncrement: true,
         primaryKey: true,
       },
@@ -24,7 +23,6 @@ module.exports = (sequelize, DataTypes) => {
       },
       longitude: {
         type: DataTypes.FLOAT,
-      },
       location: {
         type: DataTypes.STRING,
       },

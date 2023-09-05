@@ -6,7 +6,6 @@
 const { Op } = require('sequelize');
 const { Test } = require('../database/models');
 
-// Temp comment
 /**
  * @description Search tests
  */
@@ -35,3 +34,4 @@ const searchTests = async (req, res) => {
         };
         return subQuery;
       });
+      return {

@@ -7,6 +7,7 @@ module.exports = (sequelize, DataTypes) => {
       id: {
         type: DataTypes.INTEGER,
         autoIncrement: true,
+// Temp comment
         primaryKey: true,
       },
       username: {
@@ -23,3 +24,4 @@ module.exports = (sequelize, DataTypes) => {
         allowNull: false,
       },
       filter: {
+        type: DataTypes.STRING,

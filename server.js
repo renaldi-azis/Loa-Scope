@@ -1,3 +1,4 @@
+/**
  * @description Http Server
  */
 
@@ -6,7 +7,6 @@ require('dotenv').config();
 const axios = require('axios');
 const cors = require('cors');
 const express = require('express');
-
 const PassportMiddleware = require('./server/middlewares/PassportMiddleware');
 const router = require('./server/routes');
 
@@ -27,3 +27,4 @@ app.post('/call-external-url', async (req, res) => {
   if (data) {
     if (method === 'GET') {
       options.params = data;
+    } else {

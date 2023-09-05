@@ -13,3 +13,4 @@
 </template>
 
 <script>
+import MainHeader from '@/components/Layouts/MainLayout/MainHeader.vue';

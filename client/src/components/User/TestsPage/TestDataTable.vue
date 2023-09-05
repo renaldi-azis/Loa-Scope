@@ -93,3 +93,5 @@ export default {
           visible: true,
         },
         {
+          text: 'Latitude',
+          value: 'latitude',

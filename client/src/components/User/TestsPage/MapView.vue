@@ -14,7 +14,6 @@
         <div>
           <v-select
             label="Greater than"
-            :items="wormCountTicks"
             v-model="minWormCount"
             @change="selectedMarkerData = null"
           />
@@ -95,3 +94,5 @@ export default {
       minWormCount: 0,
       maxWormCount: 0,
       status: {
+        isLoading: true,
+      },

@@ -21,7 +21,6 @@ const getUsers = async (req, res) => {
     where: {
       id: {
         [Op.ne]: req.user.id,
-// Temp comment
       },
     },
   });
@@ -53,7 +52,6 @@ const updateUser = async (req, res) => {
   let { user } = req.entities;
   _.forEach(reqData, (value, key) => {
     user[key] = value;
-  });
   await user.save();
 
   user = user.toJSON();

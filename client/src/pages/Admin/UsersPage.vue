@@ -57,3 +57,4 @@ export default {
       status: {
         isLoading: false,
         isDeleting: false,
+      },

@@ -1,6 +1,6 @@
 'use strict';
 
-module.exports = {
+  up: (queryInterface, Sequelize) => {
     return queryInterface.createTable('tests', {
       id: {
         type: Sequelize.INTEGER,
@@ -27,3 +27,4 @@ module.exports = {
       },
       total_worm_count: {
         type: Sequelize.INTEGER,
+        defaultValue: 0,

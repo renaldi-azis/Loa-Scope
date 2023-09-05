@@ -1,5 +1,6 @@
 /**
  * @description Auth API Controller
+ */
 
 /** Dependencies */
 const jwt = require('jsonwebtoken');
@@ -10,3 +11,4 @@ const jwt = require('jsonwebtoken');
 const login = async (req, res) => {
   let { user } = req;
 
+  const payload = { id: user.id };

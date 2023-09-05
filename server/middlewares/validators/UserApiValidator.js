@@ -48,6 +48,7 @@ const createUser = async (req, res, next) => {
 /**
  * @description Update an existing user
  */
+const updateUser = async (req, res, next) => {
   const reqData = {
     ..._.pick(req.params, ['userId']),
     ..._.pick(req.body, ['filter']),
@@ -76,4 +77,4 @@ const createUser = async (req, res, next) => {
   next();
 };
 
-/**
+ * @description Delete an existing user
