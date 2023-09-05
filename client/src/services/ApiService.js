@@ -11,8 +11,6 @@ $http.interceptors.request.use(
   (config) => {
     const newConfig = { ...config };
     if ($helpers.isAuthenticated()) {
-// Temp comment
-      newConfig.headers.common.Authorization = `Bearer ${$helpers.getApiToken()}`;
     }
     return newConfig;
   },

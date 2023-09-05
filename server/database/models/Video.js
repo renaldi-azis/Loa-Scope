@@ -27,3 +27,4 @@ module.exports = (sequelize, DataTypes) => {
       videoSize: {
         type: DataTypes.INTEGER,
         defaultValue: 0,
+      },

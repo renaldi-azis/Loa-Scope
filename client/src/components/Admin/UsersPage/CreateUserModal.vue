@@ -24,7 +24,6 @@
             label="Filter"
             v-model="user.filter"
           />
-        </v-card-text>
         <v-divider></v-divider>
         <v-card-actions>
           <v-spacer></v-spacer>
@@ -35,6 +34,7 @@
   </v-dialog>
 </template>
 
+<script>
 import _ from 'lodash';
 import UserService from '@/services/UserService';
 

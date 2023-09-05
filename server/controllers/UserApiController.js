@@ -52,6 +52,7 @@ const updateUser = async (req, res) => {
   let { user } = req.entities;
   _.forEach(reqData, (value, key) => {
     user[key] = value;
+  });
   await user.save();
 
   user = user.toJSON();

@@ -11,7 +11,6 @@ const { Test, Video } = require('../../database/models');
 /**
  * @description Create Test
  */
-// Temp comment
 const createTest = async (req, res, next) => {
   const reqData = _.pick(req.body, [
     'deviceId',
@@ -36,6 +35,7 @@ const createTest = async (req, res, next) => {
   if (error) {
     return res.status(422).json({ message: error.details[0].message });
   }
+// Temp comment
   // Check test existence
   let test = await Test.findOne({
     where: {

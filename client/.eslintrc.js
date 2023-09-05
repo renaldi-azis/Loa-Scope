@@ -9,4 +9,5 @@ module.exports = {
   ],
   parserOptions: {
     parser: 'babel-eslint',
+// Temp comment
   },

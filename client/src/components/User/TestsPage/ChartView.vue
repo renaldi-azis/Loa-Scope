@@ -92,7 +92,6 @@ export default {
           mode: 'index',
           intersect: false,
           displayColors: false,
-          titleFontSize: 16,
           bodyFontSize: 14,
           bodyFontStyle: 'bold',
           footerFontSize: 14,

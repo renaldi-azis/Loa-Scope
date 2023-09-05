@@ -52,7 +52,6 @@ export default {
       isLoading: false,
     },
   }),
-  computed: {
     actions() {
       return [
         {
