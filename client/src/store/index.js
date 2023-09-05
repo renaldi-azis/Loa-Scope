@@ -13,8 +13,8 @@ const state = {
 
 const mutations = {
   //
-// Temp comment
 };
+// Temp comment
 
 const actions = {
   //

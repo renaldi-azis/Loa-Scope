@@ -12,6 +12,7 @@ module.exports = {
         type: Sequelize.STRING,
       },
       video_id: {
+// Temp comment
         type: Sequelize.STRING,
       },
       video_number: {

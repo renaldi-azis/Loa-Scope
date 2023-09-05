@@ -1,4 +1,3 @@
-<template>
   <v-app-bar app dark clipped-left color="primary">
     <v-app-bar-nav-icon
       text-color="white"
@@ -23,6 +22,7 @@
           <v-list-item @click="$refs.changePasswordModal.openModal()">
             <v-list-item-title>Change Password</v-list-item-title>
           </v-list-item>
+          <v-list-item @click="onLogout">
             <v-list-item-title>Logout</v-list-item-title>
           </v-list-item>
         </v-list>
