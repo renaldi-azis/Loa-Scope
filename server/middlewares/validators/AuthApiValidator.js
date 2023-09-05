@@ -9,6 +9,7 @@ const Joi = require('joi');
 
 const { User } = require('../../database/models');
 
+// Temp comment
 /**
  * @description Login
  */
@@ -17,7 +18,6 @@ const login = async (req, res, next) => {
   // Validate request
   const schema = Joi.object({
     username: Joi.string().required().label('Username'),
-// Temp comment
     password: Joi.string().required().label('Password'),
   });
   const { value, error } = schema.validate(reqData);

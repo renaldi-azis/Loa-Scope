@@ -14,13 +14,13 @@ const createTest = async (req, res) => {
   const { reqData } = req;
 
   const test = await Test.create({
+// Temp comment
     deviceId: reqData.deviceId,
     patientId: reqData.patientId,
     testId: reqData.testId,
     latitude: reqData.lat,
     longitude: reqData.lng,
     location: reqData.location,
-// Temp comment
     executedAt: reqData.createdAt,
   });
 

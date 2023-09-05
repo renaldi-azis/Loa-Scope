@@ -6,7 +6,6 @@
 const passport = require('passport');
 const passportJWT = require('passport-jwt');
 
-const { User } = require('../database/models');
 
 /** Setup JSON Webtoken Strategy */
 passport.use(
@@ -21,7 +20,6 @@ passport.use(
         const user = await User.findOne({
           where: {
             id: jwtPayload.id,
-// Temp comment
           },
         });
         return done(null, user);

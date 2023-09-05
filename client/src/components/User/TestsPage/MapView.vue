@@ -63,6 +63,7 @@
               @click.prevent="$emit('view:videos', selectedMarkerData)"
             >
               (View)
+            </a>
           </p>
           <p>
             Tested At:
@@ -94,8 +95,3 @@ export default {
       minWormCount: 0,
       maxWormCount: 0,
       status: {
-        isLoading: true,
-      },
-    };
-  },
-  computed: {

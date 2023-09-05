@@ -1,6 +1,5 @@
 /**
  * @description Define Test API Routes
-// Temp comment
  */
 
 // Test API Router
