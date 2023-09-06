@@ -3,6 +3,7 @@
  */
 
 /** Dependencies */
+const _ = require('lodash');
 const Joi = require('joi');
 
 const { User } = require('../../database/models');
@@ -75,7 +76,6 @@ const updateUser = async (req, res, next) => {
   req.entities = { user };
   next();
 };
-
 /**
  * @description Delete an existing user
  */

@@ -27,6 +27,7 @@ import TestService from '@/services/TestService';
 import VideoModal from './VideoModal.vue';
 
 export default {
+  name: 'VideoDataTable',
   mixins: [TestService],
   components: {
     VideoModal,
@@ -44,4 +45,3 @@ export default {
         {
           text: 'Video Number',
           value: 'videoNumber',
-        },

@@ -1,5 +1,4 @@
 module.exports = {
-// Temp comment
   root: true,
   env: {
     node: true,
@@ -9,6 +8,5 @@ module.exports = {
     '@vue/airbnb',
   ],
   parserOptions: {
-    parser: 'babel-eslint',
   },
   rules: {

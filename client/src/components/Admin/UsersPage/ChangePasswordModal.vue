@@ -13,7 +13,6 @@
             label="Username*"
             :value="user.username"
             readonly
-          />
           <v-text-field
             type="password"
             label="New Password*"
@@ -37,6 +36,7 @@
   </v-dialog>
 </template>
 
+<script>
 import _ from 'lodash';
 import UserService from '@/services/UserService';
 

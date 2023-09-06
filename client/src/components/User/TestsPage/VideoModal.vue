@@ -31,7 +31,6 @@
 <script>
 export default {
   name: 'VideoModal',
-  data() {
     return {
       videoUrl: '',
       status: {
