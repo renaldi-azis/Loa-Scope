@@ -30,3 +30,4 @@
   </v-data-table>
 </template>
 
+<script>

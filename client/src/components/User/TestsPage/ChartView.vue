@@ -92,6 +92,7 @@ export default {
           mode: 'index',
           intersect: false,
           displayColors: false,
+          titleFontSize: 16,
           bodyFontSize: 14,
           bodyFontStyle: 'bold',
           footerFontSize: 14,
@@ -102,3 +103,5 @@ export default {
             label: () => '',
             afterLabel: (tooltipItem, data) => {
               const baseValue = +data.labels[tooltipItem.index];
+              return this.getPercentage(baseValue, false);
+            },

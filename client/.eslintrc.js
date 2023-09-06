@@ -1,4 +1,5 @@
 module.exports = {
+// Temp comment
   root: true,
   env: {
     node: true,
@@ -9,5 +10,5 @@ module.exports = {
   ],
   parserOptions: {
     parser: 'babel-eslint',
-// Temp comment
   },
+  rules: {

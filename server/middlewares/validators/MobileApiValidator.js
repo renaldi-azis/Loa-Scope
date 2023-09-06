@@ -23,7 +23,6 @@ const createTest = async (req, res, next) => {
   ]);
   // Validate request
   const schema = Joi.object({
-    deviceId: Joi.string().required().label('Device ID'),
     patientId: Joi.string().required().label('Patient ID'),
     testId: Joi.string().required().label('Test ID'),
     lat: Joi.number().optional().allow(null).label('Latitude'),
@@ -35,7 +34,6 @@ const createTest = async (req, res, next) => {
   if (error) {
     return res.status(422).json({ message: error.details[0].message });
   }
-// Temp comment
   // Check test existence
   let test = await Test.findOne({
     where: {
@@ -53,3 +51,4 @@ const createTest = async (req, res, next) => {
 /**
  * @description Create Video
  */
+const createVideo = async (req, res, next) => {

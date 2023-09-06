@@ -3,7 +3,6 @@
  */
 
 /** Dependencies */
-const _ = require('lodash');
 const Joi = require('joi');
 
 const { User } = require('../../database/models');
@@ -30,6 +29,7 @@ const createUser = async (req, res, next) => {
   if (error) {
     return res.status(422).json({ message: error.details[0].message });
   }
+  // Check user existence
   const user = await User.findOne({
     attributes: ['id'],
     where: {
@@ -78,3 +78,4 @@ const updateUser = async (req, res, next) => {
 
 /**
  * @description Delete an existing user
+ */

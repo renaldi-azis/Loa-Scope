@@ -5,6 +5,7 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint"
   },
   "dependencies": {
     "axios": "^0.19.2",
@@ -22,3 +23,4 @@
     "vue-router": "^3.1.5",
     "vue-sweetalert2": "^3.0.3",
     "vue2-google-maps": "^0.10.7",
+    "vuetify": "^2.2.32",

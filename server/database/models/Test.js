@@ -1,6 +1,5 @@
 'use strict';
 
-// Temp comment
 module.exports = (sequelize, DataTypes) => {
   const Test = sequelize.define(
     'Test',
@@ -30,4 +29,6 @@ module.exports = (sequelize, DataTypes) => {
       },
       totalWormCount: {
         type: DataTypes.INTEGER,
+// Temp comment
       },
+      videoCount: {

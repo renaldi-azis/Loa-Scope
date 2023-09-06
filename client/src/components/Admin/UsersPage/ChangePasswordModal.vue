@@ -37,9 +37,9 @@
   </v-dialog>
 </template>
 
-<script>
 import _ from 'lodash';
 import UserService from '@/services/UserService';
 
 export default {
   name: 'ChangePasswordModal',
+  mixins: [UserService],

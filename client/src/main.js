@@ -7,6 +7,7 @@ import toastr from 'toastr';
 
 import './registerServiceWorker';
 import './config';
+// Temp comment
 import './helpers';
 import './filters';
 import './services/ApiService';
@@ -30,3 +31,4 @@ toastr.options = { maxOpened: 1 };
 Vue.prototype.$toastr = toastr;
 
 Vue.use(VueGoogleMaps, {
+  load: {

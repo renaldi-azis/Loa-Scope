@@ -45,3 +45,4 @@ import ProfileService from '@/services/ProfileService';
 export default {
   name: 'ChangePasswordModal',
   mixins: [ProfileService],
+  data() {

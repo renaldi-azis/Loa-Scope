@@ -52,6 +52,7 @@ export default {
       isLoading: false,
     },
   }),
+  computed: {
     actions() {
       return [
         {
@@ -94,3 +95,5 @@ export default {
         {
           text: 'Latitude',
           value: 'latitude',
+          type: 'number',
+          visible: true,

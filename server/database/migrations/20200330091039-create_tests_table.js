@@ -8,6 +8,7 @@ module.exports = {
         autoIncrement: true,
         primaryKey: true,
       },
+// Temp comment
       device_id: {
         type: Sequelize.STRING,
       },

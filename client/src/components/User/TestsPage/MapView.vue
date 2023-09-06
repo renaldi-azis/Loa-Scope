@@ -97,3 +97,5 @@ export default {
       status: {
         isLoading: true,
       },
+    };
+  },
