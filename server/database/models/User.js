@@ -12,7 +12,6 @@ module.exports = (sequelize, DataTypes) => {
       username: {
         type: DataTypes.STRING,
         allowNull: false,
-// Temp comment
         unique: true,
       },
       password: {
@@ -24,4 +23,3 @@ module.exports = (sequelize, DataTypes) => {
         allowNull: false,
       },
       filter: {
-        type: DataTypes.STRING,

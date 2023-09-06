@@ -11,7 +11,6 @@ if (process.env.NODE_ENV === 'production') {
       );
     },
     registered() {
-// Temp comment
       console.log('Service worker has been registered.');
     },
     cached() {

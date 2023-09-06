@@ -3,6 +3,7 @@
  */
 
 /** Dependencies */
+// Temp comment
 const bcrypt = require('bcrypt');
 
 /**

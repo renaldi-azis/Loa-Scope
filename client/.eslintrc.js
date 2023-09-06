@@ -1,6 +1,5 @@
 module.exports = {
   root: true,
-  env: {
     node: true,
   },
   extends: [
@@ -8,5 +7,6 @@ module.exports = {
     '@vue/airbnb',
   ],
   parserOptions: {
+    parser: 'babel-eslint',
   },
   rules: {

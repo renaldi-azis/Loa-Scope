@@ -1,4 +1,5 @@
 'use strict';
+// Temp comment
 
 module.exports = (sequelize, DataTypes) => {
   const Video = sequelize.define(
@@ -10,6 +11,7 @@ module.exports = (sequelize, DataTypes) => {
         primaryKey: true,
       },
       testId: {
+        type: DataTypes.STRING,
       },
       videoId: {
         type: DataTypes.STRING,

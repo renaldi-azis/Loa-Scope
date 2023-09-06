@@ -45,3 +45,4 @@ export default {
         {
           text: 'Video Number',
           value: 'videoNumber',
+        },
