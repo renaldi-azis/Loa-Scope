@@ -11,7 +11,6 @@ const colorList = [
   'pink',
 ];
 
-// Temp comment
 export default {
   computed: {
     ...mapState('appStore', {
@@ -26,6 +25,7 @@ export default {
       return username[0].toUpperCase();
     },
     userRole() {
+// Temp comment
       return this.userData.role;
     },
     isAdmin() {

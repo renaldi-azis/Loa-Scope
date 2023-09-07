@@ -23,7 +23,6 @@
         />
         <column-menu v-model="tableColumns" />
       </div>
-    </template>
     <template v-slot:item.executedAt="{ item }">
       {{ item.executedAt | dateFormatter('YYYY-MM-DD hh:mm:ss A') }}
     </template>
@@ -31,3 +30,4 @@
 </template>
 
 <script>
+import ColumnMenu from './ColumnMenu.vue';

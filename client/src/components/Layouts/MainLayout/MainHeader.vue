@@ -35,3 +35,4 @@
 </template>
 
 <script>
+import ChangePasswordModal from './ChangePasswordModal.vue';

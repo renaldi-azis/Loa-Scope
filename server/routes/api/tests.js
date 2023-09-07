@@ -3,11 +3,9 @@
  */
 
 // Test API Router
-// Temp comment
 const testApiRouter = require('express').Router();
 
 // Validator Middleware
 const TestApiValidator = require('../../middlewares/validators/TestApiValidator');
-
 // Controller
 const TestApiController = require('../../controllers/TestApiController');

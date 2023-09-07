@@ -1,3 +1,4 @@
+import axios from 'axios';
 
 const $http = axios.create({
   baseURL: $config.API_BASE_URL,
@@ -16,3 +17,5 @@ $http.interceptors.request.use(
   },
   (err) => Promise.reject(err),
 );
+
+$http.interceptors.response.use(

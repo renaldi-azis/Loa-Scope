@@ -46,3 +46,4 @@ export default {
   name: 'ChangePasswordModal',
   mixins: [ProfileService],
   data() {
+    return {

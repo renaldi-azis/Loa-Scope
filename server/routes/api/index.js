@@ -1,6 +1,5 @@
 /**
  * @description Define API Routes
- */
 
 /** Dependencies */
 const passport = require('passport');
@@ -17,3 +16,4 @@ const profileApiRouter = require('./profile');
 const testApiRouter = require('./tests');
 const userApiRouter = require('./users');
 
+// Add API Routes

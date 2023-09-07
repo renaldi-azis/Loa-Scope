@@ -44,3 +44,4 @@ import UserService from '@/services/UserService';
 export default {
   name: 'ChangePasswordModal',
   mixins: [UserService],
+  data() {

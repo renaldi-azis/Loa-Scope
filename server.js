@@ -12,9 +12,9 @@ const PassportMiddleware = require('./server/middlewares/PassportMiddleware');
 const router = require('./server/routes');
 
 /** Instantiate Server */
-const app = express();
 
 /** Load routes */
+app.use(cors());
 app.use(express.json({}));
 app.use(express.urlencoded({ extended: false }));
 
@@ -28,3 +28,4 @@ app.post('/call-external-url', async (req, res) => {
     if (method === 'GET') {
       options.params = data;
     } else {
+      options.body = data;

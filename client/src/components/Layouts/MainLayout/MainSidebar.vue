@@ -22,7 +22,6 @@
           <v-list-item-title>{{ menuItem.title }}</v-list-item-title>
         </v-list-item>
       </template>
-    </v-list>
   </v-navigation-drawer>
 </template>
 
@@ -48,3 +47,4 @@ export default {
     },
   },
   created() {
+    this.menuItems = [

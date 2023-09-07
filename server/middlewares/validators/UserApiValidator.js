@@ -12,7 +12,6 @@ const { User } = require('../../database/models');
  * @description Get users
  */
 const getUsers = async (req, res, next) => {
-// Temp comment
   next();
 };
 
@@ -81,3 +80,5 @@ const updateUser = async (req, res, next) => {
 /**
  * @description Delete an existing user
  */
+const deleteUser = async (req, res, next) => {
+  const reqData = _.pick(req.params, ['userId']);

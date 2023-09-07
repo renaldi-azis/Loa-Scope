@@ -40,3 +40,4 @@
   </v-row>
 </template>
 
+<script>

@@ -97,3 +97,5 @@ export default {
           value: 'latitude',
           type: 'number',
           visible: true,
+        },
+        {

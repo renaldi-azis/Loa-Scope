@@ -1,5 +1,5 @@
 import { Bar, mixins } from 'vue-chartjs';
 
 export default {
-  mixins: [mixins.reactiveProp],
+  extends: Bar,
   props: ['chartData', 'options'],

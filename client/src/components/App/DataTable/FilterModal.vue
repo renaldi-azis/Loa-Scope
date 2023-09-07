@@ -2,6 +2,7 @@
   <v-dialog max-width="800" v-model="status.isModalOpen">
     <v-form ref="filterForm" @submit.prevent="onApplyFilter()">
       <v-card>
+        <v-card-title>
           <span class="title">Filter</span>
           <v-spacer />
           <v-icon @click="closeModal">close</v-icon>
@@ -82,7 +83,6 @@
                           v-model="filter.from"
                         />
                       </div>
-                      <div class="ml-2" v-if="['between'].includes(filter.condition)">
                         <v-text-field
                           type="number"
                           label="To"
@@ -174,3 +174,6 @@ export default {
     },
   }),
   methods: {
+    openModal() {
+      if (this.appState.filters && this.appState.filters.length > 0) {
+        this.filterGroups = _.cloneDeep(this.appState.filters);

@@ -3,6 +3,7 @@
 module.exports = (sequelize, DataTypes) => {
   const Test = sequelize.define(
     'Test',
+// Temp comment
     {
       id: {
         type: DataTypes.INTEGER,
@@ -20,6 +21,7 @@ module.exports = (sequelize, DataTypes) => {
       },
       latitude: {
         type: DataTypes.FLOAT,
+      },
       longitude: {
         type: DataTypes.FLOAT,
       },

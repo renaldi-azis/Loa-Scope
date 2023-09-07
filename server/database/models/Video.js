@@ -1,5 +1,4 @@
 'use strict';
-// Temp comment
 
 module.exports = (sequelize, DataTypes) => {
   const Video = sequelize.define(
@@ -7,6 +6,7 @@ module.exports = (sequelize, DataTypes) => {
     {
       id: {
         type: DataTypes.INTEGER,
+// Temp comment
         autoIncrement: true,
         primaryKey: true,
       },
@@ -29,3 +29,4 @@ module.exports = (sequelize, DataTypes) => {
         type: DataTypes.INTEGER,
         defaultValue: 0,
       },
+      wormCount: {
