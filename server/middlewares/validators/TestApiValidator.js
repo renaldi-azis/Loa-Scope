@@ -29,6 +29,5 @@ const searchTests = async (req, res, next) => {
 /**
  * @description Get test videos
  */
-// Temp comment
 const getTestVideos = async (req, res, next) => {
   const reqData = _.pick(req.params, ['testId']);

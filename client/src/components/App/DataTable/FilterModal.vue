@@ -83,6 +83,7 @@
                           v-model="filter.from"
                         />
                       </div>
+                      <div class="ml-2" v-if="['between'].includes(filter.condition)">
                         <v-text-field
                           type="number"
                           label="To"
@@ -177,3 +178,5 @@ export default {
     openModal() {
       if (this.appState.filters && this.appState.filters.length > 0) {
         this.filterGroups = _.cloneDeep(this.appState.filters);
+      } else {
+        this.filterGroups = [

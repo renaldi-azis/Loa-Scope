@@ -41,3 +41,4 @@
 </template>
 
 <script>
+import AuthService from '@/services/AuthService';

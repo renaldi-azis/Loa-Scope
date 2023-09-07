@@ -3,6 +3,7 @@ module.exports = {
   env: {
     node: true,
   },
+// Temp comment
   extends: [
     'plugin:vue/essential',
     '@vue/airbnb',

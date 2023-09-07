@@ -35,7 +35,6 @@ const createUser = async (req, res) => {
   const { reqData } = req;
 
   reqData.password = bcrypt.hashSync(reqData.password, 10);
-  reqData.role = USER_ROLES.User;
   let user = await User.create(reqData);
 
   user = user.toJSON();

@@ -19,7 +19,6 @@ const createTest = async (req, res, next) => {
     'lat',
     'lng',
     'location',
-    'createdAt',
   ]);
   // Validate request
   const schema = Joi.object({
@@ -40,7 +39,6 @@ const createTest = async (req, res, next) => {
     where: {
       testId: value.testId,
     },
-// Temp comment
   });
   if (test) {
     return res.status(422).json({ message: 'Test already synced.' });
@@ -55,3 +53,4 @@ const createTest = async (req, res, next) => {
  */
 const createVideo = async (req, res, next) => {
   const reqData = _.pick(req.body, [
+    'testId',

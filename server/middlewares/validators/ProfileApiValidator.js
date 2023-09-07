@@ -7,6 +7,7 @@ const _ = require('lodash');
 const bcrypt = require('bcrypt');
 const Joi = require('joi');
 
+/**
  * @description Change my password
  */
 const changePassword = async (req, res, next) => {
@@ -16,4 +17,5 @@ const changePassword = async (req, res, next) => {
     currentPassword: Joi.string().required().label('Current password'),
     newPassword: Joi.string().min(6).label('New password'),
   });
+// Temp comment
   const { value, error } = schema.validate(reqData);

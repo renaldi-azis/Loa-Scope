@@ -78,7 +78,6 @@ export default {
           text: 'Device ID',
           value: 'deviceId',
           type: 'string',
-          visible: true,
         },
         {
           text: 'Patient ID',
@@ -99,3 +98,4 @@ export default {
           visible: true,
         },
         {
+          text: 'Longitude',

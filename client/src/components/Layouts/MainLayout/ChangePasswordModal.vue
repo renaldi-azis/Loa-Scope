@@ -47,3 +47,4 @@ export default {
   mixins: [ProfileService],
   data() {
     return {
+      user: {},

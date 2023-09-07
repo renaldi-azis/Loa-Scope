@@ -13,7 +13,6 @@ const mutations = {
   },
   setTests(state, payload) {
     state.tests = payload;
-  },
 };
 
 const actions = {

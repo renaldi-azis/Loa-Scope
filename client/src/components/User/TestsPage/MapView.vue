@@ -76,7 +76,6 @@
       </div>
     </v-card-text>
   </v-card>
-</template>
 
 <script>
 import _ from 'lodash';
@@ -102,3 +101,4 @@ export default {
   computed: {
     data() {
       return this.appState.tests;
+    },
