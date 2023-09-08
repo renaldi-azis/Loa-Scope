@@ -41,7 +41,6 @@ export default {
       },
       set(newValue) {
         this.$store.dispatch('appStore/setMenuSidebarOpen', newValue);
-      },
     },
     activeMainIndex() {
       return this.menuItems.findIndex((item) => item.link === this.$route.name);
@@ -49,3 +48,4 @@ export default {
   },
   created() {
     this.menuItems = [
+      // Admin Dashboard

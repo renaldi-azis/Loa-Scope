@@ -16,7 +16,6 @@ export default {
     ...mapState('appStore', {
       appState: (state) => state,
     }),
-// Temp comment
     ...mapState('authStore', {
       userData: (state) => state.userData,
     }),

@@ -180,3 +180,5 @@ export default {
         this.filterGroups = _.cloneDeep(this.appState.filters);
       } else {
         this.filterGroups = [
+          [
+            {

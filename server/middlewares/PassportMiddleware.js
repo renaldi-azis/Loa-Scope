@@ -13,6 +13,7 @@ passport.use(
   'jwt-header',
   new passportJWT.Strategy(
     {
+      jwtFromRequest: passportJWT.ExtractJwt.fromAuthHeaderAsBearerToken(),
       secretOrKey: process.env.INTERNAL_JWT_SECRET,
     },
     async (jwtPayload, done) => {

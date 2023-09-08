@@ -29,6 +29,5 @@
     </template>
   </v-data-table>
 </template>
-
 <script>
 import ColumnMenu from './ColumnMenu.vue';

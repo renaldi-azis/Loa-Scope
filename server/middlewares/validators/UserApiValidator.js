@@ -34,6 +34,7 @@ const createUser = async (req, res, next) => {
   const user = await User.findOne({
     attributes: ['id'],
     where: {
+      username: value.username,
     },
   });
   if (user) {
@@ -81,3 +82,4 @@ const updateUser = async (req, res, next) => {
  */
 const deleteUser = async (req, res, next) => {
   const reqData = _.pick(req.params, ['userId']);
+  // Validate request

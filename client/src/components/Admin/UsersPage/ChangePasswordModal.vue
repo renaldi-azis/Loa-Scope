@@ -45,3 +45,4 @@ export default {
   name: 'ChangePasswordModal',
   mixins: [UserService],
   data() {
+    return {

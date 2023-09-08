@@ -40,7 +40,6 @@
             <GmapMarker
               :position="position"
               :clickable="true"
-              @click="onClickMapMarker(position, index)"
               v-for="(position, index) in mapData"
               :key="index"
             />
@@ -55,6 +54,7 @@
           <p>Patient ID: {{ selectedMarkerData.patientId }}</p>
           <p>Test ID: {{ selectedMarkerData.testId }}</p>
           <p>Worm Count: {{ selectedMarkerData.totalWormCount }}</p>
+          <p>
             Video Count: {{ selectedMarkerData.videoCount }}
             <a
               href="#"
@@ -102,3 +102,4 @@ export default {
     data() {
       return this.appState.tests;
     },
+    filteredData() {
