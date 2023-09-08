@@ -1,7 +1,6 @@
 <template>
   <v-navigation-drawer
     class="grey darken-3"
-    app
     dark
     fixed
     clipped
@@ -41,6 +40,7 @@ export default {
       },
       set(newValue) {
         this.$store.dispatch('appStore/setMenuSidebarOpen', newValue);
+      },
     },
     activeMainIndex() {
       return this.menuItems.findIndex((item) => item.link === this.$route.name);

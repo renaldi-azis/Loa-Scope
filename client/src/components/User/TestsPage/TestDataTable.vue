@@ -101,3 +101,4 @@ export default {
         {
           text: 'Longitude',
           value: 'longitude',
+          type: 'number',

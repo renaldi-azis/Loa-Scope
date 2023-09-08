@@ -2,6 +2,7 @@
  * @description Profile API Validator
  */
 
+/** Dependencies */
 const _ = require('lodash');
 const bcrypt = require('bcrypt');
 const Joi = require('joi');
@@ -17,3 +18,4 @@ const changePassword = async (req, res, next) => {
     newPassword: Joi.string().min(6).label('New password'),
   });
   const { value, error } = schema.validate(reqData);
+  if (error) {

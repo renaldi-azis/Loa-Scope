@@ -21,6 +21,7 @@ passport.use(
         const user = await User.findOne({
           where: {
             id: jwtPayload.id,
+// Temp comment
           },
         });
         return done(null, user);
@@ -33,3 +34,6 @@ passport.use(
 
 /** Define how Passport should serialize a user */
 passport.serializeUser((user, done) => {
+  done(null, user.id);
+});
+

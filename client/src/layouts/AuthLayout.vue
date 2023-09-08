@@ -6,5 +6,5 @@
           <router-view></router-view>
         </transition>
       </v-container>
-  </v-app>
+    </v-content>
 </template>

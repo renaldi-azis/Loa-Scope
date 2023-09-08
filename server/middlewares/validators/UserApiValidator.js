@@ -83,3 +83,4 @@ const updateUser = async (req, res, next) => {
 const deleteUser = async (req, res, next) => {
   const reqData = _.pick(req.params, ['userId']);
   // Validate request
+  const schema = Joi.object({

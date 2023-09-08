@@ -25,7 +25,7 @@ module.exports = (sequelize, DataTypes) => {
         type: DataTypes.STRING,
       },
       videoSize: {
+        type: DataTypes.INTEGER,
         defaultValue: 0,
-      },
       wormCount: {
         type: DataTypes.INTEGER,

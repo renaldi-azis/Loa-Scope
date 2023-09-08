@@ -15,8 +15,8 @@
       <v-list-item v-for="column in value" :key="column.value">
         <v-checkbox
           :label="column.text"
-          color="primary"
           v-model="column.visible"
         />
       </v-list-item>
     </v-list>
+  </v-menu>

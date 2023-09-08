@@ -36,7 +36,6 @@ export default {
   },
   methods: {
     getValidators(fieldLabel, rules) {
-      return rules.map((rule) => {
         if (rule === 'required') {
           return (v) => !!v || `${fieldLabel} is required`;
         }

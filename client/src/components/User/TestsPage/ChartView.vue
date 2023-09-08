@@ -108,3 +108,4 @@ export default {
             afterBody: (tooltipItem, data) => {
               const baseValue = +data.labels[tooltipItem[0].index];
               return this.getPercentage(baseValue, true);
+            },

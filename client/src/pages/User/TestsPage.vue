@@ -28,3 +28,4 @@ import VideoDataTable from '@/components/User/TestsPage/VideoDataTable.vue';
 import ChartView from '@/components/User/TestsPage/ChartView.vue';
 import MapView from '@/components/User/TestsPage/MapView.vue';
 
+export default {

@@ -21,7 +21,6 @@
         </div>
         <div class="ml-2">
           <v-select
-            label="Less than"
             :items="wormCountTicks"
             v-model="maxWormCount"
             @change="selectedMarkerData = null"
@@ -40,6 +39,7 @@
             <GmapMarker
               :position="position"
               :clickable="true"
+              @click="onClickMapMarker(position, index)"
               v-for="(position, index) in mapData"
               :key="index"
             />
@@ -103,3 +103,4 @@ export default {
       return this.appState.tests;
     },
     filteredData() {
+      return this.data.filter((row) => row.latitude && row.longitude
