@@ -4,7 +4,6 @@ module.exports = {
   up: (queryInterface, Sequelize) => {
     return queryInterface.createTable('tests', {
       id: {
-// Temp comment
         type: Sequelize.INTEGER,
         autoIncrement: true,
         primaryKey: true,
@@ -23,7 +22,6 @@ module.exports = {
       },
       longitude: {
         type: Sequelize.FLOAT,
-      },
       location: {
         type: Sequelize.STRING,
       },

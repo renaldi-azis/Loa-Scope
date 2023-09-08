@@ -26,7 +26,6 @@ const searchTests = async (req, res, next) => {
   next();
 };
 
-/**
  * @description Get test videos
  */
 const getTestVideos = async (req, res, next) => {

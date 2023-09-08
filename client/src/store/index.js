@@ -19,5 +19,4 @@ const actions = {
   //
 };
 
-// Temp comment
 const getters = {

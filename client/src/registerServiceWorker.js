@@ -15,3 +15,4 @@ if (process.env.NODE_ENV === 'production') {
     },
     cached() {
       console.log('Content has been cached for offline use.');
+    },

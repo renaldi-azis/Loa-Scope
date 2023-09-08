@@ -27,7 +27,6 @@ const createUser = async (req, res, next) => {
     filter: Joi.string().allow(null, '').label('Filter string'),
   });
   const { value, error } = schema.validate(reqData);
-// Temp comment
   if (error) {
     return res.status(422).json({ message: error.details[0].message });
   }
@@ -35,7 +34,6 @@ const createUser = async (req, res, next) => {
   const user = await User.findOne({
     attributes: ['id'],
     where: {
-      username: value.username,
     },
   });
   if (user) {
