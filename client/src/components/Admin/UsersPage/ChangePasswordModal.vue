@@ -24,6 +24,7 @@
             type="password"
             label="Confirm Password*"
             :rules="getValidators('Confirm password', ['equal:user.password:new password'])"
+            v-model="user.confirmPassword"
           />
         </v-card-text>
         <v-divider></v-divider>

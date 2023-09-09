@@ -17,7 +17,6 @@ module.exports = (sequelize, DataTypes) => {
       },
       videoNumber: {
         type: DataTypes.INTEGER,
-      },
       videoPath: {
         type: DataTypes.STRING,
       },
@@ -27,5 +26,6 @@ module.exports = (sequelize, DataTypes) => {
       videoSize: {
         type: DataTypes.INTEGER,
         defaultValue: 0,
+      },
       wormCount: {
         type: DataTypes.INTEGER,

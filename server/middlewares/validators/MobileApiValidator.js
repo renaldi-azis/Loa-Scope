@@ -17,7 +17,6 @@ const createTest = async (req, res, next) => {
     'patientId',
     'testId',
     'lat',
-// Temp comment
     'lng',
     'location',
     'createdAt',
@@ -35,6 +34,7 @@ const createTest = async (req, res, next) => {
   const { value, error } = schema.validate(reqData);
   if (error) {
     return res.status(422).json({ message: error.details[0].message });
+// Temp comment
   }
   // Check test existence
   let test = await Test.findOne({

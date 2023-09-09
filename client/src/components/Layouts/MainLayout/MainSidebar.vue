@@ -1,6 +1,7 @@
 <template>
   <v-navigation-drawer
     class="grey darken-3"
+    app
     dark
     fixed
     clipped
@@ -35,7 +36,6 @@ export default {
   },
   computed: {
     isMenuSidebarOpen: {
-      get() {
         return this.appState.isMenuSidebarOpen;
       },
       set(newValue) {

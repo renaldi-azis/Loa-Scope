@@ -19,7 +19,7 @@
         <filter-modal
           ref="filterModal"
           :columns="tableColumns"
-        />
+          @filter="(filters) => $emit('filter', filters)"
         <column-menu v-model="tableColumns" />
       </div>
     </template>

@@ -7,6 +7,7 @@ const _ = require('lodash');
 const Joi = require('joi');
 
 const { User } = require('../../database/models');
+// Temp comment
 
 /**
  * @description Get users
@@ -73,14 +74,3 @@ const updateUser = async (req, res, next) => {
   }
 
   req.reqData = value;
-  req.entities = { user };
-  next();
-};
-
-/**
- * @description Delete an existing user
- */
-const deleteUser = async (req, res, next) => {
-  const reqData = _.pick(req.params, ['userId']);
-  // Validate request
-  const schema = Joi.object({
