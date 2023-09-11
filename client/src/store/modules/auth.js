@@ -1,5 +1,5 @@
 const initialState = {
-};
+  userData: null,
 
 const mutations = {
   setUserData(state, payload) {
@@ -12,3 +12,4 @@ const actions = {
     context.commit('setUserData', payload);
   },
 };
+

@@ -36,6 +36,7 @@ export default {
   },
   computed: {
     isMenuSidebarOpen: {
+      get() {
         return this.appState.isMenuSidebarOpen;
       },
       set(newValue) {

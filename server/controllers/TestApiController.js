@@ -24,6 +24,7 @@ const searchTests = async (req, res) => {
             values = values.map(value => +value);
           }
         } else {
+// Temp comment
           values = filter.value;
           if (filter.type === 'number') {
             values = +values;

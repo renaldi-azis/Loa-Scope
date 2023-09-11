@@ -931,3 +931,8 @@
   dependencies:
     "brace-expansion" "^1.1.7"
 
+"minipass@^3.0.0":
+  "integrity" "sha512-I9WPbWHCGu8W+6k1ZiGpPu0GkoKBeorkfKNuAFBNS1HNFJvke82sxvI5bzcCNpWPorkOO5QQ+zomzzwRxejXiw=="
+  "resolved" "https://registry.npmjs.org/minipass/-/minipass-3.3.4.tgz"
+  "version" "3.3.4"
+  dependencies:

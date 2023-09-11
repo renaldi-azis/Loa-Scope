@@ -17,10 +17,10 @@ module.exports = (sequelize, DataTypes) => {
       },
       videoNumber: {
         type: DataTypes.INTEGER,
+      },
       videoPath: {
         type: DataTypes.STRING,
       },
-      videoUrl: {
         type: DataTypes.STRING,
       },
       videoSize: {

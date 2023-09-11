@@ -12,7 +12,6 @@ const { Test, Video } = require('../../database/models');
  * @description Create Test
  */
 const createTest = async (req, res, next) => {
-  const reqData = _.pick(req.body, [
     'deviceId',
     'patientId',
     'testId',
@@ -34,7 +33,6 @@ const createTest = async (req, res, next) => {
   const { value, error } = schema.validate(reqData);
   if (error) {
     return res.status(422).json({ message: error.details[0].message });
-// Temp comment
   }
   // Check test existence
   let test = await Test.findOne({
@@ -56,3 +54,4 @@ const createTest = async (req, res, next) => {
 const createVideo = async (req, res, next) => {
   const reqData = _.pick(req.body, [
     'testId',
+    'videoId',

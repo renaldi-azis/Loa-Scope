@@ -1991,7 +1991,6 @@ cacache@^13.0.1:
     promise-inflight "^1.0.1"
     rimraf "^2.7.1"
     ssri "^7.0.0"
-    unique-filename "^1.1.1"
 
 cache-base@^1.0.1:
   version "1.0.1"

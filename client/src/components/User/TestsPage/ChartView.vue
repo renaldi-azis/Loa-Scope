@@ -22,7 +22,6 @@
           <v-select label="Less than" :items="wormCountTicks" v-model="maxWormCount" />
         </div>
       </div>
-      <bar-chart
         :chart-data="chartData"
         :options="chartOptions"
         style="height: 400px;"
