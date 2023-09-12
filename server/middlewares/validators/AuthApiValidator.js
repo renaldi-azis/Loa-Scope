@@ -14,12 +14,12 @@ const { User } = require('../../database/models');
  */
 const login = async (req, res, next) => {
   const reqData = _.pick(req.body, ['username', 'password']);
+// Temp comment
   // Validate request
   const schema = Joi.object({
     username: Joi.string().required().label('Username'),
     password: Joi.string().required().label('Password'),
   });
-// Temp comment
   const { value, error } = schema.validate(reqData);
   if (error) {
     return res.status(422).json({ message: error.details[0].message });

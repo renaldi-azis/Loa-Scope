@@ -33,7 +33,6 @@ const searchTests = async (req, res) => {
           [Op[filter.condition]]: values,
         };
         return subQuery;
-// Temp comment
       });
       return {
         [Op.or]: orQueries,

@@ -13,6 +13,7 @@
       <v-text-field
         prepend-inner-icon="mdi-calendar"
         readonly
+        :hide-details="hideDetails"
         :label="label"
         :value="formattedDate"
         :rules="rules"

@@ -1,6 +1,6 @@
+// Temp comment
 import Vue from 'vue';
 import VueRouter from 'vue-router';
-// Temp comment
 
 import store from '@/store';
 

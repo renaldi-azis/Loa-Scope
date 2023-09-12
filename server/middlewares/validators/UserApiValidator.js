@@ -15,7 +15,6 @@ const getUsers = async (req, res, next) => {
   next();
 };
 
-// Temp comment
 /**
  * @description Create a new user
  */
@@ -68,7 +67,6 @@ const updateUser = async (req, res, next) => {
     where: {
       id: value.userId,
     },
-  });
   if (!user) {
     return res.status(422).json({ message: 'User not found.' });
   }
@@ -77,3 +75,4 @@ const updateUser = async (req, res, next) => {
   req.entities = { user };
   next();
 };
+
