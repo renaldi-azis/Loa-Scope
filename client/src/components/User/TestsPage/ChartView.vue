@@ -110,3 +110,5 @@ export default {
               return this.getPercentage(baseValue, true);
             },
             beforeFooter: () => this.getPercentage(23000, true),
+            afterFooter: () => this.getPercentage(30000, true),
+          },

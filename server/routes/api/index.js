@@ -1,5 +1,4 @@
 /**
-// Temp comment
  * @description Define API Routes
  */
 
@@ -19,3 +18,6 @@ const testApiRouter = require('./tests');
 const userApiRouter = require('./users');
 
 // Add API Routes
+apiRouter.use('/auth', authApiRouter);
+apiRouter.use('/mobile', isAuthorizedMobile, mobileApiRouter);
+

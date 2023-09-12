@@ -21,7 +21,6 @@
         </v-card-text>
         <v-divider></v-divider>
         <v-card-actions>
-          <v-spacer></v-spacer>
           <v-btn type="submit" color="primary" :loading="status.isSaving">Save</v-btn>
         </v-card-actions>
       </v-card>
@@ -37,8 +36,10 @@ export default {
   name: 'UpdateUserModal',
   mixins: [UserService],
   props: ['refresh'],
+  data() {
     return {
       user: {},
       status: {
         isModalOpen: false,
         isSaving: false,
+      },

@@ -77,3 +77,5 @@ const updateUser = async (req, res, next) => {
   next();
 };
 
+/**
+ * @description Delete an existing user

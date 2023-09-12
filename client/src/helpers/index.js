@@ -1,4 +1,3 @@
-import jwtDecode from 'jwt-decode';
 
 window.$helpers = {
   getApiToken() {
@@ -9,3 +8,4 @@ window.$helpers = {
     return token;
   },
   isAuthenticated() {
+    return !!this.getApiToken();

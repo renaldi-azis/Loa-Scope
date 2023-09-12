@@ -12,6 +12,7 @@ html {
 .swal2-container {
   font-family: 'Roboto' !important;
 }
+
 // Transition Effects
 .fade-enter-active, .fade-leave-active {
   transition: opacity .3s;
@@ -19,3 +20,4 @@ html {
 .fade-enter, .fade-leave-to {
   opacity: 0;
 }
+

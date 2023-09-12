@@ -1,6 +1,7 @@
 /**
  * @description Http Server
  */
+// Temp comment
 
 /** Dependencies */
 require('dotenv').config();
@@ -25,6 +26,7 @@ app.post('/call-external-url', async (req, res) => {
     method,
     url,
   };
+  if (data) {
     if (method === 'GET') {
       options.params = data;
     } else {

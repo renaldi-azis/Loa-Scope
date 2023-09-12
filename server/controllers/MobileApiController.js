@@ -13,6 +13,7 @@ const { Test, Video } = require('../database/models');
 const createTest = async (req, res) => {
   const { reqData } = req;
 
+  const test = await Test.create({
     deviceId: reqData.deviceId,
     patientId: reqData.patientId,
     testId: reqData.testId,

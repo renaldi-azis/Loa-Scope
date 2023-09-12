@@ -33,3 +33,4 @@ module.exports = (sequelize, DataTypes) => {
       videoCount: {
         type: DataTypes.INTEGER,
         defaultValue: 0,
+      },

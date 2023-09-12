@@ -21,7 +21,6 @@ export default {
     }),
     userNameAbbr() {
       if (!this.userData) return '';
-      const { username } = this.userData;
       return username[0].toUpperCase();
     },
     userRole() {
@@ -45,3 +44,4 @@ export default {
         }
         const sections = rule.split(':');
         const [mainRule] = sections;
+        if (mainRule === 'max-len') {

@@ -111,3 +111,4 @@ export default {
           visible: true,
         },
         {
+          text: 'Video Count',

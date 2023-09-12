@@ -52,4 +52,4 @@ export default {
         isModalOpen: false,
         isSaving: false,
       },
-    };
+  },

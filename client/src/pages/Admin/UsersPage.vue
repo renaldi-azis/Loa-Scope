@@ -63,3 +63,4 @@ export default {
   computed: {
     userTableHeaders() {
       return [
+        { text: 'Username', value: 'username' },
