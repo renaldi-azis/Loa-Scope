@@ -67,6 +67,7 @@ const updateUser = async (req, res, next) => {
     where: {
       id: value.userId,
     },
+  });
   if (!user) {
     return res.status(422).json({ message: 'User not found.' });
   }

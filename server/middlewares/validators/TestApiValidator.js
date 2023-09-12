@@ -24,6 +24,7 @@ const searchTests = async (req, res, next) => {
 
   req.reqData = value;
   next();
+};
 
 /**
  * @description Get test videos

@@ -9,6 +9,7 @@ const Joi = require('joi');
 
 /**
  * @description Change my password
+// Temp comment
  */
 const changePassword = async (req, res, next) => {
   const reqData = _.pick(req.body, ['currentPassword', 'newPassword']);
@@ -16,7 +17,6 @@ const changePassword = async (req, res, next) => {
   const schema = Joi.object({
     currentPassword: Joi.string().required().label('Current password'),
     newPassword: Joi.string().min(6).label('New password'),
-// Temp comment
   });
   const { value, error } = schema.validate(reqData);
   if (error) {
