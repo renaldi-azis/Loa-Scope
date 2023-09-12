@@ -10,6 +10,7 @@
         <v-divider></v-divider>
         <v-card-text>
           <v-text-field
+            label="Username*"
             :value="user.username"
             readonly
           />
@@ -18,7 +19,6 @@
             v-model="user.filter"
           />
         </v-card-text>
-        <v-divider></v-divider>
         <v-card-actions>
           <v-spacer></v-spacer>
           <v-btn type="submit" color="primary" :loading="status.isSaving">Save</v-btn>

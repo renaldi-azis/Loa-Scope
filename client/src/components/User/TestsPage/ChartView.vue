@@ -22,6 +22,7 @@
           <v-select label="Less than" :items="wormCountTicks" v-model="maxWormCount" />
         </div>
       </div>
+      <bar-chart
         :chart-data="chartData"
         :options="chartOptions"
         style="height: 400px;"
@@ -108,3 +109,4 @@ export default {
               const baseValue = +data.labels[tooltipItem[0].index];
               return this.getPercentage(baseValue, true);
             },
+            beforeFooter: () => this.getPercentage(23000, true),

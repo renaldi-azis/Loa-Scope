@@ -15,6 +15,7 @@ const getUsers = async (req, res, next) => {
   next();
 };
 
+// Temp comment
 /**
  * @description Create a new user
  */
@@ -75,3 +76,4 @@ const updateUser = async (req, res, next) => {
   req.reqData = value;
   req.entities = { user };
   next();
+};

@@ -1,4 +1,3 @@
-const faker = require('faker');
 const uuid = require('uuid/v4');
 
 const { Test, Video } = require('../database/models');

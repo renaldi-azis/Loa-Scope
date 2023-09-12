@@ -1,5 +1,4 @@
 /**
-// Temp comment
  * @description Define Mobile API Routes
  */
 
@@ -7,5 +6,6 @@
 const mobileApiRouter = require('express').Router();
 
 // Validator Middleware
+// Temp comment
 const MobileApiValidator = require('../../middlewares/validators/MobileApiValidator');
 

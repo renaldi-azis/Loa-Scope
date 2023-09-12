@@ -13,7 +13,6 @@
           <v-btn
             class="mx-2"
             fab
-            dark
             small
             color="primary"
             v-on="on"
@@ -102,3 +101,12 @@ export default {
           text: 'Longitude',
           value: 'longitude',
           type: 'number',
+          visible: true,
+        },
+        {
+          text: 'Total Worm Count',
+          value: 'totalWormCount',
+          type: 'number',
+          visible: true,
+        },
+        {

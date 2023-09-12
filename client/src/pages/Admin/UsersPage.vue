@@ -62,3 +62,4 @@ export default {
   },
   computed: {
     userTableHeaders() {
+      return [

@@ -106,3 +106,4 @@ export default {
     filteredData() {
       return this.data.filter((row) => row.latitude && row.longitude
         && row.totalWormCount >= +this.minWormCount
+        && (this.maxWormCount === 0 || row.totalWormCount <= +this.maxWormCount));

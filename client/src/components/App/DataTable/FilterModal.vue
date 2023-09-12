@@ -129,7 +129,6 @@
                 <div class="d-flex align-center my-2" v-if="filterIndex < filterGroup.length - 1">
                   <hr class="or-divider" />
                   <div class="px-4 blue--text">OR</div>
-                  <hr class="or-divider" />
                 </div>
               </div>
             </v-card>
@@ -183,3 +182,5 @@ export default {
           [
             {
               column: '',
+              condition: '',
+              value: '',

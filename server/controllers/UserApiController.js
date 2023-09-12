@@ -12,6 +12,7 @@ const { USER_ROLES } = require('../constants');
 
 /**
  * @description Get users
+ */
 const getUsers = async (req, res) => {
   const users = await User.findAll({
     attributes: {
@@ -25,6 +26,7 @@ const getUsers = async (req, res) => {
   });
 
   return res.status(200).json(users);
+// Temp comment
 };
 
 /**

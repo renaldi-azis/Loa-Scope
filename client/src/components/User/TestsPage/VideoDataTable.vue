@@ -47,3 +47,4 @@ export default {
           value: 'videoNumber',
         },
         {
+          text: 'Worm Count',

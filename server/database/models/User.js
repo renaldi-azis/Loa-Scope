@@ -11,7 +11,6 @@ module.exports = (sequelize, DataTypes) => {
       },
       username: {
         type: DataTypes.STRING,
-// Temp comment
         allowNull: false,
         unique: true,
       },
@@ -26,3 +25,5 @@ module.exports = (sequelize, DataTypes) => {
       filter: {
         type: DataTypes.STRING,
         defaultValue: '',
+      },
+      createdAt: {
