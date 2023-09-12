@@ -1,4 +1,5 @@
 /**
+// Temp comment
  * @description Define API Routes
  */
 
@@ -14,7 +15,6 @@ const apiRouter = require('express').Router();
 const authApiRouter = require('./auth');
 const mobileApiRouter = require('./mobile');
 const profileApiRouter = require('./profile');
-// Temp comment
 const testApiRouter = require('./tests');
 const userApiRouter = require('./users');
 

@@ -37,7 +37,6 @@ export default {
   name: 'UpdateUserModal',
   mixins: [UserService],
   props: ['refresh'],
-  data() {
     return {
       user: {},
       status: {
