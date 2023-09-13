@@ -165,7 +165,6 @@ export default {
       [
         {
           column: '',
-          condition: '',
           value: '',
         },
       ],
@@ -187,3 +186,4 @@ export default {
               value: '',
             },
           ],
+        ];

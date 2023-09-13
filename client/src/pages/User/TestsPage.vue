@@ -20,7 +20,6 @@
       v-show="view === 'VIDEO_DATA_TABLE'"
     />
   </div>
-</template>
 
 <script>
 import TestDataTable from '@/components/User/TestsPage/TestDataTable.vue';
@@ -29,3 +28,4 @@ import ChartView from '@/components/User/TestsPage/ChartView.vue';
 import MapView from '@/components/User/TestsPage/MapView.vue';
 
 export default {
+  name: 'TestsPage',

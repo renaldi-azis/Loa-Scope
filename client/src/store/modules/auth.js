@@ -13,4 +13,3 @@ const actions = {
     context.commit('setUserData', payload);
   },
 };
-

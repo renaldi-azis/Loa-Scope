@@ -20,10 +20,10 @@ module.exports = (sequelize, DataTypes) => {
       },
       role: {
         type: DataTypes.STRING,
+        allowNull: false,
       },
       filter: {
         type: DataTypes.STRING,
         defaultValue: '',
-      },
       createdAt: {
         type: DataTypes.DATE,

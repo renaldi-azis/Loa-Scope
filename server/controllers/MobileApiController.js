@@ -1,4 +1,3 @@
-/**
  * @description Mobile API Controller
  */
 
