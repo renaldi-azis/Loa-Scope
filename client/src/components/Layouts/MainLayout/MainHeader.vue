@@ -37,7 +37,6 @@
 <script>
 import ChangePasswordModal from './ChangePasswordModal.vue';
 
-export default {
   name: 'MainHeader',
   components: {
     ChangePasswordModal,

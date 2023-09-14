@@ -27,7 +27,6 @@ module.exports = (sequelize, DataTypes) => {
       location: {
         type: DataTypes.STRING,
       },
-      totalWormCount: {
         type: DataTypes.INTEGER,
       },
       videoCount: {

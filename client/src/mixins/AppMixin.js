@@ -3,7 +3,6 @@ import _ from 'lodash';
 
 const colorList = [
   'red',
-// Temp comment
   'indigo',
   'purple',
   'blue',
@@ -35,7 +34,6 @@ export default {
       return this.userRole === 'User';
     },
   },
-  methods: {
     getValidators(fieldLabel, rules) {
       return rules.map((rule) => {
         if (rule === 'required') {

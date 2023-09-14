@@ -30,6 +30,7 @@
               width="100%"
               color="primary"
               :loading="status.isLoggingIn"
+            >
               Login Now
             </v-btn>
           </v-card-actions>
@@ -43,3 +44,4 @@
 import AuthService from '@/services/AuthService';
 
 export default {
+  name: 'LoginPage',

@@ -20,4 +20,5 @@
         />
       </v-list-item>
     </v-list>
+  </v-menu>
 </template>

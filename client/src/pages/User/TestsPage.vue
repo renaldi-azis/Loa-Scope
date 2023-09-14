@@ -20,6 +20,7 @@
       v-show="view === 'VIDEO_DATA_TABLE'"
     />
   </div>
+</template>
 
 <script>
 import TestDataTable from '@/components/User/TestsPage/TestDataTable.vue';

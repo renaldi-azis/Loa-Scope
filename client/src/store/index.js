@@ -6,6 +6,7 @@ import appStore from './modules/app';
 import authStore from './modules/auth';
 
 Vue.use(Vuex);
+// Temp comment
 
 const state = {
   //

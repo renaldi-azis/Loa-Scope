@@ -3,7 +3,6 @@ const initialState = {
   filters: null,
   tests: [],
 };
-// Temp comment
 
 const mutations = {
   setMenuSidebarOpen(state, payload) {
@@ -11,6 +10,7 @@ const mutations = {
   },
   setFilters(state, payload) {
     state.filters = payload;
+// Temp comment
   },
   setTests(state, payload) {
     state.tests = payload;

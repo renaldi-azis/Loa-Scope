@@ -25,5 +25,6 @@ module.exports = (sequelize, DataTypes) => {
       filter: {
         type: DataTypes.STRING,
         defaultValue: '',
+      },
       createdAt: {
         type: DataTypes.DATE,

@@ -59,3 +59,4 @@ const updateUser = async (req, res) => {
   delete user.password;
 
   return res.status(200).json(user);
+};

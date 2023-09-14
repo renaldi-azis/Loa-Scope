@@ -29,6 +29,7 @@
   </v-dialog>
 </template>
 
+<script>
 import _ from 'lodash';
 import UserService from '@/services/UserService';
 
@@ -41,5 +42,4 @@ export default {
       user: {},
       status: {
         isModalOpen: false,
-        isSaving: false,
       },

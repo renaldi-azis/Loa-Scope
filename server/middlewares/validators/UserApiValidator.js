@@ -81,3 +81,4 @@ const updateUser = async (req, res, next) => {
 /**
  * @description Delete an existing user
  */
+const deleteUser = async (req, res, next) => {
