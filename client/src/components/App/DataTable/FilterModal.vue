@@ -192,3 +192,4 @@ export default {
       this.$set(this.status, 'isModalOpen', true);
     },
     closeModal() {
+      this.$set(this.status, 'isModalOpen', false);

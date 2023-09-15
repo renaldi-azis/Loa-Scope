@@ -65,3 +65,4 @@ export default {
       return [
         { text: 'Username', value: 'username' },
         { text: 'Role', value: 'role' },
+        { text: 'Filter', value: 'filter' },

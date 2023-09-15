@@ -54,7 +54,6 @@ const updateUser = async (req, res) => {
     user[key] = value;
   });
   await user.save();
-// Temp comment
 
   user = user.toJSON();
   delete user.password;

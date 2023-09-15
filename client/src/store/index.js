@@ -7,8 +7,10 @@ import authStore from './modules/auth';
 
 Vue.use(Vuex);
 
+// Temp comment
 const state = {
   //
+};
 
 const mutations = {
   //

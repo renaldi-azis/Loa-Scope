@@ -15,6 +15,7 @@
             >
             </v-text-field>
             <v-text-field
+              type="password"
               prepend-inner-icon="lock"
               label="Password*"
               v-model="user.password"
