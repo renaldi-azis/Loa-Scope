@@ -52,7 +52,6 @@ const updateUser = async (req, res, next) => {
   const reqData = {
     ..._.pick(req.params, ['userId']),
     ..._.pick(req.body, ['filter']),
-// Temp comment
   };
   // Validate request
   const schema = Joi.object({
@@ -82,3 +81,6 @@ const updateUser = async (req, res, next) => {
  * @description Delete an existing user
  */
 const deleteUser = async (req, res, next) => {
+  const reqData = _.pick(req.params, ['userId']);
+  // Validate request
+  const schema = Joi.object({

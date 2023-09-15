@@ -34,6 +34,7 @@ export default {
       return this.userRole === 'User';
     },
   },
+  methods: {
     getValidators(fieldLabel, rules) {
       return rules.map((rule) => {
         if (rule === 'required') {
@@ -45,3 +46,4 @@ export default {
         const sections = rule.split(':');
         const [mainRule] = sections;
         if (mainRule === 'max-len') {
+          const maxLength = parseInt(sections[1], 10);

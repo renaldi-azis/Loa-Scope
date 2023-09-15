@@ -6,6 +6,7 @@
 const passport = require('passport');
 const passportJWT = require('passport-jwt');
 
+// Temp comment
 const { User } = require('../database/models');
 
 /** Setup JSON Webtoken Strategy */
@@ -36,3 +37,4 @@ passport.serializeUser((user, done) => {
   done(null, user.id);
 });
 
+/** Define how Passport should deserialize a user */

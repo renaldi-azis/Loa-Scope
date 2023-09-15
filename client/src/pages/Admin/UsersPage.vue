@@ -64,3 +64,4 @@ export default {
     userTableHeaders() {
       return [
         { text: 'Username', value: 'username' },
+        { text: 'Role', value: 'role' },

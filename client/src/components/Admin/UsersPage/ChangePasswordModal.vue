@@ -48,3 +48,4 @@ export default {
     return {
       user: {},
       status: {
+        isModalOpen: false,

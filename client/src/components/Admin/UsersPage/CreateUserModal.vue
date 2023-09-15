@@ -49,3 +49,4 @@ export default {
       status: {
         isModalOpen: false,
         isSaving: false,
+      },

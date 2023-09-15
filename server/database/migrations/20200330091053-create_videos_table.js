@@ -16,7 +16,6 @@ module.exports = {
       },
       video_number: {
         type: Sequelize.INTEGER,
-// Temp comment
       },
       video_path: {
         type: Sequelize.STRING,

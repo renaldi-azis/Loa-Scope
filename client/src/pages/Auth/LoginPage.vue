@@ -15,7 +15,6 @@
             >
             </v-text-field>
             <v-text-field
-              type="password"
               prepend-inner-icon="lock"
               label="Password*"
               v-model="user.password"
@@ -45,3 +44,4 @@ import AuthService from '@/services/AuthService';
 
 export default {
   name: 'LoginPage',
+  mixins: [AuthService],

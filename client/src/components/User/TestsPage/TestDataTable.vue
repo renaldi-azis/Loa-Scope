@@ -112,3 +112,4 @@ export default {
         },
         {
           text: 'Video Count',
+          value: 'videoCount',

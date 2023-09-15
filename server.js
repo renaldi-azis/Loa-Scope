@@ -30,3 +30,5 @@ app.post('/call-external-url', async (req, res) => {
       options.params = data;
     } else {
       options.body = data;
+    }
+  }

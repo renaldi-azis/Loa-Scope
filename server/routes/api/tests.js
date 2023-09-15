@@ -9,5 +9,4 @@ const testApiRouter = require('express').Router();
 const TestApiValidator = require('../../middlewares/validators/TestApiValidator');
 
 // Controller
-const TestApiController = require('../../controllers/TestApiController');
 

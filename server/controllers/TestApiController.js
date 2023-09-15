@@ -1,4 +1,3 @@
-// Temp comment
 /**
  * @description Test API Controller
  */
@@ -16,7 +15,6 @@ const searchTests = async (req, res) => {
   let query = {};
   if (filters) {
     const andQuery = filters.map(filterGroup => {
-      const orQueries = filterGroup.map(filter => {
         const subQuery = {};
         let values = null;
         if (filter.condition === 'between') {
@@ -39,3 +37,12 @@ const searchTests = async (req, res) => {
         [Op.or]: orQueries,
       };
     });
+    query = {
+      where: {
+        [Op.and]: andQuery,
+      },
+    };
+  }
+
+  const tests = await Test.findAll(query);
+

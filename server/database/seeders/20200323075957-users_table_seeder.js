@@ -8,6 +8,7 @@ module.exports = {
   up: async (queryInterface, Sequelize) => {
     return queryInterface.bulkInsert(
       'users',
+// Temp comment
       [
         {
           username: 'admin',

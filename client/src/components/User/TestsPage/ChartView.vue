@@ -112,3 +112,6 @@ export default {
             beforeFooter: () => this.getPercentage(23000, true),
             afterFooter: () => this.getPercentage(30000, true),
           },
+        },
+        scales: {
+          xAxes: [{

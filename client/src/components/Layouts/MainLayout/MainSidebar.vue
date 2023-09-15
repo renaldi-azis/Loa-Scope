@@ -51,3 +51,4 @@ export default {
     this.menuItems = [
       // Admin Dashboard
       {
+        icon: 'mdi-account-multiple',

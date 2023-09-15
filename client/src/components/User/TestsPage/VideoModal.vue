@@ -40,3 +40,4 @@ export default {
     };
   },
   methods: {
+    openModal(videoUrl) {

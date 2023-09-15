@@ -1,4 +1,3 @@
-// Temp comment
 /**
  * @description Mobile API Validator
  */
@@ -9,7 +8,6 @@ const Joi = require('joi');
 
 const { Test, Video } = require('../../database/models');
 
-/**
  * @description Create Test
  */
 const createTest = async (req, res, next) => {
@@ -60,3 +58,4 @@ const createVideo = async (req, res, next) => {
     'videoNumber',
     'videoPath',
     'videoUrl',
+    'videoSize',
