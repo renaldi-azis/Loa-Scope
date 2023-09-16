@@ -10,6 +10,7 @@
       </v-container>
     </v-content>
   </v-app>
+</template>
 
 <script>
 import MainHeader from '@/components/Layouts/MainLayout/MainHeader.vue';

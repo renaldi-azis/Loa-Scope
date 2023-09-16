@@ -11,7 +11,6 @@ module.exports = {
       device_id: {
         type: Sequelize.STRING,
       },
-// Temp comment
       patient_id: {
         type: Sequelize.STRING,
       },
@@ -26,7 +25,6 @@ module.exports = {
       },
       location: {
         type: Sequelize.STRING,
-      },
       total_worm_count: {
         type: Sequelize.INTEGER,
         defaultValue: 0,

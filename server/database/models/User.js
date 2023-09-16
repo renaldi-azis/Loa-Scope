@@ -6,6 +6,7 @@ module.exports = (sequelize, DataTypes) => {
     {
       id: {
         type: DataTypes.INTEGER,
+        autoIncrement: true,
         primaryKey: true,
       },
       username: {
@@ -26,4 +27,3 @@ module.exports = (sequelize, DataTypes) => {
         defaultValue: '',
       },
       createdAt: {
-        type: DataTypes.DATE,

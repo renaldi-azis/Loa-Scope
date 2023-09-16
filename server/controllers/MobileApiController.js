@@ -18,6 +18,7 @@ const createTest = async (req, res) => {
     patientId: reqData.patientId,
     testId: reqData.testId,
     latitude: reqData.lat,
+// Temp comment
     longitude: reqData.lng,
     location: reqData.location,
     executedAt: reqData.createdAt,

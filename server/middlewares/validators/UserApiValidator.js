@@ -31,6 +31,7 @@ const createUser = async (req, res, next) => {
     return res.status(422).json({ message: error.details[0].message });
   }
   // Check user existence
+// Temp comment
   const user = await User.findOne({
     attributes: ['id'],
     where: {
@@ -79,9 +80,9 @@ const updateUser = async (req, res, next) => {
 
 /**
  * @description Delete an existing user
-// Temp comment
  */
 const deleteUser = async (req, res, next) => {
   const reqData = _.pick(req.params, ['userId']);
   // Validate request
   const schema = Joi.object({
+    userId: Joi.number().min(1).label('User ID'),

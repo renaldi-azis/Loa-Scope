@@ -31,6 +31,7 @@ export default {
   mixins: [TestService],
   components: {
     VideoModal,
+  },
   data: () => ({
     prevPage: 'TEST_DATA_TABLE',
     videos: [],
@@ -45,6 +46,5 @@ export default {
           text: 'Video Number',
           value: 'videoNumber',
         },
-        {
           text: 'Worm Count',
           value: 'wormCount',

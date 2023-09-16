@@ -18,14 +18,12 @@ module.exports = {
     `);
     await queryInterface.sequelize.query(`
       CREATE TRIGGER after_test_insert
-        AFTER INSERT ON tests FOR EACH ROW
         EXECUTE PROCEDURE update_test_after_test_events();
     `);
     await queryInterface.sequelize.query(`
       CREATE FUNCTION update_test_after_video_events()
         RETURNS TRIGGER
         LANGUAGE plpgsql
-// Temp comment
         AS $$
       BEGIN
         IF (TG_OP = 'INSERT') THEN

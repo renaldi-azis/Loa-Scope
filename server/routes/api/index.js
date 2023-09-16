@@ -1,4 +1,5 @@
 /**
+ * @description Define API Routes
  */
 
 /** Dependencies */
@@ -10,7 +11,6 @@ const { isAuthorizedMobile, isAdmin } = require('../../middlewares/AppMiddleware
 const apiRouter = require('express').Router();
 
 // Import Sub API Routers
-const authApiRouter = require('./auth');
 const mobileApiRouter = require('./mobile');
 const profileApiRouter = require('./profile');
 const testApiRouter = require('./tests');
