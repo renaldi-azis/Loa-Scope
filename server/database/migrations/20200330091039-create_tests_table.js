@@ -16,7 +16,6 @@ module.exports = {
       },
       test_id: {
         type: Sequelize.STRING,
-      },
       latitude: {
         type: Sequelize.FLOAT,
       },
@@ -25,6 +24,7 @@ module.exports = {
       },
       location: {
         type: Sequelize.STRING,
+      },
       total_worm_count: {
         type: Sequelize.INTEGER,
         defaultValue: 0,

@@ -35,7 +35,6 @@ export default {
   data: () => ({
     prevPage: 'TEST_DATA_TABLE',
     videos: [],
-    status: {
       isLoading: false,
     },
   }),
@@ -46,5 +45,6 @@ export default {
           text: 'Video Number',
           value: 'videoNumber',
         },
+        {
           text: 'Worm Count',
           value: 'wormCount',

@@ -30,5 +30,6 @@ toastr.options = { maxOpened: 1 };
 Vue.prototype.$toastr = toastr;
 
 Vue.use(VueGoogleMaps, {
+// Temp comment
   load: {
     key: $config.GOOGLE_API_KEY,

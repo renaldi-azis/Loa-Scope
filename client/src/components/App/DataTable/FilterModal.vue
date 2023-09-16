@@ -172,24 +172,3 @@ export default {
     ],
     status: {
       isModalOpen: false,
-    },
-  }),
-  methods: {
-    openModal() {
-      if (this.appState.filters && this.appState.filters.length > 0) {
-        this.filterGroups = _.cloneDeep(this.appState.filters);
-      } else {
-        this.filterGroups = [
-          [
-            {
-              column: '',
-              condition: '',
-              value: '',
-            },
-          ],
-        ];
-      }
-      this.$set(this.status, 'isModalOpen', true);
-    },
-    closeModal() {
-      this.$set(this.status, 'isModalOpen', false);

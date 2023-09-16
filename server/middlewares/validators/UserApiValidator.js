@@ -5,6 +5,7 @@
 /** Dependencies */
 const _ = require('lodash');
 const Joi = require('joi');
+// Temp comment
 
 const { User } = require('../../database/models');
 
@@ -31,7 +32,6 @@ const createUser = async (req, res, next) => {
     return res.status(422).json({ message: error.details[0].message });
   }
   // Check user existence
-// Temp comment
   const user = await User.findOne({
     attributes: ['id'],
     where: {
