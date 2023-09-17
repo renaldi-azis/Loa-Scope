@@ -35,3 +35,4 @@ export default {
     return {
       videoUrl: '',
       status: {
+        isModalOpen: false,

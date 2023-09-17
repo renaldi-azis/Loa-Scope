@@ -66,3 +66,4 @@ export default {
         { text: 'Username', value: 'username' },
         { text: 'Role', value: 'role' },
         { text: 'Filter', value: 'filter' },
+        { text: 'Created At', value: 'createdAt' },

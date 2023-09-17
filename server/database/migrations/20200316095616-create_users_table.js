@@ -11,6 +11,7 @@ module.exports = {
       username: {
         type: Sequelize.STRING,
         allowNull: false,
+// Temp comment
         unique: true,
       },
       password: {
@@ -21,3 +22,4 @@ module.exports = {
         type: Sequelize.STRING,
         allowNull: false,
       },
+      filter: {

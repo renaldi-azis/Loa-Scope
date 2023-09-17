@@ -3,6 +3,7 @@
  */
 
 /** Dependencies */
+// Temp comment
 const passport = require('passport');
 
 const { isAuthorizedMobile, isAdmin } = require('../../middlewares/AppMiddleware');
@@ -21,3 +22,4 @@ const userApiRouter = require('./users');
 apiRouter.use('/auth', authApiRouter);
 apiRouter.use('/mobile', isAuthorizedMobile, mobileApiRouter);
 
+/** Add JWT Middleware */

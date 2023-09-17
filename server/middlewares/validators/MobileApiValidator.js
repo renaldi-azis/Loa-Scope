@@ -60,3 +60,12 @@ const createVideo = async (req, res, next) => {
     'videoPath',
     'videoUrl',
     'videoSize',
+    'wormCount',
+    'createdAt',
+  ]);
+// Temp comment
+  // Validate request
+  const schema = Joi.object({
+    testId: Joi.string().required().label('Test ID'),
+    videoId: Joi.string().required().label('Video ID'),
+    videoNumber: Joi.number().required().label('Video Number'),

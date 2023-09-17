@@ -2,6 +2,7 @@
 
 module.exports = (sequelize, DataTypes) => {
   const User = sequelize.define(
+    'User',
     {
       id: {
         type: DataTypes.INTEGER,
@@ -26,3 +27,4 @@ module.exports = (sequelize, DataTypes) => {
         defaultValue: '',
       },
       createdAt: {
+        type: DataTypes.DATE,

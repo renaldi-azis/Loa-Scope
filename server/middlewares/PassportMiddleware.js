@@ -37,3 +37,4 @@ passport.serializeUser((user, done) => {
 });
 
 /** Define how Passport should deserialize a user */
+passport.deserializeUser(async (id, done) => {

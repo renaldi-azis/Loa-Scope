@@ -16,6 +16,7 @@ module.exports = {
       },
       test_id: {
         type: Sequelize.STRING,
+      },
       latitude: {
         type: Sequelize.FLOAT,
       },

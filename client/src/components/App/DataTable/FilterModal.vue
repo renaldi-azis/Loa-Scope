@@ -172,3 +172,9 @@ export default {
     ],
     status: {
       isModalOpen: false,
+    },
+  }),
+  methods: {
+    openModal() {
+      if (this.appState.filters && this.appState.filters.length > 0) {
+        this.filterGroups = _.cloneDeep(this.appState.filters);

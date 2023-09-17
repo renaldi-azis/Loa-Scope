@@ -3,6 +3,7 @@
  */
 
 /** Dependencies */
+// Temp comment
 const Joi = require('joi');
 
 const { Test, Video } = require('../database/models');
@@ -26,8 +27,8 @@ const createTest = async (req, res) => {
   return res.status(200).json(test);
 };
 
-// Temp comment
 /**
  * @description Create Video
  */
 const createVideo = async (req, res) => {
+  const { reqData } = req;

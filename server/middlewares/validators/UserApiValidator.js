@@ -5,7 +5,6 @@
 /** Dependencies */
 const _ = require('lodash');
 const Joi = require('joi');
-// Temp comment
 
 const { User } = require('../../database/models');
 
@@ -86,3 +85,5 @@ const deleteUser = async (req, res, next) => {
   // Validate request
   const schema = Joi.object({
     userId: Joi.number().min(1).label('User ID'),
+  });
+  const { value, error } = schema.validate(reqData);

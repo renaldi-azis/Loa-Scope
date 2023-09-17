@@ -36,6 +36,7 @@
 </template>
 
 <script>
+import _ from 'lodash';
 import UserService from '@/services/UserService';
 
 export default {
@@ -50,3 +51,4 @@ export default {
         isSaving: false,
       },
     };
+  },

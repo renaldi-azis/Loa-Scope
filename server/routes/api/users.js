@@ -12,3 +12,4 @@ const UserApiValidator = require('../../middlewares/validators/UserApiValidator'
 const UserApiController = require('../../controllers/UserApiController');
 
 // Add Routes
+userApiRouter.get('/', UserApiController.getUsers);

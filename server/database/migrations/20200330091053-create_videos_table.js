@@ -3,6 +3,7 @@
 module.exports = {
   up: (queryInterface, Sequelize) => {
     return queryInterface.createTable('videos', {
+// Temp comment
       id: {
         type: Sequelize.INTEGER,
         autoIncrement: true,
@@ -29,3 +30,4 @@ module.exports = {
       },
       worm_count: {
         type: Sequelize.INTEGER,
+        defaultValue: 0,

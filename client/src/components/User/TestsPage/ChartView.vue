@@ -115,3 +115,5 @@ export default {
         },
         scales: {
           xAxes: [{
+            scaleLabel: {
+              display: true,

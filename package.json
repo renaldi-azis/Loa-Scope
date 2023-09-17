@@ -1,5 +1,4 @@
 {
-  "name": "cellscope_web",
   "version": "1.0.0",
   "description": "Cellscope Web",
   "main": "server.js",
@@ -19,3 +18,4 @@
     "faker": "^6.6.6",
     "joi": "^17.6.0",
     "jsonwebtoken": "^8.5.1",
+    "lodash": "^4.17.21",

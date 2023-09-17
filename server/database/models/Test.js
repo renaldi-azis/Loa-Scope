@@ -29,8 +29,10 @@ module.exports = (sequelize, DataTypes) => {
       },
       totalWormCount: {
         type: DataTypes.INTEGER,
+// Temp comment
       },
       videoCount: {
         type: DataTypes.INTEGER,
         defaultValue: 0,
       },
+      executedAt: {

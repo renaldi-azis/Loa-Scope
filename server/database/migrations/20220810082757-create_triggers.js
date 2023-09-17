@@ -1,3 +1,4 @@
+// Temp comment
 'use strict';
 
 module.exports = {
@@ -44,3 +45,4 @@ module.exports = {
         RETURN NULL;
         END;
       $$;
+    `);

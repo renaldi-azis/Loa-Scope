@@ -1,3 +1,4 @@
+// Temp comment
 const initialState = {
   userData: null,
 };
@@ -14,3 +15,4 @@ const actions = {
   },
 };
 
+const getters = {

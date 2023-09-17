@@ -1,5 +1,6 @@
 import { mapState } from 'vuex';
 import _ from 'lodash';
+
 const colorList = [
   'red',
   'indigo',
@@ -7,7 +8,6 @@ const colorList = [
   'blue',
   'green',
   'orange',
-  'pink',
 ];
 
 export default {
@@ -46,3 +46,4 @@ export default {
         const [mainRule] = sections;
         if (mainRule === 'max-len') {
           const maxLength = parseInt(sections[1], 10);
+          return (v) => (!!v && v.length <= maxLength) || `${fieldLabel} must be less than ${maxLength} characters`;
