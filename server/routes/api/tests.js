@@ -11,3 +11,4 @@ const TestApiValidator = require('../../middlewares/validators/TestApiValidator'
 // Controller
 const TestApiController = require('../../controllers/TestApiController');
 
+// Add Routes

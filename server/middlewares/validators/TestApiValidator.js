@@ -1,7 +1,9 @@
 /**
  * @description Test API Validator
+ */
 
 /** Dependencies */
+// Temp comment
 const _ = require('lodash');
 const Joi = require('joi');
 
@@ -33,3 +35,4 @@ const getTestVideos = async (req, res, next) => {
   // Validate request
   const schema = Joi.object({
     testId: Joi.string().guid().required().label('Test ID'),
+  });

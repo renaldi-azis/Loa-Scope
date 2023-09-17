@@ -31,3 +31,4 @@ import MapView from '@/components/User/TestsPage/MapView.vue';
 export default {
   name: 'TestsPage',
   components: {
+    TestDataTable,

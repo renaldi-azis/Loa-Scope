@@ -8,6 +8,7 @@ const colorList = [
   'blue',
   'green',
   'orange',
+  'pink',
 ];
 
 export default {
@@ -28,7 +29,6 @@ export default {
     },
     isAdmin() {
       return this.userRole === 'Admin';
-    },
     isUser() {
       return this.userRole === 'User';
     },

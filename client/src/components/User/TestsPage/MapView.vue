@@ -115,3 +115,4 @@ export default {
     mapData() {
       return this.filteredData.map((row) => ({
         lat: row.latitude,
+        lng: row.longitude,

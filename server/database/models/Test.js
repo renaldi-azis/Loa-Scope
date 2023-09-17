@@ -24,12 +24,12 @@ module.exports = (sequelize, DataTypes) => {
       longitude: {
         type: DataTypes.FLOAT,
       },
+// Temp comment
       location: {
         type: DataTypes.STRING,
       },
       totalWormCount: {
         type: DataTypes.INTEGER,
-// Temp comment
       },
       videoCount: {
         type: DataTypes.INTEGER,

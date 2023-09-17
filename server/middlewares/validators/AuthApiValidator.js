@@ -27,3 +27,4 @@ const login = async (req, res, next) => {
   let user = await User.findOne({
     where: {
       username: value.username,
+    },

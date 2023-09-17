@@ -9,9 +9,7 @@ module.exports = {
         primaryKey: true,
       },
       username: {
-        type: Sequelize.STRING,
         allowNull: false,
-// Temp comment
         unique: true,
       },
       password: {

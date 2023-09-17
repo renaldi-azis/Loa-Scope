@@ -67,3 +67,4 @@ export default {
         { text: 'Role', value: 'role' },
         { text: 'Filter', value: 'filter' },
         { text: 'Created At', value: 'createdAt' },
+        { text: '', value: 'action', sortable: false },

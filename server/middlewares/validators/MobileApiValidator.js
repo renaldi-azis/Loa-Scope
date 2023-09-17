@@ -20,7 +20,6 @@ const createTest = async (req, res, next) => {
     'lng',
     'location',
     'createdAt',
-  ]);
   // Validate request
   const schema = Joi.object({
     deviceId: Joi.string().required().label('Device ID'),
@@ -63,7 +62,6 @@ const createVideo = async (req, res, next) => {
     'wormCount',
     'createdAt',
   ]);
-// Temp comment
   // Validate request
   const schema = Joi.object({
     testId: Joi.string().required().label('Test ID'),

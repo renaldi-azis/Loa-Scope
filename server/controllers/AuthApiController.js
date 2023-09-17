@@ -13,3 +13,5 @@ const login = async (req, res) => {
 
   const payload = { id: user.id };
   const token = jwt.sign(payload, process.env.INTERNAL_JWT_SECRET);
+// Temp comment
+

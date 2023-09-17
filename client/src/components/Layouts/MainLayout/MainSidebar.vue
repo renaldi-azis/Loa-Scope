@@ -43,7 +43,6 @@ export default {
         this.$store.dispatch('appStore/setMenuSidebarOpen', newValue);
       },
     },
-    activeMainIndex() {
       return this.menuItems.findIndex((item) => item.link === this.$route.name);
     },
   },
@@ -53,3 +52,4 @@ export default {
       {
         icon: 'mdi-account-multiple',
         title: 'Users',
+        link: 'users-page',

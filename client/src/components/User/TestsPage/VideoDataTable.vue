@@ -50,3 +50,4 @@ export default {
           text: 'Worm Count',
           value: 'wormCount',
         },
+        {

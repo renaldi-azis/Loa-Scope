@@ -23,3 +23,4 @@ const actions = {
   setFilters(context, payload) {
     context.commit('setFilters', payload);
   },
+  setTests(context, payload) {
