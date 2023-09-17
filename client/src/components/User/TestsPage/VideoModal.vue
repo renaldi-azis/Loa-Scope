@@ -11,6 +11,7 @@
         <v-icon @click="closeModal">close</v-icon>
       </v-card-title>
       <v-divider />
+
       <div class="video-wrapper">
         <video
           ref="videoPlayer"

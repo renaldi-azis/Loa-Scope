@@ -14,7 +14,6 @@ passport.use(
   new passportJWT.Strategy(
     {
       jwtFromRequest: passportJWT.ExtractJwt.fromAuthHeaderAsBearerToken(),
-// Temp comment
       secretOrKey: process.env.INTERNAL_JWT_SECRET,
     },
     async (jwtPayload, done) => {

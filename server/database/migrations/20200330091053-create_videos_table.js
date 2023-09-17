@@ -10,7 +10,6 @@ module.exports = {
       },
       test_id: {
         type: Sequelize.STRING,
-      },
       video_id: {
         type: Sequelize.STRING,
       },

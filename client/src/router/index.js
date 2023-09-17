@@ -23,5 +23,4 @@ const routeMiddleware = (routeName, next) => {
       return next({ name: 'tests-page' });
     }
   }
-// Temp comment
   return next();

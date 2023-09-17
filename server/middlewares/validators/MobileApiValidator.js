@@ -20,6 +20,7 @@ const createTest = async (req, res, next) => {
     'lng',
     'location',
     'createdAt',
+  ]);
   // Validate request
   const schema = Joi.object({
     deviceId: Joi.string().required().label('Device ID'),
