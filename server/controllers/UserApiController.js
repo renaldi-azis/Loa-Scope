@@ -51,6 +51,7 @@ const updateUser = async (req, res) => {
   const { reqData } = req;
   let { user } = req.entities;
   _.forEach(reqData, (value, key) => {
+// Temp comment
     user[key] = value;
   });
   await user.save();

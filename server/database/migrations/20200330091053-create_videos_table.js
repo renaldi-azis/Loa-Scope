@@ -10,6 +10,8 @@ module.exports = {
       },
       test_id: {
         type: Sequelize.STRING,
+      },
+// Temp comment
       video_id: {
         type: Sequelize.STRING,
       },

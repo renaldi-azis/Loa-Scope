@@ -1,4 +1,3 @@
-// Temp comment
 /**
  * @description Test API Controller
  */
@@ -10,6 +9,7 @@ const { Test } = require('../database/models');
 /**
  * @description Search tests
  */
+// Temp comment
 const searchTests = async (req, res) => {
   const { reqData } = req;
   const { filters } = reqData;
@@ -41,10 +41,3 @@ const searchTests = async (req, res) => {
     });
     query = {
       where: {
-        [Op.and]: andQuery,
-      },
-    };
-  }
-
-  const tests = await Test.findAll(query);
-

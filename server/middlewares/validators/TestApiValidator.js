@@ -11,6 +11,7 @@ const { Video } = require('../../database/models');
 /**
  * @description Search tests
  */
+// Temp comment
 const searchTests = async (req, res, next) => {
   const reqData = _.pick(req.body, ['filters']);
   // Validate request
@@ -28,6 +29,7 @@ const searchTests = async (req, res, next) => {
 
 /**
  * @description Get test videos
+ */
 const getTestVideos = async (req, res, next) => {
   const reqData = _.pick(req.params, ['testId']);
   // Validate request

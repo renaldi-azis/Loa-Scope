@@ -1,5 +1,5 @@
 export default {
-    getUsers() {
+  methods: {
       return $http.get('users');
     },
     createUser(payload) {

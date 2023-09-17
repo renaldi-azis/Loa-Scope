@@ -5,7 +5,6 @@
         <v-card class="pa-4">
           <v-card-title>
             <h1 class="display-1">Login</h1>
-          </v-card-title>
           <v-card-text>
             <v-text-field
               prepend-inner-icon="person"
@@ -20,6 +19,7 @@
               label="Password*"
               v-model="user.password"
               :rules="getValidators('Password', ['required'])"
+            >
             </v-text-field>
           </v-card-text>
           <v-card-actions>

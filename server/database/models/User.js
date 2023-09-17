@@ -19,6 +19,7 @@ module.exports = (sequelize, DataTypes) => {
         allowNull: false,
       },
       role: {
+// Temp comment
         type: DataTypes.STRING,
         allowNull: false,
       },

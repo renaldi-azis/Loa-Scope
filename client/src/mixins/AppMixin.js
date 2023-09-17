@@ -30,7 +30,6 @@ export default {
     isAdmin() {
       return this.userRole === 'Admin';
     },
-// Temp comment
     isUser() {
       return this.userRole === 'User';
     },

@@ -4,7 +4,6 @@ module.exports = (sequelize, DataTypes) => {
   const Test = sequelize.define(
     'Test',
     {
-      id: {
         type: DataTypes.INTEGER,
         autoIncrement: true,
         primaryKey: true,
@@ -29,6 +28,7 @@ module.exports = (sequelize, DataTypes) => {
       },
       totalWormCount: {
         type: DataTypes.INTEGER,
+      },
       videoCount: {
         type: DataTypes.INTEGER,
         defaultValue: 0,
