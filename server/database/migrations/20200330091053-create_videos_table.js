@@ -6,12 +6,10 @@ module.exports = {
       id: {
         type: Sequelize.INTEGER,
         autoIncrement: true,
-        primaryKey: true,
       },
       test_id: {
         type: Sequelize.STRING,
       },
-// Temp comment
       video_id: {
         type: Sequelize.STRING,
       },

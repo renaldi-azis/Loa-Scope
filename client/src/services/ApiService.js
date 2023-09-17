@@ -14,7 +14,6 @@ $http.interceptors.request.use(
       newConfig.headers.common.Authorization = `Bearer ${$helpers.getApiToken()}`;
     }
     return newConfig;
-// Temp comment
   },
   (err) => Promise.reject(err),
 );

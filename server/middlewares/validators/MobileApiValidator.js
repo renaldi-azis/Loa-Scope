@@ -39,7 +39,6 @@ const createTest = async (req, res, next) => {
   let test = await Test.findOne({
     where: {
       testId: value.testId,
-// Temp comment
     },
   });
   if (test) {

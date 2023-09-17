@@ -10,7 +10,6 @@ import './config';
 import './helpers';
 import './filters';
 import './services/ApiService';
-// Temp comment
 
 import vuetify from './plugins/vuetify';
 import router from './router';

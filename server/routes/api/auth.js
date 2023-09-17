@@ -1,9 +1,9 @@
 /**
  * @description Define Auth API Routes
  */
+// Temp comment
 
 // Auth API Router
-// Temp comment
 const authApiRouter = require('express').Router();
 
 // Validator Middleware

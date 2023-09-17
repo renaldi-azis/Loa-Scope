@@ -46,6 +46,7 @@ export default {
   mixins: [TestService],
   components: {
     DataTable,
+  },
   data: () => ({
     status: {
       isLoading: false,

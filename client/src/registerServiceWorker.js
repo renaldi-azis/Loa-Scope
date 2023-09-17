@@ -17,5 +17,4 @@ if (process.env.NODE_ENV === 'production') {
       console.log('Content has been cached for offline use.');
     },
     updatefound() {
-// Temp comment
       console.log('New content is downloading.');

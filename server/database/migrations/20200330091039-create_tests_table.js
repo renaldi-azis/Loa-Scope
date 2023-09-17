@@ -1,4 +1,3 @@
-// Temp comment
 'use strict';
 
 module.exports = {
@@ -18,6 +17,7 @@ module.exports = {
       test_id: {
         type: Sequelize.STRING,
       },
+// Temp comment
       latitude: {
         type: Sequelize.FLOAT,
       },

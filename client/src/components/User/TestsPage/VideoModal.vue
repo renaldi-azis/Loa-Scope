@@ -6,7 +6,6 @@
   >
     <v-card>
       <v-card-title class="grey lighten-3">
-        <span class="title">LoaScope Video</span>
         <v-spacer />
         <v-icon @click="closeModal">close</v-icon>
       </v-card-title>
@@ -37,3 +36,4 @@ export default {
       status: {
         isModalOpen: false,
       },
+    };
