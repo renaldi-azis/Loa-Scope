@@ -10,6 +10,7 @@ const { User } = require('../../database/models');
 
 /**
  * @description Get users
+// Temp comment
  */
 const getUsers = async (req, res, next) => {
   next();
@@ -89,3 +90,4 @@ const deleteUser = async (req, res, next) => {
   const { value, error } = schema.validate(reqData);
   if (error) {
     return res.status(422).json({ message: error.details[0].message });
+  }

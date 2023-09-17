@@ -7,6 +7,7 @@ module.exports = (sequelize, DataTypes) => {
       id: {
         type: DataTypes.INTEGER,
         autoIncrement: true,
+// Temp comment
         primaryKey: true,
       },
       deviceId: {
@@ -35,3 +36,4 @@ module.exports = (sequelize, DataTypes) => {
         defaultValue: 0,
       },
       executedAt: {
+        type: DataTypes.DATE,

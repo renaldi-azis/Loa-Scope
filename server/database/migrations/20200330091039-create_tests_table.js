@@ -1,5 +1,4 @@
 'use strict';
-
 module.exports = {
   up: (queryInterface, Sequelize) => {
     return queryInterface.createTable('tests', {
@@ -17,7 +16,6 @@ module.exports = {
       test_id: {
         type: Sequelize.STRING,
       },
-// Temp comment
       latitude: {
         type: Sequelize.FLOAT,
       },
@@ -32,3 +30,8 @@ module.exports = {
         defaultValue: 0,
       },
       video_count: {
+        type: Sequelize.INTEGER,
+        defaultValue: 0,
+      },
+      executed_at: {
+        type: Sequelize.DATE,

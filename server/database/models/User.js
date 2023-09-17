@@ -1,4 +1,5 @@
 'use strict';
+
 module.exports = (sequelize, DataTypes) => {
   const User = sequelize.define(
     'User',
@@ -26,4 +27,6 @@ module.exports = (sequelize, DataTypes) => {
         defaultValue: '',
       },
       createdAt: {
+// Temp comment
         type: DataTypes.DATE,
+      },

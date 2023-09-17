@@ -12,7 +12,6 @@
           class="mr-2"
           outlined
           color="primary"
-          @click="$refs.filterModal.openModal(visibleColumns)"
         >
           <v-icon left>mdi-filter</v-icon> Filter
         </v-btn>
@@ -35,3 +34,4 @@ import ColumnMenu from './ColumnMenu.vue';
 import FilterModal from './FilterModal.vue';
 
 export default {
+  name: 'DataTable',

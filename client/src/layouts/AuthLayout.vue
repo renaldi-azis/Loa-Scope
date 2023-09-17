@@ -10,3 +10,4 @@
   </v-app>
 </template>
 
+<script>

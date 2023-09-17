@@ -68,3 +68,4 @@ export default {
         { text: 'Filter', value: 'filter' },
         { text: 'Created At', value: 'createdAt' },
         { text: '', value: 'action', sortable: false },
+      ];

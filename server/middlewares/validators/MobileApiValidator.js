@@ -68,3 +68,4 @@ const createVideo = async (req, res, next) => {
     testId: Joi.string().required().label('Test ID'),
     videoId: Joi.string().required().label('Video ID'),
     videoNumber: Joi.number().required().label('Video Number'),
+    videoPath: Joi.string().required().label('Video Path'),

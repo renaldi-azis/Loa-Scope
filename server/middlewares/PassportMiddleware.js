@@ -1,7 +1,6 @@
 /**
  * @description Uses passport.js to authenticate a user
  */
-// Temp comment
 
 /** Dependencies */
 const passport = require('passport');
@@ -39,3 +38,4 @@ passport.serializeUser((user, done) => {
 
 /** Define how Passport should deserialize a user */
 passport.deserializeUser(async (id, done) => {
+  try {

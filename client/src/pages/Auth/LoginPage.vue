@@ -8,7 +8,6 @@
           </v-card-title>
           <v-card-text>
             <v-text-field
-              prepend-inner-icon="person"
               label="Username*"
               v-model="user.username"
               :rules="getValidators('Username', ['required'])"
@@ -47,3 +46,4 @@ export default {
   name: 'LoginPage',
   mixins: [AuthService],
   data() {
+    return {

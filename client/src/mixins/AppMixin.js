@@ -48,3 +48,4 @@ export default {
         if (mainRule === 'max-len') {
           const maxLength = parseInt(sections[1], 10);
           return (v) => (!!v && v.length <= maxLength) || `${fieldLabel} must be less than ${maxLength} characters`;
+        }

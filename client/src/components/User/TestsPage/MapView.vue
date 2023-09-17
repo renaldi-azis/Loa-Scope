@@ -86,7 +86,6 @@ const UNIT = 50;
 export default {
   name: 'MapView',
   data() {
-    return {
       mapCenter: {
         lat: 3.891300262206071,
         lng: 11.60100792382417,
@@ -116,3 +115,5 @@ export default {
       return this.filteredData.map((row) => ({
         lat: row.latitude,
         lng: row.longitude,
+      }));
+    },

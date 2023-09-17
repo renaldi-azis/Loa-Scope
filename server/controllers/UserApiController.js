@@ -18,6 +18,7 @@ const getUsers = async (req, res) => {
     attributes: {
       exclude: ['password'],
     },
+    where: {
       id: {
         [Op.ne]: req.user.id,
       },
@@ -31,7 +32,6 @@ const getUsers = async (req, res) => {
  * @description Create a new user
  */
 const createUser = async (req, res) => {
-  const { reqData } = req;
 
   reqData.password = bcrypt.hashSync(reqData.password, 10);
   reqData.role = USER_ROLES.User;
@@ -61,3 +61,4 @@ const updateUser = async (req, res) => {
 };
 
 /**
+ * @description Delete an existing user

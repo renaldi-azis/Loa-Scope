@@ -20,7 +20,6 @@ module.exports = (sequelize, DataTypes) => {
       },
       videoPath: {
         type: DataTypes.STRING,
-// Temp comment
       },
       videoUrl: {
         type: DataTypes.STRING,
@@ -34,3 +33,4 @@ module.exports = (sequelize, DataTypes) => {
         defaultValue: 0,
       },
       recordedAt: {
+        type: DataTypes.DATE,

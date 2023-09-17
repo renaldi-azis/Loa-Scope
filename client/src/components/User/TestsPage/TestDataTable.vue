@@ -116,3 +116,4 @@ export default {
           type: 'number',
           visible: true,
         },
+        {

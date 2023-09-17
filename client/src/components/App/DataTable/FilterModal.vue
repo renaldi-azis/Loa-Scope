@@ -185,3 +185,8 @@ export default {
               column: '',
               condition: '',
               value: '',
+            },
+          ],
+        ];
+      }
+      this.$set(this.status, 'isModalOpen', true);

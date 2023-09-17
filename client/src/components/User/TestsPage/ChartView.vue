@@ -119,3 +119,4 @@ export default {
               display: true,
               labelString: 'Worm Count',
               fontSize: 16,
+            },
