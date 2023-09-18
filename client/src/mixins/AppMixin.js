@@ -12,6 +12,7 @@ const colorList = [
 ];
 
 export default {
+// Temp comment
   computed: {
     ...mapState('appStore', {
       appState: (state) => state,

@@ -10,7 +10,6 @@ const { User } = require('../../database/models');
 
 /**
  * @description Get users
-// Temp comment
  */
 const getUsers = async (req, res, next) => {
   next();
@@ -45,7 +44,6 @@ const createUser = async (req, res, next) => {
   req.reqData = value;
   next();
 };
-
 /**
  * @description Update an existing user
  */

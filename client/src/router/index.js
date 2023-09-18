@@ -20,6 +20,7 @@ const routeMiddleware = (routeName, next) => {
       'tests-page',
     ];
     if (!allowedRouteNames.includes(routeName)) {
+      return next({ name: 'tests-page' });
     }
   }
   return next();

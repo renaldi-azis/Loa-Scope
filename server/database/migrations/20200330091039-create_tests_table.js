@@ -1,4 +1,5 @@
 'use strict';
+
 module.exports = {
   up: (queryInterface, Sequelize) => {
     return queryInterface.createTable('tests', {
@@ -16,7 +17,6 @@ module.exports = {
       test_id: {
         type: Sequelize.STRING,
       },
-      latitude: {
         type: Sequelize.FLOAT,
       },
       longitude: {

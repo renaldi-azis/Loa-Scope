@@ -50,6 +50,7 @@ export default {
       user: {},
       status: {
         isModalOpen: false,
+        isSaving: false,
       },
     };
   },
