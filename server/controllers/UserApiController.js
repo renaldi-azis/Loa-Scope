@@ -20,7 +20,6 @@ const getUsers = async (req, res) => {
     },
     where: {
       id: {
-        [Op.ne]: req.user.id,
       },
     },
   });

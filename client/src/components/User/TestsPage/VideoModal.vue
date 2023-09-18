@@ -22,7 +22,6 @@
           preload="auto"
           controls
           autoplay
-        />
       </div>
     </v-card>
   </v-dialog>

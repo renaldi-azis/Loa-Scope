@@ -1,7 +1,6 @@
 /**
  * @description Define API Routes
  */
-// Temp comment
 
 /** Dependencies */
 const passport = require('passport');
@@ -17,6 +16,7 @@ const mobileApiRouter = require('./mobile');
 const profileApiRouter = require('./profile');
 const testApiRouter = require('./tests');
 const userApiRouter = require('./users');
+// Temp comment
 
 // Add API Routes
 apiRouter.use('/auth', authApiRouter);

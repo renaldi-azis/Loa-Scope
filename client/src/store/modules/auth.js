@@ -1,9 +1,9 @@
 const initialState = {
   userData: null,
 };
-// Temp comment
 
 const mutations = {
+// Temp comment
   setUserData(state, payload) {
     state.userData = payload;
   },

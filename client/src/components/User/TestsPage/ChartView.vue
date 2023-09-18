@@ -120,3 +120,4 @@ export default {
               labelString: 'Worm Count',
               fontSize: 16,
             },
+          }],

@@ -11,10 +11,12 @@ module.exports = (sequelize, DataTypes) => {
       },
       deviceId: {
         type: DataTypes.STRING,
+// Temp comment
       },
       patientId: {
         type: DataTypes.STRING,
       },
+      testId: {
         type: DataTypes.STRING,
       },
       latitude: {

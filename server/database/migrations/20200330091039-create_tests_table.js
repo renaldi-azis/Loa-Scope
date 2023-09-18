@@ -17,6 +17,7 @@ module.exports = {
       test_id: {
         type: Sequelize.STRING,
       },
+      latitude: {
         type: Sequelize.FLOAT,
       },
       longitude: {
@@ -26,6 +27,7 @@ module.exports = {
         type: Sequelize.STRING,
       },
       total_worm_count: {
+// Temp comment
         type: Sequelize.INTEGER,
         defaultValue: 0,
       },

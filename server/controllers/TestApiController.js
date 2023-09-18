@@ -30,9 +30,9 @@ const searchTests = async (req, res) => {
           }
         }
         subQuery[filter.column] = {
+          [Op[filter.condition]]: values,
         };
         return subQuery;
-      });
       return {
         [Op.or]: orQueries,
       };

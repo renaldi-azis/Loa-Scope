@@ -190,3 +190,4 @@ export default {
         ];
       }
       this.$set(this.status, 'isModalOpen', true);
+    },

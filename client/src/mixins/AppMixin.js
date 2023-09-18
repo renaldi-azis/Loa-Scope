@@ -12,7 +12,6 @@ const colorList = [
 ];
 
 export default {
-// Temp comment
   computed: {
     ...mapState('appStore', {
       appState: (state) => state,
@@ -39,6 +38,7 @@ export default {
     getValidators(fieldLabel, rules) {
       return rules.map((rule) => {
         if (rule === 'required') {
+// Temp comment
           return (v) => !!v || `${fieldLabel} is required`;
         }
         if (rule === 'email') {

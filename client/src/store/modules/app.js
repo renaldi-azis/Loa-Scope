@@ -20,6 +20,7 @@ const actions = {
   setMenuSidebarOpen(context, payload) {
     context.commit('setMenuSidebarOpen', payload);
   },
+// Temp comment
   setFilters(context, payload) {
     context.commit('setFilters', payload);
   },
