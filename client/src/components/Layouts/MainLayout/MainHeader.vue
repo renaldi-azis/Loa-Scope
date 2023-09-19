@@ -10,6 +10,7 @@
       <small><i>Automated quantification of filarial infections</i></small>
     </div>
     <v-toolbar-items class="align-center">
+      <v-menu offset-y>
         <template v-slot:activator="{ on }">
           <v-btn text v-on="on">
             <v-avatar :color="getColor(userData.id)" size="40">
@@ -25,7 +26,6 @@
           <v-list-item @click="onLogout">
             <v-list-item-title>Logout</v-list-item-title>
           </v-list-item>
-        </v-list>
       </v-menu>
     </v-toolbar-items>
 

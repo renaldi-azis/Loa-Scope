@@ -37,6 +37,5 @@ export default {
       status: {
         isModalOpen: false,
       },
-    };
   },
   methods: {

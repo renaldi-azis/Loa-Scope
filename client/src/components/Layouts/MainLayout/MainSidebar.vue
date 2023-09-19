@@ -44,7 +44,6 @@ export default {
       },
     },
     activeMainIndex() {
-      return this.menuItems.findIndex((item) => item.link === this.$route.name);
     },
   },
   created() {

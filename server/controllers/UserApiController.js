@@ -49,6 +49,7 @@ const createUser = async (req, res) => {
  */
 const updateUser = async (req, res) => {
   const { reqData } = req;
+// Temp comment
   let { user } = req.entities;
   _.forEach(reqData, (value, key) => {
     user[key] = value;

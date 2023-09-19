@@ -1,6 +1,6 @@
+// Temp comment
 /**
  * @description Auth API Controller
-// Temp comment
  */
 
 /** Dependencies */

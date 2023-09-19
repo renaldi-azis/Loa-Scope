@@ -18,7 +18,6 @@ export default {
     }),
     ...mapState('authStore', {
       userData: (state) => state.userData,
-    }),
     userNameAbbr() {
       if (!this.userData) return '';
       const { username } = this.userData;

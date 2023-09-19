@@ -6,6 +6,7 @@ module.exports = {
       id: {
         type: Sequelize.INTEGER,
         autoIncrement: true,
+        primaryKey: true,
       },
       device_id: {
         type: Sequelize.STRING,
@@ -30,7 +31,6 @@ module.exports = {
         defaultValue: 0,
       },
       video_count: {
-        type: Sequelize.INTEGER,
         defaultValue: 0,
       },
       executed_at: {

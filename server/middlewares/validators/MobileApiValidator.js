@@ -18,7 +18,6 @@ const createTest = async (req, res, next) => {
     'testId',
     'lat',
     'lng',
-// Temp comment
     'location',
     'createdAt',
   ]);
@@ -48,7 +47,6 @@ const createTest = async (req, res, next) => {
 
   req.reqData = value;
   next();
-};
 
 /**
  * @description Create Video

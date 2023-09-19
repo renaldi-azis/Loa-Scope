@@ -22,6 +22,7 @@
               :rules="getValidators('Password', ['required'])"
             >
             </v-text-field>
+          </v-card-text>
           <v-card-actions>
             <v-btn
               type="submit"
@@ -35,7 +36,6 @@
           </v-card-actions>
         </v-card>
       </v-form>
-    </v-col>
   </v-row>
 </template>
 
