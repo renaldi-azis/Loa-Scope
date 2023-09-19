@@ -13,7 +13,6 @@ const { User } = require('../../database/models');
  * @description Login
  */
 const login = async (req, res, next) => {
-  const reqData = _.pick(req.body, ['username', 'password']);
   // Validate request
   const schema = Joi.object({
     username: Joi.string().required().label('Username'),

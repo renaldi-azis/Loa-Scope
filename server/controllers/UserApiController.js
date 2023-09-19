@@ -41,7 +41,6 @@ const createUser = async (req, res) => {
   user = user.toJSON();
   delete user.password;
 
-// Temp comment
   return res.status(200).json(user);
 };
 

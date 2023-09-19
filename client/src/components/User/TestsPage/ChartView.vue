@@ -101,7 +101,6 @@ export default {
             title: () => '',
             afterTitle: (tooltipItem, data) => `Number of occurencies: ${data.datasets[0].data[tooltipItem[0].index]}`,
             label: () => '',
-            afterLabel: (tooltipItem, data) => {
               const baseValue = +data.labels[tooltipItem.index];
               return this.getPercentage(baseValue, false);
             },

@@ -25,7 +25,6 @@ module.exports = (sequelize, DataTypes) => {
         type: DataTypes.STRING,
       },
       videoSize: {
-// Temp comment
         type: DataTypes.INTEGER,
         defaultValue: 0,
       },

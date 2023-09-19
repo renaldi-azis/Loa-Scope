@@ -174,6 +174,7 @@ export default {
       isModalOpen: false,
     },
   }),
+  methods: {
     openModal() {
       if (this.appState.filters && this.appState.filters.length > 0) {
         this.filterGroups = _.cloneDeep(this.appState.filters);
@@ -194,3 +195,4 @@ export default {
       this.$set(this.status, 'isModalOpen', false);
     },
     getColumnType(columnName) {
+      const column = this.columns.find((_column) => _column.value === columnName);

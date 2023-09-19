@@ -22,5 +22,4 @@ module.exports = {
         allowNull: false,
       },
       filter: {
-// Temp comment
         type: Sequelize.STRING,

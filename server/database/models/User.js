@@ -25,7 +25,6 @@ module.exports = (sequelize, DataTypes) => {
       filter: {
         type: DataTypes.STRING,
         defaultValue: '',
-// Temp comment
       },
       createdAt: {
         type: DataTypes.DATE,

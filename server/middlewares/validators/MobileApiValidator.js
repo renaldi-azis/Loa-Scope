@@ -1,4 +1,3 @@
-// Temp comment
 /**
  * @description Mobile API Validator
  */
@@ -19,6 +18,7 @@ const createTest = async (req, res, next) => {
     'testId',
     'lat',
     'lng',
+// Temp comment
     'location',
     'createdAt',
   ]);

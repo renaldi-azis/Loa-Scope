@@ -55,6 +55,7 @@ const updateUser = async (req, res, next) => {
   };
   // Validate request
   const schema = Joi.object({
+// Temp comment
     userId: Joi.number().min(1).label('User ID'),
     filter: Joi.string().allow(null, '').label('Filter string'),
   });
