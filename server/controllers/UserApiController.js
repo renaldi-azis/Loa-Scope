@@ -20,6 +20,7 @@ const getUsers = async (req, res) => {
     },
     where: {
       id: {
+        [Op.ne]: req.user.id,
       },
     },
   });
@@ -40,6 +41,7 @@ const createUser = async (req, res) => {
   user = user.toJSON();
   delete user.password;
 
+// Temp comment
   return res.status(200).json(user);
 };
 

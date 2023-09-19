@@ -16,7 +16,6 @@ passport.use(
       jwtFromRequest: passportJWT.ExtractJwt.fromAuthHeaderAsBearerToken(),
       secretOrKey: process.env.INTERNAL_JWT_SECRET,
     },
-    async (jwtPayload, done) => {
       try {
         const user = await User.findOne({
           where: {

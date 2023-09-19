@@ -38,7 +38,6 @@ export default {
     getValidators(fieldLabel, rules) {
       return rules.map((rule) => {
         if (rule === 'required') {
-// Temp comment
           return (v) => !!v || `${fieldLabel} is required`;
         }
         if (rule === 'email') {
@@ -50,3 +49,4 @@ export default {
           const maxLength = parseInt(sections[1], 10);
           return (v) => (!!v && v.length <= maxLength) || `${fieldLabel} must be less than ${maxLength} characters`;
         }
+        if (mainRule === 'min-len') {

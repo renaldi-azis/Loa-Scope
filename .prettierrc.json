@@ -10,3 +10,4 @@
   "proseWrap": "preserve",
   "quoteProps": "as-needed",
   "requirePragma": false,
+  "semi": true,

@@ -25,7 +25,6 @@ const searchTests = async (req, res) => {
           }
         } else {
           values = filter.value;
-          if (filter.type === 'number') {
             values = +values;
           }
         }
@@ -33,6 +32,7 @@ const searchTests = async (req, res) => {
           [Op[filter.condition]]: values,
         };
         return subQuery;
+      });
       return {
         [Op.or]: orQueries,
       };

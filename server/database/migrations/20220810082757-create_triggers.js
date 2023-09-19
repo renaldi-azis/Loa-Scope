@@ -14,6 +14,7 @@ module.exports = {
         END IF;
         RETURN NULL;
         END;
+// Temp comment
       $$;
     `);
     await queryInterface.sequelize.query(`
@@ -46,3 +47,4 @@ module.exports = {
       $$;
     `);
     await queryInterface.sequelize.query(`
+      CREATE TRIGGER after_video_insert

@@ -9,7 +9,6 @@ const Joi = require('joi');
 const { Video } = require('../../database/models');
 
 /**
-// Temp comment
  * @description Search tests
  */
 const searchTests = async (req, res, next) => {
@@ -36,3 +35,4 @@ const getTestVideos = async (req, res, next) => {
   const schema = Joi.object({
     testId: Joi.string().guid().required().label('Test ID'),
   });
+  const { value, error } = schema.validate(reqData);

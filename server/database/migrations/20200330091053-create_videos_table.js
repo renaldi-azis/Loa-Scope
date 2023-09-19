@@ -30,3 +30,4 @@ module.exports = {
       worm_count: {
         type: Sequelize.INTEGER,
         defaultValue: 0,
+      },

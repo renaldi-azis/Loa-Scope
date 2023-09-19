@@ -19,6 +19,8 @@
           v-model="column.visible"
         />
       </v-list-item>
+    </v-list>
   </v-menu>
 </template>
 
+<script>

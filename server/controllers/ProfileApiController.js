@@ -4,7 +4,6 @@
 
 /** Dependencies */
 const bcrypt = require('bcrypt');
-
 /**
  * @description Change my password
  */

@@ -117,3 +117,4 @@ export default {
           visible: true,
         },
         {
+          text: 'Executed At',

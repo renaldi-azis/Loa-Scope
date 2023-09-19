@@ -28,3 +28,4 @@ const login = async (req, res, next) => {
     where: {
       username: value.username,
     },
+  });

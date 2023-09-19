@@ -27,7 +27,6 @@ module.exports = {
         type: Sequelize.STRING,
       },
       total_worm_count: {
-// Temp comment
         type: Sequelize.INTEGER,
         defaultValue: 0,
       },

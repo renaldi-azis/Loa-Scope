@@ -121,3 +121,16 @@ export default {
               fontSize: 16,
             },
           }],
+          yAxes: [{
+            scaleLabel: {
+              display: true,
+              labelString: 'Number of occurencies',
+              fontSize: 16,
+            },
+          }],
+        },
+        customLine: {
+          color: 'red',
+        },
+        plugins: [{
+          id: 'bar-chart-plugin',

@@ -6,12 +6,10 @@ module.exports = (sequelize, DataTypes) => {
     {
       id: {
         type: DataTypes.INTEGER,
-        autoIncrement: true,
         primaryKey: true,
       },
       deviceId: {
         type: DataTypes.STRING,
-// Temp comment
       },
       patientId: {
         type: DataTypes.STRING,
