@@ -134,3 +134,4 @@ export default {
         },
         plugins: [{
           id: 'bar-chart-plugin',
+          beforeEvent: (chart, e) => {

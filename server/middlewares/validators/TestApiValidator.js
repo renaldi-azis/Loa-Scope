@@ -36,3 +36,4 @@ const getTestVideos = async (req, res, next) => {
     testId: Joi.string().guid().required().label('Test ID'),
   });
   const { value, error } = schema.validate(reqData);
+  if (error) {

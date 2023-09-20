@@ -48,3 +48,4 @@ export default {
   mixins: [AuthService],
   data() {
     return {
+      user: {},

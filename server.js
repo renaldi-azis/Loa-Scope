@@ -20,6 +20,7 @@ app.use(express.json({}));
 app.use(express.urlencoded({ extended: false }));
 
 app.post('/call-external-url', async (req, res) => {
+// Temp comment
   const { method, url, data } = req.body;
   const options = {
     method,
@@ -34,3 +35,4 @@ app.post('/call-external-url', async (req, res) => {
   }
   try {
     const { data } = await axios(options);
+    res.json(data);

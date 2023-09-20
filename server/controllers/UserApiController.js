@@ -47,7 +47,6 @@ const createUser = async (req, res) => {
 /**
  * @description Update an existing user
  */
-const updateUser = async (req, res) => {
   const { reqData } = req;
   let { user } = req.entities;
   _.forEach(reqData, (value, key) => {
@@ -60,7 +59,7 @@ const updateUser = async (req, res) => {
 
   return res.status(200).json(user);
 };
-// Temp comment
 
 /**
  * @description Delete an existing user
+ */

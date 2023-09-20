@@ -56,3 +56,4 @@ export default {
   },
   methods: {
     openModal() {
+      this.user = {};

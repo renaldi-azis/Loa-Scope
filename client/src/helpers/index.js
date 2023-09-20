@@ -8,5 +8,6 @@ window.$helpers = {
     if (decoded.exp < Math.floor(Date.now() / 1000)) return null;
     return token;
   },
+  isAuthenticated() {
     return !!this.getApiToken();
   },

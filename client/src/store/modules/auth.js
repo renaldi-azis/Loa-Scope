@@ -1,5 +1,4 @@
 const initialState = {
-  userData: null,
 };
 
 const mutations = {
@@ -15,3 +14,4 @@ const actions = {
 };
 
 const getters = {
+  //

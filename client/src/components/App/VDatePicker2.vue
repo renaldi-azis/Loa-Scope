@@ -33,3 +33,4 @@ import moment from 'moment';
 export default {
   props: ['label', 'value', 'format', 'rules', 'hideDetails', 'required', 'disabled'],
   computed: {
+    formattedDate() {

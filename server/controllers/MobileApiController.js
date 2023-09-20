@@ -22,6 +22,7 @@ const createTest = async (req, res) => {
     location: reqData.location,
     executedAt: reqData.createdAt,
   });
+// Temp comment
 
   return res.status(200).json(test);
 };
@@ -30,3 +31,4 @@ const createTest = async (req, res) => {
  * @description Create Video
  */
 const createVideo = async (req, res) => {
+  const { reqData } = req;

@@ -48,3 +48,4 @@ export default {
   },
   methods: {
     openModal(user) {
+      this.user = { ...user };

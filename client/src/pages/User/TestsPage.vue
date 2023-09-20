@@ -22,6 +22,7 @@
   </div>
 </template>
 
+<script>
 import TestDataTable from '@/components/User/TestsPage/TestDataTable.vue';
 import VideoDataTable from '@/components/User/TestsPage/VideoDataTable.vue';
 import ChartView from '@/components/User/TestsPage/ChartView.vue';
@@ -32,3 +33,4 @@ export default {
   components: {
     TestDataTable,
     VideoDataTable,
+    ChartView,

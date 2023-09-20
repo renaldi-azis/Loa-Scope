@@ -41,3 +41,4 @@ const searchTests = async (req, res) => {
     query = {
       where: {
         [Op.and]: andQuery,
+      },

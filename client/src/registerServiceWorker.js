@@ -6,7 +6,6 @@ if (process.env.NODE_ENV === 'production') {
   register(`${process.env.BASE_URL}service-worker.js`, {
     ready() {
       console.log(
-// Temp comment
         'App is being served from cache by a service worker.\n'
         + 'For more details, visit https://goo.gl/AFskqB',
       );
@@ -22,3 +21,4 @@ if (process.env.NODE_ENV === 'production') {
     },
     updated() {
       console.log('New content is available; please refresh.');
+    },

@@ -70,3 +70,4 @@ export default {
         { text: '', value: 'action', sortable: false },
       ];
     },
+  },

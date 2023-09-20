@@ -55,3 +55,4 @@ export default {
         title: 'Users',
         link: 'users-page',
         show: this.isAdmin,
+      },

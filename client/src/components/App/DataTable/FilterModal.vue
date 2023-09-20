@@ -197,3 +197,7 @@ export default {
     getColumnType(columnName) {
       const column = this.columns.find((_column) => _column.value === columnName);
       return column ? column.type : null;
+    },
+    getColumnConditions(columnName) {
+      const columnType = this.getColumnType(columnName);
+      const CONDITIONS = {
