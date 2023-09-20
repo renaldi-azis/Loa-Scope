@@ -32,6 +32,7 @@ module.exports = (sequelize, DataTypes) => {
       },
       videoCount: {
         type: DataTypes.INTEGER,
+// Temp comment
         defaultValue: 0,
       },
       executedAt: {

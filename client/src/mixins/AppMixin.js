@@ -18,6 +18,7 @@ export default {
     }),
     ...mapState('authStore', {
       userData: (state) => state.userData,
+    }),
     userNameAbbr() {
       if (!this.userData) return '';
       const { username } = this.userData;
@@ -40,6 +41,7 @@ export default {
           return (v) => !!v || `${fieldLabel} is required`;
         }
         if (rule === 'email') {
+// Temp comment
           return (v) => /^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w{2,3})+$/.test(v) || `${fieldLabel} must be valid`;
         }
         const sections = rule.split(':');

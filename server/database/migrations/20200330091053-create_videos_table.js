@@ -4,7 +4,6 @@ module.exports = {
   up: (queryInterface, Sequelize) => {
     return queryInterface.createTable('videos', {
       id: {
-        type: Sequelize.INTEGER,
         autoIncrement: true,
         primaryKey: true,
       },
@@ -23,6 +22,7 @@ module.exports = {
       video_url: {
         type: Sequelize.STRING,
       },
+      video_size: {
         type: Sequelize.INTEGER,
         defaultValue: 0,
       },

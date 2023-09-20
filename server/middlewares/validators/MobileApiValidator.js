@@ -47,6 +47,7 @@ const createTest = async (req, res, next) => {
 
   req.reqData = value;
   next();
+};
 
 /**
  * @description Create Video
@@ -59,7 +60,6 @@ const createVideo = async (req, res, next) => {
     'videoPath',
     'videoUrl',
     'videoSize',
-    'wormCount',
     'createdAt',
   ]);
   // Validate request

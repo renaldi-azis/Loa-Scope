@@ -26,6 +26,7 @@
           <v-list-item @click="onLogout">
             <v-list-item-title>Logout</v-list-item-title>
           </v-list-item>
+        </v-list>
       </v-menu>
     </v-toolbar-items>
 
@@ -42,4 +43,3 @@ export default {
     ChangePasswordModal,
   },
   methods: {
-    onLogout() {

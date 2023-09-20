@@ -111,7 +111,6 @@ export default {
     wormCountTicks() {
       const max = Math.max(...this.data.map((item) => item.totalWormCount));
       return _.range(0, Math.ceil(max / UNIT + 1) * UNIT, UNIT);
-    },
     mapData() {
       return this.filteredData.map((row) => ({
         lat: row.latitude,

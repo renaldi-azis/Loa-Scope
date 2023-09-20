@@ -8,7 +8,6 @@
         </div>
       </v-toolbar-title>
     </v-toolbar>
-    <v-data-table
       :headers="videoTableColumns"
       :items="videos"
       :loading="status.isLoading"

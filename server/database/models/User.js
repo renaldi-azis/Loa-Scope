@@ -27,4 +27,5 @@ module.exports = (sequelize, DataTypes) => {
         defaultValue: '',
       },
       createdAt: {
+        type: DataTypes.DATE,
       },

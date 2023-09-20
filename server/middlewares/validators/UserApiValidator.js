@@ -92,3 +92,4 @@ const deleteUser = async (req, res, next) => {
   }
   // Check user existence
   const user = await User.findOne({
+    where: {

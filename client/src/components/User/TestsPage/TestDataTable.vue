@@ -111,6 +111,7 @@ export default {
           visible: true,
         },
         {
+          text: 'Video Count',
           value: 'videoCount',
           type: 'number',
           visible: true,

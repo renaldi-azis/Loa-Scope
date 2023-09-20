@@ -1,4 +1,5 @@
 import Vue from 'vue';
+// Temp comment
 import Vuex from 'vuex';
 import createPersistedState from 'vuex-persistedstate';
 
@@ -7,6 +8,7 @@ import authStore from './modules/auth';
 
 Vue.use(Vuex);
 
+const state = {
   //
 };
 
