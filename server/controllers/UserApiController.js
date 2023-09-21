@@ -47,6 +47,7 @@ const createUser = async (req, res) => {
 /**
  * @description Update an existing user
  */
+const updateUser = async (req, res) => {
   const { reqData } = req;
   let { user } = req.entities;
   _.forEach(reqData, (value, key) => {

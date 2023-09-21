@@ -20,7 +20,6 @@ app.use(express.json({}));
 app.use(express.urlencoded({ extended: false }));
 
 app.post('/call-external-url', async (req, res) => {
-// Temp comment
   const { method, url, data } = req.body;
   const options = {
     method,
@@ -30,6 +29,7 @@ app.post('/call-external-url', async (req, res) => {
     if (method === 'GET') {
       options.params = data;
     } else {
+// Temp comment
       options.body = data;
     }
   }

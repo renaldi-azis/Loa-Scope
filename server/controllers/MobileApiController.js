@@ -20,9 +20,7 @@ const createTest = async (req, res) => {
     latitude: reqData.lat,
     longitude: reqData.lng,
     location: reqData.location,
-    executedAt: reqData.createdAt,
   });
-// Temp comment
 
   return res.status(200).json(test);
 };

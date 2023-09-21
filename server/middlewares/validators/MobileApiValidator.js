@@ -62,7 +62,6 @@ const createVideo = async (req, res, next) => {
     'videoSize',
     'wormCount',
     'createdAt',
-// Temp comment
   ]);
   // Validate request
   const schema = Joi.object({

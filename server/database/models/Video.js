@@ -1,4 +1,3 @@
-'use strict';
 
 module.exports = (sequelize, DataTypes) => {
   const Video = sequelize.define(
@@ -22,7 +21,6 @@ module.exports = (sequelize, DataTypes) => {
         type: DataTypes.STRING,
       },
       videoUrl: {
-// Temp comment
         type: DataTypes.STRING,
       },
       videoSize: {

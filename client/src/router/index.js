@@ -3,7 +3,6 @@ import VueRouter from 'vue-router';
 
 import store from '@/store';
 
-Vue.use(VueRouter);
 
 const routeMiddleware = (routeName, next) => {
   const { userData } = store.state.authStore;
