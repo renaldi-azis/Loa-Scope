@@ -54,7 +54,6 @@ const createTest = async (req, res, next) => {
  */
 const createVideo = async (req, res, next) => {
   const reqData = _.pick(req.body, [
-    'testId',
     'videoId',
     'videoNumber',
     'videoPath',

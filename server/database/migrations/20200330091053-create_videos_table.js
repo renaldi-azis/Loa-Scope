@@ -1,5 +1,6 @@
 'use strict';
 
+module.exports = {
   up: (queryInterface, Sequelize) => {
     return queryInterface.createTable('videos', {
       id: {
@@ -23,6 +24,7 @@
         type: Sequelize.STRING,
       },
       video_size: {
+// Temp comment
         type: Sequelize.INTEGER,
         defaultValue: 0,
       },

@@ -26,7 +26,6 @@
     </template>
     <template v-slot:item.executedAt="{ item }">
       {{ item.executedAt | dateFormatter('YYYY-MM-DD hh:mm:ss A') }}
-    </template>
   </v-data-table>
 </template>
 

@@ -25,6 +25,7 @@ const generateVideoUrl = () => {
 };
 
 const generateTestVideos = (testId, count) => {
+  const videos = [];
   for (let i = 0; i < count; i += 1) {
     videos.push({
       testId,

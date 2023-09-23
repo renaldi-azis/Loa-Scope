@@ -1,4 +1,3 @@
-/**
  * @description Http Server
  */
 
@@ -29,7 +28,6 @@ app.post('/call-external-url', async (req, res) => {
     if (method === 'GET') {
       options.params = data;
     } else {
-// Temp comment
       options.body = data;
     }
   }

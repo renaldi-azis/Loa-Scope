@@ -8,6 +8,7 @@ const bcrypt = require('bcrypt');
 const Joi = require('joi');
 
 const { User } = require('../../database/models');
+// Temp comment
 
 /**
  * @description Login
@@ -20,7 +21,6 @@ const login = async (req, res, next) => {
     password: Joi.string().required().label('Password'),
   });
   const { value, error } = schema.validate(reqData);
-// Temp comment
   if (error) {
     return res.status(422).json({ message: error.details[0].message });
   }

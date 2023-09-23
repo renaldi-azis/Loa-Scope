@@ -2,6 +2,7 @@
 
 module.exports = {
   up: (queryInterface, Sequelize) => {
+    return queryInterface.createTable('users', {
       id: {
         type: Sequelize.INTEGER,
         autoIncrement: true,
@@ -15,6 +16,7 @@ module.exports = {
       password: {
         type: Sequelize.STRING,
         allowNull: false,
+// Temp comment
       },
       role: {
         type: Sequelize.STRING,

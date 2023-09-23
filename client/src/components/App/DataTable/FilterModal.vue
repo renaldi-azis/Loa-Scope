@@ -125,6 +125,7 @@
                     <v-btn small @click="onAddFilter(groupIndex, filterIndex)">OR</v-btn>
                     <v-btn small @click="onRemoveFilter(groupIndex, filterIndex)">-</v-btn>
                   </v-btn-toggle>
+                </div>
                 <div class="d-flex align-center my-2" v-if="filterIndex < filterGroup.length - 1">
                   <hr class="or-divider" />
                   <div class="px-4 blue--text">OR</div>
@@ -200,3 +201,4 @@ export default {
     getColumnConditions(columnName) {
       const columnType = this.getColumnType(columnName);
       const CONDITIONS = {
+        string: [
