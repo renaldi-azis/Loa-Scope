@@ -44,3 +44,4 @@ export default {
   },
   methods: {
     onLogout() {
+      $helpers.logout();

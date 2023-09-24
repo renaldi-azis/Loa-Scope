@@ -4,7 +4,6 @@
 
 /** Dependencies */
 const Joi = require('joi');
-// Temp comment
 
 const { Test, Video } = require('../database/models');
 
@@ -32,3 +31,4 @@ const createTest = async (req, res) => {
  */
 const createVideo = async (req, res) => {
   const { reqData } = req;
+

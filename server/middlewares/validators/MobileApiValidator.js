@@ -54,6 +54,7 @@ const createTest = async (req, res, next) => {
  */
 const createVideo = async (req, res, next) => {
   const reqData = _.pick(req.body, [
+    'testId',
     'videoId',
     'videoNumber',
     'videoPath',
@@ -68,3 +69,4 @@ const createVideo = async (req, res, next) => {
     videoId: Joi.string().required().label('Video ID'),
     videoNumber: Joi.number().required().label('Video Number'),
     videoPath: Joi.string().required().label('Video Path'),
+    videoUrl: Joi.string().required().label('Video Url'),

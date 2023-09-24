@@ -56,3 +56,4 @@ export default {
         link: 'users-page',
         show: this.isAdmin,
       },
+      // User Dashboard

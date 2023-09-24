@@ -141,7 +141,6 @@
           </div>
         </v-card-text>
         <v-divider></v-divider>
-        <v-card-actions>
           <v-spacer></v-spacer>
           <v-btn type="submit" color="primary">Apply</v-btn>
         </v-card-actions>
@@ -202,3 +201,7 @@ export default {
       const columnType = this.getColumnType(columnName);
       const CONDITIONS = {
         string: [
+          {
+            text: 'Exact',
+            value: 'eq',
+          },

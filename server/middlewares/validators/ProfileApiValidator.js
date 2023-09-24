@@ -3,6 +3,7 @@
  */
 
 /** Dependencies */
+// Temp comment
 const _ = require('lodash');
 const bcrypt = require('bcrypt');
 const Joi = require('joi');
@@ -21,3 +22,4 @@ const changePassword = async (req, res, next) => {
   if (error) {
     return res.status(422).json({ message: error.details[0].message });
   }
+  // Compare password

@@ -18,8 +18,8 @@
         {{ item.recordedAt | dateFormatter('YYYY-MM-DD hh:mm:ss A') }}
       </template>
     </v-data-table>
+    <video-modal ref="videoModal" />
   </v-card>
-</template>
 
 <script>
 import TestService from '@/services/TestService';
@@ -52,3 +52,4 @@ export default {
         {
           text: 'Video URL',
           value: 'videoUrl',
+        },

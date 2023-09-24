@@ -47,3 +47,4 @@ module.exports = {
     `);
     await queryInterface.sequelize.query(`
       CREATE TRIGGER after_video_insert
+        AFTER INSERT ON videos FOR EACH ROW

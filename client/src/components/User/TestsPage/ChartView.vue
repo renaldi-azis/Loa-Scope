@@ -135,3 +135,4 @@ export default {
         plugins: [{
           id: 'bar-chart-plugin',
           beforeEvent: (chart, e) => {
+            if (e.type === 'mousemove' && e.x >= e.chart.chartArea.left && e.x <= e.chart.chartArea.right) {

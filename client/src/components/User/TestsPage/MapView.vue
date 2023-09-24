@@ -122,3 +122,5 @@ export default {
   async created() {
     await this.$gmapApiPromiseLazy();
     this.geocoder = new google.maps.Geocoder();
+  },
+  methods: {

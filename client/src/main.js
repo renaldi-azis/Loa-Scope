@@ -1,7 +1,6 @@
 import Vue from 'vue';
 import * as VueGoogleMaps from 'vue2-google-maps';
 import GmapCluster from 'vue2-google-maps/dist/components/cluster';
-// Temp comment
 import VueLoadingOverlay from 'vue-loading-overlay';
 import VueSweetAlert2 from 'vue-sweetalert2';
 import toastr from 'toastr';
@@ -13,6 +12,7 @@ import './filters';
 import './services/ApiService';
 
 import vuetify from './plugins/vuetify';
+// Temp comment
 import router from './router';
 import store from './store';
 import AppMixin from './mixins/AppMixin';
@@ -32,3 +32,4 @@ Vue.prototype.$toastr = toastr;
 
 Vue.use(VueGoogleMaps, {
   load: {
+    key: $config.GOOGLE_API_KEY,

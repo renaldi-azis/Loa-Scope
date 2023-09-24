@@ -29,7 +29,6 @@ const getUsers = async (req, res) => {
 };
 
 /**
- * @description Create a new user
  */
 const createUser = async (req, res) => {
   const { reqData } = req;
@@ -64,3 +63,4 @@ const updateUser = async (req, res) => {
 /**
  * @description Delete an existing user
  */
+const deleteUser = async (req, res) => {

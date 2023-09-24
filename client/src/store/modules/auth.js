@@ -15,4 +15,3 @@ const actions = {
 };
 
 const getters = {
-  //

@@ -20,3 +20,4 @@ $http.interceptors.request.use(
 
 $http.interceptors.response.use(
   (res) => res,
+  (err) => {

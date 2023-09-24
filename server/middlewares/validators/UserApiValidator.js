@@ -74,7 +74,6 @@ const updateUser = async (req, res, next) => {
 
   req.reqData = value;
   req.entities = { user };
-// Temp comment
   next();
 };
 
@@ -95,3 +94,5 @@ const deleteUser = async (req, res, next) => {
   const user = await User.findOne({
     where: {
       id: value.userId,
+    },
+  });

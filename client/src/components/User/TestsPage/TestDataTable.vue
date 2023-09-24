@@ -120,3 +120,5 @@ export default {
           text: 'Executed At',
           value: 'executedAt',
           type: 'date',
+          visible: true,
+        },

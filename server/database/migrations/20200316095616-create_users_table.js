@@ -16,12 +16,11 @@ module.exports = {
       password: {
         type: Sequelize.STRING,
         allowNull: false,
-// Temp comment
       },
       role: {
-        type: Sequelize.STRING,
         allowNull: false,
       },
       filter: {
         type: Sequelize.STRING,
         defaultValue: '',
+      },

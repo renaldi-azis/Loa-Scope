@@ -19,7 +19,6 @@
         :rules="rules"
         v-on="on"
       />
-    </template>
     <v-date-picker scrollable :value="value" @input="onChangeDate">
       <v-spacer v-if="!required"></v-spacer>
       <v-btn text color="primary" @click="onReset" v-if="!required">Reset</v-btn>
@@ -34,3 +33,4 @@ export default {
   props: ['label', 'value', 'format', 'rules', 'hideDetails', 'required', 'disabled'],
   computed: {
     formattedDate() {
+      if (!this.format || !this.value) return this.value;
