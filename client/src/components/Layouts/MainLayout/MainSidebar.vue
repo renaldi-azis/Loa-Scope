@@ -57,3 +57,4 @@ export default {
         show: this.isAdmin,
       },
       // User Dashboard
+      {

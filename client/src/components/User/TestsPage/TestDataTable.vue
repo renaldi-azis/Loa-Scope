@@ -122,3 +122,5 @@ export default {
           type: 'date',
           visible: true,
         },
+      ];
+    },

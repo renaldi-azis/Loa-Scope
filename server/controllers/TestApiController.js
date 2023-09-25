@@ -7,6 +7,7 @@ const { Op } = require('sequelize');
 const { Test } = require('../database/models');
 
 /**
+// Temp comment
  * @description Search tests
  */
 const searchTests = async (req, res) => {
@@ -43,3 +44,4 @@ const searchTests = async (req, res) => {
         [Op.and]: andQuery,
       },
     };
+  }

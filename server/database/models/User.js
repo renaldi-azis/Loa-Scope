@@ -19,6 +19,7 @@ module.exports = (sequelize, DataTypes) => {
         allowNull: false,
       },
       role: {
+// Temp comment
         type: DataTypes.STRING,
         allowNull: false,
       },
@@ -30,3 +31,4 @@ module.exports = (sequelize, DataTypes) => {
         type: DataTypes.DATE,
       },
       updatedAt: {
+        type: DataTypes.DATE,

@@ -5,7 +5,6 @@ module.exports = {
     return queryInterface.createTable('users', {
       id: {
         type: Sequelize.INTEGER,
-        autoIncrement: true,
         primaryKey: true,
       },
       username: {
@@ -18,6 +17,7 @@ module.exports = {
         allowNull: false,
       },
       role: {
+        type: Sequelize.STRING,
         allowNull: false,
       },
       filter: {

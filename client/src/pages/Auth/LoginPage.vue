@@ -7,7 +7,6 @@
             <h1 class="display-1">Login</h1>
           </v-card-title>
           <v-card-text>
-            <v-text-field
               prepend-inner-icon="person"
               label="Username*"
               v-model="user.username"
@@ -50,3 +49,4 @@ export default {
     return {
       user: {},
       status: {
+        isLoggingIn: false,

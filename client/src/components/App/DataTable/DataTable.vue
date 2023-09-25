@@ -37,4 +37,4 @@ import FilterModal from './FilterModal.vue';
 export default {
   name: 'DataTable',
   components: {
-    ColumnMenu,
+    FilterModal,

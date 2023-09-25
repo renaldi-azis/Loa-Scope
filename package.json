@@ -2,6 +2,7 @@
   "name": "cellscope_web",
   "version": "1.0.0",
   "description": "Cellscope Web",
+  "main": "server.js",
   "scripts": {
     "start": "node server.js",
     "prettier": "prettier --write server server.js"
@@ -20,3 +21,4 @@
     "jsonwebtoken": "^8.5.1",
     "lodash": "^4.17.21",
     "moment": "^2.29.4",
+    "moment-timezone": "^0.5.34",

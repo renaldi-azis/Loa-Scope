@@ -25,3 +25,4 @@ const actions = {
   },
   setTests(context, payload) {
     context.commit('setTests', payload);
+  },

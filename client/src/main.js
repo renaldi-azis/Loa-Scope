@@ -12,7 +12,6 @@ import './filters';
 import './services/ApiService';
 
 import vuetify from './plugins/vuetify';
-// Temp comment
 import router from './router';
 import store from './store';
 import AppMixin from './mixins/AppMixin';
@@ -33,3 +32,4 @@ Vue.prototype.$toastr = toastr;
 Vue.use(VueGoogleMaps, {
   load: {
     key: $config.GOOGLE_API_KEY,
+    libraries: 'places',

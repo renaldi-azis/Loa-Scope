@@ -43,7 +43,6 @@ const createUser = async (req, res, next) => {
 
   req.reqData = value;
   next();
-};
 
 /**
  * @description Update an existing user
@@ -96,3 +95,5 @@ const deleteUser = async (req, res, next) => {
       id: value.userId,
     },
   });
+  if (!user) {
+    return res.status(422).json({ message: 'User not found.' });

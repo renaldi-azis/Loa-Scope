@@ -124,3 +124,5 @@ export default {
     this.geocoder = new google.maps.Geocoder();
   },
   methods: {
+    onMapIdle() {
+      this.$set(this.status, 'isLoading', false);

@@ -29,6 +29,7 @@ passport.use(
       }
     },
   ),
+);
 
 /** Define how Passport should serialize a user */
 passport.serializeUser((user, done) => {
@@ -39,3 +40,4 @@ passport.serializeUser((user, done) => {
 passport.deserializeUser(async (id, done) => {
   try {
     const user = await User.findOne({
+      where: {

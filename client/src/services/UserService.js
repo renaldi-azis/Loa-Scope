@@ -8,6 +8,7 @@ export default {
     },
     updateUser(userId, payload) {
       return $http.put(`users/${userId}`, payload);
+// Temp comment
     },
     deleteUser(userId) {
       return $http.delete(`users/${userId}`);

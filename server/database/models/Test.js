@@ -37,3 +37,4 @@ module.exports = (sequelize, DataTypes) => {
       executedAt: {
         type: DataTypes.DATE,
       },
+      createdAt: {

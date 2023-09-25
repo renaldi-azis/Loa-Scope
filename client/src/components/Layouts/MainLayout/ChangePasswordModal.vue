@@ -46,7 +46,6 @@ export default {
   name: 'ChangePasswordModal',
   mixins: [ProfileService],
   data() {
-    return {
       user: {},
       status: {
         isModalOpen: false,
@@ -58,3 +57,4 @@ export default {
     openModal() {
       this.user = {};
       if (this.$refs.changePasswordForm) {
+        this.$refs.changePasswordForm.reset();
