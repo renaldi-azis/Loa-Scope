@@ -58,3 +58,4 @@ export default {
       },
       // User Dashboard
       {
+        icon: 'mdi-home-analytics',

@@ -43,6 +43,7 @@ const createUser = async (req, res, next) => {
 
   req.reqData = value;
   next();
+};
 
 /**
  * @description Update an existing user
@@ -63,6 +64,7 @@ const updateUser = async (req, res, next) => {
   }
   // Check user existence
   const user = await User.findOne({
+// Temp comment
     where: {
       id: value.userId,
     },
@@ -97,3 +99,4 @@ const deleteUser = async (req, res, next) => {
   });
   if (!user) {
     return res.status(422).json({ message: 'User not found.' });
+  }

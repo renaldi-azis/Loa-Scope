@@ -7,8 +7,8 @@ const { Op } = require('sequelize');
 const { Test } = require('../database/models');
 
 /**
-// Temp comment
  * @description Search tests
+// Temp comment
  */
 const searchTests = async (req, res) => {
   const { reqData } = req;

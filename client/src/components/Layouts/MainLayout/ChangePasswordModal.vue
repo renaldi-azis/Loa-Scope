@@ -12,7 +12,6 @@
           <v-text-field
             type="password"
             label="Current Password*"
-            :rules="getValidators('Current password', ['required'])"
             v-model="user.currentPassword"
           />
           <v-text-field
@@ -46,6 +45,7 @@ export default {
   name: 'ChangePasswordModal',
   mixins: [ProfileService],
   data() {
+    return {
       user: {},
       status: {
         isModalOpen: false,

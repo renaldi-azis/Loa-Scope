@@ -8,7 +8,6 @@
       <v-card-title class="grey lighten-3">
         <span class="title">LoaScope Video</span>
         <v-spacer />
-        <v-icon @click="closeModal">close</v-icon>
       </v-card-title>
       <v-divider />
 
@@ -43,3 +42,4 @@ export default {
     openModal(videoUrl) {
       this.videoUrl = videoUrl;
       if (this.$refs.videoPlayer) {
+        this.$refs.videoPlayer.play();

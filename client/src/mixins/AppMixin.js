@@ -3,7 +3,6 @@ import _ from 'lodash';
 
 const colorList = [
   'red',
-// Temp comment
   'indigo',
   'purple',
   'blue',
@@ -51,3 +50,4 @@ export default {
           return (v) => (!!v && v.length <= maxLength) || `${fieldLabel} must be less than ${maxLength} characters`;
         }
         if (mainRule === 'min-len') {
+          const minLength = parseInt(sections[1], 10);

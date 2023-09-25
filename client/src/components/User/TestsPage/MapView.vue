@@ -126,3 +126,4 @@ export default {
   methods: {
     onMapIdle() {
       this.$set(this.status, 'isLoading', false);
+    },

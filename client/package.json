@@ -2,13 +2,13 @@
   "name": "client",
   "version": "0.1.0",
   "private": true,
+  "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
     "axios": "^0.19.2",
-    "chart.js": "^2.9.3",
     "core-js": "^3.6.4",
     "js-file-download": "^0.4.12",
     "jwt-decode": "^2.2.0",
@@ -28,3 +28,4 @@
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.2.0",
+    "@vue/cli-plugin-eslint": "~4.2.0",

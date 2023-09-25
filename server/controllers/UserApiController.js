@@ -41,7 +41,6 @@ const createUser = async (req, res) => {
   user = user.toJSON();
   delete user.password;
 
-  return res.status(200).json(user);
 };
 
 /**
@@ -66,3 +65,4 @@ const updateUser = async (req, res) => {
  */
 const deleteUser = async (req, res) => {
   const { user } = req.entities;
+

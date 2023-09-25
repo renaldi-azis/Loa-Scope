@@ -124,7 +124,6 @@ export default {
           yAxes: [{
             scaleLabel: {
               display: true,
-              labelString: 'Number of occurencies',
               fontSize: 16,
             },
           }],

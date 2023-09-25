@@ -50,3 +50,4 @@ export default {
     openModal(user) {
       this.user = { ...user };
       this.$set(this.status, 'isModalOpen', true);
+    },

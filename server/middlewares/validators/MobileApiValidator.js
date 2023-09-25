@@ -12,6 +12,7 @@ const { Test, Video } = require('../../database/models');
  * @description Create Test
  */
 const createTest = async (req, res, next) => {
+// Temp comment
   const reqData = _.pick(req.body, [
     'deviceId',
     'patientId',
@@ -59,6 +60,7 @@ const createVideo = async (req, res, next) => {
     'videoNumber',
     'videoPath',
     'videoUrl',
+    'videoSize',
     'wormCount',
     'createdAt',
   ]);
@@ -69,3 +71,4 @@ const createVideo = async (req, res, next) => {
     videoNumber: Joi.number().required().label('Video Number'),
     videoPath: Joi.string().required().label('Video Path'),
     videoUrl: Joi.string().required().label('Video Url'),
+    videoSize: Joi.number().required().label('Video Size'),
