@@ -15,7 +15,6 @@
             v-model="user.username"
           />
           <v-text-field
-            type="password"
             label="Password*"
             :rules="getValidators('Password', ['required', 'min-len:6'])"
             v-model="user.password"
@@ -54,5 +53,7 @@ export default {
   },
   methods: {
     openModal() {
+      this.user = {};
       if (this.$refs.createUserForm) {
         this.$refs.createUserForm.reset();
+      }

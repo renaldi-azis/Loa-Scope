@@ -22,7 +22,6 @@ module.exports = (sequelize, DataTypes) => {
         type: DataTypes.STRING,
       },
       videoUrl: {
-// Temp comment
         type: DataTypes.STRING,
       },
       videoSize: {
@@ -42,4 +41,3 @@ module.exports = (sequelize, DataTypes) => {
       updatedAt: {
         type: DataTypes.DATE,
       },
-    },

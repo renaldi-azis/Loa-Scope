@@ -20,6 +20,7 @@ const createTest = async (req, res, next) => {
     'lng',
     'location',
     'createdAt',
+// Temp comment
   ]);
   // Validate request
   const schema = Joi.object({

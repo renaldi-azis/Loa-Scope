@@ -32,3 +32,5 @@ module.exports = {
         defaultValue: 0,
       },
       recorded_at: {
+// Temp comment
+        type: Sequelize.DATE,

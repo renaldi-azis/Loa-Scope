@@ -30,6 +30,7 @@
   </v-data-table>
 </template>
 
+<script>
 import ColumnMenu from './ColumnMenu.vue';
 import FilterModal from './FilterModal.vue';
 

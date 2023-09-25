@@ -74,3 +74,4 @@ export default {
   created() {
     this.fetchUsers();
   },
+  methods: {

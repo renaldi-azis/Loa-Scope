@@ -20,7 +20,6 @@ passport.use(
       try {
         const user = await User.findOne({
           where: {
-// Temp comment
             id: jwtPayload.id,
           },
         });
@@ -42,3 +41,4 @@ passport.deserializeUser(async (id, done) => {
   try {
     const user = await User.findOne({
       where: {
+        id,

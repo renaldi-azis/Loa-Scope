@@ -4,6 +4,7 @@ module.exports = (sequelize, DataTypes) => {
   const Test = sequelize.define(
     'Test',
     {
+      id: {
         type: DataTypes.INTEGER,
         autoIncrement: true,
         primaryKey: true,
@@ -21,6 +22,7 @@ module.exports = (sequelize, DataTypes) => {
         type: DataTypes.FLOAT,
       },
       longitude: {
+// Temp comment
         type: DataTypes.FLOAT,
       },
       location: {

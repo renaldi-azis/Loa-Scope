@@ -36,6 +36,7 @@
 
 <script>
 import ChangePasswordModal from './ChangePasswordModal.vue';
+
 export default {
   name: 'MainHeader',
   components: {
@@ -44,3 +45,4 @@ export default {
   methods: {
     onLogout() {
       $helpers.logout();
+    },

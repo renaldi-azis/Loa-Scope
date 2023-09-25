@@ -38,7 +38,6 @@ export default {
   mixins: [UserService],
   props: ['refresh'],
   data() {
-    return {
       user: {},
       status: {
         isModalOpen: false,

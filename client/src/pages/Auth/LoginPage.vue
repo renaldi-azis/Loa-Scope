@@ -51,3 +51,4 @@ export default {
       user: {},
       status: {
         isLoggingIn: false,
+      },

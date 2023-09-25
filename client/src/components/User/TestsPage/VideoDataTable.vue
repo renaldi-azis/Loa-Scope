@@ -38,7 +38,6 @@ export default {
     status: {
       isLoading: false,
     },
-  }),
   computed: {
     videoTableColumns() {
       return [
@@ -55,3 +54,4 @@ export default {
           value: 'videoUrl',
         },
         {
+          text: 'Recorded At',

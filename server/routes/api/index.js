@@ -1,7 +1,7 @@
 /**
  * @description Define API Routes
-// Temp comment
  */
+// Temp comment
 
 /** Dependencies */
 const passport = require('passport');
