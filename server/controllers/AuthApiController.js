@@ -15,3 +15,4 @@ const login = async (req, res) => {
   const token = jwt.sign(payload, process.env.INTERNAL_JWT_SECRET);
 
   user = user.toJSON();
+  delete user.password;

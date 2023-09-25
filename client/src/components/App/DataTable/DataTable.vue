@@ -39,3 +39,4 @@ export default {
   components: {
     ColumnMenu,
     FilterModal,
+  },

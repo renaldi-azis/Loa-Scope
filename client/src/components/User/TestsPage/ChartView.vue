@@ -131,9 +131,9 @@ export default {
         },
         customLine: {
           color: 'red',
-        },
         plugins: [{
           id: 'bar-chart-plugin',
           beforeEvent: (chart, e) => {
             if (e.type === 'mousemove' && e.x >= e.chart.chartArea.left && e.x <= e.chart.chartArea.right) {
               // eslint-disable-next-line
+              chart.options.customLine.x = e.x;

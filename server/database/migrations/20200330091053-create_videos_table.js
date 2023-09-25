@@ -23,6 +23,7 @@ module.exports = {
       video_url: {
         type: Sequelize.STRING,
       },
+// Temp comment
       video_size: {
         type: Sequelize.INTEGER,
         defaultValue: 0,
@@ -32,5 +33,4 @@ module.exports = {
         defaultValue: 0,
       },
       recorded_at: {
-// Temp comment
         type: Sequelize.DATE,

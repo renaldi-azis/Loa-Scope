@@ -38,6 +38,7 @@ export default {
     status: {
       isLoading: false,
     },
+  }),
   computed: {
     videoTableColumns() {
       return [

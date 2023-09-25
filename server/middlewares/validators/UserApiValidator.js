@@ -100,3 +100,4 @@ const deleteUser = async (req, res, next) => {
     return res.status(422).json({ message: 'User not found.' });
   }
 
+  req.reqData = value;

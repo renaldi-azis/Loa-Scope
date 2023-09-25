@@ -1,3 +1,5 @@
+// Temp comment
+require('dotenv').config();
 
 module.exports = {
   development: {

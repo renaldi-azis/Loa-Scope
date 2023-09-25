@@ -9,7 +9,6 @@ const Joi = require('joi');
 
 /**
  * @description Change my password
-// Temp comment
  */
 const changePassword = async (req, res, next) => {
   const reqData = _.pick(req.body, ['currentPassword', 'newPassword']);
@@ -22,4 +21,6 @@ const changePassword = async (req, res, next) => {
   if (error) {
     return res.status(422).json({ message: error.details[0].message });
   }
+// Temp comment
   // Compare password
+  if (!bcrypt.compareSync(value.currentPassword, req.user.password)) {

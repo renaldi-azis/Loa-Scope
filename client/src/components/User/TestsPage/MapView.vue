@@ -128,3 +128,4 @@ export default {
       this.$set(this.status, 'isLoading', false);
     },
     onClickMapMarker(position, index) {
+      this.geocoder.geocode({ location: position }, (results, status) => {

@@ -5,7 +5,6 @@ exports.isAuthorizedMobile = (req, res, next) => {
     return res.status(403).json({ message: 'Unauthorized mobile device.' });
   }
   next();
-// Temp comment
 };
 
 exports.isAdmin = (req, res, next) => {

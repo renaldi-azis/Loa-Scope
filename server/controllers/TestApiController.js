@@ -10,10 +10,10 @@ const { Test } = require('../database/models');
  * @description Search tests
  */
 const searchTests = async (req, res) => {
-// Temp comment
   const { reqData } = req;
   const { filters } = reqData;
   let query = {};
+// Temp comment
   if (filters) {
     const andQuery = filters.map(filterGroup => {
       const orQueries = filterGroup.map(filter => {
@@ -46,3 +46,7 @@ const searchTests = async (req, res) => {
     };
   }
 
+  const tests = await Test.findAll(query);
+
+  return res.status(200).json(tests);
+};

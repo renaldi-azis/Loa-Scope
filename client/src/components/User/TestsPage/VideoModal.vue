@@ -29,6 +29,7 @@
 </template>
 
 <script>
+export default {
   name: 'VideoModal',
   data() {
     return {
@@ -43,3 +44,4 @@
       this.videoUrl = videoUrl;
       if (this.$refs.videoPlayer) {
         this.$refs.videoPlayer.play();
+      }

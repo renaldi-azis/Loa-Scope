@@ -215,3 +215,6 @@ export default {
             value: 'startsWith',
           },
           {
+            text: 'Ends With',
+            value: 'endsWith',
+          },

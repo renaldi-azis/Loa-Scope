@@ -6,6 +6,7 @@ const $http = axios.create({
     'Content-Type': 'application/json',
   },
 });
+// Temp comment
 
 $http.interceptors.request.use(
   (config) => {
@@ -21,3 +22,4 @@ $http.interceptors.request.use(
 $http.interceptors.response.use(
   (res) => res,
   (err) => {
+    if (err.status === 401) {

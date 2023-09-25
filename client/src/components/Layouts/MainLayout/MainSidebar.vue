@@ -24,6 +24,7 @@
       </template>
     </v-list>
   </v-navigation-drawer>
+</template>
 
 <script>
 export default {
@@ -58,3 +59,4 @@ export default {
       // User Dashboard
       {
         icon: 'mdi-home-analytics',
+        title: 'Tests',

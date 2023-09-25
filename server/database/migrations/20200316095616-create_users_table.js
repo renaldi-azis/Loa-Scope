@@ -23,7 +23,6 @@ module.exports = {
       },
       filter: {
         type: Sequelize.STRING,
-// Temp comment
         defaultValue: '',
       },
       created_at: {

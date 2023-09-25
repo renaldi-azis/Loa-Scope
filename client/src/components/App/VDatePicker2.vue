@@ -36,3 +36,4 @@ export default {
     formattedDate() {
       if (!this.format || !this.value) return this.value;
       return moment(this.value).format(this.format);
+    },

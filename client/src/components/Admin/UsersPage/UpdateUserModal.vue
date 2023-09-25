@@ -38,6 +38,7 @@ export default {
   mixins: [UserService],
   props: ['refresh'],
   data() {
+    return {
       user: {},
       status: {
         isModalOpen: false,
@@ -50,3 +51,4 @@ export default {
       this.user = { ...user };
       this.$set(this.status, 'isModalOpen', true);
     },
+    closeModal() {
