@@ -1128,3 +1128,6 @@
 "pg-protocol@^1.5.0":
   "integrity" "sha512-muRttij7H8TqRNu/DxrAJQITO4Ac7RmX3Klyr/9mJEOBeIpgnF8f9jAfRz5d3XwQZl5qBjF9gLsUtMPJE0vezQ=="
   "resolved" "https://registry.npmjs.org/pg-protocol/-/pg-protocol-1.5.0.tgz"
+  "version" "1.5.0"
+
+"pg-types@^2.1.0":

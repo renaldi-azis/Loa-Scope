@@ -12,6 +12,7 @@
           <v-text-field
             type="password"
             label="Current Password*"
+            :rules="getValidators('Current password', ['required'])"
             v-model="user.currentPassword"
           />
           <v-text-field
@@ -34,7 +35,6 @@
         </v-card-actions>
       </v-card>
     </v-form>
-  </v-dialog>
 </template>
 
 <script>

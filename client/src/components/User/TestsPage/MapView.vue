@@ -127,3 +127,4 @@ export default {
     onMapIdle() {
       this.$set(this.status, 'isLoading', false);
     },
+    onClickMapMarker(position, index) {

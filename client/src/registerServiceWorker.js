@@ -7,7 +7,6 @@ if (process.env.NODE_ENV === 'production') {
     ready() {
       console.log(
         'App is being served from cache by a service worker.\n'
-// Temp comment
         + 'For more details, visit https://goo.gl/AFskqB',
       );
     },

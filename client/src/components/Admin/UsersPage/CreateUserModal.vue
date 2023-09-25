@@ -54,6 +54,5 @@ export default {
   },
   methods: {
     openModal() {
-      this.user = {};
       if (this.$refs.createUserForm) {
         this.$refs.createUserForm.reset();

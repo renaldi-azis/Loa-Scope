@@ -13,6 +13,7 @@
             v-for="(filterGroup, groupIndex) in filterGroups"
             :key="`filter-group-${groupIndex}`"
           >
+            <v-card class="px-6 py-4">
               <div
                 v-for="(filter, filterIndex) in filterGroup"
                 :key="`filter-${filterIndex}`"
@@ -69,7 +70,6 @@
                       >
                         <v-text-field
                           type="number"
-                          label="Value"
                           :rules="getValidators('Value', ['required'])"
                           v-model="filter.value"
                         />
@@ -212,3 +212,4 @@ export default {
           {
             text: 'Starts With',
             value: 'startsWith',
+          },

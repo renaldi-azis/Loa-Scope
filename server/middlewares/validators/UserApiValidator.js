@@ -57,14 +57,12 @@ const updateUser = async (req, res, next) => {
   const schema = Joi.object({
     userId: Joi.number().min(1).label('User ID'),
     filter: Joi.string().allow(null, '').label('Filter string'),
-  });
   const { value, error } = schema.validate(reqData);
   if (error) {
     return res.status(422).json({ message: error.details[0].message });
   }
   // Check user existence
   const user = await User.findOne({
-// Temp comment
     where: {
       id: value.userId,
     },

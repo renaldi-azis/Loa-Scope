@@ -1,5 +1,4 @@
 <template>
-  <v-card>
     <v-toolbar flat color="grey lighten-3">
       <v-toolbar-title>
         <div class="d-flex align-center">
@@ -124,6 +123,7 @@ export default {
           yAxes: [{
             scaleLabel: {
               display: true,
+              labelString: 'Number of occurencies',
               fontSize: 16,
             },
           }],
