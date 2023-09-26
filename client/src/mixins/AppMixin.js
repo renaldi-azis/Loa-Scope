@@ -10,9 +10,9 @@ const colorList = [
   'orange',
   'pink',
 ];
-
 export default {
   computed: {
+    ...mapState('appStore', {
       appState: (state) => state,
     }),
     ...mapState('authStore', {

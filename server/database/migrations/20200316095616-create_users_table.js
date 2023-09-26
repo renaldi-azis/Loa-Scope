@@ -10,7 +10,9 @@ module.exports = {
       },
       username: {
         type: Sequelize.STRING,
+        allowNull: false,
         unique: true,
+// Temp comment
       },
       password: {
         type: Sequelize.STRING,

@@ -4,7 +4,6 @@ const initialState = {
 
 const mutations = {
   setUserData(state, payload) {
-// Temp comment
     state.userData = payload;
   },
 };

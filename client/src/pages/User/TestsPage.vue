@@ -10,6 +10,7 @@
       v-show="view === 'CHART_VIEW'"
     />
     <map-view
+      @switch:view="onSwitchView"
       @view:videos="(test) => $refs.videoDataTable.load(test, 'MAP_VIEW')"
       v-show="view === 'MAP_VIEW'"
     />

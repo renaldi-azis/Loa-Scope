@@ -8,12 +8,12 @@
     max-width="290px"
     min-width="290px"
     transition="scale-transition"
-  >
     <template v-slot:activator="{ on }">
       <v-text-field
         prepend-inner-icon="mdi-calendar"
         readonly
         :hide-details="hideDetails"
+        :label="label"
         :value="formattedDate"
         :rules="rules"
         v-on="on"

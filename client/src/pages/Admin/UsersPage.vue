@@ -29,6 +29,7 @@
           </td>
         </template>
       </v-data-table>
+    </v-card>
 
     <change-password-modal ref="changePasswordModal"></change-password-modal>
     <create-user-modal ref="createUserModal" :refresh="fetchUsers"></create-user-modal>
@@ -59,7 +60,6 @@ export default {
       },
     };
   },
-  computed: {
     userTableHeaders() {
       return [
         { text: 'Username', value: 'username' },

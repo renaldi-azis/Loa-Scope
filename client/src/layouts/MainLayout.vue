@@ -11,7 +11,6 @@
     </v-content>
   </v-app>
 </template>
-
 <script>
 import MainHeader from '@/components/Layouts/MainLayout/MainHeader.vue';
 import MainSidebar from '@/components/Layouts/MainLayout/MainSidebar.vue';

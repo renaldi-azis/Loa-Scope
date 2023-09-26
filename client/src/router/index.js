@@ -1,6 +1,7 @@
 import Vue from 'vue';
 import VueRouter from 'vue-router';
 
+// Temp comment
 import store from '@/store';
 
 Vue.use(VueRouter);
@@ -23,3 +24,4 @@ const routeMiddleware = (routeName, next) => {
       return next({ name: 'tests-page' });
     }
   }
+  return next();

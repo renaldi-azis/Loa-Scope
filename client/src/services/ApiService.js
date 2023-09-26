@@ -13,12 +13,7 @@ $http.interceptors.request.use(
     if ($helpers.isAuthenticated()) {
       newConfig.headers.common.Authorization = `Bearer ${$helpers.getApiToken()}`;
     }
-    return newConfig;
   },
   (err) => Promise.reject(err),
 );
 
-$http.interceptors.response.use(
-  (res) => res,
-  (err) => {
-    if (err.status === 401) {
