@@ -17,7 +17,6 @@ module.exports = {
       test_id: {
         type: Sequelize.STRING,
       },
-// Temp comment
       latitude: {
         type: Sequelize.FLOAT,
       },
@@ -36,5 +35,6 @@ module.exports = {
         defaultValue: 0,
       },
       executed_at: {
+// Temp comment
         type: Sequelize.DATE,
       },

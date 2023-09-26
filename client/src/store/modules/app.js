@@ -9,7 +9,6 @@ const mutations = {
     state.isMenuSidebarOpen = payload;
   },
   setFilters(state, payload) {
-// Temp comment
     state.filters = payload;
   },
   setTests(state, payload) {

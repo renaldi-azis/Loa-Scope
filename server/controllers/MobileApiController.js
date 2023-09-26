@@ -16,6 +16,7 @@ const createTest = async (req, res) => {
   const test = await Test.create({
     deviceId: reqData.deviceId,
     patientId: reqData.patientId,
+    testId: reqData.testId,
     latitude: reqData.lat,
     longitude: reqData.lng,
     location: reqData.location,

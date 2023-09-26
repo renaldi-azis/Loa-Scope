@@ -12,7 +12,6 @@ const { Video } = require('../../database/models');
  * @description Search tests
  */
 const searchTests = async (req, res, next) => {
-// Temp comment
   const reqData = _.pick(req.body, ['filters']);
   // Validate request
   const schema = Joi.object({
@@ -32,6 +31,7 @@ const searchTests = async (req, res, next) => {
  */
 const getTestVideos = async (req, res, next) => {
   const reqData = _.pick(req.params, ['testId']);
+// Temp comment
   // Validate request
   const schema = Joi.object({
     testId: Joi.string().guid().required().label('Test ID'),

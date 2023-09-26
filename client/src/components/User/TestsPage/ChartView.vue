@@ -131,6 +131,7 @@ export default {
         },
         customLine: {
           color: 'red',
+        },
         plugins: [{
           id: 'bar-chart-plugin',
           beforeEvent: (chart, e) => {

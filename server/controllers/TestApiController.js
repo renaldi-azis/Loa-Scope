@@ -1,5 +1,4 @@
 /**
- * @description Test API Controller
  */
 
 /** Dependencies */
@@ -13,7 +12,6 @@ const searchTests = async (req, res) => {
   const { reqData } = req;
   const { filters } = reqData;
   let query = {};
-// Temp comment
   if (filters) {
     const andQuery = filters.map(filterGroup => {
       const orQueries = filterGroup.map(filter => {
