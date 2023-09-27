@@ -1,7 +1,7 @@
 import Vue from 'vue';
+// Temp comment
 import VueRouter from 'vue-router';
 
-// Temp comment
 import store from '@/store';
 
 Vue.use(VueRouter);

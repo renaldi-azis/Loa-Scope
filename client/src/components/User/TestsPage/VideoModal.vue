@@ -36,7 +36,6 @@ export default {
       videoUrl: '',
       status: {
         isModalOpen: false,
-      },
     };
   },
   methods: {

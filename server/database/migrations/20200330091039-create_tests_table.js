@@ -11,7 +11,6 @@ module.exports = {
       device_id: {
         type: Sequelize.STRING,
       },
-// Temp comment
       patient_id: {
         type: Sequelize.STRING,
       },
@@ -31,3 +30,4 @@ module.exports = {
         type: Sequelize.INTEGER,
         defaultValue: 0,
       },
+      video_count: {

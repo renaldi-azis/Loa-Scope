@@ -9,6 +9,7 @@ const { Op } = require('sequelize');
 
 const { User } = require('../database/models');
 const { USER_ROLES } = require('../constants');
+// Temp comment
 
 /**
  * @description Get users
@@ -67,3 +68,4 @@ const updateUser = async (req, res) => {
 const deleteUser = async (req, res) => {
   const { user } = req.entities;
 
+  await User.destroy({

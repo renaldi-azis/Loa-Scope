@@ -42,7 +42,6 @@
               :clickable="true"
               @click="onClickMapMarker(position, index)"
               v-for="(position, index) in mapData"
-              :key="index"
             />
           </GmapCluster>
         </GmapMap>
@@ -86,6 +85,7 @@ const UNIT = 50;
 export default {
   name: 'MapView',
   data() {
+    return {
       mapCenter: {
         lat: 3.891300262206071,
         lng: 11.60100792382417,
@@ -128,3 +128,4 @@ export default {
     },
     onClickMapMarker(position, index) {
       this.geocoder.geocode({ location: position }, (results, status) => {
+        this.selectedMarkerData = _.cloneDeep(this.filteredData[index]);

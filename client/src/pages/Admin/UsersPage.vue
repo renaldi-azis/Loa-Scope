@@ -60,6 +60,7 @@ export default {
       },
     };
   },
+  computed: {
     userTableHeaders() {
       return [
         { text: 'Username', value: 'username' },
@@ -74,3 +75,4 @@ export default {
     this.fetchUsers();
   },
   methods: {
+    async fetchUsers() {

@@ -26,10 +26,12 @@ const createTest = async (req, res) => {
   return res.status(200).json(test);
 };
 
+// Temp comment
 /**
  * @description Create Video
  */
 const createVideo = async (req, res) => {
   const { reqData } = req;
 
+  const video = await Video.create({
     testId: reqData.testId,

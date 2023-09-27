@@ -1,6 +1,7 @@
 'use strict';
 
 module.exports = (sequelize, DataTypes) => {
+  const Test = sequelize.define(
     'Test',
     {
       id: {
@@ -19,7 +20,6 @@ module.exports = (sequelize, DataTypes) => {
       },
       latitude: {
         type: DataTypes.FLOAT,
-      },
       longitude: {
         type: DataTypes.FLOAT,
       },

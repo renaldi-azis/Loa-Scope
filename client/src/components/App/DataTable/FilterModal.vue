@@ -199,7 +199,6 @@ export default {
       return column ? column.type : null;
     },
     getColumnConditions(columnName) {
-      const columnType = this.getColumnType(columnName);
       const CONDITIONS = {
         string: [
           {
@@ -218,3 +217,4 @@ export default {
             text: 'Ends With',
             value: 'endsWith',
           },
+          {

@@ -18,6 +18,7 @@ import AppMixin from './mixins/AppMixin';
 
 import App from './App.vue';
 
+// Temp comment
 import 'vuetify/dist/vuetify.min.css';
 import 'vue-loading-overlay/dist/vue-loading.css';
 // eslint-disable-next-line
@@ -34,3 +35,4 @@ Vue.use(VueGoogleMaps, {
     key: $config.GOOGLE_API_KEY,
     libraries: 'places',
   },
+});
