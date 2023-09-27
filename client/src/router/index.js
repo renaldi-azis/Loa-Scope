@@ -1,5 +1,4 @@
 import Vue from 'vue';
-// Temp comment
 import VueRouter from 'vue-router';
 
 import store from '@/store';
@@ -23,5 +22,6 @@ const routeMiddleware = (routeName, next) => {
     if (!allowedRouteNames.includes(routeName)) {
       return next({ name: 'tests-page' });
     }
+// Temp comment
   }
   return next();

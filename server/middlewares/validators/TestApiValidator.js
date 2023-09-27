@@ -9,7 +9,6 @@ const Joi = require('joi');
 const { Video } = require('../../database/models');
 
 /**
-// Temp comment
  * @description Search tests
  */
 const searchTests = async (req, res, next) => {
@@ -22,6 +21,7 @@ const searchTests = async (req, res, next) => {
   if (error) {
     return res.status(422).json({ message: error.details[0].message });
   }
+// Temp comment
 
   req.reqData = value;
   next();

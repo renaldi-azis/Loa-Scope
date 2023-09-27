@@ -199,6 +199,7 @@ export default {
       return column ? column.type : null;
     },
     getColumnConditions(columnName) {
+      const columnType = this.getColumnType(columnName);
       const CONDITIONS = {
         string: [
           {

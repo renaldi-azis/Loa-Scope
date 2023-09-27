@@ -23,6 +23,5 @@ module.exports = {
       },
       filter: {
         type: Sequelize.STRING,
-        defaultValue: '',
       },
       created_at: {

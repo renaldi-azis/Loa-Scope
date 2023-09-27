@@ -42,6 +42,7 @@
               :clickable="true"
               @click="onClickMapMarker(position, index)"
               v-for="(position, index) in mapData"
+              :key="index"
             />
           </GmapCluster>
         </GmapMap>
@@ -57,7 +58,6 @@
           <p>
             Video Count: {{ selectedMarkerData.videoCount }}
             <a
-              href="#"
               v-if="selectedMarkerData.videoCount > 0"
               @click.prevent="$emit('view:videos', selectedMarkerData)"
             >

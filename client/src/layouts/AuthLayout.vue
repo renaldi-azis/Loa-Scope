@@ -5,7 +5,6 @@
         <transition name="fade" mode="out-in" appear>
           <router-view></router-view>
         </transition>
-      </v-container>
     </v-content>
   </v-app>
 </template>

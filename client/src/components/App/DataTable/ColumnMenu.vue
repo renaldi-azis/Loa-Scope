@@ -1,4 +1,3 @@
-<template>
   <v-menu
     left
     offset-y
@@ -17,6 +16,7 @@
           :label="column.text"
           color="primary"
           v-model="column.visible"
+        />
       </v-list-item>
     </v-list>
   </v-menu>
