@@ -2,7 +2,6 @@
 
 module.exports = {
   up: (queryInterface, Sequelize) => {
-    return queryInterface.createTable('users', {
       id: {
         type: Sequelize.INTEGER,
         autoIncrement: true,
@@ -23,5 +22,6 @@ module.exports = {
       },
       filter: {
         type: Sequelize.STRING,
+        defaultValue: '',
       },
       created_at: {

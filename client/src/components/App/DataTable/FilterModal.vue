@@ -219,3 +219,5 @@ export default {
             value: 'endsWith',
           },
           {
+            text: 'In',
+            value: 'in',

@@ -19,9 +19,7 @@ const routeMiddleware = (routeName, next) => {
     const allowedRouteNames = [
       'tests-page',
     ];
-    if (!allowedRouteNames.includes(routeName)) {
       return next({ name: 'tests-page' });
     }
-// Temp comment
   }
   return next();

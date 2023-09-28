@@ -52,3 +52,4 @@ export default {
       status: {
         isLoggingIn: false,
       },
+    };

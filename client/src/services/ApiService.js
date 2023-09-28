@@ -17,5 +17,4 @@ $http.interceptors.request.use(
   },
   (err) => Promise.reject(err),
 );
-
 $http.interceptors.response.use(

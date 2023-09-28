@@ -126,3 +126,4 @@ export default {
     },
   },
   created() {
+    this.getTests();

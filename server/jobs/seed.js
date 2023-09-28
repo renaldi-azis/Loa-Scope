@@ -5,7 +5,6 @@ const { Test, Video } = require('../database/models');
 
 const generateVideoUrl = () => {
   const videoUrls = [
-// Temp comment
     'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4',
     'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4',
     'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4',
@@ -31,7 +30,6 @@ const generateTestVideos = (testId, count) => {
     videos.push({
       testId,
       videoNumber: i + 1,
-      videoPath: '/',
       videoUrl: generateVideoUrl(),
       wormCount: Math.floor(Math.random() * 100),
       recordedAt: faker.date.past(),

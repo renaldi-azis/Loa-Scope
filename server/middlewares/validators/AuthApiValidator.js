@@ -17,7 +17,6 @@ const login = async (req, res, next) => {
   // Validate request
   const schema = Joi.object({
     username: Joi.string().required().label('Username'),
-// Temp comment
     password: Joi.string().required().label('Password'),
   });
   const { value, error } = schema.validate(reqData);
@@ -32,3 +31,4 @@ const login = async (req, res, next) => {
   });
   if (!user) {
     return res.status(401).json({ message: 'Seems you entered the wrong credential.' });
+  }

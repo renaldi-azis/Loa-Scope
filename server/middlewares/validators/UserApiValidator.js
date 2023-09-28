@@ -101,3 +101,5 @@ const deleteUser = async (req, res, next) => {
   }
 
   req.reqData = value;
+  req.entities = { user };
+  next();

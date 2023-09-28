@@ -56,3 +56,4 @@ export default {
         },
         {
           text: 'Recorded At',
+          value: 'recordedAt',

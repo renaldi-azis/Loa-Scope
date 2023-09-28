@@ -42,3 +42,4 @@ passport.deserializeUser(async (id, done) => {
     const user = await User.findOne({
       where: {
         id,
+      },

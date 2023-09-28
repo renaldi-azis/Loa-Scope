@@ -58,6 +58,7 @@
           <p>
             Video Count: {{ selectedMarkerData.videoCount }}
             <a
+              href="#"
               v-if="selectedMarkerData.videoCount > 0"
               @click.prevent="$emit('view:videos', selectedMarkerData)"
             >
@@ -129,3 +130,4 @@ export default {
     onClickMapMarker(position, index) {
       this.geocoder.geocode({ location: position }, (results, status) => {
         this.selectedMarkerData = _.cloneDeep(this.filteredData[index]);
+        if (status === 'OK') {
