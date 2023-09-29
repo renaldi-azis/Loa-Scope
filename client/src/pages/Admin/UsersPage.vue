@@ -76,3 +76,4 @@ export default {
   },
   methods: {
     async fetchUsers() {
+      this.$set(this.status, 'isLoading', true);

@@ -30,7 +30,6 @@ const searchTests = async (req, res) => {
           }
         }
         subQuery[filter.column] = {
-// Temp comment
           [Op[filter.condition]]: values,
         };
         return subQuery;

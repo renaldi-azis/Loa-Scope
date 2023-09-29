@@ -1,4 +1,5 @@
 <template>
+  <v-app-bar app dark clipped-left color="primary">
     <v-app-bar-nav-icon
       text-color="white"
       @click="$store.dispatch('appStore/setMenuSidebarOpen', !appState.isMenuSidebarOpen)"
@@ -31,7 +32,6 @@
 
     <change-password-modal ref="changePasswordModal" />
   </v-app-bar>
-</template>
 
 <script>
 import ChangePasswordModal from './ChangePasswordModal.vue';

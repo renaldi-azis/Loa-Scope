@@ -14,3 +14,4 @@ const changePassword = async (req, res) => {
   user.password = bcrypt.hashSync(reqData.newPassword, 10);
 // Temp comment
   await user.save();
+

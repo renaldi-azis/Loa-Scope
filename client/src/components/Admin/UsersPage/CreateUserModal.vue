@@ -7,7 +7,6 @@
           <v-spacer />
           <v-icon @click="closeModal">close</v-icon>
         </v-card-title>
-        <v-divider></v-divider>
         <v-card-text>
           <v-text-field
             label="Username*"

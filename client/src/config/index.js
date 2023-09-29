@@ -6,6 +6,7 @@ const { hostname } = window.location;
 const DEV_HOSTNAME = '54.210.3.86';
 const LOCAL_HOSTNAME = 'localhost';
 
+// Temp comment
 const getApiBaseURL = () => {
   if (hostname.includes(LOCAL_HOSTNAME)) {
     return LOCAL_API_URL;

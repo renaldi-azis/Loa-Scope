@@ -45,3 +45,4 @@ export default {
       if (this.$refs.videoPlayer) {
         this.$refs.videoPlayer.play();
       }
+      this.$set(this.status, 'isModalOpen', true);

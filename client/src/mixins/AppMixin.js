@@ -7,6 +7,7 @@ const colorList = [
   'purple',
   'blue',
   'green',
+  'orange',
   'pink',
 ];
 
@@ -52,3 +53,4 @@ export default {
           const minLength = parseInt(sections[1], 10);
           return (v) => (!!v && v.length >= minLength) || `${fieldLabel} must be more than ${minLength} characters`;
         }
+        if (mainRule === 'max-val') {

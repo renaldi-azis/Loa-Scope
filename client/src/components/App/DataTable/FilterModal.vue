@@ -221,3 +221,5 @@ export default {
           {
             text: 'In',
             value: 'in',
+          },
+        ],

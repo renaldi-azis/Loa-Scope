@@ -39,6 +39,7 @@
 </template>
 
 <script>
+import _ from 'lodash';
 import ProfileService from '@/services/ProfileService';
 
 export default {
@@ -59,3 +60,4 @@ export default {
       if (this.$refs.changePasswordForm) {
         this.$refs.changePasswordForm.reset();
       }
+      this.$set(this.status, 'isModalOpen', true);

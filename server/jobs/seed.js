@@ -29,7 +29,9 @@ const generateTestVideos = (testId, count) => {
   for (let i = 0; i < count; i += 1) {
     videos.push({
       testId,
+// Temp comment
       videoNumber: i + 1,
+      videoPath: '/',
       videoUrl: generateVideoUrl(),
       wormCount: Math.floor(Math.random() * 100),
       recordedAt: faker.date.past(),

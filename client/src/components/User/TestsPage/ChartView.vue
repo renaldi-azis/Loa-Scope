@@ -138,3 +138,8 @@ export default {
             if (e.type === 'mousemove' && e.x >= e.chart.chartArea.left && e.x <= e.chart.chartArea.right) {
               // eslint-disable-next-line
               chart.options.customLine.x = e.x;
+            }
+          },
+          beforeDraw: (chart) => {
+            const { ctx } = chart.chart;
+            const { chartArea } = chart;

@@ -2,6 +2,7 @@
  * @description Http Server
  */
 
+/** Dependencies */
 require('dotenv').config();
 const axios = require('axios');
 const cors = require('cors');
@@ -33,3 +34,4 @@ app.post('/call-external-url', async (req, res) => {
   }
   try {
     const { data } = await axios(options);
+    res.json(data);

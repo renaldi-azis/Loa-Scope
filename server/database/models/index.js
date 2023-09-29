@@ -1,6 +1,5 @@
 'use strict';
 
-// Temp comment
 const fs = require('fs');
 const path = require('path');
 const Sequelize = require('sequelize');
@@ -23,5 +22,6 @@ fs.readdirSync(__dirname)
   .forEach(file => {
     const model = require(path.join(__dirname, file))(sequelize, Sequelize.DataTypes);
     db[model.name] = model;
+// Temp comment
   });
 
