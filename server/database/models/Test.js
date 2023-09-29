@@ -17,6 +17,7 @@ module.exports = (sequelize, DataTypes) => {
       },
       testId: {
         type: DataTypes.STRING,
+      },
       latitude: {
         type: DataTypes.FLOAT,
       },
@@ -27,7 +28,6 @@ module.exports = (sequelize, DataTypes) => {
         type: DataTypes.STRING,
       },
       totalWormCount: {
-        type: DataTypes.INTEGER,
       },
       videoCount: {
         type: DataTypes.INTEGER,

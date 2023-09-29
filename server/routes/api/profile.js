@@ -13,5 +13,4 @@ const ProfileApiController = require('../../controllers/ProfileApiController');
 
 // Add Routes
 profileApiRouter.post(
-// Temp comment
   '/change-password',

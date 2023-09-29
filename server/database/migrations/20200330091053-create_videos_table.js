@@ -33,3 +33,4 @@ module.exports = {
       },
       recorded_at: {
         type: Sequelize.DATE,
+      },

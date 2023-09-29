@@ -16,7 +16,6 @@
         <video
           ref="videoPlayer"
           class="d-flex"
-          :src="videoUrl"
           poster="/images/video-logo.gif"
           width="100%"
           preload="auto"

@@ -13,7 +13,6 @@ const Joi = require('joi');
 const changePassword = async (req, res, next) => {
   const reqData = _.pick(req.body, ['currentPassword', 'newPassword']);
   // Validate request
-  const schema = Joi.object({
     currentPassword: Joi.string().required().label('Current password'),
     newPassword: Joi.string().min(6).label('New password'),
   });

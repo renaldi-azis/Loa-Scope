@@ -40,3 +40,4 @@ export default {
     ColumnMenu,
     FilterModal,
   },
+  props: ['columns', 'items', 'loading'],

@@ -87,6 +87,7 @@ export default {
   name: 'MapView',
   data() {
     return {
+      mapCenter: {
         lat: 3.891300262206071,
         lng: 11.60100792382417,
       },
@@ -131,3 +132,4 @@ export default {
         this.selectedMarkerData = _.cloneDeep(this.filteredData[index]);
         if (status === 'OK') {
           this.selectedMarkerData.address = results[0].formatted_address;
+        } else {

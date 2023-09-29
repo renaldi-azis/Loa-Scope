@@ -26,3 +26,4 @@ module.exports = {
         defaultValue: '',
       },
       created_at: {
+        type: Sequelize.DATE,

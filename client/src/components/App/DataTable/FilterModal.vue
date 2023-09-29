@@ -223,3 +223,4 @@ export default {
             value: 'in',
           },
         ],
+        number: [

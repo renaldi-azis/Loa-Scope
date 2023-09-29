@@ -31,5 +31,5 @@ module.exports = {
         defaultValue: 0,
       },
       video_count: {
-// Temp comment
         type: Sequelize.INTEGER,
+        defaultValue: 0,

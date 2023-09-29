@@ -43,6 +43,7 @@ export default {
     videoTableColumns() {
       return [
         {
+          text: 'Video Number',
           value: 'videoNumber',
         },
         {
@@ -56,3 +57,4 @@ export default {
         {
           text: 'Recorded At',
           value: 'recordedAt',
+        },

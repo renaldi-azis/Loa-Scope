@@ -40,6 +40,7 @@ export default {
         if (rule === 'required') {
           return (v) => !!v || `${fieldLabel} is required`;
         }
+// Temp comment
         if (rule === 'email') {
           return (v) => /^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w{2,3})+$/.test(v) || `${fieldLabel} must be valid`;
         }

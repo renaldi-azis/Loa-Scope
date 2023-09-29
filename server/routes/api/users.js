@@ -5,12 +5,10 @@
 // User API Router
 const userApiRouter = require('express').Router();
 
-// Validator Middleware
 const UserApiValidator = require('../../middlewares/validators/UserApiValidator');
 
 // Controller
 const UserApiController = require('../../controllers/UserApiController');
-// Temp comment
 
 // Add Routes
 userApiRouter.get('/', UserApiController.getUsers);

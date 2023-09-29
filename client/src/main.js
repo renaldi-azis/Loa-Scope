@@ -35,3 +35,4 @@ Vue.use(VueGoogleMaps, {
     libraries: 'places',
   },
 });
+Vue.use(VueLoadingOverlay);

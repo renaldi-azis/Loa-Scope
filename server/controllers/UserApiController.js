@@ -4,7 +4,6 @@
 
 /** Dependencies */
 const _ = require('lodash');
-const bcrypt = require('bcrypt');
 const { Op } = require('sequelize');
 
 const { User } = require('../database/models');
@@ -68,3 +67,4 @@ const deleteUser = async (req, res) => {
   const { user } = req.entities;
 
   await User.destroy({
+    where: {
