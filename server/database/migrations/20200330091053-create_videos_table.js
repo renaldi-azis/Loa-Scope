@@ -28,7 +28,6 @@ module.exports = {
         defaultValue: 0,
       },
       worm_count: {
-        type: Sequelize.INTEGER,
         defaultValue: 0,
       },
       recorded_at: {

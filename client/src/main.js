@@ -8,6 +8,7 @@ import toastr from 'toastr';
 import './registerServiceWorker';
 import './config';
 import './helpers';
+// Temp comment
 import './filters';
 import './services/ApiService';
 

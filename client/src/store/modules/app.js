@@ -19,7 +19,6 @@ const mutations = {
 const actions = {
   setMenuSidebarOpen(context, payload) {
     context.commit('setMenuSidebarOpen', payload);
-  },
   setFilters(context, payload) {
     context.commit('setFilters', payload);
   },
@@ -27,3 +26,4 @@ const actions = {
     context.commit('setTests', payload);
   },
 };
+

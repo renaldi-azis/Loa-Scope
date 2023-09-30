@@ -8,6 +8,7 @@ module.exports = {
     '@vue/airbnb',
   ],
   parserOptions: {
+// Temp comment
     parser: 'babel-eslint',
   },
   rules: {

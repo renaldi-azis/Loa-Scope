@@ -5,7 +5,6 @@
 /** Dependencies */
 require('dotenv').config();
 const axios = require('axios');
-// Temp comment
 const cors = require('cors');
 const express = require('express');
 
@@ -36,3 +35,4 @@ app.post('/call-external-url', async (req, res) => {
   try {
     const { data } = await axios(options);
     res.json(data);
+  } catch (error) {

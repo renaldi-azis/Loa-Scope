@@ -8,7 +8,6 @@ window.$helpers = {
     if (decoded.exp < Math.floor(Date.now() / 1000)) return null;
     return token;
   },
-// Temp comment
   isAuthenticated() {
     return !!this.getApiToken();
   },

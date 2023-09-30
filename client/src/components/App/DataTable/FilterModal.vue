@@ -224,3 +224,5 @@ export default {
           },
         ],
         number: [
+          {
+            text: 'Exact',
