@@ -37,6 +37,7 @@ export default {
       status: {
         isModalOpen: false,
       },
+    };
   },
   methods: {
     openModal(videoUrl) {
@@ -46,3 +47,4 @@ export default {
       }
       this.$set(this.status, 'isModalOpen', true);
     },
+    closeModal() {

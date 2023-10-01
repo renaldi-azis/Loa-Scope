@@ -12,7 +12,6 @@ const colorList = [
 ];
 
 export default {
-// Temp comment
   computed: {
     ...mapState('appStore', {
       appState: (state) => state,
@@ -57,3 +56,4 @@ export default {
         if (mainRule === 'max-val') {
           const maxValue = parseFloat(sections[1]);
           return (v) => (!!v && parseFloat(v) <= maxValue) || `${fieldLabel} must be smaller than ${maxValue}`;
+        }

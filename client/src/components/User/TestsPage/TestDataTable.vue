@@ -132,3 +132,5 @@ export default {
     async getTests() {
       this.$set(this.status, 'isLoading', true);
       const payload = {
+        filters: this.appState.filters,
+      };

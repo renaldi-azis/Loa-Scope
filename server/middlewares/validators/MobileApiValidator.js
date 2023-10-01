@@ -48,6 +48,7 @@ const createTest = async (req, res, next) => {
   req.reqData = value;
   next();
 };
+
 /**
  * @description Create Video
  */
@@ -72,3 +73,4 @@ const createVideo = async (req, res, next) => {
     videoSize: Joi.number().required().label('Video Size'),
     wormCount: Joi.number().required().label('Worm Count'),
     createdAt: Joi.string().required().label('Created At'),
+  });

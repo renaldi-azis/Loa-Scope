@@ -36,3 +36,4 @@ const createVideo = async (req, res) => {
     testId: reqData.testId,
     videoId: reqData.videoId,
     videoNumber: reqData.videoNumber,
+    videoPath: reqData.videoPath,

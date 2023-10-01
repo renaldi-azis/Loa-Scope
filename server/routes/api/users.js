@@ -15,5 +15,5 @@ const UserApiController = require('../../controllers/UserApiController');
 userApiRouter.get('/', UserApiController.getUsers);
 userApiRouter.post('/', UserApiValidator.createUser, UserApiController.createUser);
 userApiRouter.post(
-// Temp comment
   '/:userId/change-password',
+  UserApiValidator.changePassword,

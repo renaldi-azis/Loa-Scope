@@ -71,3 +71,4 @@ const deleteUser = async (req, res) => {
     where: {
       id: user.id,
     },
+  });

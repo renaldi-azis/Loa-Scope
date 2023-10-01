@@ -1147,3 +1147,27 @@
   "version" "8.7.3"
   dependencies:
     "buffer-writer" "2.0.0"
+    "packet-reader" "1.0.0"
+    "pg-connection-string" "^2.5.0"
+    "pg-pool" "^3.5.1"
+    "pg-protocol" "^1.5.0"
+    "pg-types" "^2.1.0"
+    "pgpass" "1.x"
+
+"pgpass@1.x":
+  "integrity" "sha1-Knu0G2BltnkH6R2hsHwYR8h3swY= sha512-tlMkj+LGqdaz6M0wJOlOiZd3/Z370ormYONAzY7Lh4TCHHDPuntYm39yV4e0GwQI2qVIGdYQ/Nkw+ALLKu3f9Q=="
+  "resolved" "https://registry.npmjs.org/pgpass/-/pgpass-1.0.2.tgz"
+  "version" "1.0.2"
+  dependencies:
+    "split" "^1.0.0"
+
+"postgres-array@~2.0.0":
+  "integrity" "sha512-VpZrUqU5A69eQyW2c5CA1jtLecCsN2U/bD6VilrFDWq5+5UIEVO7nazS3TEcHf1zuPYO/sqGvUvW62g86RXZuA=="
+  "resolved" "https://registry.npmjs.org/postgres-array/-/postgres-array-2.0.0.tgz"
+  "version" "2.0.0"
+
+"postgres-bytea@~1.0.0":
+  "integrity" "sha1-AntTPAqokOJtFy1Hz5zOzFIazTU= sha512-xy3pmLuQqRBZBXDULy7KbaitYqLcmxigw14Q5sj8QBVLqEwXfeybIKVWiqAXTlcvdvb0+xkOtDbfQMOf4lST1w=="
+  "resolved" "https://registry.npmjs.org/postgres-bytea/-/postgres-bytea-1.0.0.tgz"
+  "version" "1.0.0"
+

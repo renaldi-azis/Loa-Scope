@@ -136,3 +136,5 @@ export default {
           this.selectedMarkerData.address = '';
         }
       });
+    },
+  },

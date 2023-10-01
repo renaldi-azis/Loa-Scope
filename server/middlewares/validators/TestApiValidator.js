@@ -3,6 +3,7 @@
  */
 
 /** Dependencies */
+// Temp comment
 const _ = require('lodash');
 const Joi = require('joi');
 
@@ -41,3 +42,4 @@ const getTestVideos = async (req, res, next) => {
   }
   // Get test videos
   const videos = await Video.findAll({
+    where: {

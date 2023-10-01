@@ -28,3 +28,4 @@ const actions = {
   },
 };
 
+const getters = {

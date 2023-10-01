@@ -231,3 +231,7 @@ export default {
           {
             text: 'Greater Than',
             value: 'gt',
+          },
+          {
+            text: 'Less Than',
+            value: 'lt',
