@@ -5,7 +5,6 @@ module.exports = (sequelize, DataTypes) => {
     'User',
     {
       id: {
-// Temp comment
         type: DataTypes.INTEGER,
         autoIncrement: true,
         primaryKey: true,

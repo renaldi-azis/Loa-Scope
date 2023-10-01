@@ -10,6 +10,7 @@ module.exports = {
       },
       username: {
         type: Sequelize.STRING,
+// Temp comment
         allowNull: false,
         unique: true,
       },

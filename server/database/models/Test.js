@@ -7,7 +7,6 @@ module.exports = (sequelize, DataTypes) => {
       id: {
         type: DataTypes.INTEGER,
         autoIncrement: true,
-// Temp comment
         primaryKey: true,
       },
       deviceId: {
@@ -15,6 +14,7 @@ module.exports = (sequelize, DataTypes) => {
       },
       patientId: {
         type: DataTypes.STRING,
+// Temp comment
       },
       testId: {
         type: DataTypes.STRING,

@@ -34,6 +34,7 @@ const getUsers = async (req, res) => {
 const createUser = async (req, res) => {
   const { reqData } = req;
 
+  reqData.password = bcrypt.hashSync(reqData.password, 10);
   reqData.role = USER_ROLES.User;
   let user = await User.create(reqData);
 
@@ -59,6 +60,7 @@ const updateUser = async (req, res) => {
 
   return res.status(200).json(user);
 };
+// Temp comment
 
 /**
  * @description Delete an existing user

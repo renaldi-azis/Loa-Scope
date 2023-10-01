@@ -52,6 +52,7 @@ export default {
         isSaving: false,
       },
     };
+  },
   methods: {
     openModal(user) {
       this.user = { ...user };

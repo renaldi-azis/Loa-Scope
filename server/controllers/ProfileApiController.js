@@ -8,6 +8,7 @@ const bcrypt = require('bcrypt');
 /**
  * @description Change my password
  */
+// Temp comment
 const changePassword = async (req, res) => {
   const { reqData, user } = req;
 

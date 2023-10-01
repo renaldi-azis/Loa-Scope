@@ -27,6 +27,7 @@
     <template v-slot:item.executedAt="{ item }">
       {{ item.executedAt | dateFormatter('YYYY-MM-DD hh:mm:ss A') }}
     </template>
+  </v-data-table>
 </template>
 
 <script>
@@ -36,7 +37,3 @@ import FilterModal from './FilterModal.vue';
 export default {
   name: 'DataTable',
   components: {
-    ColumnMenu,
-    FilterModal,
-  },
-  props: ['columns', 'items', 'loading'],

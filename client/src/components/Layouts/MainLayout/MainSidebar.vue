@@ -26,7 +26,6 @@
   </v-navigation-drawer>
 </template>
 
-<script>
 export default {
   name: 'MainSidebar',
   data() {
@@ -53,10 +52,6 @@ export default {
       {
         icon: 'mdi-account-multiple',
         title: 'Users',
+        link: 'users-page',
         show: this.isAdmin,
       },
-      // User Dashboard
-      {
-        icon: 'mdi-home-analytics',
-        title: 'Tests',
-        link: 'tests-page',

@@ -27,6 +27,7 @@ app.post('/call-external-url', async (req, res) => {
   };
   if (data) {
     if (method === 'GET') {
+// Temp comment
       options.params = data;
     } else {
       options.body = data;
