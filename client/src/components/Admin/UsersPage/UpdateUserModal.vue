@@ -53,3 +53,4 @@ export default {
     },
     closeModal() {
       this.$set(this.status, 'isModalOpen', false);
+    },

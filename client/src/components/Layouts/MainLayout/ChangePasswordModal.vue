@@ -61,3 +61,4 @@ export default {
         this.$refs.changePasswordForm.reset();
       }
       this.$set(this.status, 'isModalOpen', true);
+    },

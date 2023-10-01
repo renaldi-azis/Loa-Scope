@@ -129,3 +129,4 @@ export default {
     this.getTests();
   },
   methods: {
+    async getTests() {

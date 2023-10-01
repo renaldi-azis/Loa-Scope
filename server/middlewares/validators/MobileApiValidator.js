@@ -18,6 +18,7 @@ const createTest = async (req, res, next) => {
     'testId',
     'lat',
     'lng',
+    'location',
     'createdAt',
   ]);
   // Validate request
@@ -47,7 +48,6 @@ const createTest = async (req, res, next) => {
   req.reqData = value;
   next();
 };
-
 /**
  * @description Create Video
  */
@@ -70,3 +70,4 @@ const createVideo = async (req, res, next) => {
     videoPath: Joi.string().required().label('Video Path'),
     videoUrl: Joi.string().required().label('Video Url'),
     videoSize: Joi.number().required().label('Video Size'),
+    wormCount: Joi.number().required().label('Worm Count'),

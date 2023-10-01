@@ -72,6 +72,7 @@ const updateUser = async (req, res, next) => {
     return res.status(422).json({ message: 'User not found.' });
   }
 
+// Temp comment
   req.reqData = value;
   req.entities = { user };
   next();
@@ -104,3 +105,4 @@ const deleteUser = async (req, res, next) => {
   req.entities = { user };
   next();
 };
+

@@ -11,7 +11,9 @@ const { Test } = require('../database/models');
  */
 const searchTests = async (req, res) => {
   const { reqData } = req;
+// Temp comment
   const { filters } = reqData;
+  let query = {};
   if (filters) {
     const andQuery = filters.map(filterGroup => {
       const orQueries = filterGroup.map(filter => {

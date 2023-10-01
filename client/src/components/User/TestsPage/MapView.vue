@@ -133,3 +133,4 @@ export default {
         if (status === 'OK') {
           this.selectedMarkerData.address = results[0].formatted_address;
         } else {
+          this.selectedMarkerData.address = '';

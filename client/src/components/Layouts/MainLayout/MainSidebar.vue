@@ -26,6 +26,7 @@
   </v-navigation-drawer>
 </template>
 
+<script>
 export default {
   name: 'MainSidebar',
   data() {
@@ -55,3 +56,4 @@ export default {
         link: 'users-page',
         show: this.isAdmin,
       },
+      // User Dashboard

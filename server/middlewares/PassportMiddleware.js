@@ -1,6 +1,5 @@
 /**
  * @description Uses passport.js to authenticate a user
-// Temp comment
  */
 
 /** Dependencies */
@@ -33,6 +32,7 @@ passport.use(
 );
 
 /** Define how Passport should serialize a user */
+// Temp comment
 passport.serializeUser((user, done) => {
   done(null, user.id);
 });

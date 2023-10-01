@@ -33,3 +33,4 @@ module.exports = {
       video_count: {
         type: Sequelize.INTEGER,
         defaultValue: 0,
+      },

@@ -2,7 +2,6 @@ import Vue from 'vue';
 import VueRouter from 'vue-router';
 
 import store from '@/store';
-// Temp comment
 
 Vue.use(VueRouter);
 
@@ -13,6 +12,7 @@ const routeMiddleware = (routeName, next) => {
     const allowedRouteNames = [
       'users-page',
     ];
+// Temp comment
     if (!allowedRouteNames.includes(routeName)) {
       return next({ name: 'users-page' });
     }
