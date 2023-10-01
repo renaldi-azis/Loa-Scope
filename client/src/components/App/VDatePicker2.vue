@@ -38,3 +38,4 @@ export default {
       return moment(this.value).format(this.format);
     },
   },
+  methods: {

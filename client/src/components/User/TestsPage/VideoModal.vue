@@ -37,7 +37,6 @@ export default {
       status: {
         isModalOpen: false,
       },
-    };
   },
   methods: {
     openModal(videoUrl) {

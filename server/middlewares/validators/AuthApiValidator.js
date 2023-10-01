@@ -32,3 +32,4 @@ const login = async (req, res, next) => {
   if (!user) {
     return res.status(401).json({ message: 'Seems you entered the wrong credential.' });
   }
+  // Compare password

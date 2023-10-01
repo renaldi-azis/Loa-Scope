@@ -36,3 +36,4 @@ app.post('/call-external-url', async (req, res) => {
     const { data } = await axios(options);
     res.json(data);
   } catch (error) {
+    if (error.response && error.response.status) {

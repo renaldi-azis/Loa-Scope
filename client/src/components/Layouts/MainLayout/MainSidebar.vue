@@ -30,7 +30,6 @@
 export default {
   name: 'MainSidebar',
   data() {
-    return {
       menuItems: [],
     };
   },
@@ -57,3 +56,5 @@ export default {
         show: this.isAdmin,
       },
       // User Dashboard
+      {
+        icon: 'mdi-home-analytics',

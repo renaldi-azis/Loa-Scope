@@ -13,6 +13,7 @@
             v-for="(filterGroup, groupIndex) in filterGroups"
             :key="`filter-group-${groupIndex}`"
           >
+            <v-card class="px-6 py-4">
               <div
                 v-for="(filter, filterIndex) in filterGroup"
                 :key="`filter-${filterIndex}`"
@@ -226,3 +227,7 @@ export default {
           {
             text: 'Exact',
             value: 'eq',
+          },
+          {
+            text: 'Greater Than',
+            value: 'gt',

@@ -130,3 +130,5 @@ export default {
   },
   methods: {
     async getTests() {
+      this.$set(this.status, 'isLoading', true);
+      const payload = {

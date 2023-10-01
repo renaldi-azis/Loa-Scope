@@ -11,7 +11,6 @@ const { Test } = require('../database/models');
  */
 const searchTests = async (req, res) => {
   const { reqData } = req;
-// Temp comment
   const { filters } = reqData;
   let query = {};
   if (filters) {
@@ -50,3 +49,4 @@ const searchTests = async (req, res) => {
 
   return res.status(200).json(tests);
 };
+

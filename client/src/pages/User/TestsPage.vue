@@ -21,7 +21,6 @@
     />
   </div>
 </template>
-
 <script>
 import TestDataTable from '@/components/User/TestsPage/TestDataTable.vue';
 import VideoDataTable from '@/components/User/TestsPage/VideoDataTable.vue';
@@ -40,3 +39,4 @@ export default {
     return {
       view: 'TEST_DATA_TABLE',
     };
+  },

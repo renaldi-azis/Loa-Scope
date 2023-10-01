@@ -23,6 +23,7 @@ module.exports = {
       longitude: {
         type: Sequelize.FLOAT,
       },
+// Temp comment
       location: {
         type: Sequelize.STRING,
       },
@@ -34,3 +35,4 @@ module.exports = {
         type: Sequelize.INTEGER,
         defaultValue: 0,
       },
+      executed_at: {

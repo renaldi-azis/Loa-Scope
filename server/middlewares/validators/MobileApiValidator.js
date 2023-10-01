@@ -71,3 +71,4 @@ const createVideo = async (req, res, next) => {
     videoUrl: Joi.string().required().label('Video Url'),
     videoSize: Joi.number().required().label('Video Size'),
     wormCount: Joi.number().required().label('Worm Count'),
+    createdAt: Joi.string().required().label('Created At'),

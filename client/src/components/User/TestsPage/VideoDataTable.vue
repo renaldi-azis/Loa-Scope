@@ -10,7 +10,6 @@
     </v-toolbar>
     <v-data-table
       :headers="videoTableColumns"
-      :items="videos"
       :loading="status.isLoading"
       @click:row="onClickRow"
     >
@@ -52,8 +51,10 @@ export default {
         },
         {
           text: 'Video URL',
+          value: 'videoUrl',
         },
         {
           text: 'Recorded At',
           value: 'recordedAt',
         },
+      ];

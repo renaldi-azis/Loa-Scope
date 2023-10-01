@@ -11,7 +11,6 @@ const { User } = require('../database/models');
 const { USER_ROLES } = require('../constants');
 
 /**
-// Temp comment
  * @description Get users
  */
 const getUsers = async (req, res) => {
@@ -71,3 +70,4 @@ const deleteUser = async (req, res) => {
   await User.destroy({
     where: {
       id: user.id,
+    },
