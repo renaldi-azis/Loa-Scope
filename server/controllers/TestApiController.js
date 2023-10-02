@@ -29,6 +29,7 @@ const searchTests = async (req, res) => {
             values = +values;
           }
         }
+        subQuery[filter.column] = {
           [Op[filter.condition]]: values,
         };
         return subQuery;

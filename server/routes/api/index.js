@@ -23,5 +23,4 @@ apiRouter.use('/mobile', isAuthorizedMobile, mobileApiRouter);
 
 /** Add JWT Middleware */
 apiRouter.use(passport.authenticate('jwt-header', { session: false }));
-
 apiRouter.use('/profile', profileApiRouter);

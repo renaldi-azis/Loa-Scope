@@ -15,7 +15,6 @@ module.exports = (sequelize, DataTypes) => {
         unique: true,
       },
       password: {
-// Temp comment
         type: DataTypes.STRING,
         allowNull: false,
       },
@@ -26,6 +25,7 @@ module.exports = (sequelize, DataTypes) => {
       filter: {
         type: DataTypes.STRING,
         defaultValue: '',
+// Temp comment
       },
       createdAt: {
         type: DataTypes.DATE,

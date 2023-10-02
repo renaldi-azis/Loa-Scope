@@ -36,9 +36,7 @@ const createUser = async (req, res, next) => {
     where: {
       username: value.username,
     },
-  });
   if (user) {
-// Temp comment
     return res.status(422).json({ message: 'Username was already taken.' });
   }
 

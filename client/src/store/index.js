@@ -1,4 +1,3 @@
-// Temp comment
 import Vue from 'vue';
 import Vuex from 'vuex';
 import createPersistedState from 'vuex-persistedstate';
@@ -21,7 +20,6 @@ const actions = {
 };
 
 const getters = {
-  //
 };
 
 export default new Vuex.Store({

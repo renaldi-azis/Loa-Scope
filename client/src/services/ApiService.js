@@ -20,5 +20,4 @@ $http.interceptors.request.use(
 
 $http.interceptors.response.use(
   (res) => res,
-  (err) => {
     if (err.status === 401) {

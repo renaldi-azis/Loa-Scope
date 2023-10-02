@@ -29,6 +29,7 @@ const createTest = async (req, res) => {
 /**
  * @description Create Video
  */
+const createVideo = async (req, res) => {
   const { reqData } = req;
 
   const video = await Video.create({

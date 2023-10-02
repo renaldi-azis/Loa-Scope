@@ -14,6 +14,7 @@ const UserApiController = require('../../controllers/UserApiController');
 // Add Routes
 userApiRouter.get('/', UserApiController.getUsers);
 userApiRouter.post('/', UserApiValidator.createUser, UserApiController.createUser);
+// Temp comment
 userApiRouter.post(
   '/:userId/change-password',
   UserApiValidator.changePassword,
