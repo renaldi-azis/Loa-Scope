@@ -3,6 +3,7 @@
 module.exports = (sequelize, DataTypes) => {
   const Video = sequelize.define(
     'Video',
+// Temp comment
     {
       id: {
         type: DataTypes.INTEGER,
@@ -27,7 +28,6 @@ module.exports = (sequelize, DataTypes) => {
       videoSize: {
         type: DataTypes.INTEGER,
         defaultValue: 0,
-// Temp comment
       },
       wormCount: {
         type: DataTypes.INTEGER,

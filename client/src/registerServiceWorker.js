@@ -19,7 +19,6 @@ if (process.env.NODE_ENV === 'production') {
     updatefound() {
       console.log('New content is downloading.');
     },
-// Temp comment
     updated() {
       console.log('New content is available; please refresh.');
     },

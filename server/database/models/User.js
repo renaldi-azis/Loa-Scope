@@ -5,6 +5,7 @@ module.exports = (sequelize, DataTypes) => {
     'User',
     {
       id: {
+        type: DataTypes.INTEGER,
         autoIncrement: true,
         primaryKey: true,
       },
@@ -14,6 +15,7 @@ module.exports = (sequelize, DataTypes) => {
         unique: true,
       },
       password: {
+// Temp comment
         type: DataTypes.STRING,
         allowNull: false,
       },
@@ -30,6 +32,3 @@ module.exports = (sequelize, DataTypes) => {
       },
       updatedAt: {
         type: DataTypes.DATE,
-      },
-    },
-    {

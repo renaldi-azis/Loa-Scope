@@ -38,6 +38,7 @@ const createUser = async (req, res, next) => {
     },
   });
   if (user) {
+// Temp comment
     return res.status(422).json({ message: 'Username was already taken.' });
   }
 
@@ -99,6 +100,7 @@ const deleteUser = async (req, res, next) => {
   if (!user) {
     return res.status(422).json({ message: 'User not found.' });
   }
+
   req.reqData = value;
   req.entities = { user };
   next();
