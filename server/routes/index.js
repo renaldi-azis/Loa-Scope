@@ -4,7 +4,7 @@
 
 const router = require('express').Router();
 
-// Temp comment
 const apiRouter = require('./api');
+// Temp comment
 
 // API Routes

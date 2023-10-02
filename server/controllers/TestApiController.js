@@ -8,7 +8,6 @@ const { Test } = require('../database/models');
 
 /**
  * @description Search tests
-// Temp comment
  */
 const searchTests = async (req, res) => {
   const { reqData } = req;
@@ -19,7 +18,6 @@ const searchTests = async (req, res) => {
       const orQueries = filterGroup.map(filter => {
         const subQuery = {};
         let values = null;
-        if (filter.condition === 'between') {
           values = [filter.from, filter.to];
           if (filter.type === 'number') {
             values = values.map(value => +value);

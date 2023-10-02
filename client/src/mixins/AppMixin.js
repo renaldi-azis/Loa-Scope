@@ -57,3 +57,4 @@ export default {
           const maxValue = parseFloat(sections[1]);
           return (v) => (!!v && parseFloat(v) <= maxValue) || `${fieldLabel} must be smaller than ${maxValue}`;
         }
+        if (mainRule === 'min-val') {

@@ -37,3 +37,4 @@ Vue.use(VueGoogleMaps, {
 });
 Vue.use(VueLoadingOverlay);
 Vue.use(VueSweetAlert2, {
+  confirmButtonColor: '#3085d6',

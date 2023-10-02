@@ -1,5 +1,6 @@
 <template>
   <v-dialog max-width="450" v-model="status.isModalOpen">
+    <v-form ref="changePasswordForm" @submit.prevent="onChangePassword()">
       <v-card>
         <v-card-title class="grey lighten-3">
           <span class="title">Change Password</span>
@@ -62,3 +63,4 @@ export default {
       this.$set(this.status, 'isModalOpen', true);
     },
     closeModal() {
+      this.$set(this.status, 'isModalOpen', false);

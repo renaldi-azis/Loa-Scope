@@ -33,3 +33,4 @@ const login = async (req, res, next) => {
     return res.status(401).json({ message: 'Seems you entered the wrong credential.' });
   }
   // Compare password
+  if (!bcrypt.compareSync(value.password, user.password)) {

@@ -99,7 +99,6 @@ const deleteUser = async (req, res, next) => {
   if (!user) {
     return res.status(422).json({ message: 'User not found.' });
   }
-
   req.reqData = value;
   req.entities = { user };
   next();
@@ -108,3 +107,4 @@ const deleteUser = async (req, res, next) => {
 /**
  * @description Change password
  */
+const changePassword = async (req, res, next) => {

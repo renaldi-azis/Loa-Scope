@@ -60,3 +60,4 @@ export default {
       {
         icon: 'mdi-home-analytics',
         title: 'Tests',
+        link: 'tests-page',

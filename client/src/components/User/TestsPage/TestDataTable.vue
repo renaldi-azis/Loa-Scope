@@ -102,6 +102,7 @@ export default {
           text: 'Longitude',
           value: 'longitude',
           type: 'number',
+          visible: true,
         },
         {
           text: 'Total Worm Count',
@@ -133,3 +134,4 @@ export default {
       const payload = {
         filters: this.appState.filters,
       };
+      const { data } = await this.searchTests(payload);

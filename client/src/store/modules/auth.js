@@ -13,7 +13,6 @@ const actions = {
     context.commit('setUserData', payload);
   },
 };
-// Temp comment
 
 const getters = {
   //
