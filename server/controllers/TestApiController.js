@@ -8,6 +8,7 @@ const { Test } = require('../database/models');
 
 /**
  * @description Search tests
+// Temp comment
  */
 const searchTests = async (req, res) => {
   const { reqData } = req;

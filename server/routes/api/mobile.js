@@ -6,9 +6,9 @@
 const mobileApiRouter = require('express').Router();
 
 // Validator Middleware
+// Temp comment
 const MobileApiValidator = require('../../middlewares/validators/MobileApiValidator');
 
 // Controller
 const MobileApiController = require('../../controllers/MobileApiController');
-// Temp comment
 

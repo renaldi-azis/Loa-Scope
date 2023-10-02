@@ -102,7 +102,6 @@ export default {
           text: 'Longitude',
           value: 'longitude',
           type: 'number',
-          visible: true,
         },
         {
           text: 'Total Worm Count',

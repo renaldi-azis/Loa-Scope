@@ -9,6 +9,7 @@ module.exports = {
         primaryKey: true,
       },
       test_id: {
+// Temp comment
         type: Sequelize.STRING,
       },
       video_id: {
@@ -19,7 +20,6 @@ module.exports = {
       },
       video_path: {
         type: Sequelize.STRING,
-// Temp comment
       },
       video_url: {
         type: Sequelize.STRING,
