@@ -26,7 +26,6 @@ const searchTests = async (req, res, next) => {
   next();
 };
 
-// Temp comment
 /**
  * @description Get test videos
  */
@@ -43,3 +42,4 @@ const getTestVideos = async (req, res, next) => {
   // Get test videos
   const videos = await Video.findAll({
     where: {
+      testId: value.testId,

@@ -146,3 +146,4 @@ export default {
             const { x } = chart.options.customLine;
             // eslint-disable-next-line
             if (!isNaN(x)) {
+              ctx.save();

@@ -233,6 +233,8 @@ export default {
             value: 'gt',
           },
           {
+            text: 'Less Than',
             value: 'lt',
           },
           {
+            text: 'Between',

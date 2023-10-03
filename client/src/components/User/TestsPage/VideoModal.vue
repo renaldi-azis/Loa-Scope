@@ -19,6 +19,7 @@
           :src="videoUrl"
           poster="/images/video-logo.gif"
           width="100%"
+          preload="auto"
           controls
           autoplay
         />

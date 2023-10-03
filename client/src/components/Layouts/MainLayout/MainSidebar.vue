@@ -30,6 +30,7 @@
 export default {
   name: 'MainSidebar',
   data() {
+    return {
       menuItems: [],
     };
   },
@@ -60,3 +61,4 @@ export default {
         icon: 'mdi-home-analytics',
         title: 'Tests',
         link: 'tests-page',
+        show: this.isUser,

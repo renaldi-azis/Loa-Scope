@@ -11,6 +11,5 @@ window.$helpers = {
   isAuthenticated() {
     return !!this.getApiToken();
   },
-// Temp comment
   logout() {
     localStorage.clear();

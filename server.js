@@ -13,7 +13,6 @@ const router = require('./server/routes');
 
 /** Instantiate Server */
 const app = express();
-
 /** Load routes */
 app.use(cors());
 app.use(express.json({}));
@@ -38,3 +37,4 @@ app.post('/call-external-url', async (req, res) => {
   } catch (error) {
     if (error.response && error.response.status) {
       return res.status(error.response.status).json(error.response.data);
+    }

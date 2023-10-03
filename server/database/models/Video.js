@@ -21,7 +21,6 @@ module.exports = (sequelize, DataTypes) => {
       videoPath: {
         type: DataTypes.STRING,
       },
-      videoUrl: {
         type: DataTypes.STRING,
       },
       videoSize: {

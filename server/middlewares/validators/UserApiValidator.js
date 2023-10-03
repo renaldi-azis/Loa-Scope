@@ -7,7 +7,6 @@ const _ = require('lodash');
 const Joi = require('joi');
 
 const { User } = require('../../database/models');
-
 /**
  * @description Get users
  */
@@ -36,6 +35,7 @@ const createUser = async (req, res, next) => {
     where: {
       username: value.username,
     },
+  });
   if (user) {
     return res.status(422).json({ message: 'Username was already taken.' });
   }
@@ -108,3 +108,4 @@ const deleteUser = async (req, res, next) => {
  * @description Change password
  */
 const changePassword = async (req, res, next) => {
+  const reqData = {

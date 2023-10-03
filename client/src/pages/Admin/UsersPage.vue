@@ -81,3 +81,4 @@ export default {
       this.users = data;
       this.$set(this.status, 'isLoading', false);
     },
+    async onDeleteUser(user) {

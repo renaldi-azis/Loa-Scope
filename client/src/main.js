@@ -1,6 +1,7 @@
 import Vue from 'vue';
 import * as VueGoogleMaps from 'vue2-google-maps';
 import GmapCluster from 'vue2-google-maps/dist/components/cluster';
+// Temp comment
 import VueLoadingOverlay from 'vue-loading-overlay';
 import VueSweetAlert2 from 'vue-sweetalert2';
 import toastr from 'toastr';
@@ -38,3 +39,6 @@ Vue.use(VueGoogleMaps, {
 Vue.use(VueLoadingOverlay);
 Vue.use(VueSweetAlert2, {
   confirmButtonColor: '#3085d6',
+  cancelButtonColor: '#d33',
+});
+

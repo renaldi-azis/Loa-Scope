@@ -22,6 +22,7 @@ module.exports = {
       },
       longitude: {
         type: Sequelize.FLOAT,
+// Temp comment
       },
       location: {
         type: Sequelize.STRING,

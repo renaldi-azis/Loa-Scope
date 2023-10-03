@@ -13,7 +13,6 @@ module.exports = (sequelize, DataTypes) => {
         type: DataTypes.STRING,
       },
       patientId: {
-        type: DataTypes.STRING,
       },
       testId: {
         type: DataTypes.STRING,

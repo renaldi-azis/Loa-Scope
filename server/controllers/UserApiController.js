@@ -19,6 +19,7 @@ const getUsers = async (req, res) => {
       exclude: ['password'],
     },
     where: {
+      id: {
         [Op.ne]: req.user.id,
       },
     },
@@ -71,3 +72,4 @@ const deleteUser = async (req, res) => {
       id: user.id,
     },
   });
+  return res.status(200).json(true);
