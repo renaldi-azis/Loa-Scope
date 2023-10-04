@@ -59,4 +59,3 @@ module.exports = {
       CREATE TRIGGER after_video_delete
         AFTER INSERT ON videos FOR EACH ROW
         EXECUTE PROCEDURE update_test_after_video_events();
-    `);

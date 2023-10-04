@@ -31,7 +31,6 @@
     </v-toolbar-items>
 
     <change-password-modal ref="changePasswordModal" />
-  </v-app-bar>
 </template>
 
 <script>

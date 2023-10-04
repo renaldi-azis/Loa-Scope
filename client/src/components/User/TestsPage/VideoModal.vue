@@ -49,3 +49,4 @@ export default {
     },
     closeModal() {
       this.$refs.videoPlayer.pause();
+      this.$set(this.status, 'isModalOpen', false);

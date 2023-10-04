@@ -12,6 +12,7 @@ const { Test, Video } = require('../database/models');
  */
 const createTest = async (req, res) => {
   const { reqData } = req;
+
   const test = await Test.create({
     deviceId: reqData.deviceId,
     patientId: reqData.patientId,
@@ -36,3 +37,4 @@ const createVideo = async (req, res) => {
     videoId: reqData.videoId,
     videoNumber: reqData.videoNumber,
     videoPath: reqData.videoPath,
+    videoUrl: reqData.videoUrl,

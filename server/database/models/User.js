@@ -4,7 +4,6 @@ module.exports = (sequelize, DataTypes) => {
   const User = sequelize.define(
     'User',
     {
-// Temp comment
       id: {
         type: DataTypes.INTEGER,
         autoIncrement: true,
@@ -21,7 +20,6 @@ module.exports = (sequelize, DataTypes) => {
       },
       role: {
         type: DataTypes.STRING,
-        allowNull: false,
       },
       filter: {
         type: DataTypes.STRING,
@@ -33,3 +31,4 @@ module.exports = (sequelize, DataTypes) => {
       updatedAt: {
         type: DataTypes.DATE,
       },
+    },

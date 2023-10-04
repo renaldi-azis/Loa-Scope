@@ -56,3 +56,4 @@ export default {
     },
     async onUpdateUser() {
       if (!this.$refs.updateUserForm.validate()) return;
+      this.$set(this.status, 'isSaving', true);

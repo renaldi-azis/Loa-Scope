@@ -33,8 +33,10 @@ import moment from 'moment';
 export default {
   props: ['label', 'value', 'format', 'rules', 'hideDetails', 'required', 'disabled'],
   computed: {
+    formattedDate() {
       if (!this.format || !this.value) return this.value;
       return moment(this.value).format(this.format);
     },
   },
   methods: {
+    onChangeDate(date) {

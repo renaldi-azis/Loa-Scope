@@ -104,6 +104,7 @@ export default {
       return this.appState.tests;
     },
     filteredData() {
+      return this.data.filter((row) => row.latitude && row.longitude
         && row.totalWormCount >= +this.minWormCount
         && (this.maxWormCount === 0 || row.totalWormCount <= +this.maxWormCount));
     },
@@ -139,3 +140,5 @@ export default {
   },
   watch: {
     data() {
+      this.maxWormCount = +this.wormCountTicks[this.wormCountTicks.length - 1];
+    },

@@ -3,6 +3,7 @@
 module.exports = {
   up: (queryInterface, Sequelize) => {
     return queryInterface.createTable('users', {
+      id: {
         type: Sequelize.INTEGER,
         autoIncrement: true,
         primaryKey: true,
@@ -27,3 +28,4 @@ module.exports = {
       created_at: {
         type: Sequelize.DATE,
       },
+      updated_at: {

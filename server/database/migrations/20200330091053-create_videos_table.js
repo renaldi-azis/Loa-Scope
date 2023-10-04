@@ -21,7 +21,6 @@ module.exports = {
         type: Sequelize.STRING,
       },
       video_url: {
-// Temp comment
         type: Sequelize.STRING,
       },
       video_size: {

@@ -35,6 +35,7 @@ export default {
     };
   },
   computed: {
+    isMenuSidebarOpen: {
       get() {
         return this.appState.isMenuSidebarOpen;
       },
@@ -56,8 +57,8 @@ export default {
         show: this.isAdmin,
       },
       // User Dashboard
-      {
         icon: 'mdi-home-analytics',
         title: 'Tests',
         link: 'tests-page',
         show: this.isUser,
+      },

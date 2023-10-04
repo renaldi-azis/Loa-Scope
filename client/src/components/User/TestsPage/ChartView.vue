@@ -40,6 +40,7 @@ const UNIT = 50;
 export default {
   name: 'ChartView',
   components: {
+    BarChart,
   },
   data() {
     return {
@@ -146,3 +147,4 @@ export default {
             // eslint-disable-next-line
             if (!isNaN(x)) {
               ctx.save();
+              ctx.beginPath();

@@ -67,11 +67,10 @@ const createVideo = async (req, res, next) => {
   const schema = Joi.object({
     testId: Joi.string().required().label('Test ID'),
     videoId: Joi.string().required().label('Video ID'),
-    videoNumber: Joi.number().required().label('Video Number'),
-// Temp comment
     videoPath: Joi.string().required().label('Video Path'),
     videoUrl: Joi.string().required().label('Video Url'),
     videoSize: Joi.number().required().label('Video Size'),
     wormCount: Joi.number().required().label('Worm Count'),
     createdAt: Joi.string().required().label('Created At'),
   });
+  const { value, error } = schema.validate(reqData);
