@@ -10,5 +10,4 @@ const AuthApiValidator = require('../../middlewares/validators/AuthApiValidator'
 
 // Controller
 const AuthApiController = require('../../controllers/AuthApiController');
-
 // Add Routes

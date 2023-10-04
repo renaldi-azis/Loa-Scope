@@ -33,6 +33,7 @@
 <script>
 import ColumnMenu from './ColumnMenu.vue';
 import FilterModal from './FilterModal.vue';
+
 export default {
   name: 'DataTable',
   components: {

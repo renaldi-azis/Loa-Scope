@@ -41,6 +41,7 @@ import moment from 'moment';
 import TestService from '@/services/TestService';
 import DataTable from '@/components/App/DataTable/DataTable.vue';
 
+export default {
   name: 'TestDataTable',
   mixins: [TestService],
   components: {

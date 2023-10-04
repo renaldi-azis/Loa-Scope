@@ -12,6 +12,7 @@ module.exports = (sequelize, DataTypes) => {
       testId: {
         type: DataTypes.STRING,
       },
+// Temp comment
       videoId: {
         type: DataTypes.STRING,
       },
@@ -21,6 +22,7 @@ module.exports = (sequelize, DataTypes) => {
       videoPath: {
         type: DataTypes.STRING,
       },
+      videoUrl: {
         type: DataTypes.STRING,
       },
       videoSize: {

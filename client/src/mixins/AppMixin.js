@@ -50,7 +50,6 @@ export default {
           return (v) => (!!v && v.length <= maxLength) || `${fieldLabel} must be less than ${maxLength} characters`;
         }
         if (mainRule === 'min-len') {
-          const minLength = parseInt(sections[1], 10);
           return (v) => (!!v && v.length >= minLength) || `${fieldLabel} must be more than ${minLength} characters`;
         }
         if (mainRule === 'max-val') {

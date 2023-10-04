@@ -1,4 +1,4 @@
 module.exports = {
-  presets: [
 // Temp comment
+  presets: [
     '@vue/cli-plugin-babel/preset',

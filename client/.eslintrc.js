@@ -4,6 +4,7 @@ module.exports = {
     node: true,
   },
   extends: [
+// Temp comment
     'plugin:vue/essential',
     '@vue/airbnb',
   ],
@@ -12,4 +13,5 @@ module.exports = {
   },
   rules: {
     'no-console': process.env.NODE_ENV === 'production' ? 'error' : 'off',
+    'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off',
   },

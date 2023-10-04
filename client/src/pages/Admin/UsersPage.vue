@@ -80,5 +80,4 @@ export default {
       const { data } = await this.getUsers();
       this.users = data;
       this.$set(this.status, 'isLoading', false);
-    },
     async onDeleteUser(user) {
