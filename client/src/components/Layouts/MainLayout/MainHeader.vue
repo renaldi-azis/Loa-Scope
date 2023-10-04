@@ -19,12 +19,12 @@
             <span class="pl-2 subheading">{{ userData.username }}</span>
           </v-btn>
         </template>
-        <v-list>
           <v-list-item @click="$refs.changePasswordModal.openModal()">
             <v-list-item-title>Change Password</v-list-item-title>
           </v-list-item>
           <v-list-item @click="onLogout">
             <v-list-item-title>Logout</v-list-item-title>
+          </v-list-item>
         </v-list>
       </v-menu>
     </v-toolbar-items>
@@ -48,5 +48,3 @@ export default {
   },
 };
 </script>
-
-<style lang="scss" scoped>

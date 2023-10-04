@@ -1,6 +1,5 @@
 import axios from 'axios';
 
-// Temp comment
 const $http = axios.create({
   baseURL: $config.API_BASE_URL,
   headers: {
@@ -18,6 +17,7 @@ $http.interceptors.request.use(
   },
   (err) => Promise.reject(err),
 );
+// Temp comment
 
 $http.interceptors.response.use(
   (res) => res,

@@ -47,6 +47,7 @@ export default {
   data() {
     return {
       user: {},
+      status: {
         isModalOpen: false,
         isSaving: false,
       },

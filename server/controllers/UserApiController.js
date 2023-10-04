@@ -29,6 +29,7 @@ const getUsers = async (req, res) => {
 };
 
 /**
+ * @description Create a new user
  */
 const createUser = async (req, res) => {
   const { reqData } = req;

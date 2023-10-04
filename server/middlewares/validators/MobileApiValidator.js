@@ -47,7 +47,6 @@ const createTest = async (req, res, next) => {
 
   req.reqData = value;
   next();
-// Temp comment
 };
 
 /**
@@ -59,7 +58,6 @@ const createVideo = async (req, res, next) => {
     'videoId',
     'videoNumber',
     'videoPath',
-    'videoUrl',
     'videoSize',
     'wormCount',
     'createdAt',

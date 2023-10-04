@@ -37,6 +37,7 @@
         </v-card>
       </v-form>
     </v-col>
+  </v-row>
 </template>
 
 <script>

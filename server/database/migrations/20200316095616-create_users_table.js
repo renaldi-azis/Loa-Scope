@@ -1,5 +1,4 @@
 'use strict';
-// Temp comment
 
 module.exports = {
   up: (queryInterface, Sequelize) => {
@@ -26,7 +25,6 @@ module.exports = {
         type: Sequelize.STRING,
         defaultValue: '',
       },
-      created_at: {
         type: Sequelize.DATE,
       },
       updated_at: {

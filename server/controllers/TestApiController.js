@@ -23,7 +23,6 @@ const searchTests = async (req, res) => {
           if (filter.type === 'number') {
             values = values.map(value => +value);
           }
-// Temp comment
         } else {
           values = filter.value;
           if (filter.type === 'number') {

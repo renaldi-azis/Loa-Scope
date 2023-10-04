@@ -10,6 +10,7 @@ module.exports = (sequelize, DataTypes) => {
         primaryKey: true,
       },
       deviceId: {
+        type: DataTypes.STRING,
       },
       patientId: {
         type: DataTypes.STRING,
@@ -34,6 +35,7 @@ module.exports = (sequelize, DataTypes) => {
         defaultValue: 0,
       },
       executedAt: {
+// Temp comment
         type: DataTypes.DATE,
       },
       createdAt: {
