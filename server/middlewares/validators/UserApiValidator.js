@@ -111,3 +111,5 @@ const deleteUser = async (req, res, next) => {
 const changePassword = async (req, res, next) => {
   const reqData = {
     ..._.pick(req.params, ['userId']),
+    ..._.pick(req.body, ['password']),
+  };

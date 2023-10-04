@@ -6,7 +6,7 @@ module.exports = {
       id: {
         type: Sequelize.INTEGER,
         autoIncrement: true,
-        primaryKey: true,
+      },
       device_id: {
         type: Sequelize.STRING,
       },
@@ -36,3 +36,4 @@ module.exports = {
       executed_at: {
         type: Sequelize.DATE,
       },
+      created_at: {

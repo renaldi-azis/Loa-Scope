@@ -9,7 +9,6 @@ const { isAuthorizedMobile, isAdmin } = require('../../middlewares/AppMiddleware
 
 // Root API Router
 const apiRouter = require('express').Router();
-
 // Import Sub API Routers
 const authApiRouter = require('./auth');
 const mobileApiRouter = require('./mobile');
@@ -25,3 +24,4 @@ apiRouter.use('/mobile', isAuthorizedMobile, mobileApiRouter);
 apiRouter.use(passport.authenticate('jwt-header', { session: false }));
 
 apiRouter.use('/profile', profileApiRouter);
+apiRouter.use('/tests', testApiRouter);

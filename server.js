@@ -7,6 +7,7 @@ require('dotenv').config();
 const axios = require('axios');
 const cors = require('cors');
 const express = require('express');
+// Temp comment
 
 const PassportMiddleware = require('./server/middlewares/PassportMiddleware');
 const router = require('./server/routes');
@@ -23,7 +24,6 @@ app.post('/call-external-url', async (req, res) => {
   const { method, url, data } = req.body;
   const options = {
     method,
-// Temp comment
     url,
   };
   if (data) {
@@ -40,3 +40,4 @@ app.post('/call-external-url', async (req, res) => {
     if (error.response && error.response.status) {
       return res.status(error.response.status).json(error.response.data);
     }
+    res.status(400).json(error);

@@ -1219,3 +1219,23 @@
   "version" "1.2.1"
 
 "raw-body@2.5.1":
+  "integrity" "sha512-qqJBtEyVgS0ZmPGdCFPWJ3FreoqvG4MVQln/kCgF7Olq95IbOp0/BWyMwbdtn4VTvkM8Y7khCQ2Xgk/tcrCXig=="
+  "resolved" "https://registry.npmjs.org/raw-body/-/raw-body-2.5.1.tgz"
+  "version" "2.5.1"
+  dependencies:
+    "bytes" "3.1.2"
+    "http-errors" "2.0.0"
+    "iconv-lite" "0.4.24"
+    "unpipe" "1.0.0"
+
+"readable-stream@^3.6.0":
+  "integrity" "sha512-BViHy7LKeTz4oNnkcLJ+lVSL6vpiFeX6/d3oSH8zCW7UxP2onchk+vTGB143xuFjHS3deTgkKoXXymXqymiIdA=="
+  "resolved" "https://registry.npmjs.org/readable-stream/-/readable-stream-3.6.0.tgz"
+  "version" "3.6.0"
+  dependencies:
+    "inherits" "^2.0.3"
+    "string_decoder" "^1.1.1"
+    "util-deprecate" "^1.0.1"
+
+"regexp.prototype.flags@^1.4.3":
+  "integrity" "sha512-fjggEOO3slI6Wvgjwflkc4NFRCTZAu5CnNfBd5qOMYhWdn67nJBBu34/TkD++eeFmd8C9r9jfXJ27+nSiRkSUA=="

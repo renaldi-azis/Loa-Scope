@@ -126,6 +126,7 @@ export default {
     },
   },
   created() {
+    this.getTests();
   },
   methods: {
     async getTests() {
@@ -136,3 +137,4 @@ export default {
       const { data } = await this.searchTests(payload);
       this.$store.dispatch('appStore/setTests', data);
       this.$set(this.status, 'isLoading', false);
+    },

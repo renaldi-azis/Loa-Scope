@@ -1,4 +1,3 @@
-// Temp comment
 'use strict';
 
 const fs = require('fs');
@@ -25,3 +24,4 @@ fs.readdirSync(__dirname)
     db[model.name] = model;
   });
 
+Object.keys(db).forEach(modelName => {

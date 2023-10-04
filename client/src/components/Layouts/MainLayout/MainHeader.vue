@@ -25,12 +25,12 @@
           </v-list-item>
           <v-list-item @click="onLogout">
             <v-list-item-title>Logout</v-list-item-title>
-          </v-list-item>
         </v-list>
       </v-menu>
     </v-toolbar-items>
 
     <change-password-modal ref="changePasswordModal" />
+  </v-app-bar>
 </template>
 
 <script>
@@ -49,3 +49,4 @@ export default {
 };
 </script>
 
+<style lang="scss" scoped>

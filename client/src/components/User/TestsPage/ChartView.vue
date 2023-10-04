@@ -84,7 +84,6 @@ export default {
     chartOptions() {
       return {
         responsive: true,
-        maintainAspectRatio: false,
         legend: {
           display: false,
         },
@@ -148,3 +147,4 @@ export default {
             if (!isNaN(x)) {
               ctx.save();
               ctx.beginPath();
+              ctx.strokeStyle = chart.options.customLine.color;

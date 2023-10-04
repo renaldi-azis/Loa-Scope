@@ -47,6 +47,7 @@ const createTest = async (req, res, next) => {
 
   req.reqData = value;
   next();
+// Temp comment
 };
 
 /**
@@ -67,6 +68,7 @@ const createVideo = async (req, res, next) => {
   const schema = Joi.object({
     testId: Joi.string().required().label('Test ID'),
     videoId: Joi.string().required().label('Video ID'),
+    videoNumber: Joi.number().required().label('Video Number'),
     videoPath: Joi.string().required().label('Video Path'),
     videoUrl: Joi.string().required().label('Video Url'),
     videoSize: Joi.number().required().label('Video Size'),
@@ -74,3 +76,4 @@ const createVideo = async (req, res, next) => {
     createdAt: Joi.string().required().label('Created At'),
   });
   const { value, error } = schema.validate(reqData);
+  if (error) {

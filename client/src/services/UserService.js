@@ -1,4 +1,3 @@
-export default {
   methods: {
     getUsers() {
       return $http.get('users');
@@ -9,7 +8,7 @@ export default {
     updateUser(userId, payload) {
       return $http.put(`users/${userId}`, payload);
     },
-// Temp comment
     deleteUser(userId) {
       return $http.delete(`users/${userId}`);
     },
+    changePassword(userId, payload) {

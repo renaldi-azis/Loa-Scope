@@ -136,6 +136,7 @@
             <div class="d-flex align-center my-2" v-if="groupIndex < filterGroups.length - 1">
               <hr class="and-divider" />
               <div class="px-4 red--text">AND</div>
+              <hr class="and-divider" />
             </div>
           </div>
         </v-card-text>
@@ -240,3 +241,6 @@ export default {
             value: 'between',
           },
         ],
+        date: [
+          {
+            text: 'Greater Than',

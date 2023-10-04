@@ -18,7 +18,6 @@
         <template v-slot:item.action="{ item }">
           <td class="layout justify-center">
             <v-btn icon class="mx-0" @click="$refs.changePasswordModal.openModal(item)">
-              <v-icon color="warning">security</v-icon>
             </v-btn>
             <v-btn icon class="mx-0" @click="$refs.updateUserModal.openModal(item)">
               <v-icon color="primary">edit</v-icon>
@@ -82,3 +81,5 @@ export default {
       this.$set(this.status, 'isLoading', false);
     },
     async onDeleteUser(user) {
+      const result = await this.$swal({
+        title: 'Are you sure you want to delete this user?',

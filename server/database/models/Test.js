@@ -10,7 +10,6 @@ module.exports = (sequelize, DataTypes) => {
         primaryKey: true,
       },
       deviceId: {
-        type: DataTypes.STRING,
       },
       patientId: {
         type: DataTypes.STRING,

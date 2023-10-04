@@ -10,6 +10,7 @@ const Joi = require('joi');
 /**
  * @description Change my password
  */
+const changePassword = async (req, res, next) => {
   const reqData = _.pick(req.body, ['currentPassword', 'newPassword']);
   // Validate request
   const schema = Joi.object({
@@ -18,6 +19,7 @@ const Joi = require('joi');
   });
   const { value, error } = schema.validate(reqData);
   if (error) {
+// Temp comment
     return res.status(422).json({ message: error.details[0].message });
   }
   // Compare password

@@ -2,6 +2,7 @@
 
 module.exports = (sequelize, DataTypes) => {
   const Video = sequelize.define(
+    'Video',
     {
       id: {
         type: DataTypes.INTEGER,
@@ -31,6 +32,7 @@ module.exports = (sequelize, DataTypes) => {
         type: DataTypes.INTEGER,
         defaultValue: 0,
       },
+// Temp comment
       recordedAt: {
         type: DataTypes.DATE,
       },

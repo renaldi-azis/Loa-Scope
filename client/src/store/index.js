@@ -7,7 +7,6 @@ import authStore from './modules/auth';
 
 Vue.use(Vuex);
 
-// Temp comment
 const state = {
   //
 };
@@ -28,3 +27,4 @@ export default new Vuex.Store({
   state,
   mutations,
   actions,
+  getters,

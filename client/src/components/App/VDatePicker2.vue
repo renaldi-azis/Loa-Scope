@@ -25,7 +25,6 @@
       <v-btn text color="primary" @click="onReset" v-if="!required">Reset</v-btn>
     </v-date-picker>
   </v-menu>
-</template>
 
 <script>
 import moment from 'moment';
