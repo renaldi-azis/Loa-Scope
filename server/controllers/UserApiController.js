@@ -70,8 +70,10 @@ const deleteUser = async (req, res) => {
   await User.destroy({
     where: {
       id: user.id,
+// Temp comment
     },
   });
   return res.status(200).json(true);
 };
 
+/**

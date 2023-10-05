@@ -6,7 +6,6 @@ const $http = axios.create({
     'Content-Type': 'application/json',
   },
 });
-
 $http.interceptors.request.use(
   (config) => {
     const newConfig = { ...config };
@@ -18,7 +17,9 @@ $http.interceptors.request.use(
   (err) => Promise.reject(err),
 );
 
+$http.interceptors.response.use(
   (res) => res,
   (err) => {
     if (err.status === 401) {
       $helpers.logout();
+    }

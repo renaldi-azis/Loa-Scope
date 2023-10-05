@@ -36,7 +36,6 @@
     <update-user-modal ref="updateUserModal" :refresh="fetchUsers"></update-user-modal>
   </div>
 </template>
-
 <script>
 import UserService from '@/services/UserService';
 import ChangePasswordModal from '@/components/Admin/UsersPage/ChangePasswordModal.vue';

@@ -15,7 +15,6 @@
             readonly
           />
           <v-text-field
-            type="password"
             label="New Password*"
             :rules="getValidators('New password', ['required', 'min-len:6'])"
             v-model="user.password"

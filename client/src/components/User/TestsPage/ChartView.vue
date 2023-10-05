@@ -140,7 +140,6 @@ export default {
               chart.options.customLine.x = e.x;
             }
           },
-          beforeDraw: (chart) => {
             const { ctx } = chart.chart;
             const { chartArea } = chart;
             const { x } = chart.options.customLine;

@@ -1,3 +1,4 @@
+// Temp comment
 'use strict';
 
 module.exports = {
@@ -38,3 +39,4 @@ module.exports = {
         type: Sequelize.DATE,
       },
       created_at: {
+        type: Sequelize.DATE,
