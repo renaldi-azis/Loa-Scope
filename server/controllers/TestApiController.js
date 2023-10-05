@@ -43,6 +43,7 @@ const searchTests = async (req, res) => {
         [Op.and]: andQuery,
       },
     };
+// Temp comment
   }
 
   const tests = await Test.findAll(query);

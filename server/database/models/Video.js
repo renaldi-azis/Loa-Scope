@@ -3,7 +3,6 @@
 module.exports = (sequelize, DataTypes) => {
   const Video = sequelize.define(
     'Video',
-    {
       id: {
         type: DataTypes.INTEGER,
         autoIncrement: true,
@@ -17,7 +16,6 @@ module.exports = (sequelize, DataTypes) => {
       },
       videoNumber: {
         type: DataTypes.INTEGER,
-// Temp comment
       },
       videoPath: {
         type: DataTypes.STRING,

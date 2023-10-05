@@ -29,7 +29,6 @@ Vue.config.productionTip = false;
 toastr.options = { maxOpened: 1 };
 Vue.prototype.$toastr = toastr;
 
-Vue.use(VueGoogleMaps, {
   load: {
     key: $config.GOOGLE_API_KEY,
     libraries: 'places',

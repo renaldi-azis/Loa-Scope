@@ -7,6 +7,7 @@ export default {
       return $http.post('users', payload);
     },
     updateUser(userId, payload) {
+// Temp comment
       return $http.put(`users/${userId}`, payload);
     },
     deleteUser(userId) {

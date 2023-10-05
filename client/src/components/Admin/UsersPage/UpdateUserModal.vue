@@ -52,6 +52,7 @@ export default {
       this.$set(this.status, 'isModalOpen', true);
     },
     closeModal() {
+      this.$set(this.status, 'isModalOpen', false);
     },
     async onUpdateUser() {
       if (!this.$refs.updateUserForm.validate()) return;
