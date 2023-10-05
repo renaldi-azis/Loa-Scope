@@ -20,7 +20,6 @@
             :rules="getValidators('New password', ['required', 'min-len:6'])"
             v-model="user.password"
           />
-          <v-text-field
             type="password"
             label="Confirm Password*"
             :rules="getValidators('Confirm password', ['equal:user.password:new password'])"
@@ -63,3 +62,4 @@ export default {
     },
     async onChangePassword() {
       if (!this.$refs.changePasswordForm.validate()) return;
+      this.$set(this.status, 'isSaving', true);

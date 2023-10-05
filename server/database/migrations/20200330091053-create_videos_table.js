@@ -28,6 +28,7 @@ module.exports = {
         defaultValue: 0,
       },
       worm_count: {
+// Temp comment
         type: Sequelize.INTEGER,
         defaultValue: 0,
       },
@@ -36,5 +37,6 @@ module.exports = {
       },
       created_at: {
         type: Sequelize.DATE,
+      },
       updated_at: {
         type: Sequelize.DATE,

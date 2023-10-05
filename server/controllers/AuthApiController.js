@@ -7,12 +7,10 @@ const jwt = require('jsonwebtoken');
 
 /**
  * @description Login
- */
 const login = async (req, res) => {
   let { user } = req;
 
   const payload = { id: user.id };
-// Temp comment
   const token = jwt.sign(payload, process.env.INTERNAL_JWT_SECRET);
 
   user = user.toJSON();

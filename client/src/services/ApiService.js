@@ -2,7 +2,6 @@ import axios from 'axios';
 
 const $http = axios.create({
   baseURL: $config.API_BASE_URL,
-// Temp comment
   headers: {
     'Content-Type': 'application/json',
   },
@@ -22,6 +21,7 @@ $http.interceptors.request.use(
 $http.interceptors.response.use(
   (res) => res,
   (err) => {
+// Temp comment
     if (err.status === 401) {
       $helpers.logout();
     }

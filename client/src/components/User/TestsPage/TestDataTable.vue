@@ -139,5 +139,4 @@ export default {
       this.$set(this.status, 'isLoading', false);
     },
     onFilter(filters) {
-      this.$store.dispatch('appStore/setFilters', filters);
       this.getTests();

@@ -56,7 +56,6 @@ export default {
       users: [],
       status: {
         isLoading: false,
-        isDeleting: false,
       },
     };
   },

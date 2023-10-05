@@ -17,7 +17,6 @@ const changePassword = async (req, res, next) => {
     currentPassword: Joi.string().required().label('Current password'),
     newPassword: Joi.string().min(6).label('New password'),
   });
-// Temp comment
   const { value, error } = schema.validate(reqData);
   if (error) {
     return res.status(422).json({ message: error.details[0].message });

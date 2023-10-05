@@ -11,7 +11,6 @@ const { Test } = require('../database/models');
  */
 const searchTests = async (req, res) => {
   const { reqData } = req;
-// Temp comment
   const { filters } = reqData;
   let query = {};
   if (filters) {
@@ -29,7 +28,6 @@ const searchTests = async (req, res) => {
           if (filter.type === 'number') {
             values = +values;
           }
-        }
         subQuery[filter.column] = {
           [Op[filter.condition]]: values,
         };
