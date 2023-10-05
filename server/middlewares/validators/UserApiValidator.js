@@ -64,7 +64,6 @@ const updateUser = async (req, res, next) => {
   }
   // Check user existence
   const user = await User.findOne({
-// Temp comment
     where: {
       id: value.userId,
     },

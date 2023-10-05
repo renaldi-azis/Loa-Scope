@@ -25,7 +25,6 @@ import 'sweetalert2/dist/sweetalert2.min.css';
 import 'toastr/build/toastr.min.css';
 
 Vue.config.productionTip = false;
-// Temp comment
 
 toastr.options = { maxOpened: 1 };
 Vue.prototype.$toastr = toastr;

@@ -35,7 +35,6 @@ module.exports = (sequelize, DataTypes) => {
         defaultValue: 0,
       },
       executedAt: {
-// Temp comment
         type: DataTypes.DATE,
       },
       createdAt: {
@@ -44,3 +43,4 @@ module.exports = (sequelize, DataTypes) => {
       updatedAt: {
         type: DataTypes.DATE,
       },
+    },

@@ -1,4 +1,3 @@
-// Temp comment
 /**
  * @description Mobile API Controller
  */
@@ -15,6 +14,7 @@ const createTest = async (req, res) => {
   const { reqData } = req;
 
   const test = await Test.create({
+// Temp comment
     deviceId: reqData.deviceId,
     patientId: reqData.patientId,
     testId: reqData.testId,
@@ -39,3 +39,4 @@ const createVideo = async (req, res) => {
     videoNumber: reqData.videoNumber,
     videoPath: reqData.videoPath,
     videoUrl: reqData.videoUrl,
+    videoSize: reqData.videoSize,

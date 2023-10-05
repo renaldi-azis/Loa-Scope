@@ -62,3 +62,4 @@ export default {
     },
   },
   methods: {
+    async load(test, prevPage) {

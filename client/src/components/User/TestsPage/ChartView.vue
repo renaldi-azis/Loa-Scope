@@ -52,6 +52,7 @@ export default {
     data() {
       return this.appState.tests;
     },
+    filteredData() {
       return this.data.filter((item) => item.totalWormCount >= this.minWormCount
         && item.totalWormCount <= this.maxWormCount);
     },
@@ -148,3 +149,4 @@ export default {
               ctx.save();
               ctx.beginPath();
               ctx.strokeStyle = chart.options.customLine.color;
+              ctx.moveTo(chart.options.customLine.x, chartArea.bottom);

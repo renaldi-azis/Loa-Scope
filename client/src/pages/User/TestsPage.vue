@@ -34,6 +34,7 @@ export default {
     TestDataTable,
     VideoDataTable,
     ChartView,
+    MapView,
   },
   data() {
     return {

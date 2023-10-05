@@ -143,3 +143,4 @@ export default {
       this.maxWormCount = +this.wormCountTicks[this.wormCountTicks.length - 1];
     },
   },
+};

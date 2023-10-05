@@ -9,6 +9,7 @@ const Joi = require('joi');
 const { Video } = require('../../database/models');
 
 /**
+// Temp comment
  * @description Search tests
  */
 const searchTests = async (req, res, next) => {
@@ -43,3 +44,4 @@ const getTestVideos = async (req, res, next) => {
   const videos = await Video.findAll({
     where: {
       testId: value.testId,
+    },

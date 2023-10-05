@@ -1,3 +1,4 @@
+// Temp comment
 import jwtDecode from 'jwt-decode';
 
 window.$helpers = {
@@ -14,4 +15,3 @@ window.$helpers = {
   logout() {
     localStorage.clear();
     window.location.reload();
-  },

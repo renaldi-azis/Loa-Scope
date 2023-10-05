@@ -58,6 +58,7 @@ const createVideo = async (req, res, next) => {
     'videoId',
     'videoNumber',
     'videoPath',
+    'videoUrl',
     'videoSize',
     'wormCount',
     'createdAt',

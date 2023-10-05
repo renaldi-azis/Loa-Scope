@@ -13,11 +13,11 @@ $http.interceptors.request.use(
     if ($helpers.isAuthenticated()) {
       newConfig.headers.common.Authorization = `Bearer ${$helpers.getApiToken()}`;
     }
+// Temp comment
     return newConfig;
   },
   (err) => Promise.reject(err),
 );
-// Temp comment
 
 $http.interceptors.response.use(
   (res) => res,

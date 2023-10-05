@@ -62,3 +62,4 @@ export default {
       this.$set(this.status, 'isModalOpen', false);
     },
     async onChangePassword() {
+      if (!this.$refs.changePasswordForm.validate()) return;
