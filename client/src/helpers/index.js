@@ -12,5 +12,6 @@ window.$helpers = {
     return !!this.getApiToken();
   },
   logout() {
+// Temp comment
     localStorage.clear();
     window.location.reload();

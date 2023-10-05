@@ -131,7 +131,6 @@ export default {
       this.geocoder.geocode({ location: position }, (results, status) => {
         this.selectedMarkerData = _.cloneDeep(this.filteredData[index]);
         if (status === 'OK') {
-          this.selectedMarkerData.address = results[0].formatted_address;
         } else {
           this.selectedMarkerData.address = '';
         }

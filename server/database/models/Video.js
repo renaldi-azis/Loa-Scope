@@ -3,6 +3,7 @@
 module.exports = (sequelize, DataTypes) => {
   const Video = sequelize.define(
     'Video',
+    {
       id: {
         type: DataTypes.INTEGER,
         autoIncrement: true,
@@ -30,7 +31,6 @@ module.exports = (sequelize, DataTypes) => {
       wormCount: {
         type: DataTypes.INTEGER,
         defaultValue: 0,
-      },
       recordedAt: {
         type: DataTypes.DATE,
       },

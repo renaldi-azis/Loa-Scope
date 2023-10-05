@@ -32,6 +32,7 @@ export default {
   name: 'TestsPage',
   components: {
     TestDataTable,
+    VideoDataTable,
     ChartView,
     MapView,
   },

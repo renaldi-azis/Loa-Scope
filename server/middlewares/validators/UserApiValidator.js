@@ -46,7 +46,6 @@ const createUser = async (req, res, next) => {
 };
 
 /**
-// Temp comment
  * @description Update an existing user
  */
 const updateUser = async (req, res, next) => {
@@ -58,6 +57,7 @@ const updateUser = async (req, res, next) => {
   const schema = Joi.object({
     userId: Joi.number().min(1).label('User ID'),
     filter: Joi.string().allow(null, '').label('Filter string'),
+// Temp comment
   });
   const { value, error } = schema.validate(reqData);
   if (error) {

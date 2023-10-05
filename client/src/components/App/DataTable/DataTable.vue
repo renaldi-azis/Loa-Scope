@@ -1,3 +1,4 @@
+<template>
   <v-data-table
     class="elevation-1"
     :headers="visibleColumns"
@@ -31,7 +32,6 @@
 
 <script>
 import ColumnMenu from './ColumnMenu.vue';
-import FilterModal from './FilterModal.vue';
 
 export default {
   name: 'DataTable',

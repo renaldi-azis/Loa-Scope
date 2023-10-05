@@ -24,7 +24,6 @@ const login = async (req, res, next) => {
     return res.status(422).json({ message: error.details[0].message });
   }
   // Check user existence
-  let user = await User.findOne({
     where: {
       username: value.username,
     },
