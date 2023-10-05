@@ -41,6 +41,7 @@ export default {
           return (v) => !!v || `${fieldLabel} is required`;
         }
         if (rule === 'email') {
+          return (v) => /^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w{2,3})+$/.test(v) || `${fieldLabel} must be valid`;
         }
         const sections = rule.split(':');
         const [mainRule] = sections;
@@ -59,3 +60,4 @@ export default {
         if (mainRule === 'min-val') {
           const minValue = parseFloat(sections[1]);
           return (v) => (!!v && parseFloat(v) >= minValue) || `${fieldLabel} must be greater than ${minValue}`;
+        }

@@ -14,13 +14,13 @@ const apiRouter = require('express').Router();
 const authApiRouter = require('./auth');
 const mobileApiRouter = require('./mobile');
 const profileApiRouter = require('./profile');
+const testApiRouter = require('./tests');
 const userApiRouter = require('./users');
 
 // Add API Routes
 apiRouter.use('/auth', authApiRouter);
 apiRouter.use('/mobile', isAuthorizedMobile, mobileApiRouter);
 
-/** Add JWT Middleware */
 apiRouter.use(passport.authenticate('jwt-header', { session: false }));
 
 apiRouter.use('/profile', profileApiRouter);

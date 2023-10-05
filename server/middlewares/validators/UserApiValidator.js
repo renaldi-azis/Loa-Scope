@@ -31,6 +31,7 @@ const createUser = async (req, res, next) => {
     return res.status(422).json({ message: error.details[0].message });
   }
   // Check user existence
+// Temp comment
   const user = await User.findOne({
     attributes: ['id'],
     where: {
@@ -113,3 +114,4 @@ const changePassword = async (req, res, next) => {
     ..._.pick(req.params, ['userId']),
     ..._.pick(req.body, ['password']),
   };
+  // Validate request

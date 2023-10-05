@@ -56,3 +56,4 @@ export default {
   },
   methods: {
     async onLogin() {
+      if (!this.$refs.loginForm.validate()) return;

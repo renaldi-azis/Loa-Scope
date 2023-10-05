@@ -43,3 +43,4 @@ export default {
   props: ['columns', 'items', 'loading'],
   data: () => ({
     tableColumns: [],
+  }),

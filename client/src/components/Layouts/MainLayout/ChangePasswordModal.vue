@@ -60,8 +60,10 @@ export default {
       if (this.$refs.changePasswordForm) {
         this.$refs.changePasswordForm.reset();
       }
+      this.$set(this.status, 'isModalOpen', true);
     },
     closeModal() {
       this.$set(this.status, 'isModalOpen', false);
     },
     async onChangePassword() {
+      if (!this.$refs.changePasswordForm.validate()) return;

@@ -18,7 +18,6 @@
           color="primary"
           v-model="column.visible"
         />
-      </v-list-item>
     </v-list>
   </v-menu>
 </template>
@@ -28,3 +27,4 @@ export default {
   name: 'ColumnMenu',
   props: ['value'],
   data() {
+    return {

@@ -41,3 +41,4 @@ export default {
       view: 'TEST_DATA_TABLE',
     };
   },
+  methods: {

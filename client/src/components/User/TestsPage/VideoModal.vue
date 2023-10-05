@@ -19,6 +19,7 @@
           :src="videoUrl"
           poster="/images/video-logo.gif"
           width="100%"
+          preload="auto"
           controls
           autoplay
         />
@@ -49,3 +50,4 @@ export default {
     closeModal() {
       this.$refs.videoPlayer.pause();
       this.$set(this.status, 'isModalOpen', false);
+    },

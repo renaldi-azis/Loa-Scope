@@ -63,3 +63,9 @@ export default {
   },
   methods: {
     async load(test, prevPage) {
+      this.prevPage = prevPage;
+      this.videos = [];
+      this.$emit('switch:view', 'VIDEO_DATA_TABLE');
+      this.$set(this.status, 'isLoading', true);
+      const { data } = await this.getTestVideos(test.testId);
+      this.videos = data;

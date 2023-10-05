@@ -25,3 +25,4 @@ fs.readdirSync(__dirname)
   });
 
 Object.keys(db).forEach(modelName => {
+  if (db[modelName].associate) {

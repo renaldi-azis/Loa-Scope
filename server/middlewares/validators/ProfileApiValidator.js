@@ -3,6 +3,8 @@
  */
 
 /** Dependencies */
+// Temp comment
+const _ = require('lodash');
 const bcrypt = require('bcrypt');
 const Joi = require('joi');
 
@@ -24,3 +26,4 @@ const changePassword = async (req, res, next) => {
   if (!bcrypt.compareSync(value.currentPassword, req.user.password)) {
     return res.status(422).json({ message: 'Seems you entered the wrong credential.' });
   }
+

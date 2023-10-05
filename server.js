@@ -40,3 +40,4 @@ app.post('/call-external-url', async (req, res) => {
       return res.status(error.response.status).json(error.response.data);
     }
     res.status(400).json(error);
+  }

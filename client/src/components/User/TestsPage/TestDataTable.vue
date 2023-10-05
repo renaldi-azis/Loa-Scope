@@ -121,6 +121,7 @@ export default {
           value: 'executedAt',
           type: 'date',
           visible: true,
+        },
       ];
     },
   },
@@ -138,3 +139,4 @@ export default {
       this.$set(this.status, 'isLoading', false);
     },
     onFilter(filters) {
+      this.$store.dispatch('appStore/setFilters', filters);

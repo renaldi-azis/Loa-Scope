@@ -13,3 +13,4 @@
 <script>
 export default {
   name: 'AuthLayout',
+};

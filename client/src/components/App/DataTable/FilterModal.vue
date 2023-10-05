@@ -239,8 +239,12 @@ export default {
           {
             text: 'Between',
             value: 'between',
+          },
         ],
         date: [
           {
             text: 'Greater Than',
             value: 'gt',
+          },
+          {
+            text: 'Less Than',
