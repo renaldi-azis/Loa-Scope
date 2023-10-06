@@ -1,7 +1,6 @@
 /**
  * @description Mobile API Controller
  */
-// Temp comment
 
 /** Dependencies */
 const Joi = require('joi');
@@ -16,7 +15,6 @@ const createTest = async (req, res) => {
 
   const test = await Test.create({
     deviceId: reqData.deviceId,
-    patientId: reqData.patientId,
     testId: reqData.testId,
     latitude: reqData.lat,
     longitude: reqData.lng,

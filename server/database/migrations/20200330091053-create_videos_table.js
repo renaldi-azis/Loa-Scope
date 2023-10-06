@@ -12,7 +12,6 @@ module.exports = {
         type: Sequelize.STRING,
       },
       video_id: {
-        type: Sequelize.STRING,
       },
       video_number: {
         type: Sequelize.INTEGER,
@@ -28,7 +27,6 @@ module.exports = {
         defaultValue: 0,
       },
       worm_count: {
-// Temp comment
         type: Sequelize.INTEGER,
         defaultValue: 0,
       },

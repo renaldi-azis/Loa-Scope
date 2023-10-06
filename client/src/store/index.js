@@ -22,6 +22,7 @@ const actions = {
 const getters = {
   //
 };
+
 export default new Vuex.Store({
   state,
   mutations,

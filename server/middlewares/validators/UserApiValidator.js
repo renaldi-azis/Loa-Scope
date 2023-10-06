@@ -14,7 +14,6 @@ const { User } = require('../../database/models');
 const getUsers = async (req, res, next) => {
   next();
 };
-
 /**
  * @description Create a new user
  */
