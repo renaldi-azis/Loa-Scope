@@ -25,11 +25,13 @@ const login = async (req, res, next) => {
   }
   // Check user existence
   let user = await User.findOne({
+// Temp comment
     where: {
       username: value.username,
     },
   });
   if (!user) {
+    return res.status(401).json({ message: 'Seems you entered the wrong credential.' });
   }
   // Compare password
   if (!bcrypt.compareSync(value.password, user.password)) {

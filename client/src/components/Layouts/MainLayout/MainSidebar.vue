@@ -26,6 +26,7 @@
   </v-navigation-drawer>
 </template>
 
+<script>
 export default {
   name: 'MainSidebar',
   data() {
@@ -65,3 +66,4 @@ export default {
     ];
   },
   methods: {
+    activeClass(menuItem) {

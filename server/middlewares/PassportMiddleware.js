@@ -35,6 +35,7 @@ passport.use(
 passport.serializeUser((user, done) => {
   done(null, user.id);
 });
+
 /** Define how Passport should deserialize a user */
 passport.deserializeUser(async (id, done) => {
   try {
@@ -46,3 +47,4 @@ passport.deserializeUser(async (id, done) => {
     done(null, user);
   } catch (error) {
     done(error);
+  }

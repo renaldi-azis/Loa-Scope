@@ -21,13 +21,11 @@ const getUsers = async (req, res) => {
     where: {
       id: {
         [Op.ne]: req.user.id,
-      },
     },
   });
 
   return res.status(200).json(users);
 };
-// Temp comment
 
 /**
  * @description Create a new user

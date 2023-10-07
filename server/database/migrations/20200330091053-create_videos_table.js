@@ -12,6 +12,7 @@ module.exports = {
         type: Sequelize.STRING,
       },
       video_id: {
+        type: Sequelize.STRING,
       },
       video_number: {
         type: Sequelize.INTEGER,

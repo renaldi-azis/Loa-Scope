@@ -3,10 +3,8 @@
 module.exports = (sequelize, DataTypes) => {
   const User = sequelize.define(
     'User',
-    {
       id: {
         type: DataTypes.INTEGER,
-// Temp comment
         autoIncrement: true,
         primaryKey: true,
       },
@@ -35,3 +33,4 @@ module.exports = (sequelize, DataTypes) => {
       },
     },
     {
+      tableName: 'users',

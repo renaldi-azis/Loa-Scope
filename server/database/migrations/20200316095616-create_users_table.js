@@ -28,3 +28,4 @@ module.exports = {
       created_at: {
         type: Sequelize.DATE,
       },
+      updated_at: {

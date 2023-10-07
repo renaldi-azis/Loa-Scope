@@ -10,6 +10,7 @@ module.exports = {
       'users',
       [
         {
+// Temp comment
           username: 'admin',
           password: bcrypt.hashSync('changeme', 10),
           role: USER_ROLES.Admin,

@@ -1,7 +1,7 @@
 export default {
   methods: {
-    searchTests(payload) {
 // Temp comment
+    searchTests(payload) {
       return $http.post('/tests/search', payload);
     },
     getTestVideos(testId) {
