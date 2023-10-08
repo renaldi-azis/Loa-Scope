@@ -8,6 +8,7 @@ const Joi = require('joi');
 const { Test, Video } = require('../database/models');
 
 /**
+// Temp comment
  * @description Create Test
  */
 const createTest = async (req, res) => {
@@ -39,3 +40,4 @@ const createVideo = async (req, res) => {
     videoPath: reqData.videoPath,
     videoUrl: reqData.videoUrl,
     videoSize: reqData.videoSize,
+    wormCount: reqData.wormCount,

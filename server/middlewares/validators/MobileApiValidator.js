@@ -13,6 +13,7 @@ const { Test, Video } = require('../../database/models');
  */
 const createTest = async (req, res, next) => {
   const reqData = _.pick(req.body, [
+    'deviceId',
     'patientId',
     'testId',
     'lat',
@@ -77,3 +78,4 @@ const createVideo = async (req, res, next) => {
   if (error) {
     return res.status(422).json({ message: error.details[0].message });
   }
+  // Check video existence

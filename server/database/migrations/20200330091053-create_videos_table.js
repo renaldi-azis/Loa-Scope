@@ -23,6 +23,7 @@ module.exports = {
       video_url: {
         type: Sequelize.STRING,
       },
+      video_size: {
         type: Sequelize.INTEGER,
         defaultValue: 0,
       },
@@ -38,3 +39,4 @@ module.exports = {
       },
       updated_at: {
         type: Sequelize.DATE,
+      },

@@ -250,3 +250,6 @@ export default {
             text: 'Less Than',
             value: 'lt',
           },
+          {
+            text: 'Between',
+            value: 'between',

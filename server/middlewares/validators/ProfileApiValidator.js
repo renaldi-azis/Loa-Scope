@@ -10,7 +10,6 @@ const Joi = require('joi');
 /**
  * @description Change my password
  */
-const changePassword = async (req, res, next) => {
   const reqData = _.pick(req.body, ['currentPassword', 'newPassword']);
   // Validate request
   const schema = Joi.object({
@@ -23,7 +22,6 @@ const changePassword = async (req, res, next) => {
   }
   // Compare password
   if (!bcrypt.compareSync(value.currentPassword, req.user.password)) {
-// Temp comment
     return res.status(422).json({ message: 'Seems you entered the wrong credential.' });
   }
 

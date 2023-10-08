@@ -147,3 +147,5 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.map-container {
+  height: calc(100vh - 280px);

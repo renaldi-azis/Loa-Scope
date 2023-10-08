@@ -115,3 +115,5 @@ const changePassword = async (req, res, next) => {
   };
   // Validate request
   const schema = Joi.object({
+    userId: Joi.number().min(1).label('User ID'),
+    password: Joi.string().min(6).label('Filter string'),

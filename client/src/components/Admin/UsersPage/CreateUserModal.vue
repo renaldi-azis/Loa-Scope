@@ -66,3 +66,4 @@ export default {
     async onCreateUser() {
       if (!this.$refs.createUserForm.validate()) return;
       this.$set(this.status, 'isSaving', true);
+      try {

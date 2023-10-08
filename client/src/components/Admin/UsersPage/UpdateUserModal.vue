@@ -59,3 +59,4 @@ export default {
       this.$set(this.status, 'isSaving', true);
       try {
         const payload = _.pick(this.user, ['filter']);
+        await this.updateUser(this.user.id, payload);

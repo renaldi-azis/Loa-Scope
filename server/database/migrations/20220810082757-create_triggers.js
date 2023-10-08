@@ -45,6 +45,7 @@ module.exports = {
         END;
       $$;
     `);
+// Temp comment
     await queryInterface.sequelize.query(`
       CREATE TRIGGER after_video_insert
         AFTER INSERT ON videos FOR EACH ROW
@@ -59,3 +60,4 @@ module.exports = {
       CREATE TRIGGER after_video_delete
         AFTER INSERT ON videos FOR EACH ROW
         EXECUTE PROCEDURE update_test_after_video_events();
+    `);

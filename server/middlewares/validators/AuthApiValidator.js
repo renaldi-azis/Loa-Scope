@@ -13,7 +13,6 @@ const { User } = require('../../database/models');
  * @description Login
  */
 const login = async (req, res, next) => {
-  const reqData = _.pick(req.body, ['username', 'password']);
   // Validate request
   const schema = Joi.object({
     username: Joi.string().required().label('Username'),
@@ -36,3 +35,4 @@ const login = async (req, res, next) => {
   if (!bcrypt.compareSync(value.password, user.password)) {
     return res.status(401).json({ message: 'Seems you entered the wrong credential.' });
   }
+

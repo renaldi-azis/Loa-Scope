@@ -22,6 +22,7 @@ module.exports = (sequelize, DataTypes) => {
         type: DataTypes.FLOAT,
       },
       longitude: {
+// Temp comment
         type: DataTypes.FLOAT,
       },
       location: {
@@ -39,7 +40,9 @@ module.exports = (sequelize, DataTypes) => {
       },
       createdAt: {
         type: DataTypes.DATE,
+      },
       updatedAt: {
         type: DataTypes.DATE,
       },
     },
+    {

@@ -142,3 +142,4 @@ export default {
       this.$store.dispatch('appStore/setFilters', filters);
       this.getTests();
     },
+    onExportAsCSV() {

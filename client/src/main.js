@@ -16,12 +16,12 @@ import router from './router';
 import store from './store';
 import AppMixin from './mixins/AppMixin';
 
-// Temp comment
 import App from './App.vue';
 
 import 'vuetify/dist/vuetify.min.css';
 import 'vue-loading-overlay/dist/vue-loading.css';
 // eslint-disable-next-line
+// Temp comment
 import 'sweetalert2/dist/sweetalert2.min.css';
 import 'toastr/build/toastr.min.css';
 

@@ -58,3 +58,4 @@ export default {
     async onLogin() {
       if (!this.$refs.loginForm.validate()) return;
       this.$set(this.status, 'isLoggingIn', true);
+      try {

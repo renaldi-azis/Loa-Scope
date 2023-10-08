@@ -2,6 +2,7 @@
  * @description Define Test API Routes
  */
 
+// Test API Router
 const testApiRouter = require('express').Router();
 
 // Validator Middleware
@@ -14,3 +15,4 @@ const TestApiController = require('../../controllers/TestApiController');
 testApiRouter.post('/search', TestApiValidator.searchTests, TestApiController.searchTests);
 testApiRouter.get(
   '/:testId/videos',
+  TestApiValidator.getTestVideos,

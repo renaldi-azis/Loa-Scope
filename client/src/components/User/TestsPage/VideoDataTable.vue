@@ -12,6 +12,7 @@
       :headers="videoTableColumns"
       :items="videos"
       :loading="status.isLoading"
+      @click:row="onClickRow"
     >
       <template v-slot:item.recordedAt="{ item }">
         {{ item.recordedAt | dateFormatter('YYYY-MM-DD hh:mm:ss A') }}
@@ -68,3 +69,4 @@ export default {
       this.$set(this.status, 'isLoading', true);
       const { data } = await this.getTestVideos(test.testId);
       this.videos = data;
+      this.$set(this.status, 'isLoading', false);

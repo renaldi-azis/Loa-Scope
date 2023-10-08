@@ -52,3 +52,4 @@ export default {
 
 <style lang="scss" scoped>
 .title-wrapper {
+  position: absolute;

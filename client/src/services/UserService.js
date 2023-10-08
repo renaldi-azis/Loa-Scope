@@ -12,5 +12,4 @@ export default {
     deleteUser(userId) {
       return $http.delete(`users/${userId}`);
     },
-// Temp comment
     changePassword(userId, payload) {

@@ -67,3 +67,4 @@ export default {
     },
     async onChangePassword() {
       if (!this.$refs.changePasswordForm.validate()) return;
+      this.$set(this.status, 'isSaving', true);

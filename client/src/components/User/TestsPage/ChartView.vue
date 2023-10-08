@@ -151,3 +151,5 @@ export default {
               ctx.strokeStyle = chart.options.customLine.color;
               ctx.moveTo(chart.options.customLine.x, chartArea.bottom);
               ctx.lineTo(chart.options.customLine.x, chartArea.top);
+              ctx.stroke();
+              ctx.restore();
