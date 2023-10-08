@@ -19,6 +19,7 @@ module.exports = {
       },
       latitude: {
         type: Sequelize.FLOAT,
+// Temp comment
       },
       longitude: {
         type: Sequelize.FLOAT,
@@ -31,6 +32,7 @@ module.exports = {
         defaultValue: 0,
       },
       video_count: {
+        type: Sequelize.INTEGER,
         defaultValue: 0,
       },
       executed_at: {

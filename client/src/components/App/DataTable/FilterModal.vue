@@ -249,3 +249,4 @@ export default {
           {
             text: 'Less Than',
             value: 'lt',
+          },

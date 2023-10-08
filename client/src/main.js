@@ -16,6 +16,7 @@ import router from './router';
 import store from './store';
 import AppMixin from './mixins/AppMixin';
 
+// Temp comment
 import App from './App.vue';
 
 import 'vuetify/dist/vuetify.min.css';

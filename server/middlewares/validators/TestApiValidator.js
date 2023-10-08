@@ -44,3 +44,4 @@ const getTestVideos = async (req, res, next) => {
     where: {
       testId: value.testId,
     },
+    order: [['videoNumber', 'ASC']],

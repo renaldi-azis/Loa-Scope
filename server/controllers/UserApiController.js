@@ -21,6 +21,7 @@ const getUsers = async (req, res) => {
     where: {
       id: {
         [Op.ne]: req.user.id,
+      },
     },
   });
 
@@ -56,7 +57,6 @@ const updateUser = async (req, res) => {
 
   user = user.toJSON();
   delete user.password;
-
   return res.status(200).json(user);
 };
 

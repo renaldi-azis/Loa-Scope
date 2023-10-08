@@ -25,7 +25,6 @@ const login = async (req, res, next) => {
   }
   // Check user existence
   let user = await User.findOne({
-// Temp comment
     where: {
       username: value.username,
     },

@@ -141,3 +141,4 @@ export default {
     onFilter(filters) {
       this.$store.dispatch('appStore/setFilters', filters);
       this.getTests();
+    },

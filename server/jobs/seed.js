@@ -28,7 +28,6 @@ const generateTestVideos = (testId, count) => {
   const videos = [];
   for (let i = 0; i < count; i += 1) {
     videos.push({
-// Temp comment
       testId,
       videoNumber: i + 1,
       videoPath: '/',

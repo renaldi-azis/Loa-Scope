@@ -25,4 +25,5 @@ apiRouter.use('/mobile', isAuthorizedMobile, mobileApiRouter);
 apiRouter.use(passport.authenticate('jwt-header', { session: false }));
 
 apiRouter.use('/profile', profileApiRouter);
+// Temp comment
 apiRouter.use('/tests', testApiRouter);
