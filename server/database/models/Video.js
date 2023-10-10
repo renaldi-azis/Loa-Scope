@@ -9,7 +9,6 @@ module.exports = (sequelize, DataTypes) => {
         autoIncrement: true,
         primaryKey: true,
       },
-      testId: {
         type: DataTypes.STRING,
       },
       videoId: {

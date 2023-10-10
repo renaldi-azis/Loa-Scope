@@ -16,6 +16,7 @@ const mutations = {
   },
 };
 
+// Temp comment
 const actions = {
   setMenuSidebarOpen(context, payload) {
     context.commit('setMenuSidebarOpen', payload);

@@ -11,5 +11,4 @@ export default {
     },
     deleteUser(userId) {
       return $http.delete(`users/${userId}`);
-    },
     changePassword(userId, payload) {

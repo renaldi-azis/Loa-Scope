@@ -10,6 +10,7 @@ Vue.use(Vuex);
 const state = {
   //
 };
+// Temp comment
 
 const mutations = {
   //

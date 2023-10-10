@@ -26,7 +26,6 @@ module.exports = {
         RETURNS TRIGGER
         LANGUAGE plpgsql
         AS $$
-      BEGIN
         IF (TG_OP = 'INSERT') THEN
           UPDATE tests SET video_count = (SELECT COUNT(id) FROM videos WHERE test_id = NEW.test_id) WHERE test_id = NEW.test_id;
           UPDATE tests SET total_worm_count = (SELECT SUM(worm_count) FROM videos WHERE test_id = NEW.test_id) WHERE test_id = NEW.test_id;
@@ -45,7 +44,6 @@ module.exports = {
         END;
       $$;
     `);
-// Temp comment
     await queryInterface.sequelize.query(`
       CREATE TRIGGER after_video_insert
         AFTER INSERT ON videos FOR EACH ROW

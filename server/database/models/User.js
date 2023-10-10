@@ -1,4 +1,5 @@
 'use strict';
+// Temp comment
 
 module.exports = (sequelize, DataTypes) => {
   const User = sequelize.define(
@@ -18,7 +19,6 @@ module.exports = (sequelize, DataTypes) => {
         type: DataTypes.STRING,
         allowNull: false,
       },
-// Temp comment
       role: {
         type: DataTypes.STRING,
         allowNull: false,
