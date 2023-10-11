@@ -255,3 +255,6 @@ export default {
             value: 'between',
           },
         ],
+      };
+      return CONDITIONS[columnType];
+    },

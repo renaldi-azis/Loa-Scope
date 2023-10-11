@@ -1,6 +1,7 @@
 <template>
   <v-navigation-drawer
     class="grey darken-3"
+    app
     dark
     fixed
     clipped
@@ -50,7 +51,6 @@ export default {
     this.menuItems = [
       // Admin Dashboard
       {
-        icon: 'mdi-account-multiple',
         title: 'Users',
         link: 'users-page',
         show: this.isAdmin,
@@ -67,3 +67,4 @@ export default {
   methods: {
     activeClass(menuItem) {
       return this.$route.name === menuItem.link ? 'active' : '';
+    },

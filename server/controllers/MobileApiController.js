@@ -9,7 +9,6 @@ const { Test, Video } = require('../database/models');
 
 /**
  * @description Create Test
-// Temp comment
  */
 const createTest = async (req, res) => {
   const { reqData } = req;
@@ -41,3 +40,9 @@ const createVideo = async (req, res) => {
     videoUrl: reqData.videoUrl,
     videoSize: reqData.videoSize,
     wormCount: reqData.wormCount,
+    recordedAt: reqData.createdAt,
+  });
+
+  return res.status(200).json(video);
+// Temp comment
+};

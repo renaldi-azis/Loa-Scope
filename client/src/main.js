@@ -42,3 +42,4 @@ Vue.use(VueSweetAlert2, {
 });
 
 Vue.mixin(AppMixin);
+

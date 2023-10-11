@@ -14,7 +14,6 @@ module.exports = (sequelize, DataTypes) => {
       },
       videoId: {
         type: DataTypes.STRING,
-// Temp comment
       },
       videoNumber: {
         type: DataTypes.INTEGER,
@@ -45,3 +44,4 @@ module.exports = (sequelize, DataTypes) => {
     },
     {
       tableName: 'videos',
+      underscored: true,

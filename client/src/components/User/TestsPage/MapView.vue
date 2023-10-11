@@ -29,7 +29,6 @@
         </div>
       </div>
       <div class="position-relative">
-        <GmapMap
           class="map-container"
           :center="mapCenter"
           :zoom="4"
@@ -107,6 +106,7 @@ export default {
       return this.data.filter((row) => row.latitude && row.longitude
         && row.totalWormCount >= +this.minWormCount
         && (this.maxWormCount === 0 || row.totalWormCount <= +this.maxWormCount));
+    },
     wormCountTicks() {
       const max = Math.max(...this.data.map((item) => item.totalWormCount));
       return _.range(0, Math.ceil(max / UNIT + 1) * UNIT, UNIT);
@@ -149,3 +149,5 @@ export default {
 .map-container {
   height: calc(100vh - 280px);
 }
+.test-detail {
+    position: absolute;

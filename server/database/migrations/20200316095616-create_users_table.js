@@ -19,6 +19,7 @@ module.exports = {
       },
       role: {
         type: Sequelize.STRING,
+        allowNull: false,
       },
       filter: {
         type: Sequelize.STRING,

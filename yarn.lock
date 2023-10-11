@@ -1461,3 +1461,5 @@
   "version" "1.6.18"
   dependencies:
     "media-typer" "0.3.0"
+    "mime-types" "~2.1.24"
+

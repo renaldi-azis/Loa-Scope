@@ -13,6 +13,7 @@ const router = require('./server/routes');
 
 /** Instantiate Server */
 const app = express();
+// Temp comment
 
 /** Load routes */
 app.use(cors());
@@ -42,3 +43,4 @@ app.post('/call-external-url', async (req, res) => {
     res.status(400).json(error);
   }
 });
+

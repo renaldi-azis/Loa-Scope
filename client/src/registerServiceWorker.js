@@ -14,7 +14,6 @@ if (process.env.NODE_ENV === 'production') {
       console.log('Service worker has been registered.');
     },
     cached() {
-      console.log('Content has been cached for offline use.');
     },
     updatefound() {
       console.log('New content is downloading.');

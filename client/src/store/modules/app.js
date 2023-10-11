@@ -12,7 +12,6 @@ const mutations = {
     state.filters = payload;
   },
   setTests(state, payload) {
-    state.tests = payload;
   },
 };
 
@@ -31,3 +30,4 @@ const actions = {
 const getters = {
   //
 };
+

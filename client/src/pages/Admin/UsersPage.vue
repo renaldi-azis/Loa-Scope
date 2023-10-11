@@ -48,7 +48,6 @@ export default {
   mixins: [UserService],
   components: {
     ChangePasswordModal,
-    CreateUserModal,
     UpdateUserModal,
   },
   data() {
@@ -87,3 +86,4 @@ export default {
         icon: 'question',
         showCancelButton: true,
         confirmButtonText: 'Yes',
+        cancelButtonText: 'No',

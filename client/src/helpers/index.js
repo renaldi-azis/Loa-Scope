@@ -14,3 +14,4 @@ window.$helpers = {
   logout() {
     localStorage.clear();
     window.location.reload();
+  },

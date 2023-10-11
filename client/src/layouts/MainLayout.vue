@@ -21,3 +21,4 @@ export default {
   components: {
     MainHeader,
     MainSidebar,
+  },

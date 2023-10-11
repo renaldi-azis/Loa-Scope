@@ -101,6 +101,7 @@ export default {
         {
           text: 'Longitude',
           value: 'longitude',
+          type: 'number',
           visible: true,
         },
         {
@@ -124,7 +125,6 @@ export default {
       ];
     },
   },
-  created() {
     this.getTests();
   },
   methods: {
@@ -143,3 +143,5 @@ export default {
     },
     onExportAsCSV() {
       let csvData = '';
+      const columns = [
+        'Device ID',

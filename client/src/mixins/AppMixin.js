@@ -19,7 +19,6 @@ export default {
     ...mapState('authStore', {
       userData: (state) => state.userData,
     }),
-// Temp comment
     userNameAbbr() {
       if (!this.userData) return '';
       const { username } = this.userData;
@@ -49,7 +48,6 @@ export default {
         if (mainRule === 'max-len') {
           const maxLength = parseInt(sections[1], 10);
           return (v) => (!!v && v.length <= maxLength) || `${fieldLabel} must be less than ${maxLength} characters`;
-        }
         if (mainRule === 'min-len') {
           const minLength = parseInt(sections[1], 10);
           return (v) => (!!v && v.length >= minLength) || `${fieldLabel} must be more than ${minLength} characters`;
@@ -63,3 +61,4 @@ export default {
           return (v) => (!!v && parseFloat(v) >= minValue) || `${fieldLabel} must be greater than ${minValue}`;
         }
         if (mainRule === 'equal') {
+          const otherFieldName = sections[1];

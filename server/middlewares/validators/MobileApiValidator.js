@@ -79,3 +79,4 @@ const createVideo = async (req, res, next) => {
     return res.status(422).json({ message: error.details[0].message });
   }
   // Check video existence
+  let video = await Video.findOne({
