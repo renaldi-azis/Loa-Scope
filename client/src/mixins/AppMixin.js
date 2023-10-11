@@ -11,7 +11,6 @@ const colorList = [
   'pink',
 ];
 
-// Temp comment
 export default {
   computed: {
     ...mapState('appStore', {
@@ -20,6 +19,7 @@ export default {
     ...mapState('authStore', {
       userData: (state) => state.userData,
     }),
+// Temp comment
     userNameAbbr() {
       if (!this.userData) return '';
       const { username } = this.userData;

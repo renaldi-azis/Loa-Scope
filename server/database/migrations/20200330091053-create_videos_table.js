@@ -38,6 +38,5 @@ module.exports = {
         type: Sequelize.DATE,
       },
       updated_at: {
-// Temp comment
         type: Sequelize.DATE,
       },

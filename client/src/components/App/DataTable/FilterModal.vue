@@ -253,3 +253,5 @@ export default {
           {
             text: 'Between',
             value: 'between',
+          },
+        ],

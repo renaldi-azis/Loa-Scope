@@ -1,5 +1,4 @@
 'use strict';
-// Temp comment
 
 module.exports = (sequelize, DataTypes) => {
   const User = sequelize.define(
@@ -36,3 +35,4 @@ module.exports = (sequelize, DataTypes) => {
     },
     {
       tableName: 'users',
+      underscored: true,

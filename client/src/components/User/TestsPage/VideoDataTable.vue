@@ -53,6 +53,7 @@ export default {
         {
           text: 'Video URL',
           value: 'videoUrl',
+        },
         {
           text: 'Recorded At',
           value: 'recordedAt',

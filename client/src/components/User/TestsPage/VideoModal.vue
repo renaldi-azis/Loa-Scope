@@ -30,7 +30,6 @@
 
 <script>
 export default {
-  name: 'VideoModal',
   data() {
     return {
       videoUrl: '',
@@ -52,3 +51,4 @@ export default {
       this.$set(this.status, 'isModalOpen', false);
     },
   },
+};

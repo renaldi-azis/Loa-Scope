@@ -29,3 +29,4 @@ export default {
   props: ['value'],
   data() {
     return {
+      menu: false,

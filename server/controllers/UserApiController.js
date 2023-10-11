@@ -77,3 +77,4 @@ const deleteUser = async (req, res) => {
 
 /**
  * @description Change an existing user's password
+ */

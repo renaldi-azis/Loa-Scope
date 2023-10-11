@@ -68,6 +68,7 @@
           <p>
             Tested At:
             {{ selectedMarkerData.createdAt | dateFormatter('YYYY-MM-DD hh:mm:ss A') }}
+          </p>
         </div>
         <div class="indicator-container" v-if="status.isLoading">
           <v-progress-circular :size="50" color="white" indeterminate/>
@@ -106,7 +107,6 @@ export default {
       return this.data.filter((row) => row.latitude && row.longitude
         && row.totalWormCount >= +this.minWormCount
         && (this.maxWormCount === 0 || row.totalWormCount <= +this.maxWormCount));
-    },
     wormCountTicks() {
       const max = Math.max(...this.data.map((item) => item.totalWormCount));
       return _.range(0, Math.ceil(max / UNIT + 1) * UNIT, UNIT);
@@ -148,3 +148,4 @@ export default {
 <style lang="scss" scoped>
 .map-container {
   height: calc(100vh - 280px);
+}

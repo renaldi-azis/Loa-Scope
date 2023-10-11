@@ -101,7 +101,6 @@ export default {
         {
           text: 'Longitude',
           value: 'longitude',
-          type: 'number',
           visible: true,
         },
         {
@@ -143,3 +142,4 @@ export default {
       this.getTests();
     },
     onExportAsCSV() {
+      let csvData = '';

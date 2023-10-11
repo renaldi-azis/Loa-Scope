@@ -48,3 +48,4 @@ const searchTests = async (req, res) => {
   const tests = await Test.findAll(query);
 
   return res.status(200).json(tests);
+};

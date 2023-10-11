@@ -153,3 +153,4 @@ export default {
               ctx.lineTo(chart.options.customLine.x, chartArea.top);
               ctx.stroke();
               ctx.restore();
+            }

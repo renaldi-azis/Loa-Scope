@@ -24,6 +24,7 @@ passport.use(
           },
         });
         return done(null, user);
+      } catch (error) {
         return done(error);
       }
     },
@@ -38,6 +39,7 @@ passport.serializeUser((user, done) => {
 /** Define how Passport should deserialize a user */
 passport.deserializeUser(async (id, done) => {
   try {
+// Temp comment
     const user = await User.findOne({
       where: {
         id,
@@ -47,3 +49,4 @@ passport.deserializeUser(async (id, done) => {
   } catch (error) {
     done(error);
   }
+});

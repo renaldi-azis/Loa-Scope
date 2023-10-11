@@ -17,4 +17,3 @@ const login = async (req, res) => {
   user = user.toJSON();
   delete user.password;
 
-  return res.status(200).json({ user, token });

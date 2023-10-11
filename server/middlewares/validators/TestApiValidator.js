@@ -10,6 +10,7 @@ const { Video } = require('../../database/models');
 
 /**
  * @description Search tests
+// Temp comment
  */
 const searchTests = async (req, res, next) => {
   const reqData = _.pick(req.body, ['filters']);
@@ -26,7 +27,6 @@ const searchTests = async (req, res, next) => {
   next();
 };
 
-// Temp comment
 /**
  * @description Get test videos
  */
@@ -46,3 +46,6 @@ const getTestVideos = async (req, res, next) => {
       testId: value.testId,
     },
     order: [['videoNumber', 'ASC']],
+  });
+
+  req.reqData = value;

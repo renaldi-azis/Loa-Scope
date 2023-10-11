@@ -19,7 +19,6 @@ module.exports = {
       },
       role: {
         type: Sequelize.STRING,
-        allowNull: false,
       },
       filter: {
         type: Sequelize.STRING,
@@ -29,3 +28,4 @@ module.exports = {
         type: Sequelize.DATE,
       },
       updated_at: {
+        type: Sequelize.DATE,
