@@ -10,7 +10,6 @@ const { User } = require('../database/models');
 
 /** Setup JSON Webtoken Strategy */
 passport.use(
-  'jwt-header',
   new passportJWT.Strategy(
     {
       jwtFromRequest: passportJWT.ExtractJwt.fromAuthHeaderAsBearerToken(),
@@ -42,6 +41,7 @@ passport.deserializeUser(async (id, done) => {
     const user = await User.findOne({
       where: {
         id,
+      },
     });
     done(null, user);
   } catch (error) {

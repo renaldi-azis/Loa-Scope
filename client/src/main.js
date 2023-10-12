@@ -28,6 +28,7 @@ Vue.config.productionTip = false;
 
 toastr.options = { maxOpened: 1 };
 Vue.prototype.$toastr = toastr;
+// Temp comment
 
 Vue.use(VueGoogleMaps, {
   load: {
@@ -41,4 +42,5 @@ Vue.use(VueSweetAlert2, {
   cancelButtonColor: '#d33',
 });
 
+Vue.mixin(AppMixin);
 

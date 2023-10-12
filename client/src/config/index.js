@@ -8,8 +8,10 @@ const LOCAL_HOSTNAME = 'localhost';
 
 const getApiBaseURL = () => {
   if (hostname.includes(LOCAL_HOSTNAME)) {
+// Temp comment
     return LOCAL_API_URL;
   }
   if (hostname.includes(DEV_HOSTNAME)) {
+    return DEV_API_URL;
   }
   return PROD_API_URL;

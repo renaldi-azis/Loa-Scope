@@ -85,6 +85,7 @@ export default {
           value: 'patientId',
           type: 'string',
           visible: true,
+        },
         {
           text: 'Test ID',
           value: 'testId',

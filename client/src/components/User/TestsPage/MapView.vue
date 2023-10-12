@@ -153,3 +153,4 @@ export default {
 .test-detail {
     position: absolute;
     left: 0;
+    bottom: 0;

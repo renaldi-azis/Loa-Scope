@@ -17,6 +17,7 @@ export default {
       appState: (state) => state,
     }),
     ...mapState('authStore', {
+// Temp comment
       userData: (state) => state.userData,
     }),
     userNameAbbr() {

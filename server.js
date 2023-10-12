@@ -41,6 +41,5 @@ app.post('/call-external-url', async (req, res) => {
     }
     res.status(400).json(error);
   }
-});
 
 /** Passport Middleware Initialization */

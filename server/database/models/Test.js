@@ -28,6 +28,7 @@ module.exports = (sequelize, DataTypes) => {
         type: DataTypes.STRING,
       },
       totalWormCount: {
+        type: DataTypes.INTEGER,
       },
       videoCount: {
         type: DataTypes.INTEGER,

@@ -25,6 +25,7 @@ const getUsers = async (req, res) => {
     },
   });
 
+  return res.status(200).json(users);
 };
 
 /**
@@ -45,7 +46,6 @@ const createUser = async (req, res) => {
 
 /**
  * @description Update an existing user
- */
 const updateUser = async (req, res) => {
   const { reqData } = req;
   let { user } = req.entities;
