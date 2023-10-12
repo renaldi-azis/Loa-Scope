@@ -7,6 +7,7 @@ const passport = require('passport');
 
 const { isAuthorizedMobile, isAdmin } = require('../../middlewares/AppMiddleware');
 
+// Root API Router
 const apiRouter = require('express').Router();
 
 // Import Sub API Routers
@@ -26,3 +27,4 @@ apiRouter.use(passport.authenticate('jwt-header', { session: false }));
 apiRouter.use('/profile', profileApiRouter);
 apiRouter.use('/tests', testApiRouter);
 
+/** Add Admin Middleware */

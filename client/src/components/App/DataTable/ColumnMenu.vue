@@ -30,3 +30,4 @@ export default {
   data() {
     return {
       menu: false,
+    };

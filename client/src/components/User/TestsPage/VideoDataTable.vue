@@ -55,7 +55,6 @@ export default {
           value: 'videoUrl',
         },
         {
-          text: 'Recorded At',
           value: 'recordedAt',
         },
       ];
@@ -70,3 +69,4 @@ export default {
       const { data } = await this.getTestVideos(test.testId);
       this.videos = data;
       this.$set(this.status, 'isLoading', false);
+    },

@@ -261,3 +261,7 @@ export default {
     onAddFilterGroup(groupIndex) {
       this.filterGroups.splice(groupIndex + 1, 0, [{
         column: '',
+        condition: '',
+        value: '',
+      }]);
+    },

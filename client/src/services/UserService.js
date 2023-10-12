@@ -1,5 +1,6 @@
 export default {
   methods: {
+    getUsers() {
       return $http.get('users');
     },
     createUser(payload) {
@@ -13,3 +14,5 @@ export default {
     },
     changePassword(userId, payload) {
       return $http.post(`users/${userId}/change-password`, payload);
+    },
+  },

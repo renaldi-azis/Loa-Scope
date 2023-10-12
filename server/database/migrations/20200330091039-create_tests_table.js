@@ -34,6 +34,7 @@ module.exports = {
         type: Sequelize.INTEGER,
         defaultValue: 0,
       },
+      executed_at: {
         type: Sequelize.DATE,
       },
       created_at: {

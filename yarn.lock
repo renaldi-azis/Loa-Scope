@@ -65,6 +65,7 @@
 
 "@types/validator@^13.7.1":
   "integrity" "sha512-9rQHeAqz6Jw3gDhttkmWetoriW5FPbxylv/6h6mXtaj2NKRcOvOmvfcswVdLVpbuy10NrO486K3lCoLgoIhiIA=="
+  "resolved" "https://registry.npmjs.org/@types/validator/-/validator-13.7.5.tgz"
   "version" "13.7.5"
 
 "abbrev@1":
@@ -1463,3 +1464,11 @@
     "mime-types" "~2.1.24"
 
 "unbox-primitive@^1.0.2":
+  "integrity" "sha512-61pPlCD9h51VoreyJ0BReideM3MDKMKnh6+V9L08331ipq6Q8OFXZYiqP6n/tbHx4s5I9uRhcye6BrbkizkBDw=="
+  "resolved" "https://registry.npmjs.org/unbox-primitive/-/unbox-primitive-1.0.2.tgz"
+  "version" "1.0.2"
+  dependencies:
+    "call-bind" "^1.0.2"
+    "has-bigints" "^1.0.2"
+    "has-symbols" "^1.0.3"
+    "which-boxed-primitive" "^1.0.2"

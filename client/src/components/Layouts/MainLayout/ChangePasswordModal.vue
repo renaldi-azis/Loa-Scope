@@ -24,6 +24,7 @@
           <v-text-field
             type="password"
             label="Confirm Password*"
+            :rules="getValidators('Confirm password', ['equal:user.newPassword:new password'])"
             v-model="user.confirmPassword"
           />
         </v-card-text>
@@ -69,3 +70,4 @@ export default {
       this.$set(this.status, 'isSaving', true);
       try {
         const payload = _.pick(this.user, ['currentPassword', 'newPassword']);
+        await this.changePassword(payload);

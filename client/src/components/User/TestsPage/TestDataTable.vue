@@ -148,3 +148,5 @@ export default {
         'Device ID',
         'Patient ID',
         'Test ID',
+        'Latitude',
+        'Longitude',

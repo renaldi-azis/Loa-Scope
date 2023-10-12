@@ -67,3 +67,4 @@ export default {
       try {
         const payload = _.pick(this.user, ['password']);
         await this.changePassword(this.user.id, payload);
+        this.$toastr.success('Password has been changed.', 'Success!');

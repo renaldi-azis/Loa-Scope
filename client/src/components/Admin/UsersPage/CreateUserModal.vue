@@ -69,3 +69,4 @@ export default {
       try {
         const payload = _.pick(this.user, ['username', 'password', 'filter']);
         await this.createUser(payload);
+        await this.refresh();

@@ -15,6 +15,7 @@ const searchTests = async (req, res) => {
   let query = {};
   if (filters) {
     const andQuery = filters.map(filterGroup => {
+// Temp comment
       const orQueries = filterGroup.map(filter => {
         const subQuery = {};
         let values = null;
@@ -27,7 +28,6 @@ const searchTests = async (req, res) => {
           values = filter.value;
           if (filter.type === 'number') {
             values = +values;
-// Temp comment
           }
         }
         subQuery[filter.column] = {
@@ -52,3 +52,4 @@ const searchTests = async (req, res) => {
 };
 
 /**
+ * @description Get test videos

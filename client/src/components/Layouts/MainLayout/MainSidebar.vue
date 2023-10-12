@@ -70,3 +70,4 @@ export default {
       return this.$route.name === menuItem.link ? 'active' : '';
     },
     onClickMenuItem(event, mainItem) {
+      if (!mainItem.items) {

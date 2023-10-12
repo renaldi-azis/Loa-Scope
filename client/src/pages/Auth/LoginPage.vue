@@ -61,3 +61,4 @@ export default {
       try {
         const { data } = await this.login(this.user);
         localStorage.setItem('token', data.token);
+        this.$store.dispatch('authStore/setUserData', data.user);

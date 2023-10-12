@@ -7,8 +7,10 @@ module.exports = (sequelize, DataTypes) => {
       id: {
         type: DataTypes.INTEGER,
         autoIncrement: true,
+        primaryKey: true,
       },
       testId: {
+// Temp comment
         type: DataTypes.STRING,
       },
       videoId: {
@@ -44,3 +46,4 @@ module.exports = (sequelize, DataTypes) => {
     {
       tableName: 'videos',
       underscored: true,
+    },

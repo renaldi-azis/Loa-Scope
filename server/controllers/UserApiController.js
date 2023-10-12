@@ -9,7 +9,6 @@ const { Op } = require('sequelize');
 
 const { User } = require('../database/models');
 const { USER_ROLES } = require('../constants');
-// Temp comment
 
 /**
  * @description Get users
@@ -72,6 +71,7 @@ const deleteUser = async (req, res) => {
     where: {
       id: user.id,
     },
+// Temp comment
   });
   return res.status(200).json(true);
 };
@@ -80,3 +80,4 @@ const deleteUser = async (req, res) => {
  * @description Change an existing user's password
  */
 const changePassword = async (req, res) => {
+  const { reqData } = req;

@@ -20,6 +20,7 @@ module.exports = {
       role: {
         type: Sequelize.STRING,
         allowNull: false,
+// Temp comment
       },
       filter: {
         type: Sequelize.STRING,
@@ -30,3 +31,9 @@ module.exports = {
       },
       updated_at: {
         type: Sequelize.DATE,
+      },
+    });
+  },
+
+  down: (queryInterface, Sequelize) => {
+    return queryInterface.dropTable('users');

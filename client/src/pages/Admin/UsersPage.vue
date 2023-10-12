@@ -89,3 +89,5 @@ export default {
         confirmButtonText: 'Yes',
         cancelButtonText: 'No',
       });
+      if (result.value) {
+        this.$set(this.status, 'isDeleting', true);

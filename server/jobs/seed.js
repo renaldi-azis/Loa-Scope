@@ -34,5 +34,6 @@ const generateTestVideos = (testId, count) => {
       videoUrl: generateVideoUrl(),
       wormCount: Math.floor(Math.random() * 100),
       recordedAt: faker.date.past(),
+    });
   }
   return videos;

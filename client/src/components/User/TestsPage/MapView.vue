@@ -154,3 +154,5 @@ export default {
     position: absolute;
     left: 0;
     bottom: 0;
+    padding: 15px;
+    max-width: 350px;

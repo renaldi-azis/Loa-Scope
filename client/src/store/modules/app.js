@@ -32,3 +32,4 @@ const getters = {
   //
 };
 
+export default {
