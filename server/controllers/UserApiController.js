@@ -9,6 +9,7 @@ const { Op } = require('sequelize');
 
 const { User } = require('../database/models');
 const { USER_ROLES } = require('../constants');
+// Temp comment
 
 /**
  * @description Get users
@@ -46,6 +47,7 @@ const createUser = async (req, res) => {
 
 /**
  * @description Update an existing user
+ */
 const updateUser = async (req, res) => {
   const { reqData } = req;
   let { user } = req.entities;

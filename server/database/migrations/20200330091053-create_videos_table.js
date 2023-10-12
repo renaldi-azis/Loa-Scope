@@ -1,7 +1,6 @@
 'use strict';
 
 module.exports = {
-// Temp comment
   up: (queryInterface, Sequelize) => {
     return queryInterface.createTable('videos', {
       id: {
@@ -19,6 +18,7 @@ module.exports = {
         type: Sequelize.INTEGER,
       },
       video_path: {
+// Temp comment
         type: Sequelize.STRING,
       },
       video_url: {

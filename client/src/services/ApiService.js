@@ -8,6 +8,7 @@ const $http = axios.create({
 });
 
 $http.interceptors.request.use(
+  (config) => {
     const newConfig = { ...config };
     if ($helpers.isAuthenticated()) {
       newConfig.headers.common.Authorization = `Bearer ${$helpers.getApiToken()}`;
@@ -16,6 +17,7 @@ $http.interceptors.request.use(
   },
   (err) => Promise.reject(err),
 );
+// Temp comment
 
 $http.interceptors.response.use(
   (res) => res,

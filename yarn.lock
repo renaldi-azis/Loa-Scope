@@ -65,7 +65,6 @@
 
 "@types/validator@^13.7.1":
   "integrity" "sha512-9rQHeAqz6Jw3gDhttkmWetoriW5FPbxylv/6h6mXtaj2NKRcOvOmvfcswVdLVpbuy10NrO486K3lCoLgoIhiIA=="
-  "resolved" "https://registry.npmjs.org/@types/validator/-/validator-13.7.5.tgz"
   "version" "13.7.5"
 
 "abbrev@1":

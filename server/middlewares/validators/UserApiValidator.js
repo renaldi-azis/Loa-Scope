@@ -74,7 +74,6 @@ const updateUser = async (req, res, next) => {
 
   req.reqData = value;
   req.entities = { user };
-// Temp comment
   next();
 };
 

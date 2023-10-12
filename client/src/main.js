@@ -28,7 +28,6 @@ Vue.config.productionTip = false;
 
 toastr.options = { maxOpened: 1 };
 Vue.prototype.$toastr = toastr;
-// Temp comment
 
 Vue.use(VueGoogleMaps, {
   load: {

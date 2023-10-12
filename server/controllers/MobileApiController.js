@@ -8,7 +8,6 @@ const Joi = require('joi');
 const { Test, Video } = require('../database/models');
 
 /**
-// Temp comment
  * @description Create Test
  */
 const createTest = async (req, res) => {
@@ -27,6 +26,7 @@ const createTest = async (req, res) => {
   return res.status(200).json(test);
 };
 
+// Temp comment
 /**
  * @description Create Video
  */

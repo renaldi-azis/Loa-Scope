@@ -24,7 +24,6 @@
           <v-text-field
             type="password"
             label="Confirm Password*"
-            :rules="getValidators('Confirm password', ['equal:user.newPassword:new password'])"
             v-model="user.confirmPassword"
           />
         </v-card-text>
