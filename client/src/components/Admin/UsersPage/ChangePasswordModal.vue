@@ -66,3 +66,4 @@ export default {
       this.$set(this.status, 'isSaving', true);
       try {
         const payload = _.pick(this.user, ['password']);
+        await this.changePassword(this.user.id, payload);

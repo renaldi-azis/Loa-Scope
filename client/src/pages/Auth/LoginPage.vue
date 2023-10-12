@@ -60,3 +60,4 @@ export default {
       this.$set(this.status, 'isLoggingIn', true);
       try {
         const { data } = await this.login(this.user);
+        localStorage.setItem('token', data.token);

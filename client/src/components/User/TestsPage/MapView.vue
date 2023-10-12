@@ -29,6 +29,7 @@
         </div>
       </div>
       <div class="position-relative">
+        <GmapMap
           class="map-container"
           :center="mapCenter"
           :zoom="4"
@@ -151,3 +152,4 @@ export default {
 }
 .test-detail {
     position: absolute;
+    left: 0;

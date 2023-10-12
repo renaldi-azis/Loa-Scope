@@ -39,7 +39,6 @@ const getTestVideos = async (req, res, next) => {
   if (error) {
     return res.status(422).json({ message: error.details[0].message });
   }
-  // Get test videos
   const videos = await Video.findAll({
     where: {
       testId: value.testId,
@@ -48,3 +47,4 @@ const getTestVideos = async (req, res, next) => {
   });
 
   req.reqData = value;
+  req.entities = { videos };

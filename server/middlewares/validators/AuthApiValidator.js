@@ -6,7 +6,6 @@
 const _ = require('lodash');
 const bcrypt = require('bcrypt');
 const Joi = require('joi');
-
 const { User } = require('../../database/models');
 
 /**
@@ -37,3 +36,4 @@ const login = async (req, res, next) => {
     return res.status(401).json({ message: 'Seems you entered the wrong credential.' });
   }
 
+  req.reqData = value;

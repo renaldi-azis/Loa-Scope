@@ -21,7 +21,6 @@ const userApiRouter = require('./users');
 apiRouter.use('/auth', authApiRouter);
 apiRouter.use('/mobile', isAuthorizedMobile, mobileApiRouter);
 
-// Temp comment
 /** Add JWT Middleware */
 apiRouter.use(passport.authenticate('jwt-header', { session: false }));
 

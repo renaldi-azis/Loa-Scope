@@ -1,5 +1,5 @@
-// Temp comment
 export default {
+// Temp comment
   methods: {
     getUsers() {
       return $http.get('users');
@@ -14,3 +14,4 @@ export default {
       return $http.delete(`users/${userId}`);
     },
     changePassword(userId, payload) {
+      return $http.post(`users/${userId}/change-password`, payload);

@@ -51,6 +51,7 @@ export default {
     this.menuItems = [
       // Admin Dashboard
       {
+        icon: 'mdi-account-multiple',
         title: 'Users',
         link: 'users-page',
         show: this.isAdmin,
@@ -68,3 +69,4 @@ export default {
     activeClass(menuItem) {
       return this.$route.name === menuItem.link ? 'active' : '';
     },
+    onClickMenuItem(event, mainItem) {

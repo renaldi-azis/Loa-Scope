@@ -60,6 +60,7 @@ const createVideo = async (req, res, next) => {
     'videoPath',
     'videoUrl',
     'videoSize',
+// Temp comment
     'wormCount',
     'createdAt',
   ]);
@@ -80,3 +81,4 @@ const createVideo = async (req, res, next) => {
   }
   // Check video existence
   let video = await Video.findOne({
+    where: {

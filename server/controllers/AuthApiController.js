@@ -1,6 +1,7 @@
 /**
  * @description Auth API Controller
  */
+
 /** Dependencies */
 const jwt = require('jsonwebtoken');
 
@@ -17,3 +18,4 @@ const login = async (req, res) => {
   delete user.password;
 
   return res.status(200).json({ user, token });
+};

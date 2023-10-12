@@ -75,6 +75,7 @@ const updateUser = async (req, res, next) => {
   req.reqData = value;
   req.entities = { user };
   next();
+// Temp comment
 };
 
 /**
@@ -119,3 +120,4 @@ const changePassword = async (req, res, next) => {
     password: Joi.string().min(6).label('Filter string'),
   });
   const { value, error } = schema.validate(reqData);
+  if (error) {

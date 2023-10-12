@@ -48,6 +48,7 @@ export default {
   },
   methods: {
     openModal(user) {
+      this.user = { ...user };
       this.$set(this.status, 'isModalOpen', true);
     },
     closeModal() {
@@ -60,3 +61,4 @@ export default {
         const payload = _.pick(this.user, ['filter']);
         await this.updateUser(this.user.id, payload);
         await this.refresh();
+        this.$toastr.success('User has been updated.', 'Success!');

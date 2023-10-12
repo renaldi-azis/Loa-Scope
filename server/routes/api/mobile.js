@@ -1,6 +1,7 @@
 /**
  * @description Define Mobile API Routes
  */
+// Temp comment
 
 // Mobile API Router
 const mobileApiRouter = require('express').Router();
@@ -12,3 +13,4 @@ const MobileApiValidator = require('../../middlewares/validators/MobileApiValida
 const MobileApiController = require('../../controllers/MobileApiController');
 
 // Add Routes
+mobileApiRouter.post('/tests', MobileApiValidator.createTest, MobileApiController.createTest);

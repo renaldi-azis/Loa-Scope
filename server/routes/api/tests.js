@@ -12,6 +12,7 @@ const TestApiValidator = require('../../middlewares/validators/TestApiValidator'
 const TestApiController = require('../../controllers/TestApiController');
 
 // Add Routes
+// Temp comment
 testApiRouter.post('/search', TestApiValidator.searchTests, TestApiController.searchTests);
 testApiRouter.get(
   '/:testId/videos',

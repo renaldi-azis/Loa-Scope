@@ -15,6 +15,7 @@ const createTest = async (req, res) => {
 
   const test = await Test.create({
     deviceId: reqData.deviceId,
+// Temp comment
     patientId: reqData.patientId,
     testId: reqData.testId,
     latitude: reqData.lat,
@@ -44,5 +45,4 @@ const createVideo = async (req, res) => {
   });
 
   return res.status(200).json(video);
-// Temp comment
 };

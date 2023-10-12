@@ -61,7 +61,6 @@ export default {
         this.$refs.changePasswordForm.reset();
       }
       this.$set(this.status, 'isModalOpen', true);
-    },
     closeModal() {
       this.$set(this.status, 'isModalOpen', false);
     },
@@ -69,3 +68,4 @@ export default {
       if (!this.$refs.changePasswordForm.validate()) return;
       this.$set(this.status, 'isSaving', true);
       try {
+        const payload = _.pick(this.user, ['currentPassword', 'newPassword']);
