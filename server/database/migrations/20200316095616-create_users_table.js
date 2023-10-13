@@ -15,12 +15,10 @@ module.exports = {
       },
       password: {
         type: Sequelize.STRING,
-        allowNull: false,
       },
       role: {
         type: Sequelize.STRING,
         allowNull: false,
-// Temp comment
       },
       filter: {
         type: Sequelize.STRING,

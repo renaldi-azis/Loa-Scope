@@ -7,7 +7,6 @@
     <v-spacer />
     <div class="title-wrapper d-none d-md-block">
       <div class="title">LoaScope {{isUser ? 'Data' : 'Admin'}} Portal</div>
-      <small><i>Automated quantification of filarial infections</i></small>
     </div>
     <v-toolbar-items class="align-center">
       <v-menu offset-y>
@@ -54,3 +53,4 @@ export default {
 .title-wrapper {
   position: absolute;
   left: 50%;
+  top: 50%;

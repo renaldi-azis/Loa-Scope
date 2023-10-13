@@ -15,7 +15,6 @@ const searchTests = async (req, res) => {
   let query = {};
   if (filters) {
     const andQuery = filters.map(filterGroup => {
-// Temp comment
       const orQueries = filterGroup.map(filter => {
         const subQuery = {};
         let values = null;
@@ -46,7 +45,6 @@ const searchTests = async (req, res) => {
     };
   }
 
-  const tests = await Test.findAll(query);
 
   return res.status(200).json(tests);
 };

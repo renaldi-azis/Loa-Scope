@@ -41,7 +41,6 @@ const createUser = async (req, res) => {
   user = user.toJSON();
   delete user.password;
 
-  return res.status(200).json(user);
 };
 
 /**
@@ -71,7 +70,6 @@ const deleteUser = async (req, res) => {
     where: {
       id: user.id,
     },
-// Temp comment
   });
   return res.status(200).json(true);
 };

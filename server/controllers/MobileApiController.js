@@ -44,6 +44,5 @@ const createVideo = async (req, res) => {
   });
 
   return res.status(200).json(video);
-// Temp comment
 };
 

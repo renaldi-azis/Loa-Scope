@@ -53,7 +53,6 @@ export default {
       },
     };
   },
-  methods: {
     openModal(user) {
       this.user = { ...user };
       this.$set(this.status, 'isModalOpen', true);

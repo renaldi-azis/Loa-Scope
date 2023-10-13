@@ -25,4 +25,3 @@ $http.interceptors.response.use(
       $helpers.logout();
     }
     return Promise.reject(err);
-  },
