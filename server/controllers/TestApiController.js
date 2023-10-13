@@ -35,7 +35,6 @@ const searchTests = async (req, res) => {
         return subQuery;
       });
       return {
-        [Op.or]: orQueries,
       };
     });
     query = {
@@ -45,6 +44,7 @@ const searchTests = async (req, res) => {
     };
   }
 
+  const tests = await Test.findAll(query);
 
   return res.status(200).json(tests);
 };

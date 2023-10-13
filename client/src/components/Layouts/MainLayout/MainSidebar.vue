@@ -56,7 +56,7 @@ export default {
         link: 'users-page',
         show: this.isAdmin,
       },
-      {
+      // User Dashboard
         icon: 'mdi-home-analytics',
         title: 'Tests',
         link: 'tests-page',

@@ -18,6 +18,7 @@
             color="primary"
             v-on="on"
             @click="action.handler"
+          >
             <v-icon dark v-html="action.icon" />
           </v-btn>
         </template>
