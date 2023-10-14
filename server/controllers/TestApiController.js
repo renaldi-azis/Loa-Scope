@@ -35,6 +35,7 @@ const searchTests = async (req, res) => {
         return subQuery;
       });
       return {
+        [Op.or]: orQueries,
       };
     });
     query = {
@@ -51,3 +52,4 @@ const searchTests = async (req, res) => {
 
 /**
  * @description Get test videos
+ * @param {*} req

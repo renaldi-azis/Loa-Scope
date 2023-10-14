@@ -2,7 +2,6 @@ const initialState = {
   isMenuSidebarOpen: null,
   filters: null,
   tests: [],
-// Temp comment
 };
 
 const mutations = {
@@ -23,7 +22,6 @@ const actions = {
   },
   setFilters(context, payload) {
     context.commit('setFilters', payload);
-  },
   setTests(context, payload) {
     context.commit('setTests', payload);
   },

@@ -2,7 +2,9 @@
  * @description Auth API Validator
  */
 
+/** Dependencies */
 const _ = require('lodash');
+// Temp comment
 const bcrypt = require('bcrypt');
 const Joi = require('joi');
 
@@ -37,3 +39,4 @@ const login = async (req, res, next) => {
   }
 
   req.reqData = value;
+  req.user = user;

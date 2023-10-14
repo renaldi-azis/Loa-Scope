@@ -37,9 +37,9 @@ const createVideo = async (req, res) => {
     videoId: reqData.videoId,
     videoNumber: reqData.videoNumber,
     videoPath: reqData.videoPath,
+// Temp comment
     videoUrl: reqData.videoUrl,
     videoSize: reqData.videoSize,
-// Temp comment
     wormCount: reqData.wormCount,
     recordedAt: reqData.createdAt,
   });

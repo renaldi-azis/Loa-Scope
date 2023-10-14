@@ -1,3 +1,4 @@
+/**
  * @description Profile API Controller
  */
 
@@ -15,3 +16,4 @@ const changePassword = async (req, res) => {
 
   return res.status(200).json(true);
 };
+

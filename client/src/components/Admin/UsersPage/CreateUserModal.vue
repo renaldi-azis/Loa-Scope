@@ -14,6 +14,7 @@
             :rules="getValidators('Username', ['required'])"
             v-model="user.username"
           />
+          <v-text-field
             type="password"
             label="Password*"
             :rules="getValidators('Password', ['required', 'min-len:6'])"
@@ -69,3 +70,4 @@ export default {
         const payload = _.pick(this.user, ['username', 'password', 'filter']);
         await this.createUser(payload);
         await this.refresh();
+        this.$toastr.success('User has been created.', 'Success!');

@@ -65,3 +65,4 @@ export default {
           const otherFieldName = sections[1];
           const otherFieldLabel = sections[2];
           return (v) => (!!v && v === _.get(this, otherFieldName)) || `${fieldLabel} must be equal to ${otherFieldLabel}`;
+        }

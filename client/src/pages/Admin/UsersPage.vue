@@ -35,7 +35,6 @@
     <create-user-modal ref="createUserModal" :refresh="fetchUsers"></create-user-modal>
     <update-user-modal ref="updateUserModal" :refresh="fetchUsers"></update-user-modal>
   </div>
-</template>
 
 <script>
 import UserService from '@/services/UserService';
@@ -86,7 +85,9 @@ export default {
         title: 'Are you sure you want to delete this user?',
         icon: 'question',
         showCancelButton: true,
+        confirmButtonText: 'Yes',
         cancelButtonText: 'No',
       });
       if (result.value) {
         this.$set(this.status, 'isDeleting', true);
+        try {

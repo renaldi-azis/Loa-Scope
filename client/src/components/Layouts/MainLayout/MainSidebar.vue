@@ -52,11 +52,11 @@ export default {
       // Admin Dashboard
       {
         icon: 'mdi-account-multiple',
-        title: 'Users',
         link: 'users-page',
         show: this.isAdmin,
       },
       // User Dashboard
+      {
         icon: 'mdi-home-analytics',
         title: 'Tests',
         link: 'tests-page',
@@ -70,3 +70,4 @@ export default {
     },
     onClickMenuItem(event, mainItem) {
       if (!mainItem.items) {
+        this.$router.replace({ name: mainItem.link });

@@ -156,3 +156,5 @@ export default {
     bottom: 0;
     padding: 15px;
     max-width: 350px;
+    width: 100%;
+    min-height: 170px;

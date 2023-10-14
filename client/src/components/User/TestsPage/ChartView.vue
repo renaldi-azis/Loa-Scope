@@ -159,3 +159,5 @@ export default {
       };
     },
   },
+  methods: {
+    getPercentage(baseValue, isGreater) {

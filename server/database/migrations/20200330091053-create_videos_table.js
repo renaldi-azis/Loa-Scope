@@ -6,7 +6,6 @@ module.exports = {
       id: {
         type: Sequelize.INTEGER,
         autoIncrement: true,
-        primaryKey: true,
       },
       test_id: {
         type: Sequelize.STRING,
@@ -14,6 +13,7 @@ module.exports = {
       video_id: {
         type: Sequelize.STRING,
       },
+      video_number: {
         type: Sequelize.INTEGER,
       },
       video_path: {

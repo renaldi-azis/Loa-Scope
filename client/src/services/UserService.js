@@ -1,4 +1,5 @@
 export default {
+// Temp comment
   methods: {
     getUsers() {
       return $http.get('users');
@@ -8,6 +9,7 @@ export default {
     },
     updateUser(userId, payload) {
       return $http.put(`users/${userId}`, payload);
+    },
     deleteUser(userId) {
       return $http.delete(`users/${userId}`);
     },

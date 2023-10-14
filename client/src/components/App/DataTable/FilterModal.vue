@@ -265,3 +265,6 @@ export default {
         value: '',
       }]);
     },
+    onAddFilter(groupIndex, filterIndex) {
+      this.filterGroups[groupIndex].splice(filterIndex + 1, 0, {
+        column: '',

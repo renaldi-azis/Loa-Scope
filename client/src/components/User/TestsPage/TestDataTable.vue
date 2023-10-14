@@ -150,3 +150,5 @@ export default {
         'Test ID',
         'Latitude',
         'Longitude',
+        'Total Worm Count',
+        'Video Count',

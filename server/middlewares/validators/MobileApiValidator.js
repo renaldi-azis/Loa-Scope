@@ -82,3 +82,4 @@ const createVideo = async (req, res, next) => {
   let video = await Video.findOne({
     where: {
       videoId: value.videoId,
+    },

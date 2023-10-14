@@ -16,7 +16,6 @@
         :hide-details="hideDetails"
         :label="label"
         :value="formattedDate"
-        :rules="rules"
         v-on="on"
       />
     </template>
@@ -44,3 +43,4 @@ export default {
       this.$emit('input', date);
     },
     onReset() {
+      this.$refs.menu.save('');

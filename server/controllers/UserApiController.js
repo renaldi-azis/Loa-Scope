@@ -80,3 +80,5 @@ const deleteUser = async (req, res) => {
  */
 const changePassword = async (req, res) => {
   const { reqData } = req;
+  const { user } = req.entities;
+

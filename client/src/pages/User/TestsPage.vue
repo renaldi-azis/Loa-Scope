@@ -43,3 +43,4 @@ export default {
   },
   methods: {
     onSwitchView(view) {
+      this.view = view;

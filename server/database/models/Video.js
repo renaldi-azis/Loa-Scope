@@ -5,7 +5,6 @@ module.exports = (sequelize, DataTypes) => {
     'Video',
     {
       id: {
-        type: DataTypes.INTEGER,
         autoIncrement: true,
         primaryKey: true,
       },
@@ -13,6 +12,7 @@ module.exports = (sequelize, DataTypes) => {
         type: DataTypes.STRING,
       },
       videoId: {
+        type: DataTypes.STRING,
       },
       videoNumber: {
         type: DataTypes.INTEGER,

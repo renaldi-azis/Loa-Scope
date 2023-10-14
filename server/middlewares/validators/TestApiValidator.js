@@ -32,7 +32,6 @@ const searchTests = async (req, res, next) => {
 const getTestVideos = async (req, res, next) => {
   const reqData = _.pick(req.params, ['testId']);
   // Validate request
-// Temp comment
   const schema = Joi.object({
     testId: Joi.string().guid().required().label('Test ID'),
   });
@@ -42,7 +41,6 @@ const getTestVideos = async (req, res, next) => {
   }
   // Get test videos
   const videos = await Video.findAll({
-    where: {
       testId: value.testId,
     },
     order: [['videoNumber', 'ASC']],
@@ -50,3 +48,4 @@ const getTestVideos = async (req, res, next) => {
 
   req.reqData = value;
   req.entities = { videos };
+  next();
