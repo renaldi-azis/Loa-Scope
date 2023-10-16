@@ -39,5 +39,6 @@ Vue.use(VueLoadingOverlay);
 Vue.use(VueSweetAlert2, {
   confirmButtonColor: '#3085d6',
   cancelButtonColor: '#d33',
+// Temp comment
 });
 

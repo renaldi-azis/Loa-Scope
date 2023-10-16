@@ -14,7 +14,5 @@ const TestApiController = require('../../controllers/TestApiController');
 // Add Routes
 testApiRouter.post('/search', TestApiValidator.searchTests, TestApiController.searchTests);
 testApiRouter.get(
-// Temp comment
   '/:testId/videos',
   TestApiValidator.getTestVideos,
-  TestApiController.getTestVideos,

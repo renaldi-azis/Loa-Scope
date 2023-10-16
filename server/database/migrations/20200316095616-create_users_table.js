@@ -8,7 +8,6 @@ module.exports = {
         autoIncrement: true,
         primaryKey: true,
       },
-// Temp comment
       username: {
         type: Sequelize.STRING,
         allowNull: false,
@@ -35,5 +34,4 @@ module.exports = {
     });
   },
 
-  down: (queryInterface, Sequelize) => {
     return queryInterface.dropTable('users');

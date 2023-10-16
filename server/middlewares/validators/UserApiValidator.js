@@ -7,7 +7,6 @@ const _ = require('lodash');
 const Joi = require('joi');
 
 const { User } = require('../../database/models');
-
 /**
  * @description Get users
  */
@@ -112,6 +111,7 @@ const changePassword = async (req, res, next) => {
   const reqData = {
     ..._.pick(req.params, ['userId']),
     ..._.pick(req.body, ['password']),
+  };
   // Validate request
   const schema = Joi.object({
     userId: Joi.number().min(1).label('User ID'),

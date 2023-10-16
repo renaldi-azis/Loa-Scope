@@ -2,6 +2,7 @@
  * @description Mobile API Controller
  */
 
+/** Dependencies */
 const Joi = require('joi');
 
 const { Test, Video } = require('../database/models');
@@ -35,7 +36,6 @@ const createVideo = async (req, res) => {
     testId: reqData.testId,
     videoId: reqData.videoId,
     videoNumber: reqData.videoNumber,
-    videoPath: reqData.videoPath,
     videoUrl: reqData.videoUrl,
     videoSize: reqData.videoSize,
     wormCount: reqData.wormCount,

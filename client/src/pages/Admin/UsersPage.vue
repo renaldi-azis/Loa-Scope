@@ -35,6 +35,7 @@
     <create-user-modal ref="createUserModal" :refresh="fetchUsers"></create-user-modal>
     <update-user-modal ref="updateUserModal" :refresh="fetchUsers"></update-user-modal>
   </div>
+</template>
 
 <script>
 import UserService from '@/services/UserService';

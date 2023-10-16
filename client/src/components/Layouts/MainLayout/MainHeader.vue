@@ -22,7 +22,6 @@
         <v-list>
           <v-list-item @click="$refs.changePasswordModal.openModal()">
             <v-list-item-title>Change Password</v-list-item-title>
-          </v-list-item>
           <v-list-item @click="onLogout">
             <v-list-item-title>Logout</v-list-item-title>
           </v-list-item>
@@ -54,5 +53,3 @@ export default {
 .title-wrapper {
   position: absolute;
   left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);

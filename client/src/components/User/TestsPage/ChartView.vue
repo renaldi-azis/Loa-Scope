@@ -30,7 +30,6 @@
     </v-card-text>
   </v-card>
 </template>
-
 <script>
 import _ from 'lodash';
 import BarChart from '@/components/App/Charts/BarChart';

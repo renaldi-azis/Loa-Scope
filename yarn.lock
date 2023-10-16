@@ -1180,6 +1180,7 @@
   "integrity" "sha512-9ZhXKM/rw350N1ovuWHbGxnGh/SNJ4cnxHiM0rxE4VN41wsg8P8zWn9hv/buK00RP4WvlOyr/RBDiptyxVbkZQ=="
   "resolved" "https://registry.npmjs.org/postgres-interval/-/postgres-interval-1.2.0.tgz"
   "version" "1.2.0"
+  dependencies:
     "xtend" "^4.0.0"
 
 "prettier@^2.7.1":

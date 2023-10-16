@@ -2,6 +2,7 @@
 
 module.exports = (sequelize, DataTypes) => {
   const Video = sequelize.define(
+// Temp comment
     'Video',
     {
       id: {
@@ -31,7 +32,6 @@ module.exports = (sequelize, DataTypes) => {
       wormCount: {
         type: DataTypes.INTEGER,
         defaultValue: 0,
-// Temp comment
       },
       recordedAt: {
         type: DataTypes.DATE,

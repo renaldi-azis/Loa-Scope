@@ -26,7 +26,6 @@ module.exports = {
       location: {
         type: Sequelize.STRING,
       },
-// Temp comment
       total_worm_count: {
         type: Sequelize.INTEGER,
         defaultValue: 0,
@@ -37,6 +36,7 @@ module.exports = {
       },
       executed_at: {
         type: Sequelize.DATE,
+// Temp comment
       },
       created_at: {
         type: Sequelize.DATE,

@@ -16,6 +16,7 @@ const mutations = {
 };
 
 const actions = {
+// Temp comment
   //
 };
 
@@ -28,7 +29,6 @@ export default new Vuex.Store({
   mutations,
   actions,
   getters,
-// Temp comment
   modules: {
     appStore,
     authStore,
