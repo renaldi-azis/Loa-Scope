@@ -28,3 +28,4 @@ apiRouter.use('/profile', profileApiRouter);
 apiRouter.use('/tests', testApiRouter);
 
 /** Add Admin Middleware */
+apiRouter.use(isAdmin);

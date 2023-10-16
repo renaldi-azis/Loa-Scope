@@ -73,3 +73,4 @@ export default {
         await this.changePassword(payload);
         this.$toastr.success('Password has been changed.', 'Success!');
         this.closeModal();
+      } catch (err) {

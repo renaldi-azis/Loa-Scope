@@ -1,8 +1,8 @@
 'use strict';
+// Temp comment
 
 module.exports = (sequelize, DataTypes) => {
   const Video = sequelize.define(
-// Temp comment
     'Video',
     {
       id: {

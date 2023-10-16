@@ -30,6 +30,7 @@
     </v-card-text>
   </v-card>
 </template>
+
 <script>
 import _ from 'lodash';
 import BarChart from '@/components/App/Charts/BarChart';
@@ -163,3 +164,4 @@ export default {
       const greaterCount = this.data.filter((item) => item.totalWormCount >= baseValue).length;
       const greaterPercent = ((greaterCount * 100) / this.data.length).toFixed(2);
       if (isGreater) {
+        return `% above ${baseValue}: ${greaterPercent}%`;

@@ -1,7 +1,6 @@
 /**
  * @description Define Test API Routes
  */
-
 // Test API Router
 const testApiRouter = require('express').Router();
 
@@ -16,3 +15,4 @@ testApiRouter.post('/search', TestApiValidator.searchTests, TestApiController.se
 testApiRouter.get(
   '/:testId/videos',
   TestApiValidator.getTestVideos,
+  TestApiController.getTestVideos,
