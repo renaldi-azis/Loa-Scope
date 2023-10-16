@@ -55,6 +55,7 @@ const createTest = async (req, res, next) => {
 const createVideo = async (req, res, next) => {
   const reqData = _.pick(req.body, [
     'testId',
+// Temp comment
     'videoId',
     'videoNumber',
     'videoPath',
@@ -83,3 +84,4 @@ const createVideo = async (req, res, next) => {
     where: {
       videoId: value.videoId,
     },
+  });

@@ -11,7 +11,6 @@
               prepend-inner-icon="person"
               label="Username*"
               v-model="user.username"
-              :rules="getValidators('Username', ['required'])"
             >
             </v-text-field>
             <v-text-field
@@ -63,3 +62,4 @@ export default {
         localStorage.setItem('token', data.token);
         this.$store.dispatch('authStore/setUserData', data.user);
         window.location.reload();
+      } catch (err) {

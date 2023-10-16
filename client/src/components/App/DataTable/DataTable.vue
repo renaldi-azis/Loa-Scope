@@ -48,3 +48,4 @@ export default {
     visibleColumns() {
       return this.tableColumns.filter((column) => column.visible);
     },
+  },

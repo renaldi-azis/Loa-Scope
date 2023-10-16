@@ -52,6 +52,7 @@ export default {
       // Admin Dashboard
       {
         icon: 'mdi-account-multiple',
+        title: 'Users',
         link: 'users-page',
         show: this.isAdmin,
       },
@@ -71,3 +72,4 @@ export default {
     onClickMenuItem(event, mainItem) {
       if (!mainItem.items) {
         this.$router.replace({ name: mainItem.link });
+        event.stopPropagation();

@@ -16,5 +16,6 @@ userApiRouter.get('/', UserApiController.getUsers);
 userApiRouter.post('/', UserApiValidator.createUser, UserApiController.createUser);
 userApiRouter.post(
   '/:userId/change-password',
+  UserApiValidator.changePassword,
   UserApiController.changePassword,
 );

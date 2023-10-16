@@ -62,7 +62,6 @@ export default {
     },
   },
   methods: {
-    async load(test, prevPage) {
       this.prevPage = prevPage;
       this.videos = [];
       this.$emit('switch:view', 'VIDEO_DATA_TABLE');
@@ -71,3 +70,4 @@ export default {
       this.videos = data;
       this.$set(this.status, 'isLoading', false);
     },
+    onClickRow(row) {

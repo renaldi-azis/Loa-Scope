@@ -16,3 +16,4 @@ testApiRouter.post('/search', TestApiValidator.searchTests, TestApiController.se
 testApiRouter.get(
   '/:testId/videos',
   TestApiValidator.getTestVideos,
+  TestApiController.getTestVideos,

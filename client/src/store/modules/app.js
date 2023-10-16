@@ -1,6 +1,5 @@
 const initialState = {
   isMenuSidebarOpen: null,
-  filters: null,
   tests: [],
 };
 
@@ -22,6 +21,7 @@ const actions = {
   },
   setFilters(context, payload) {
     context.commit('setFilters', payload);
+  },
   setTests(context, payload) {
     context.commit('setTests', payload);
   },

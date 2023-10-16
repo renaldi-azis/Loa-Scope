@@ -9,6 +9,7 @@ Vue.use(Vuex);
 
 const state = {
   //
+};
 
 const mutations = {
   //
@@ -29,3 +30,4 @@ export default new Vuex.Store({
   getters,
   modules: {
     appStore,
+    authStore,

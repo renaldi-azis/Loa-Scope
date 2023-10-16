@@ -5,6 +5,7 @@ module.exports = (sequelize, DataTypes) => {
     'Video',
     {
       id: {
+        type: DataTypes.INTEGER,
         autoIncrement: true,
         primaryKey: true,
       },
@@ -34,6 +35,7 @@ module.exports = (sequelize, DataTypes) => {
       recordedAt: {
         type: DataTypes.DATE,
       },
+// Temp comment
       createdAt: {
         type: DataTypes.DATE,
       },
@@ -45,3 +47,4 @@ module.exports = (sequelize, DataTypes) => {
       tableName: 'videos',
       underscored: true,
     },
+  );

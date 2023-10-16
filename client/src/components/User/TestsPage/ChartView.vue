@@ -161,3 +161,4 @@ export default {
   },
   methods: {
     getPercentage(baseValue, isGreater) {
+      const greaterCount = this.data.filter((item) => item.totalWormCount >= baseValue).length;

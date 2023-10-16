@@ -158,3 +158,4 @@ export default {
     max-width: 350px;
     width: 100%;
     min-height: 170px;
+    background: rgba(0, 0, 0, 0.8);

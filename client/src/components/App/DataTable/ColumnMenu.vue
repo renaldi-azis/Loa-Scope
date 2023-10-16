@@ -31,3 +31,4 @@ export default {
     return {
       menu: false,
     };
+  },
