@@ -1,5 +1,5 @@
 const initialState = {
-  isMenuSidebarOpen: null,
+  filters: null,
   tests: [],
 };
 
@@ -32,3 +32,4 @@ const getters = {
 };
 
 export default {
+  namespaced: true,

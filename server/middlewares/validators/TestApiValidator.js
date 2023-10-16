@@ -39,7 +39,7 @@ const getTestVideos = async (req, res, next) => {
   if (error) {
     return res.status(422).json({ message: error.details[0].message });
   }
-  const videos = await Video.findAll({
+  // Get test videos
     where: {
       testId: value.testId,
     },

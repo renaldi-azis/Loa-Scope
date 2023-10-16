@@ -93,3 +93,13 @@ export default {
         this.$set(this.status, 'isDeleting', true);
         try {
           await this.deleteUser(user.id);
+          await this.fetchUsers();
+          this.$toastr.success('User has been removed.', 'Success!');
+        } catch (err) {
+          this.handleErrorResponse(err);
+        }
+        this.$set(this.status, 'isDeleting', false);
+      }
+    },
+  },
+};

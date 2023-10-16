@@ -153,3 +153,5 @@ export default {
         'Total Worm Count',
         'Video Count',
         'Executed At',
+      ];
+      csvData = `${columns.join(',')}\r\n`;

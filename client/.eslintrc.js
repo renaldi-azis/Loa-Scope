@@ -1,8 +1,8 @@
 module.exports = {
   root: true,
-  env: {
     node: true,
   },
+  extends: [
     'plugin:vue/essential',
     '@vue/airbnb',
   ],
@@ -16,3 +16,4 @@ module.exports = {
   globals: {
     $config: true,
     $helpers: true,
+    $http: true,

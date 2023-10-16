@@ -8,6 +8,7 @@
           <v-icon @click="closeModal">close</v-icon>
         </v-card-title>
         <v-divider></v-divider>
+        <v-card-text>
           <v-text-field
             label="Username*"
             :rules="getValidators('Username', ['required'])"
@@ -65,9 +66,9 @@ export default {
     async onCreateUser() {
       if (!this.$refs.createUserForm.validate()) return;
       this.$set(this.status, 'isSaving', true);
-      try {
         const payload = _.pick(this.user, ['username', 'password', 'filter']);
         await this.createUser(payload);
         await this.refresh();
         this.$toastr.success('User has been created.', 'Success!');
         this.closeModal();
+      } catch (err) {

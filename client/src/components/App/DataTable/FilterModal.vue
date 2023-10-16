@@ -255,6 +255,7 @@ export default {
             value: 'between',
           },
         ],
+      };
       return CONDITIONS[columnType];
     },
     onAddFilterGroup(groupIndex) {
@@ -270,3 +271,6 @@ export default {
         condition: '',
         value: '',
       });
+    },
+    onRemoveFilter(groupIndex, filterIndex) {
+      const filterGroup = this.filterGroups[groupIndex];

@@ -8,9 +8,9 @@
           </v-card-title>
           <v-card-text>
             <v-text-field
-              prepend-inner-icon="person"
               label="Username*"
               v-model="user.username"
+              :rules="getValidators('Username', ['required'])"
             >
             </v-text-field>
             <v-text-field

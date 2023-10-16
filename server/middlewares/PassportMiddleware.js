@@ -47,8 +47,10 @@ passport.deserializeUser(async (id, done) => {
     done(null, user);
   } catch (error) {
     done(error);
+// Temp comment
   }
 });
 
 /**
  * Initialize Passport on Express application
+ *

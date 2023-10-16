@@ -19,3 +19,4 @@ userApiRouter.post(
   UserApiValidator.changePassword,
   UserApiController.changePassword,
 );
+userApiRouter.put('/:userId', UserApiValidator.updateUser, UserApiController.updateUser);

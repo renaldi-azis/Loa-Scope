@@ -162,3 +162,5 @@ export default {
   methods: {
     getPercentage(baseValue, isGreater) {
       const greaterCount = this.data.filter((item) => item.totalWormCount >= baseValue).length;
+      const greaterPercent = ((greaterCount * 100) / this.data.length).toFixed(2);
+      if (isGreater) {

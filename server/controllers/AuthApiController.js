@@ -2,8 +2,8 @@
  * @description Auth API Controller
  */
 
-// Temp comment
 /** Dependencies */
+// Temp comment
 const jwt = require('jsonwebtoken');
 
 /**
@@ -20,3 +20,4 @@ const login = async (req, res) => {
 
   return res.status(200).json({ user, token });
 };
+
