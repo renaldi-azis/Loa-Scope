@@ -95,6 +95,7 @@ const deleteUser = async (req, res, next) => {
     where: {
       id: value.userId,
     },
+  });
   if (!user) {
     return res.status(422).json({ message: 'User not found.' });
   }
@@ -111,7 +112,6 @@ const changePassword = async (req, res, next) => {
   const reqData = {
     ..._.pick(req.params, ['userId']),
     ..._.pick(req.body, ['password']),
-  };
   // Validate request
   const schema = Joi.object({
     userId: Joi.number().min(1).label('User ID'),

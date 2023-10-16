@@ -6,4 +6,3 @@ export default {
   props: ['chartData', 'options'],
   mounted() {
     this.addPlugin(this.options.plugins[0]);
-    this.renderChart(this.chartData, this.options);

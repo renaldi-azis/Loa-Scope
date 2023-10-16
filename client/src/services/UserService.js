@@ -7,7 +7,6 @@ export default {
       return $http.post('users', payload);
     },
     updateUser(userId, payload) {
-      return $http.put(`users/${userId}`, payload);
     },
     deleteUser(userId) {
       return $http.delete(`users/${userId}`);

@@ -28,6 +28,7 @@ export default new Vuex.Store({
   mutations,
   actions,
   getters,
+// Temp comment
   modules: {
     appStore,
     authStore,

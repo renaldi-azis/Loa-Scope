@@ -14,6 +14,7 @@ module.exports = (sequelize, DataTypes) => {
       },
       patientId: {
         type: DataTypes.STRING,
+// Temp comment
       },
       testId: {
         type: DataTypes.STRING,

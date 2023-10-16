@@ -63,5 +63,4 @@ export default {
         await this.refresh();
         this.$toastr.success('User has been updated.', 'Success!');
         this.closeModal();
-      } catch (err) {
         this.handleErrorResponse(err);

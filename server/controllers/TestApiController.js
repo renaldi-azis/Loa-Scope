@@ -27,7 +27,6 @@ const searchTests = async (req, res) => {
           values = filter.value;
           if (filter.type === 'number') {
             values = +values;
-          }
         }
         subQuery[filter.column] = {
           [Op[filter.condition]]: values,

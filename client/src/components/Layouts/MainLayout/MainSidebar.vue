@@ -3,7 +3,6 @@
     class="grey darken-3"
     app
     dark
-    fixed
     clipped
     left
     width="250"

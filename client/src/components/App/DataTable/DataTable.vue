@@ -38,7 +38,6 @@ export default {
   name: 'DataTable',
   components: {
     ColumnMenu,
-    FilterModal,
   },
   props: ['columns', 'items', 'loading'],
   data: () => ({
