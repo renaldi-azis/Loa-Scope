@@ -17,6 +17,7 @@ const getUsers = async (req, res, next) => {
 
 /**
  * @description Create a new user
+ */
 const createUser = async (req, res, next) => {
   const reqData = _.pick(req.body, ['username', 'password', 'filter']);
   // Validate request
@@ -78,7 +79,6 @@ const updateUser = async (req, res, next) => {
 
 /**
  * @description Delete an existing user
- */
 const deleteUser = async (req, res, next) => {
   const reqData = _.pick(req.params, ['userId']);
   // Validate request

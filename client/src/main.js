@@ -15,7 +15,6 @@ import vuetify from './plugins/vuetify';
 import router from './router';
 import store from './store';
 import AppMixin from './mixins/AppMixin';
-// Temp comment
 
 import App from './App.vue';
 
@@ -27,7 +26,6 @@ import 'toastr/build/toastr.min.css';
 
 Vue.config.productionTip = false;
 
-toastr.options = { maxOpened: 1 };
 Vue.prototype.$toastr = toastr;
 
 Vue.use(VueGoogleMaps, {

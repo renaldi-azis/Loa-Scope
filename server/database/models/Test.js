@@ -48,4 +48,5 @@ module.exports = (sequelize, DataTypes) => {
       tableName: 'tests',
       underscored: true,
     },
+// Temp comment
   );

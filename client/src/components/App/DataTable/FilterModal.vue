@@ -138,7 +138,6 @@
               <div class="px-4 red--text">AND</div>
               <hr class="and-divider" />
             </div>
-          </div>
         </v-card-text>
         <v-divider></v-divider>
         <v-card-actions>
@@ -274,3 +273,6 @@ export default {
     },
     onRemoveFilter(groupIndex, filterIndex) {
       const filterGroup = this.filterGroups[groupIndex];
+      if (filterGroup.length === 1) {
+        this.filterGroups.splice(groupIndex, 1);
+      } else {

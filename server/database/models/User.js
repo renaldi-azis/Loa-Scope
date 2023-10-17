@@ -8,7 +8,6 @@ module.exports = (sequelize, DataTypes) => {
         type: DataTypes.INTEGER,
         autoIncrement: true,
         primaryKey: true,
-      },
       username: {
         type: DataTypes.STRING,
         allowNull: false,
@@ -19,6 +18,7 @@ module.exports = (sequelize, DataTypes) => {
         allowNull: false,
       },
       role: {
+        type: DataTypes.STRING,
         allowNull: false,
       },
       filter: {
@@ -36,3 +36,4 @@ module.exports = (sequelize, DataTypes) => {
       tableName: 'users',
       underscored: true,
     },
+  );

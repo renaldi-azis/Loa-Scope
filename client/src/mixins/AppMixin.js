@@ -67,3 +67,4 @@ export default {
           return (v) => (!!v && v === _.get(this, otherFieldName)) || `${fieldLabel} must be equal to ${otherFieldLabel}`;
         }
         return null;
+      });

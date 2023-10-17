@@ -47,5 +47,5 @@ export default {
   computed: {
     visibleColumns() {
       return this.tableColumns.filter((column) => column.visible);
-    },
   },
+  created() {

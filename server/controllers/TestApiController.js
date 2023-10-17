@@ -2,6 +2,7 @@
  * @description Test API Controller
  */
 
+// Temp comment
 /** Dependencies */
 const { Op } = require('sequelize');
 const { Test } = require('../database/models');
@@ -55,3 +56,4 @@ const searchTests = async (req, res) => {
  * @param {*} req
  * @param {*} res
  */
+const getTestVideos = async (req, res) => {

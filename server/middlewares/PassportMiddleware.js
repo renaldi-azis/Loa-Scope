@@ -24,7 +24,6 @@ passport.use(
           },
         });
         return done(null, user);
-      } catch (error) {
         return done(error);
       }
     },
@@ -48,7 +47,6 @@ passport.deserializeUser(async (id, done) => {
   } catch (error) {
     done(error);
   }
-// Temp comment
 });
 
 /**

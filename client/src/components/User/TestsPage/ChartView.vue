@@ -142,7 +142,6 @@ export default {
           },
           beforeDraw: (chart) => {
             const { ctx } = chart.chart;
-            const { chartArea } = chart;
             const { x } = chart.options.customLine;
             // eslint-disable-next-line
             if (!isNaN(x)) {
@@ -165,3 +164,4 @@ export default {
       const greaterPercent = ((greaterCount * 100) / this.data.length).toFixed(2);
       if (isGreater) {
         return `% above ${baseValue}: ${greaterPercent}%`;
+      }

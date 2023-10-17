@@ -9,7 +9,6 @@
   },
   "author": "Michel Stekelenburg",
   "license": "ISC",
-  "dependencies": {
     "aws-sdk": "^2.1191.0",
     "axios": "^0.27.2",
     "bcrypt": "^5.0.1",
@@ -28,3 +27,4 @@
     "pg-hstore": "^2.3.4",
     "sequelize": "^6.21.3",
     "uuid": "^8.3.2"
+  },

@@ -37,6 +37,7 @@ export default {
     MapView,
   },
   data() {
+    return {
       view: 'TEST_DATA_TABLE',
     };
   },

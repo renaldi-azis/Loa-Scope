@@ -43,6 +43,7 @@ export default {
     videoTableColumns() {
       return [
         {
+          text: 'Video Number',
           value: 'videoNumber',
         },
         {
@@ -71,3 +72,4 @@ export default {
       this.$set(this.status, 'isLoading', false);
     },
     onClickRow(row) {
+      this.$refs.videoModal.openModal(row.videoUrl);

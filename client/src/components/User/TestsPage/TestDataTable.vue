@@ -155,3 +155,4 @@ export default {
         'Executed At',
       ];
       csvData = `${columns.join(',')}\r\n`;
+      this.appState.tests.forEach((test) => {

@@ -39,3 +39,4 @@ const login = async (req, res, next) => {
 
   req.reqData = value;
   req.user = user;
+  next();

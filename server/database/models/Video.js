@@ -1,5 +1,4 @@
 'use strict';
-// Temp comment
 
 module.exports = (sequelize, DataTypes) => {
   const Video = sequelize.define(
@@ -32,6 +31,7 @@ module.exports = (sequelize, DataTypes) => {
       wormCount: {
         type: DataTypes.INTEGER,
         defaultValue: 0,
+// Temp comment
       },
       recordedAt: {
         type: DataTypes.DATE,
@@ -48,3 +48,4 @@ module.exports = (sequelize, DataTypes) => {
       underscored: true,
     },
   );
+
