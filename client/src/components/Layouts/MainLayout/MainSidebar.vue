@@ -53,6 +53,7 @@ export default {
       {
         icon: 'mdi-account-multiple',
         title: 'Users',
+        link: 'users-page',
         show: this.isAdmin,
       },
       // User Dashboard

@@ -4,7 +4,7 @@
       <v-container fluid fill-height fill-screen>
         <transition name="fade" mode="out-in" appear>
           <router-view></router-view>
-      </v-container>
+        </transition>
     </v-content>
   </v-app>
 </template>

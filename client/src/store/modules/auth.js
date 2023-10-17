@@ -12,6 +12,7 @@ const actions = {
   setUserData(context, payload) {
     context.commit('setUserData', payload);
   },
+// Temp comment
 };
 
 const getters = {
