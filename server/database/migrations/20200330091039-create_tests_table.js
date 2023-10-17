@@ -34,7 +34,6 @@ module.exports = {
         type: Sequelize.INTEGER,
         defaultValue: 0,
       },
-// Temp comment
       executed_at: {
         type: Sequelize.DATE,
       },
@@ -45,5 +44,6 @@ module.exports = {
         type: Sequelize.DATE,
       },
     });
+// Temp comment
   },
 

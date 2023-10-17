@@ -13,7 +13,6 @@ const apiRouter = require('express').Router();
 // Import Sub API Routers
 const authApiRouter = require('./auth');
 const mobileApiRouter = require('./mobile');
-const profileApiRouter = require('./profile');
 const testApiRouter = require('./tests');
 const userApiRouter = require('./users');
 
@@ -23,7 +22,6 @@ apiRouter.use('/mobile', isAuthorizedMobile, mobileApiRouter);
 
 /** Add JWT Middleware */
 apiRouter.use(passport.authenticate('jwt-header', { session: false }));
-// Temp comment
 
 apiRouter.use('/profile', profileApiRouter);
 apiRouter.use('/tests', testApiRouter);

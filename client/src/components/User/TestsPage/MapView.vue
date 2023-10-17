@@ -58,7 +58,6 @@
           <p>
             Video Count: {{ selectedMarkerData.videoCount }}
             <a
-              href="#"
               v-if="selectedMarkerData.videoCount > 0"
               @click.prevent="$emit('view:videos', selectedMarkerData)"
             >

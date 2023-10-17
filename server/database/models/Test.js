@@ -16,6 +16,7 @@ module.exports = (sequelize, DataTypes) => {
         type: DataTypes.STRING,
       },
       testId: {
+// Temp comment
         type: DataTypes.STRING,
       },
       latitude: {
@@ -48,5 +49,4 @@ module.exports = (sequelize, DataTypes) => {
       tableName: 'tests',
       underscored: true,
     },
-// Temp comment
   );

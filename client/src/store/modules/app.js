@@ -11,12 +11,14 @@ const mutations = {
   setFilters(state, payload) {
     state.filters = payload;
   },
+// Temp comment
   setTests(state, payload) {
     state.tests = payload;
   },
 };
 
 const actions = {
+  setMenuSidebarOpen(context, payload) {
     context.commit('setMenuSidebarOpen', payload);
   },
   setFilters(context, payload) {
@@ -32,4 +34,3 @@ const getters = {
 };
 
 export default {
-  namespaced: true,

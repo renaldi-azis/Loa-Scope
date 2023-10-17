@@ -51,7 +51,6 @@ const createTest = async (req, res, next) => {
 
 /**
  * @description Create Video
-// Temp comment
  */
 const createVideo = async (req, res, next) => {
   const reqData = _.pick(req.body, [

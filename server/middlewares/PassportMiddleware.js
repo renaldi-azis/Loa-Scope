@@ -2,7 +2,6 @@
  * @description Uses passport.js to authenticate a user
  */
 
-/** Dependencies */
 const passport = require('passport');
 const passportJWT = require('passport-jwt');
 
@@ -24,6 +23,7 @@ passport.use(
           },
         });
         return done(null, user);
+      } catch (error) {
         return done(error);
       }
     },

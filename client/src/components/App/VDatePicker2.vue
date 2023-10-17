@@ -37,6 +37,7 @@ export default {
       if (!this.format || !this.value) return this.value;
       return moment(this.value).format(this.format);
     },
+  },
   methods: {
     onChangeDate(date) {
       this.$refs.menu.save(date);

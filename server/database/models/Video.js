@@ -31,8 +31,6 @@ module.exports = (sequelize, DataTypes) => {
       wormCount: {
         type: DataTypes.INTEGER,
         defaultValue: 0,
-// Temp comment
-      },
       recordedAt: {
         type: DataTypes.DATE,
       },

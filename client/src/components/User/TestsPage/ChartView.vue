@@ -142,6 +142,7 @@ export default {
           },
           beforeDraw: (chart) => {
             const { ctx } = chart.chart;
+            const { chartArea } = chart;
             const { x } = chart.options.customLine;
             // eslint-disable-next-line
             if (!isNaN(x)) {

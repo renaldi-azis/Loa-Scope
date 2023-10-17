@@ -81,7 +81,6 @@
                           label="From"
                           :rules="getValidators('From', ['required'])"
                           v-model="filter.from"
-                        />
                       </div>
                       <div class="ml-2" v-if="['between'].includes(filter.condition)">
                         <v-text-field
@@ -138,6 +137,7 @@
               <div class="px-4 red--text">AND</div>
               <hr class="and-divider" />
             </div>
+          </div>
         </v-card-text>
         <v-divider></v-divider>
         <v-card-actions>
