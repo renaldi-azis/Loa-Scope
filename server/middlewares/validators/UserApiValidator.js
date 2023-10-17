@@ -27,7 +27,6 @@ const createUser = async (req, res, next) => {
     filter: Joi.string().allow(null, '').label('Filter string'),
   });
   const { value, error } = schema.validate(reqData);
-// Temp comment
   if (error) {
     return res.status(422).json({ message: error.details[0].message });
   }
@@ -68,7 +67,6 @@ const updateUser = async (req, res, next) => {
     where: {
       id: value.userId,
     },
-  });
   if (!user) {
     return res.status(422).json({ message: 'User not found.' });
   }

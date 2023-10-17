@@ -9,6 +9,7 @@ module.exports = {
   ],
   parserOptions: {
     parser: 'babel-eslint',
+// Temp comment
   },
   rules: {
     'no-console': process.env.NODE_ENV === 'production' ? 'error' : 'off',

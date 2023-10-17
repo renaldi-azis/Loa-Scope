@@ -64,4 +64,3 @@ export default {
         this.$store.dispatch('authStore/setUserData', data.user);
         window.location.reload();
       } catch (err) {
-        this.handleErrorResponse(err);

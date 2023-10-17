@@ -11,7 +11,6 @@
         <v-card-text>
           <v-text-field
             label="Username*"
-            :value="user.username"
             readonly
           />
           <v-text-field
@@ -37,6 +36,7 @@
   </v-dialog>
 </template>
 
+<script>
 import _ from 'lodash';
 import UserService from '@/services/UserService';
 

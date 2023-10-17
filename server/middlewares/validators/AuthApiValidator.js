@@ -9,7 +9,6 @@ const Joi = require('joi');
 
 const { User } = require('../../database/models');
 
-// Temp comment
 /**
  * @description Login
  */
@@ -27,6 +26,7 @@ const login = async (req, res, next) => {
   // Check user existence
   let user = await User.findOne({
     where: {
+// Temp comment
       username: value.username,
     },
   });

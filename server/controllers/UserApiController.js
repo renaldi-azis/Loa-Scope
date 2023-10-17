@@ -79,8 +79,3 @@ const deleteUser = async (req, res) => {
  * @description Change an existing user's password
  */
 const changePassword = async (req, res) => {
-  const { reqData } = req;
-  const { user } = req.entities;
-
-  user.password = bcrypt.hashSync(reqData.password, 10);
-  await user.save();
