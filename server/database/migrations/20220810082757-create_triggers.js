@@ -60,6 +60,5 @@ module.exports = {
         AFTER INSERT ON videos FOR EACH ROW
         EXECUTE PROCEDURE update_test_after_video_events();
     `);
-  },
 
   async down(queryInterface, Sequelize) {

@@ -16,7 +16,6 @@
         >
           <v-icon left>mdi-filter</v-icon> Filter
         </v-btn>
-        <filter-modal
           ref="filterModal"
           :columns="tableColumns"
           @filter="(filters) => $emit('filter', filters)"

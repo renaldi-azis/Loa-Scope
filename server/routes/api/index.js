@@ -19,7 +19,6 @@ const userApiRouter = require('./users');
 
 // Add API Routes
 apiRouter.use('/auth', authApiRouter);
-// Temp comment
 apiRouter.use('/mobile', isAuthorizedMobile, mobileApiRouter);
 
 /** Add JWT Middleware */

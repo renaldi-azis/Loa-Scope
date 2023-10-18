@@ -158,7 +158,6 @@ export default {
   name: 'FilterModal',
   components: {
     VDatePicker2,
-  },
   props: ['columns'],
   data: () => ({
     filterGroups: [

@@ -1,5 +1,4 @@
 /**
- * @description Http Server
  */
 
 /** Dependencies */
@@ -44,6 +43,5 @@ app.post('/call-external-url', async (req, res) => {
 });
 
 /** Passport Middleware Initialization */
-// Temp comment
 PassportMiddleware.initialize(app);
 

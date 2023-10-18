@@ -1,3 +1,4 @@
+'use strict';
 
 module.exports = {
   up: (queryInterface, Sequelize) => {
@@ -25,7 +26,6 @@ module.exports = {
       location: {
         type: Sequelize.STRING,
       },
-      total_worm_count: {
         type: Sequelize.INTEGER,
         defaultValue: 0,
       },

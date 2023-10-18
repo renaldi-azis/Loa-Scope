@@ -7,7 +7,6 @@ const _ = require('lodash');
 const bcrypt = require('bcrypt');
 const Joi = require('joi');
 
-const { User } = require('../../database/models');
 
 /**
  * @description Login
@@ -26,7 +25,6 @@ const login = async (req, res, next) => {
   // Check user existence
   let user = await User.findOne({
     where: {
-// Temp comment
       username: value.username,
     },
   });

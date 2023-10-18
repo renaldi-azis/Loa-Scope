@@ -12,7 +12,7 @@ const ProfileApiValidator = require('../../middlewares/validators/ProfileApiVali
 const ProfileApiController = require('../../controllers/ProfileApiController');
 
 // Add Routes
+profileApiRouter.post(
   '/change-password',
   ProfileApiValidator.changePassword,
-  ProfileApiController.changePassword,
 );
