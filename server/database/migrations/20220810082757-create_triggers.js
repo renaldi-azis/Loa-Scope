@@ -60,7 +60,6 @@ module.exports = {
         AFTER INSERT ON videos FOR EACH ROW
         EXECUTE PROCEDURE update_test_after_video_events();
     `);
-  },
 
   async down(queryInterface, Sequelize) {
     await queryInterface.sequelize.query('DROP TRIGGER after_video_delete ON videos;');

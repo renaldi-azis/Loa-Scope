@@ -43,7 +43,6 @@ export default {
     ChangePasswordModal,
   },
   methods: {
-    onLogout() {
       $helpers.logout();
     },
   },

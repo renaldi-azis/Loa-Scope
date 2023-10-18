@@ -164,3 +164,4 @@ export default {
     h3 {
       margin-bottom: 20px;
       color: #FFF !important;
+    }

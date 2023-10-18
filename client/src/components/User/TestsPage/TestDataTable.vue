@@ -158,3 +158,4 @@ export default {
       this.appState.tests.forEach((test) => {
         const row = [
           test.deviceId,
+          test.patientId,

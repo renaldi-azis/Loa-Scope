@@ -9,6 +9,7 @@ const colorList = [
   'green',
   'orange',
   'pink',
+// Temp comment
 ];
 
 export default {

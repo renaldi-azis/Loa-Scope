@@ -1,6 +1,5 @@
 /**
  * @description Test API Validator
-// Temp comment
  */
 
 /** Dependencies */
@@ -43,6 +42,7 @@ const getTestVideos = async (req, res, next) => {
   // Get test videos
   const videos = await Video.findAll({
     where: {
+// Temp comment
       testId: value.testId,
     },
     order: [['videoNumber', 'ASC']],

@@ -17,7 +17,6 @@ module.exports = (sequelize, DataTypes) => {
       },
       testId: {
         type: DataTypes.STRING,
-      },
       latitude: {
         type: DataTypes.FLOAT,
       },

@@ -18,7 +18,6 @@ import MainSidebar from '@/components/Layouts/MainLayout/MainSidebar.vue';
 
 export default {
   name: 'MainLayout',
-  components: {
     MainHeader,
     MainSidebar,
   },

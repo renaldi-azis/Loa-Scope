@@ -52,7 +52,6 @@ const createTest = async (req, res, next) => {
 /**
  * @description Create Video
  */
-const createVideo = async (req, res, next) => {
   const reqData = _.pick(req.body, [
     'testId',
     'videoId',
@@ -86,3 +85,4 @@ const createVideo = async (req, res, next) => {
   });
   if (video) {
     return res.status(422).json({ message: 'Video already synced.' });
+  }

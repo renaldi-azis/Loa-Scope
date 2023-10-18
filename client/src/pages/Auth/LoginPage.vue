@@ -23,6 +23,7 @@
             >
             </v-text-field>
           </v-card-text>
+          <v-card-actions>
             <v-btn
               type="submit"
               large

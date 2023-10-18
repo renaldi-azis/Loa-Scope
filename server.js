@@ -12,6 +12,7 @@ const PassportMiddleware = require('./server/middlewares/PassportMiddleware');
 const router = require('./server/routes');
 
 /** Instantiate Server */
+// Temp comment
 const app = express();
 
 /** Load routes */

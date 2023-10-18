@@ -280,3 +280,4 @@ export default {
         filterGroup.splice(filterIndex, 1);
       }
     },
+    onChangeColumn(groupIndex, filterIndex) {

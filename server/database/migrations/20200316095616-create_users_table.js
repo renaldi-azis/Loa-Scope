@@ -19,10 +19,10 @@ module.exports = {
       },
       role: {
         type: Sequelize.STRING,
-        allowNull: false,
       },
       filter: {
         type: Sequelize.STRING,
+        defaultValue: '',
       },
       created_at: {
         type: Sequelize.DATE,

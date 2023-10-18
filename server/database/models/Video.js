@@ -5,6 +5,7 @@ module.exports = (sequelize, DataTypes) => {
     'Video',
     {
       id: {
+// Temp comment
         type: DataTypes.INTEGER,
         autoIncrement: true,
         primaryKey: true,
@@ -23,6 +24,7 @@ module.exports = (sequelize, DataTypes) => {
       },
       videoUrl: {
         type: DataTypes.STRING,
+      },
       videoSize: {
         type: DataTypes.INTEGER,
         defaultValue: 0,
