@@ -160,6 +160,7 @@ export default {
     min-height: 170px;
     background: rgba(0, 0, 0, 0.8);
     border-radius: 12px;
+
     h3 {
       margin-bottom: 20px;
       color: #FFF !important;

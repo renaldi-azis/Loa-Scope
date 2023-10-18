@@ -8,7 +8,7 @@ const mutations = {
   },
 };
 
-  setUserData(context, payload) {
+const actions = {
     context.commit('setUserData', payload);
   },
 };

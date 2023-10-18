@@ -13,10 +13,10 @@ const Joi = require('joi');
 const changePassword = async (req, res, next) => {
   const reqData = _.pick(req.body, ['currentPassword', 'newPassword']);
   // Validate request
+  const schema = Joi.object({
     currentPassword: Joi.string().required().label('Current password'),
     newPassword: Joi.string().min(6).label('New password'),
   });
-  const { value, error } = schema.validate(reqData);
   if (error) {
     return res.status(422).json({ message: error.details[0].message });
   }

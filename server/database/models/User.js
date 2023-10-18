@@ -20,7 +20,6 @@ module.exports = (sequelize, DataTypes) => {
       },
       role: {
         type: DataTypes.STRING,
-// Temp comment
         allowNull: false,
       },
       filter: {

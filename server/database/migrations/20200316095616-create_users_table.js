@@ -12,6 +12,7 @@ module.exports = {
         type: Sequelize.STRING,
         allowNull: false,
         unique: true,
+      },
       password: {
         type: Sequelize.STRING,
         allowNull: false,
@@ -22,7 +23,6 @@ module.exports = {
       },
       filter: {
         type: Sequelize.STRING,
-        defaultValue: '',
       },
       created_at: {
         type: Sequelize.DATE,

@@ -26,7 +26,6 @@ apiRouter.use(passport.authenticate('jwt-header', { session: false }));
 
 apiRouter.use('/profile', profileApiRouter);
 apiRouter.use('/tests', testApiRouter);
-// Temp comment
 
 /** Add Admin Middleware */
 apiRouter.use(isAdmin);

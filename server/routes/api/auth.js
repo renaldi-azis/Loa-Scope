@@ -6,7 +6,6 @@
 const authApiRouter = require('express').Router();
 
 // Validator Middleware
-// Temp comment
 const AuthApiValidator = require('../../middlewares/validators/AuthApiValidator');
 
 // Controller
