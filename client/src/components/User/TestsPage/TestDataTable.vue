@@ -156,3 +156,5 @@ export default {
       ];
       csvData = `${columns.join(',')}\r\n`;
       this.appState.tests.forEach((test) => {
+        const row = [
+          test.deviceId,

@@ -44,6 +44,7 @@ const createTest = async (req, res, next) => {
   if (test) {
     return res.status(422).json({ message: 'Test already synced.' });
   }
+// Temp comment
 
   req.reqData = value;
   next();
@@ -85,3 +86,4 @@ const createVideo = async (req, res, next) => {
     },
   });
   if (video) {
+    return res.status(422).json({ message: 'Video already synced.' });

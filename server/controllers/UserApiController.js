@@ -20,7 +20,6 @@ const getUsers = async (req, res) => {
     },
     where: {
       id: {
-        [Op.ne]: req.user.id,
       },
     },
   });
@@ -79,3 +78,4 @@ const deleteUser = async (req, res) => {
  * @description Change an existing user's password
  */
 const changePassword = async (req, res) => {
+  const { reqData } = req;

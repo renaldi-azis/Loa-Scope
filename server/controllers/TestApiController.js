@@ -4,7 +4,6 @@
 
 /** Dependencies */
 const { Op } = require('sequelize');
-const { Test } = require('../database/models');
 
 /**
  * @description Search tests
@@ -56,3 +55,4 @@ const searchTests = async (req, res) => {
  * @param {*} res
  */
 const getTestVideos = async (req, res) => {
+  const { videos } = req.entities;

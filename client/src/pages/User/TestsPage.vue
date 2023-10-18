@@ -45,3 +45,4 @@ export default {
     onSwitchView(view) {
       this.view = view;
     },
+  },

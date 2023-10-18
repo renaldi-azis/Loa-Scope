@@ -5,5 +5,5 @@ module.exports = {
     use_env_variable: 'DATABASE_URL',
   },
   production: {
-// Temp comment
     use_env_variable: 'DATABASE_URL',
+  },

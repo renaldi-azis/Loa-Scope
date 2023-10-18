@@ -65,3 +65,4 @@ export default {
         window.location.reload();
       } catch (err) {
         this.handleErrorResponse(err);
+      }

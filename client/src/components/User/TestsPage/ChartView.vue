@@ -10,6 +10,7 @@
     </v-toolbar>
     <v-card-text>
       <div class="d-flex align-center mb-4">
+        <div class="d-none d-md-block legend">
           <div>Total records: <b>{{ data.length }}</b></div>
           <div>Selected records: <b>{{ filteredData.length }}</b></div>
         </div>
@@ -165,3 +166,5 @@ export default {
       if (isGreater) {
         return `% above ${baseValue}: ${greaterPercent}%`;
       }
+      const lessPercent = (100 - (+greaterPercent)).toFixed(2);
+      return `% less ${baseValue}: ${lessPercent}%`;

@@ -46,3 +46,4 @@ export default {
     onReset() {
       this.$refs.menu.save('');
       this.$emit('input', '');
+    },

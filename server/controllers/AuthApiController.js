@@ -8,6 +8,7 @@ const jwt = require('jsonwebtoken');
 /**
  * @description Login
  */
+const login = async (req, res) => {
   let { user } = req;
 
   const payload = { id: user.id };
@@ -17,3 +18,4 @@ const jwt = require('jsonwebtoken');
   delete user.password;
 
   return res.status(200).json({ user, token });
+};

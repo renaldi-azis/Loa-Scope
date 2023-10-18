@@ -8,7 +8,6 @@ const mutations = {
   },
 };
 
-const actions = {
   setUserData(context, payload) {
     context.commit('setUserData', payload);
   },
@@ -21,5 +20,6 @@ const getters = {
 export default {
   namespaced: true,
   state: initialState,
-// Temp comment
   mutations,
+  actions,
+  getters,

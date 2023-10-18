@@ -3,8 +3,10 @@ const initialState = {
   filters: null,
   tests: [],
 };
+
 const mutations = {
   setMenuSidebarOpen(state, payload) {
+// Temp comment
     state.isMenuSidebarOpen = payload;
   },
   setFilters(state, payload) {
@@ -32,3 +34,4 @@ const getters = {
 };
 
 export default {
+  namespaced: true,

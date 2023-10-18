@@ -20,6 +20,7 @@ module.exports = (sequelize, DataTypes) => {
       },
       role: {
         type: DataTypes.STRING,
+// Temp comment
         allowNull: false,
       },
       filter: {
@@ -35,5 +36,7 @@ module.exports = (sequelize, DataTypes) => {
     },
     {
       tableName: 'users',
+      underscored: true,
     },
   );
+

@@ -65,3 +65,4 @@ export default {
         this.closeModal();
       } catch (err) {
         this.handleErrorResponse(err);
+      }

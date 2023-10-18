@@ -68,12 +68,12 @@ export default {
         { text: 'Filter', value: 'filter' },
         { text: 'Created At', value: 'createdAt' },
         { text: '', value: 'action', sortable: false },
+      ];
     },
   },
   created() {
     this.fetchUsers();
   },
-  methods: {
     async fetchUsers() {
       this.$set(this.status, 'isLoading', true);
       const { data } = await this.getUsers();
@@ -87,3 +87,5 @@ export default {
         showCancelButton: true,
         confirmButtonText: 'Yes',
         cancelButtonText: 'No',
+      });
+      if (result.value) {

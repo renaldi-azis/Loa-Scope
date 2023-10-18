@@ -2,7 +2,6 @@
  * @description Test API Validator
  */
 
-/** Dependencies */
 const _ = require('lodash');
 const Joi = require('joi');
 
@@ -50,3 +49,4 @@ const getTestVideos = async (req, res, next) => {
   req.reqData = value;
   req.entities = { videos };
   next();
+};

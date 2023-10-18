@@ -1,4 +1,5 @@
 /**
+// Temp comment
  * @description Define Profile API Routes
  */
 
@@ -15,4 +16,5 @@ const ProfileApiController = require('../../controllers/ProfileApiController');
 profileApiRouter.post(
   '/change-password',
   ProfileApiValidator.changePassword,
+  ProfileApiController.changePassword,
 );

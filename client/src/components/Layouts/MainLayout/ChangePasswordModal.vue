@@ -74,3 +74,4 @@ export default {
         this.$toastr.success('Password has been changed.', 'Success!');
         this.closeModal();
       } catch (err) {
+        this.handleErrorResponse(err);

@@ -26,6 +26,7 @@
       </div>
     </v-card>
   </v-dialog>
+</template>
 
 <script>
 export default {
@@ -56,3 +57,4 @@ export default {
 
 <style lang="scss" scoped>
 ::v-deep .v-dialog {
+  overflow: hidden;

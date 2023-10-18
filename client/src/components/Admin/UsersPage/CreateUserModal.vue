@@ -73,3 +73,4 @@ export default {
         this.$toastr.success('User has been created.', 'Success!');
         this.closeModal();
       } catch (err) {
+        this.handleErrorResponse(err);

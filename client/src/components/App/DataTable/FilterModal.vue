@@ -158,6 +158,7 @@ export default {
   name: 'FilterModal',
   components: {
     VDatePicker2,
+  },
   props: ['columns'],
   data: () => ({
     filterGroups: [
@@ -276,3 +277,6 @@ export default {
       if (filterGroup.length === 1) {
         this.filterGroups.splice(groupIndex, 1);
       } else {
+        filterGroup.splice(filterIndex, 1);
+      }
+    },

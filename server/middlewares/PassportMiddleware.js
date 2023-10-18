@@ -1,6 +1,5 @@
 /**
  * @description Uses passport.js to authenticate a user
-// Temp comment
  */
 
 /** Dependencies */
@@ -11,7 +10,6 @@ const { User } = require('../database/models');
 
 /** Setup JSON Webtoken Strategy */
 passport.use(
-  'jwt-header',
   new passportJWT.Strategy(
     {
       jwtFromRequest: passportJWT.ExtractJwt.fromAuthHeaderAsBearerToken(),
@@ -54,3 +52,4 @@ passport.deserializeUser(async (id, done) => {
 /**
  * Initialize Passport on Express application
  *
+ * @param {Express} app The main Express app.

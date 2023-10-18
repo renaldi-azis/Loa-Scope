@@ -15,6 +15,7 @@ module.exports = (sequelize, DataTypes) => {
       patientId: {
         type: DataTypes.STRING,
       },
+      testId: {
         type: DataTypes.STRING,
       },
       latitude: {
@@ -48,3 +49,4 @@ module.exports = (sequelize, DataTypes) => {
       underscored: true,
     },
   );
+
