@@ -21,7 +21,6 @@
         <div class="ml-2">
           <v-select label="Less than" :items="wormCountTicks" v-model="maxWormCount" />
         </div>
-      </div>
       <bar-chart
         :chart-data="chartData"
         :options="chartOptions"
@@ -168,3 +167,5 @@ export default {
       }
       const lessPercent = (100 - (+greaterPercent)).toFixed(2);
       return `% less ${baseValue}: ${lessPercent}%`;
+    },
+  },

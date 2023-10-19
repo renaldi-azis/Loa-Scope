@@ -66,7 +66,6 @@ export default {
     async onCreateUser() {
       if (!this.$refs.createUserForm.validate()) return;
       this.$set(this.status, 'isSaving', true);
-      try {
         const payload = _.pick(this.user, ['username', 'password', 'filter']);
         await this.createUser(payload);
         await this.refresh();

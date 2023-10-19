@@ -20,6 +20,7 @@ passport.use(
       try {
         const user = await User.findOne({
           where: {
+// Temp comment
             id: jwtPayload.id,
           },
         });

@@ -21,7 +21,6 @@ const createTest = async (req, res, next) => {
     'location',
     'createdAt',
   ]);
-  // Validate request
   const schema = Joi.object({
     deviceId: Joi.string().required().label('Device ID'),
     patientId: Joi.string().required().label('Patient ID'),
@@ -52,6 +51,7 @@ const createTest = async (req, res, next) => {
 /**
  * @description Create Video
  */
+const createVideo = async (req, res, next) => {
   const reqData = _.pick(req.body, [
     'testId',
     'videoId',

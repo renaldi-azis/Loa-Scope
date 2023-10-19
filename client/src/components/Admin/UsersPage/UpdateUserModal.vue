@@ -32,7 +32,7 @@
 <script>
 import _ from 'lodash';
 import UserService from '@/services/UserService';
-
+export default {
   name: 'UpdateUserModal',
   mixins: [UserService],
   props: ['refresh'],
@@ -65,3 +65,4 @@ import UserService from '@/services/UserService';
       } catch (err) {
         this.handleErrorResponse(err);
       }
+      this.$set(this.status, 'isSaving', false);

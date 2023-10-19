@@ -4,7 +4,6 @@
 
 /** Dependencies */
 const { Op } = require('sequelize');
-// Temp comment
 const { Test } = require('../database/models');
 
 /**
@@ -58,3 +57,4 @@ const searchTests = async (req, res) => {
  */
 const getTestVideos = async (req, res) => {
   const { videos } = req.entities;
+

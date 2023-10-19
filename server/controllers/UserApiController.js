@@ -18,6 +18,7 @@ const getUsers = async (req, res) => {
     attributes: {
       exclude: ['password'],
     },
+// Temp comment
     where: {
       id: {
         [Op.ne]: req.user.id,
@@ -81,3 +82,4 @@ const deleteUser = async (req, res) => {
 const changePassword = async (req, res) => {
   const { reqData } = req;
   const { user } = req.entities;
+

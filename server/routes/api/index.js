@@ -1,6 +1,7 @@
 /**
  * @description Define API Routes
  */
+
 /** Dependencies */
 const passport = require('passport');
 
@@ -28,3 +29,4 @@ apiRouter.use('/tests', testApiRouter);
 
 /** Add Admin Middleware */
 apiRouter.use(isAdmin);
+

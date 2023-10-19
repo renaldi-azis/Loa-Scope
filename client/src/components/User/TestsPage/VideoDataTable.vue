@@ -23,7 +23,6 @@
 </template>
 
 <script>
-import TestService from '@/services/TestService';
 import VideoModal from './VideoModal.vue';
 
 export default {
@@ -73,3 +72,4 @@ export default {
     },
     onClickRow(row) {
       this.$refs.videoModal.openModal(row.videoUrl);
+    },

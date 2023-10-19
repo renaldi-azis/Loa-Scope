@@ -47,3 +47,4 @@ export default {
       this.$refs.menu.save('');
       this.$emit('input', '');
     },
+  },

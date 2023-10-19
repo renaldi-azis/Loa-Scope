@@ -12,7 +12,6 @@ const PassportMiddleware = require('./server/middlewares/PassportMiddleware');
 const router = require('./server/routes');
 
 /** Instantiate Server */
-// Temp comment
 const app = express();
 
 /** Load routes */
@@ -48,3 +47,4 @@ app.post('/call-external-url', async (req, res) => {
 PassportMiddleware.initialize(app);
 
 /** Setup Server Routes */
+app.use(router);

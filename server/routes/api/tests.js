@@ -17,3 +17,4 @@ testApiRouter.get(
   '/:testId/videos',
   TestApiValidator.getTestVideos,
   TestApiController.getTestVideos,
+);

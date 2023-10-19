@@ -30,7 +30,6 @@
 
 <script>
 export default {
-  name: 'VideoModal',
   data() {
     return {
       videoUrl: '',
@@ -58,3 +57,4 @@ export default {
 <style lang="scss" scoped>
 ::v-deep .v-dialog {
   overflow: hidden;
+}

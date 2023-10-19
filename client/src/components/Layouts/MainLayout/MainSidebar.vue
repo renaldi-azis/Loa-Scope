@@ -44,6 +44,7 @@ export default {
       },
     },
     activeMainIndex() {
+      return this.menuItems.findIndex((item) => item.link === this.$route.name);
     },
   },
   created() {
@@ -72,3 +73,4 @@ export default {
       if (!mainItem.items) {
         this.$router.replace({ name: mainItem.link });
         event.stopPropagation();
+      }

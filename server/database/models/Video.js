@@ -5,7 +5,6 @@ module.exports = (sequelize, DataTypes) => {
     'Video',
     {
       id: {
-// Temp comment
         type: DataTypes.INTEGER,
         autoIncrement: true,
         primaryKey: true,
@@ -41,7 +40,6 @@ module.exports = (sequelize, DataTypes) => {
       },
       updatedAt: {
         type: DataTypes.DATE,
-      },
     },
     {
       tableName: 'videos',
@@ -49,3 +47,4 @@ module.exports = (sequelize, DataTypes) => {
     },
   );
 
+  Video.associate = function (models) {

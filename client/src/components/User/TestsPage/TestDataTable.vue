@@ -159,3 +159,4 @@ export default {
         const row = [
           test.deviceId,
           test.patientId,
+          test.testId,

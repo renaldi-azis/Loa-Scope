@@ -9,7 +9,6 @@ const colorList = [
   'green',
   'orange',
   'pink',
-// Temp comment
 ];
 
 export default {
@@ -70,3 +69,4 @@ export default {
         return null;
       });
     },
+    getColor(id) {

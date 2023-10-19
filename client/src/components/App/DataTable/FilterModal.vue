@@ -281,3 +281,6 @@ export default {
       }
     },
     onChangeColumn(groupIndex, filterIndex) {
+      const filter = this.filterGroups[groupIndex][filterIndex];
+      this.$set(filter, 'type', this.getColumnType(filter.column));
+      ['condition', 'value', 'from', 'to'].forEach((fieldName) => {
