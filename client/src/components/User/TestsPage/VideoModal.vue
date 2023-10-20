@@ -39,6 +39,7 @@ export default {
       },
     };
   },
+  methods: {
     openModal(videoUrl) {
       this.videoUrl = videoUrl;
       if (this.$refs.videoPlayer) {

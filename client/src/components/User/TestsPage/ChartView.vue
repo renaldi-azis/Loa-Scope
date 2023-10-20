@@ -147,6 +147,7 @@ export default {
             // eslint-disable-next-line
             if (!isNaN(x)) {
               ctx.save();
+              ctx.beginPath();
               ctx.strokeStyle = chart.options.customLine.color;
               ctx.moveTo(chart.options.customLine.x, chartArea.bottom);
               ctx.lineTo(chart.options.customLine.x, chartArea.top);

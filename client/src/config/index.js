@@ -1,6 +1,5 @@
 const PROD_API_URL = 'https://api.loascope.com/api/';
 const DEV_API_URL = 'https://api.loascope.com/api/';
-// Temp comment
 const LOCAL_API_URL = 'http://localhost:3000/api/';
 
 const { hostname } = window.location;
@@ -14,4 +13,5 @@ const getApiBaseURL = () => {
   if (hostname.includes(DEV_HOSTNAME)) {
     return DEV_API_URL;
   }
+// Temp comment
   return PROD_API_URL;

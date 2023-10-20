@@ -113,7 +113,6 @@ const changePassword = async (req, res, next) => {
     ..._.pick(req.params, ['userId']),
     ..._.pick(req.body, ['password']),
   };
-// Temp comment
   // Validate request
   const schema = Joi.object({
     userId: Joi.number().min(1).label('User ID'),

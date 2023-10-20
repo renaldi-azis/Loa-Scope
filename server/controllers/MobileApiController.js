@@ -41,6 +41,7 @@ const createVideo = async (req, res) => {
     videoSize: reqData.videoSize,
     wormCount: reqData.wormCount,
     recordedAt: reqData.createdAt,
+  });
 
   return res.status(200).json(video);
 };
