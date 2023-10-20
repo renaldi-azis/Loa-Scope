@@ -18,7 +18,6 @@ const getUsers = async (req, res) => {
     attributes: {
       exclude: ['password'],
     },
-// Temp comment
     where: {
       id: {
         [Op.ne]: req.user.id,
@@ -74,7 +73,6 @@ const deleteUser = async (req, res) => {
     },
   });
   return res.status(200).json(true);
-};
 
 /**
  * @description Change an existing user's password

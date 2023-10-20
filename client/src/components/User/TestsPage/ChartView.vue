@@ -21,6 +21,7 @@
         <div class="ml-2">
           <v-select label="Less than" :items="wormCountTicks" v-model="maxWormCount" />
         </div>
+      </div>
       <bar-chart
         :chart-data="chartData"
         :options="chartOptions"
@@ -146,7 +147,6 @@ export default {
             // eslint-disable-next-line
             if (!isNaN(x)) {
               ctx.save();
-              ctx.beginPath();
               ctx.strokeStyle = chart.options.customLine.color;
               ctx.moveTo(chart.options.customLine.x, chartArea.bottom);
               ctx.lineTo(chart.options.customLine.x, chartArea.top);

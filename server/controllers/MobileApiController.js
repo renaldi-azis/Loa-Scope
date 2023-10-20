@@ -29,7 +29,6 @@ const createTest = async (req, res) => {
 /**
  * @description Create Video
  */
-// Temp comment
 const createVideo = async (req, res) => {
   const { reqData } = req;
 
@@ -42,7 +41,6 @@ const createVideo = async (req, res) => {
     videoSize: reqData.videoSize,
     wormCount: reqData.wormCount,
     recordedAt: reqData.createdAt,
-  });
 
   return res.status(200).json(video);
 };

@@ -30,6 +30,7 @@
 
 <script>
 export default {
+  name: 'VideoModal',
   data() {
     return {
       videoUrl: '',
@@ -38,7 +39,6 @@ export default {
       },
     };
   },
-  methods: {
     openModal(videoUrl) {
       this.videoUrl = videoUrl;
       if (this.$refs.videoPlayer) {

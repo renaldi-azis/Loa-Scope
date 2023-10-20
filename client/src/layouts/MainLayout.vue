@@ -8,7 +8,6 @@
           <router-view></router-view>
         </transition>
       </v-container>
-    </v-content>
   </v-app>
 </template>
 

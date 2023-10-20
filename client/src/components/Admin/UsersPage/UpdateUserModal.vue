@@ -14,7 +14,6 @@
             :value="user.username"
             readonly
           />
-          <v-text-field
             label="Filter"
             v-model="user.filter"
           />
@@ -32,6 +31,7 @@
 <script>
 import _ from 'lodash';
 import UserService from '@/services/UserService';
+
 export default {
   name: 'UpdateUserModal',
   mixins: [UserService],
@@ -60,9 +60,3 @@ export default {
         const payload = _.pick(this.user, ['filter']);
         await this.updateUser(this.user.id, payload);
         await this.refresh();
-        this.$toastr.success('User has been updated.', 'Success!');
-        this.closeModal();
-      } catch (err) {
-        this.handleErrorResponse(err);
-      }
-      this.$set(this.status, 'isSaving', false);

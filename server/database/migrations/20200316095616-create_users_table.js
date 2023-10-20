@@ -13,6 +13,7 @@ module.exports = {
         allowNull: false,
         unique: true,
       },
+// Temp comment
       password: {
         type: Sequelize.STRING,
         allowNull: false,

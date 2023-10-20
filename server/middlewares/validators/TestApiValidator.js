@@ -44,7 +44,6 @@ const getTestVideos = async (req, res, next) => {
     where: {
       testId: value.testId,
     },
-// Temp comment
     order: [['videoNumber', 'ASC']],
   });
 

@@ -23,6 +23,7 @@
 </template>
 
 <script>
+import TestService from '@/services/TestService';
 import VideoModal from './VideoModal.vue';
 
 export default {
