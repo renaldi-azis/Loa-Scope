@@ -65,7 +65,6 @@
               (View)
             </a>
           </p>
-          <p>
             Tested At:
             {{ selectedMarkerData.createdAt | dateFormatter('YYYY-MM-DD hh:mm:ss A') }}
           </p>
@@ -86,6 +85,7 @@ const UNIT = 50;
 export default {
   name: 'MapView',
   data() {
+    return {
       mapCenter: {
         lat: 3.891300262206071,
         lng: 11.60100792382417,

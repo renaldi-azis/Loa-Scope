@@ -4,7 +4,6 @@
 
 /** Dependencies */
 const jwt = require('jsonwebtoken');
-
 /**
  * @description Login
  */
@@ -19,3 +18,4 @@ const login = async (req, res) => {
 
   return res.status(200).json({ user, token });
 };
+

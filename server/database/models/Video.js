@@ -10,7 +10,6 @@ module.exports = (sequelize, DataTypes) => {
         primaryKey: true,
       },
       testId: {
-        type: DataTypes.STRING,
       },
       videoId: {
         type: DataTypes.STRING,
@@ -47,6 +46,5 @@ module.exports = (sequelize, DataTypes) => {
       underscored: true,
     },
   );
-// Temp comment
 
   Video.associate = function (models) {

@@ -75,6 +75,7 @@ export default {
     testTableColumns() {
       return [
         {
+          text: 'Device ID',
           value: 'deviceId',
           type: 'string',
           visible: true,
@@ -89,7 +90,6 @@ export default {
           text: 'Test ID',
           value: 'testId',
           type: 'string',
-          visible: true,
         },
         {
           text: 'Latitude',
@@ -159,3 +159,4 @@ export default {
           test.deviceId,
           test.patientId,
           test.testId,
+          test.latitude,

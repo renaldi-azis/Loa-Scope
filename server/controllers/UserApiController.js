@@ -82,3 +82,4 @@ const changePassword = async (req, res) => {
   const { reqData } = req;
   const { user } = req.entities;
 
+  user.password = bcrypt.hashSync(reqData.password, 10);

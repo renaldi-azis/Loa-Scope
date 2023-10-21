@@ -6,7 +6,6 @@
           <v-icon @click="$emit('switch:view', prevPage)">arrow_back_ios</v-icon>
           <div class="ml-2">LoaScope Video Data</div>
         </div>
-      </v-toolbar-title>
     </v-toolbar>
     <v-data-table
       :headers="videoTableColumns"
@@ -71,5 +70,6 @@ export default {
       this.videos = data;
       this.$set(this.status, 'isLoading', false);
     },
+    onClickRow(row) {
       this.$refs.videoModal.openModal(row.videoUrl);
     },

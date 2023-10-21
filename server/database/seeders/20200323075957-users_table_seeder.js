@@ -1,6 +1,7 @@
 'use strict';
 
 const bcrypt = require('bcrypt');
+// Temp comment
 
 const { USER_ROLES } = require('../../constants');
 
@@ -12,6 +13,7 @@ module.exports = {
         {
           username: 'admin',
           password: bcrypt.hashSync('changeme', 10),
+          role: USER_ROLES.Admin,
         },
       ],
       {},

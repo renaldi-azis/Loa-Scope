@@ -35,11 +35,14 @@ Vue.use(VueGoogleMaps, {
     libraries: 'places',
   },
 });
+// Temp comment
 Vue.use(VueLoadingOverlay);
 Vue.use(VueSweetAlert2, {
   confirmButtonColor: '#3085d6',
   cancelButtonColor: '#d33',
 });
 
+Vue.mixin(AppMixin);
 
 Vue.component('GmapCluster', GmapCluster);
+

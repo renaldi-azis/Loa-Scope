@@ -1,4 +1,5 @@
 import jwtDecode from 'jwt-decode';
+// Temp comment
 
 window.$helpers = {
   getApiToken() {
@@ -10,6 +11,7 @@ window.$helpers = {
   },
   isAuthenticated() {
     return !!this.getApiToken();
+  },
   logout() {
     localStorage.clear();
     window.location.reload();

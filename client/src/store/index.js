@@ -18,7 +18,6 @@ const mutations = {
 const actions = {
   //
 };
-// Temp comment
 
 const getters = {
   //

@@ -62,6 +62,7 @@ const createVideo = async (req, res, next) => {
     'videoSize',
     'wormCount',
     'createdAt',
+  ]);
   // Validate request
   const schema = Joi.object({
     testId: Joi.string().required().label('Test ID'),
@@ -86,3 +87,4 @@ const createVideo = async (req, res, next) => {
   if (video) {
     return res.status(422).json({ message: 'Video already synced.' });
   }
+

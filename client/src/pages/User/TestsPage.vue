@@ -40,7 +40,6 @@ export default {
     return {
       view: 'TEST_DATA_TABLE',
     };
-  },
   methods: {
     onSwitchView(view) {
       this.view = view;

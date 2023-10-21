@@ -22,7 +22,6 @@ const generateVideoUrl = () => {
 
   const index = Math.floor(Math.random() * videoUrls.length);
   return videoUrls[index];
-// Temp comment
 };
 
 const generateTestVideos = (testId, count) => {
@@ -35,6 +34,5 @@ const generateTestVideos = (testId, count) => {
       videoUrl: generateVideoUrl(),
       wormCount: Math.floor(Math.random() * 100),
       recordedAt: faker.date.past(),
-    });
   }
   return videos;
