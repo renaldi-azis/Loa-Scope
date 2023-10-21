@@ -71,6 +71,5 @@ export default {
       this.videos = data;
       this.$set(this.status, 'isLoading', false);
     },
-    onClickRow(row) {
       this.$refs.videoModal.openModal(row.videoUrl);
     },

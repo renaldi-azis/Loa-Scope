@@ -26,9 +26,7 @@ const actions = {
   setTests(context, payload) {
     context.commit('setTests', payload);
   },
-};
 
-// Temp comment
 const getters = {
   //
 };

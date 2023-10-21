@@ -30,6 +30,7 @@ module.exports = {
       worm_count: {
         type: Sequelize.INTEGER,
         defaultValue: 0,
+// Temp comment
       },
       recorded_at: {
         type: Sequelize.DATE,

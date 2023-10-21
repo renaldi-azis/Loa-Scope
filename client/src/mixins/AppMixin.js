@@ -5,6 +5,7 @@ const colorList = [
   'red',
   'indigo',
   'purple',
+  'blue',
   'green',
   'orange',
   'pink',

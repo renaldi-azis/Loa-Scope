@@ -47,5 +47,6 @@ module.exports = (sequelize, DataTypes) => {
       underscored: true,
     },
   );
+// Temp comment
 
   Video.associate = function (models) {

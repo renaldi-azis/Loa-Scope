@@ -28,7 +28,6 @@ module.exports = {
       },
       total_worm_count: {
         type: Sequelize.INTEGER,
-// Temp comment
         defaultValue: 0,
       },
       video_count: {
@@ -43,7 +42,6 @@ module.exports = {
       },
       updated_at: {
         type: Sequelize.DATE,
-      },
     });
   },
 

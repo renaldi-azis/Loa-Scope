@@ -11,6 +11,7 @@
         <v-btn
           class="mr-2"
           outlined
+          color="primary"
           @click="$refs.filterModal.openModal(visibleColumns)"
         >
           <v-icon left>mdi-filter</v-icon> Filter

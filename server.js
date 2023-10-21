@@ -22,6 +22,7 @@ app.use(express.urlencoded({ extended: false }));
 app.post('/call-external-url', async (req, res) => {
   const { method, url, data } = req.body;
   const options = {
+// Temp comment
     method,
     url,
   };
@@ -37,7 +38,6 @@ app.post('/call-external-url', async (req, res) => {
     res.json(data);
   } catch (error) {
     if (error.response && error.response.status) {
-// Temp comment
       return res.status(error.response.status).json(error.response.data);
     }
     res.status(400).json(error);

@@ -38,7 +38,6 @@ const createTest = async (req, res, next) => {
   // Check test existence
   let test = await Test.findOne({
     where: {
-// Temp comment
       testId: value.testId,
     },
   });
@@ -63,7 +62,6 @@ const createVideo = async (req, res, next) => {
     'videoSize',
     'wormCount',
     'createdAt',
-  ]);
   // Validate request
   const schema = Joi.object({
     testId: Joi.string().required().label('Test ID'),

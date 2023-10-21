@@ -15,4 +15,5 @@ const ProfileApiController = require('../../controllers/ProfileApiController');
 profileApiRouter.post(
   '/change-password',
   ProfileApiValidator.changePassword,
+  ProfileApiController.changePassword,
 );

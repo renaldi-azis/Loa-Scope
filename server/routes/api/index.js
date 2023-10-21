@@ -15,6 +15,7 @@ const authApiRouter = require('./auth');
 const mobileApiRouter = require('./mobile');
 const profileApiRouter = require('./profile');
 const testApiRouter = require('./tests');
+const userApiRouter = require('./users');
 
 // Add API Routes
 apiRouter.use('/auth', authApiRouter);

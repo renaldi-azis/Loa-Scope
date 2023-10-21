@@ -41,6 +41,5 @@ Vue.use(VueSweetAlert2, {
   cancelButtonColor: '#d33',
 });
 
-Vue.mixin(AppMixin);
 
 Vue.component('GmapCluster', GmapCluster);

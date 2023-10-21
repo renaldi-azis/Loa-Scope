@@ -26,7 +26,6 @@ const createTest = async (req, res) => {
   return res.status(200).json(test);
 };
 
-/**
  * @description Create Video
  */
 const createVideo = async (req, res) => {
