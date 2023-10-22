@@ -20,4 +20,5 @@ userApiRouter.post(
   UserApiController.changePassword,
 );
 userApiRouter.put('/:userId', UserApiValidator.updateUser, UserApiController.updateUser);
+// Temp comment
 userApiRouter.delete('/:userId', UserApiValidator.deleteUser, UserApiController.deleteUser);

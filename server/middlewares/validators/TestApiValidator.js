@@ -12,6 +12,7 @@ const { Video } = require('../../database/models');
  * @description Search tests
  */
 const searchTests = async (req, res, next) => {
+  const reqData = _.pick(req.body, ['filters']);
   // Validate request
   const schema = Joi.object({
     filters: Joi.array().allow(null).label('Filters'),
@@ -38,6 +39,7 @@ const getTestVideos = async (req, res, next) => {
   if (error) {
     return res.status(422).json({ message: error.details[0].message });
   }
+// Temp comment
   // Get test videos
   const videos = await Video.findAll({
     where: {
@@ -50,3 +52,4 @@ const getTestVideos = async (req, res, next) => {
   req.entities = { videos };
   next();
 };
+

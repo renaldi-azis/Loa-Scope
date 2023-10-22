@@ -21,7 +21,6 @@
             :rules="getValidators('New password', ['required', 'min-len:6'])"
             v-model="user.newPassword"
           />
-          <v-text-field
             type="password"
             label="Confirm Password*"
             :rules="getValidators('Confirm password', ['equal:user.newPassword:new password'])"
@@ -76,3 +75,4 @@ export default {
       } catch (err) {
         this.handleErrorResponse(err);
       }
+      this.$set(this.status, 'isSaving', false);

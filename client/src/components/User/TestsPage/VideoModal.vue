@@ -46,7 +46,6 @@ export default {
         this.$refs.videoPlayer.play();
       }
       this.$set(this.status, 'isModalOpen', true);
-    },
     closeModal() {
       this.$refs.videoPlayer.pause();
       this.$set(this.status, 'isModalOpen', false);

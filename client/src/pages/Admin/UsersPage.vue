@@ -8,7 +8,6 @@
       </v-toolbar>
       <v-data-table
         class="elevation-1"
-        :headers="userTableHeaders"
         :items="users"
         :loading="status.isLoading"
       >
@@ -93,3 +92,4 @@ export default {
         this.$set(this.status, 'isDeleting', true);
         try {
           await this.deleteUser(user.id);
+          await this.fetchUsers();

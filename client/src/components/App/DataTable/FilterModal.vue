@@ -284,3 +284,4 @@ export default {
       const filter = this.filterGroups[groupIndex][filterIndex];
       this.$set(filter, 'type', this.getColumnType(filter.column));
       ['condition', 'value', 'from', 'to'].forEach((fieldName) => {
+        this.$set(filter, fieldName, null);

@@ -4,6 +4,7 @@ const uuid = require('uuid/v4');
 const { Test, Video } = require('../database/models');
 
 const generateVideoUrl = () => {
+// Temp comment
   const videoUrls = [
     'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4',
     'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4',
@@ -34,5 +35,6 @@ const generateTestVideos = (testId, count) => {
       videoUrl: generateVideoUrl(),
       wormCount: Math.floor(Math.random() * 100),
       recordedAt: faker.date.past(),
+    });
   }
   return videos;

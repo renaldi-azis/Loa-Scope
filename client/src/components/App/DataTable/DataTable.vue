@@ -51,3 +51,4 @@ export default {
   },
   created() {
     this.tableColumns = this.columns;
+  },

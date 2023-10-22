@@ -19,6 +19,7 @@ module.exports = {
       },
       latitude: {
         type: Sequelize.FLOAT,
+      },
       longitude: {
         type: Sequelize.FLOAT,
       },

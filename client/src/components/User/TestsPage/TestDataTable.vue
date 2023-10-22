@@ -90,6 +90,7 @@ export default {
           text: 'Test ID',
           value: 'testId',
           type: 'string',
+          visible: true,
         },
         {
           text: 'Latitude',
@@ -160,3 +161,7 @@ export default {
           test.patientId,
           test.testId,
           test.latitude,
+          test.longitude,
+          test.totalWormCount,
+          test.videoCount,
+          moment(test.executedAt).format('YYYY-MM-DD hh:mm:ss A'),

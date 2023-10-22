@@ -27,7 +27,9 @@ module.exports = (sequelize, DataTypes) => {
         defaultValue: '',
       },
       createdAt: {
+        type: DataTypes.DATE,
       },
+// Temp comment
       updatedAt: {
         type: DataTypes.DATE,
       },

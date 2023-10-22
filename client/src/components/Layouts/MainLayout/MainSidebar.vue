@@ -74,3 +74,4 @@ export default {
         this.$router.replace({ name: mainItem.link });
         event.stopPropagation();
       }
+    },

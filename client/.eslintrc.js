@@ -10,10 +10,8 @@ module.exports = {
   parserOptions: {
     parser: 'babel-eslint',
   },
-// Temp comment
   rules: {
     'no-console': process.env.NODE_ENV === 'production' ? 'error' : 'off',
-    'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off',
   },
   globals: {
     $config: true,

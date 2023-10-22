@@ -1,4 +1,5 @@
 import { Bar, mixins } from 'vue-chartjs';
+
 export default {
   extends: Bar,
   mixins: [mixins.reactiveProp],
@@ -6,3 +7,4 @@ export default {
   mounted() {
     this.addPlugin(this.options.plugins[0]);
     this.renderChart(this.chartData, this.options);
+  },

@@ -62,3 +62,4 @@ export default {
         await this.updateUser(this.user.id, payload);
         await this.refresh();
         this.$toastr.success('User has been updated.', 'Success!');
+        this.closeModal();
