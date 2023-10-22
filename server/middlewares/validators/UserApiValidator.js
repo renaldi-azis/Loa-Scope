@@ -51,7 +51,6 @@ const createUser = async (req, res, next) => {
 const updateUser = async (req, res, next) => {
   const reqData = {
     ..._.pick(req.params, ['userId']),
-    ..._.pick(req.body, ['filter']),
   };
   // Validate request
   const schema = Joi.object({
@@ -66,7 +65,6 @@ const updateUser = async (req, res, next) => {
   const user = await User.findOne({
     where: {
       id: value.userId,
-// Temp comment
     },
   });
   if (!user) {
@@ -140,3 +138,4 @@ const changePassword = async (req, res, next) => {
 
 module.exports = {
   getUsers,
+  createUser,

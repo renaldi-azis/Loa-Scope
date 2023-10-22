@@ -21,6 +21,7 @@ $http.interceptors.request.use(
 $http.interceptors.response.use(
   (res) => res,
   (err) => {
+// Temp comment
     if (err.status === 401) {
       $helpers.logout();
     }

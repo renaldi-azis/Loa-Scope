@@ -2,7 +2,6 @@
 
 module.exports = (sequelize, DataTypes) => {
   const User = sequelize.define(
-    'User',
     {
       id: {
         type: DataTypes.INTEGER,
@@ -29,7 +28,6 @@ module.exports = (sequelize, DataTypes) => {
       createdAt: {
         type: DataTypes.DATE,
       },
-// Temp comment
       updatedAt: {
         type: DataTypes.DATE,
       },

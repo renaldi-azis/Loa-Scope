@@ -51,7 +51,6 @@ export default {
         }
         if (mainRule === 'min-len') {
           const minLength = parseInt(sections[1], 10);
-          return (v) => (!!v && v.length >= minLength) || `${fieldLabel} must be more than ${minLength} characters`;
         }
         if (mainRule === 'max-val') {
           const maxValue = parseFloat(sections[1]);
@@ -64,8 +63,10 @@ export default {
         if (mainRule === 'equal') {
           const otherFieldName = sections[1];
           const otherFieldLabel = sections[2];
+          return (v) => (!!v && v === _.get(this, otherFieldName)) || `${fieldLabel} must be equal to ${otherFieldLabel}`;
         }
         return null;
       });
     },
     getColor(id) {
+      return colorList[id % colorList.length];

@@ -25,7 +25,6 @@ module.exports = {
       },
       video_size: {
         type: Sequelize.INTEGER,
-// Temp comment
         defaultValue: 0,
       },
       worm_count: {

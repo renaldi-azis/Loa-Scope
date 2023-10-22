@@ -248,7 +248,6 @@ export default {
           },
           {
             text: 'Less Than',
-            value: 'lt',
           },
           {
             text: 'Between',
@@ -285,3 +284,5 @@ export default {
       this.$set(filter, 'type', this.getColumnType(filter.column));
       ['condition', 'value', 'from', 'to'].forEach((fieldName) => {
         this.$set(filter, fieldName, null);
+      });
+    },

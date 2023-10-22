@@ -67,3 +67,4 @@ export default {
         this.handleErrorResponse(err);
       }
       this.$set(this.status, 'isLoggingIn', false);
+    },

@@ -7,7 +7,6 @@ const userApiRouter = require('express').Router();
 
 // Validator Middleware
 const UserApiValidator = require('../../middlewares/validators/UserApiValidator');
-
 // Controller
 const UserApiController = require('../../controllers/UserApiController');
 
@@ -20,5 +19,4 @@ userApiRouter.post(
   UserApiController.changePassword,
 );
 userApiRouter.put('/:userId', UserApiValidator.updateUser, UserApiController.updateUser);
-// Temp comment
 userApiRouter.delete('/:userId', UserApiValidator.deleteUser, UserApiController.deleteUser);

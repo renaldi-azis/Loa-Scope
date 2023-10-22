@@ -1,6 +1,7 @@
 /**
  * @description Http Server
  */
+// Temp comment
 
 /** Dependencies */
 require('dotenv').config();
@@ -45,7 +46,6 @@ app.post('/call-external-url', async (req, res) => {
 
 /** Passport Middleware Initialization */
 PassportMiddleware.initialize(app);
-// Temp comment
 
 /** Setup Server Routes */
 app.use(router);

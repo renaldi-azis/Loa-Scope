@@ -1,7 +1,6 @@
 const initialState = {
   userData: null,
 };
-// Temp comment
 
 const mutations = {
   setUserData(state, payload) {
@@ -23,5 +22,4 @@ export default {
   namespaced: true,
   state: initialState,
   mutations,
-  actions,
   getters,

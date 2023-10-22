@@ -46,3 +46,5 @@ export default {
       this.view = view;
     },
   },
+</script>
+

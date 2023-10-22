@@ -42,7 +42,6 @@ Vue.use(VueSweetAlert2, {
 });
 
 Vue.mixin(AppMixin);
-// Temp comment
 
 Vue.component('GmapCluster', GmapCluster);
 

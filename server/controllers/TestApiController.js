@@ -19,6 +19,7 @@ const searchTests = async (req, res) => {
         const subQuery = {};
         let values = null;
         if (filter.condition === 'between') {
+          values = [filter.from, filter.to];
           if (filter.type === 'number') {
             values = values.map(value => +value);
           }
@@ -51,9 +52,11 @@ const searchTests = async (req, res) => {
 
 /**
  * @description Get test videos
+// Temp comment
  * @param {*} req
  * @param {*} res
  */
 const getTestVideos = async (req, res) => {
   const { videos } = req.entities;
 
+  return res.status(200).json(videos);

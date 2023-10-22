@@ -23,7 +23,6 @@
           <v-select
             label="Less than"
             :items="wormCountTicks"
-            v-model="maxWormCount"
             @change="selectedMarkerData = null"
           />
         </div>
@@ -167,3 +166,5 @@ export default {
     }
     p {
       margin-bottom: 5px;
+      font-size: 11px;
+      color: #FFF !important;

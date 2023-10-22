@@ -51,7 +51,6 @@ export default {
           value: 'wormCount',
         },
         {
-          text: 'Video URL',
           value: 'videoUrl',
         },
         {
