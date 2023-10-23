@@ -72,7 +72,6 @@ export default {
         const payload = _.pick(this.user, ['currentPassword', 'newPassword']);
         await this.changePassword(payload);
         this.$toastr.success('Password has been changed.', 'Success!');
-        this.closeModal();
       } catch (err) {
         this.handleErrorResponse(err);
       }

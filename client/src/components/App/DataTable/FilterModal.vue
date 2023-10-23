@@ -248,6 +248,7 @@ export default {
           },
           {
             text: 'Less Than',
+            value: 'lt',
           },
           {
             text: 'Between',
@@ -286,3 +287,12 @@ export default {
         this.$set(filter, fieldName, null);
       });
     },
+    onChangeCondition(groupIndex, filterIndex) {
+      ['value', 'from', 'to'].forEach((fieldName) => {
+        this.$set(this.filterGroups[groupIndex][filterIndex], fieldName, null);
+      });
+    },
+    onApplyFilter() {
+      if (!this.$refs.filterForm.validate()) return;
+      this.$emit('filter', this.filterGroups);
+      this.closeModal();

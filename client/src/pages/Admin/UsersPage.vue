@@ -6,7 +6,6 @@
         <v-spacer></v-spacer>
         <v-btn color="warning" @click="$refs.createUserModal.openModal()">New User</v-btn>
       </v-toolbar>
-      <v-data-table
         class="elevation-1"
         :headers="userTableHeaders"
         :items="users"
@@ -95,3 +94,4 @@ export default {
           await this.deleteUser(user.id);
           await this.fetchUsers();
           this.$toastr.success('User has been removed.', 'Success!');
+        } catch (err) {

@@ -39,7 +39,6 @@ export default {
     },
   },
   methods: {
-    onChangeDate(date) {
       this.$refs.menu.save(date);
       this.$emit('input', date);
     },

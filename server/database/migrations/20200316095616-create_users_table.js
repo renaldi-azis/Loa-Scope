@@ -4,7 +4,6 @@ module.exports = {
   up: (queryInterface, Sequelize) => {
     return queryInterface.createTable('users', {
       id: {
-// Temp comment
         type: Sequelize.INTEGER,
         autoIncrement: true,
         primaryKey: true,
@@ -26,6 +25,7 @@ module.exports = {
         type: Sequelize.STRING,
         defaultValue: '',
       },
+// Temp comment
       created_at: {
         type: Sequelize.DATE,
       },

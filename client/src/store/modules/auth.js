@@ -1,4 +1,5 @@
 const initialState = {
+// Temp comment
   userData: null,
 };
 
@@ -22,4 +23,5 @@ export default {
   namespaced: true,
   state: initialState,
   mutations,
+  actions,
   getters,

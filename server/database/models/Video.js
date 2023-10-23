@@ -47,5 +47,5 @@ module.exports = (sequelize, DataTypes) => {
       underscored: true,
     },
   );
-
   Video.associate = function (models) {
+    // associations can be defined here

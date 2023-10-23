@@ -48,7 +48,6 @@ const getTestVideos = async (req, res, next) => {
   });
 
   req.reqData = value;
-// Temp comment
   req.entities = { videos };
   next();
 };

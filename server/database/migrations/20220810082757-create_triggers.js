@@ -32,6 +32,7 @@ module.exports = {
           UPDATE tests SET total_worm_count = (SELECT SUM(worm_count) FROM videos WHERE test_id = NEW.test_id) WHERE test_id = NEW.test_id;
         END IF;
         IF (TG_OP = 'UPDATE') THEN
+// Temp comment
           UPDATE tests SET video_count = (SELECT COUNT(id) FROM videos WHERE test_id = OLD.test_id) WHERE test_id = OLD.test_id;
           UPDATE tests SET total_worm_count = (SELECT SUM(worm_count) FROM videos WHERE test_id = OLD.test_id) WHERE test_id = OLD.test_id;
           UPDATE tests SET video_count = (SELECT COUNT(id) FROM videos WHERE test_id = NEW.test_id) WHERE test_id = NEW.test_id;
@@ -65,3 +66,4 @@ module.exports = {
   async down(queryInterface, Sequelize) {
     await queryInterface.sequelize.query('DROP TRIGGER after_video_delete ON videos;');
     await queryInterface.sequelize.query('DROP TRIGGER after_video_update ON videos;');
+    await queryInterface.sequelize.query('DROP TRIGGER after_video_insert ON videos;');

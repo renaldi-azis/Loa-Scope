@@ -45,12 +45,12 @@ export default {
         {
           text: 'Video Number',
           value: 'videoNumber',
-        },
         {
           text: 'Worm Count',
           value: 'wormCount',
         },
         {
+          text: 'Video URL',
           value: 'videoUrl',
         },
         {
@@ -73,3 +73,4 @@ export default {
     onClickRow(row) {
       this.$refs.videoModal.openModal(row.videoUrl);
     },
+  },

@@ -27,6 +27,7 @@ const getUsers = async (req, res) => {
 
   return res.status(200).json(users);
 };
+
 /**
  * @description Create a new user
  */
@@ -45,7 +46,6 @@ const createUser = async (req, res) => {
 
 /**
  * @description Update an existing user
- */
 const updateUser = async (req, res) => {
   const { reqData } = req;
   let { user } = req.entities;
@@ -83,3 +83,4 @@ const changePassword = async (req, res) => {
 
   user.password = bcrypt.hashSync(reqData.password, 10);
   await user.save();
+

@@ -52,7 +52,6 @@ const searchTests = async (req, res) => {
 
 /**
  * @description Get test videos
-// Temp comment
  * @param {*} req
  * @param {*} res
  */

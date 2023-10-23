@@ -9,6 +9,7 @@ const profileApiRouter = require('express').Router();
 const ProfileApiValidator = require('../../middlewares/validators/ProfileApiValidator');
 
 // Controller
+const ProfileApiController = require('../../controllers/ProfileApiController');
 
 // Add Routes
 profileApiRouter.post(

@@ -4,7 +4,6 @@ const bcrypt = require('bcrypt');
 
 const { USER_ROLES } = require('../../constants');
 
-// Temp comment
 module.exports = {
   up: async (queryInterface, Sequelize) => {
     return queryInterface.bulkInsert(

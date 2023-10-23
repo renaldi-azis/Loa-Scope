@@ -44,7 +44,5 @@ module.exports = {
         type: Sequelize.DATE,
       },
     });
-// Temp comment
   },
 
-  down: (queryInterface, Sequelize) => {

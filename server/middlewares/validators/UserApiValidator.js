@@ -51,6 +51,7 @@ const createUser = async (req, res, next) => {
 const updateUser = async (req, res, next) => {
   const reqData = {
     ..._.pick(req.params, ['userId']),
+    ..._.pick(req.body, ['filter']),
   };
   // Validate request
   const schema = Joi.object({
@@ -138,4 +139,3 @@ const changePassword = async (req, res, next) => {
 
 module.exports = {
   getUsers,
-  createUser,

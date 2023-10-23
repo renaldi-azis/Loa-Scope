@@ -73,3 +73,4 @@ export default {
         this.handleErrorResponse(err);
       }
       this.$set(this.status, 'isSaving', false);
+    },
