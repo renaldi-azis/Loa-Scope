@@ -165,6 +165,7 @@ export default {
       margin-bottom: 20px;
       color: #FFF !important;
     }
+    p {
       margin-bottom: 5px;
       font-size: 11px;
       color: #FFF !important;

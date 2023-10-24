@@ -4,6 +4,7 @@
     <main-sidebar></main-sidebar>
     <v-content>
       <v-container class="pa-6" fluid>
+        <transition name="fade" mode="out-in" appear>
           <router-view></router-view>
         </transition>
       </v-container>
@@ -15,7 +16,6 @@
 import MainHeader from '@/components/Layouts/MainLayout/MainHeader.vue';
 import MainSidebar from '@/components/Layouts/MainLayout/MainSidebar.vue';
 
-export default {
   name: 'MainLayout',
   components: {
     MainHeader,

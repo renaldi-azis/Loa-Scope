@@ -19,7 +19,6 @@ module.exports = (sequelize, DataTypes) => {
         type: DataTypes.INTEGER,
       },
       videoPath: {
-        type: DataTypes.STRING,
       },
       videoUrl: {
         type: DataTypes.STRING,
@@ -47,5 +46,6 @@ module.exports = (sequelize, DataTypes) => {
       underscored: true,
     },
   );
+
   Video.associate = function (models) {
     // associations can be defined here

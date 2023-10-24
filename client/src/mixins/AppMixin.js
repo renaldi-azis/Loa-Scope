@@ -6,7 +6,6 @@ const colorList = [
   'indigo',
   'purple',
   'blue',
-  'green',
   'orange',
   'pink',
 ];
@@ -46,7 +45,6 @@ export default {
         const sections = rule.split(':');
         const [mainRule] = sections;
         if (mainRule === 'max-len') {
-// Temp comment
           const maxLength = parseInt(sections[1], 10);
           return (v) => (!!v && v.length <= maxLength) || `${fieldLabel} must be less than ${maxLength} characters`;
         }

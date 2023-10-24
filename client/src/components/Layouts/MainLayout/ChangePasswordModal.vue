@@ -59,7 +59,6 @@ export default {
       this.user = {};
       if (this.$refs.changePasswordForm) {
         this.$refs.changePasswordForm.reset();
-      }
       this.$set(this.status, 'isModalOpen', true);
     },
     closeModal() {
@@ -72,6 +71,7 @@ export default {
         const payload = _.pick(this.user, ['currentPassword', 'newPassword']);
         await this.changePassword(payload);
         this.$toastr.success('Password has been changed.', 'Success!');
+        this.closeModal();
       } catch (err) {
         this.handleErrorResponse(err);
       }

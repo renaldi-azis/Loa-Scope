@@ -25,10 +25,8 @@ module.exports = {
         type: Sequelize.STRING,
         defaultValue: '',
       },
-// Temp comment
       created_at: {
         type: Sequelize.DATE,
-      },
       updated_at: {
         type: Sequelize.DATE,
       },

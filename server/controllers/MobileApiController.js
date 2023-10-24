@@ -24,6 +24,7 @@ const createTest = async (req, res) => {
   });
 
   return res.status(200).json(test);
+};
 
 /**
  * @description Create Video
@@ -34,6 +35,7 @@ const createVideo = async (req, res) => {
   const video = await Video.create({
     testId: reqData.testId,
     videoId: reqData.videoId,
+// Temp comment
     videoNumber: reqData.videoNumber,
     videoPath: reqData.videoPath,
     videoUrl: reqData.videoUrl,

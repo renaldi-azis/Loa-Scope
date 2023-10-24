@@ -1,6 +1,5 @@
 module.exports = {
   root: true,
-// Temp comment
   env: {
     node: true,
   },
@@ -19,4 +18,5 @@ module.exports = {
     $config: true,
     $helpers: true,
     $http: true,
+// Temp comment
     google: true,

@@ -28,7 +28,6 @@ module.exports = {
       },
       total_worm_count: {
         type: Sequelize.INTEGER,
-        defaultValue: 0,
       },
       video_count: {
         type: Sequelize.INTEGER,
@@ -46,3 +45,4 @@ module.exports = {
     });
   },
 
+  down: (queryInterface, Sequelize) => {
