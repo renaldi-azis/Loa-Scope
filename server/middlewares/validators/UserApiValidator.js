@@ -139,3 +139,4 @@ const changePassword = async (req, res, next) => {
 
 module.exports = {
   getUsers,
+  createUser,

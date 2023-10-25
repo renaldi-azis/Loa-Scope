@@ -8,6 +8,7 @@
           <v-icon @click="closeModal">close</v-icon>
         </v-card-title>
         <v-divider></v-divider>
+        <v-card-text>
           <div
             v-for="(filterGroup, groupIndex) in filterGroups"
             :key="`filter-group-${groupIndex}`"
@@ -175,7 +176,6 @@ export default {
   }),
   methods: {
     openModal() {
-      if (this.appState.filters && this.appState.filters.length > 0) {
         this.filterGroups = _.cloneDeep(this.appState.filters);
       } else {
         this.filterGroups = [
@@ -295,3 +295,5 @@ export default {
       if (!this.$refs.filterForm.validate()) return;
       this.$emit('filter', this.filterGroups);
       this.closeModal();
+    },
+  },

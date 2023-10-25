@@ -18,6 +18,7 @@
             color="primary"
             v-on="on"
             @click="action.handler"
+          >
             <v-icon dark v-html="action.icon" />
           </v-btn>
         </template>
@@ -164,3 +165,4 @@ export default {
           test.totalWormCount,
           test.videoCount,
           moment(test.executedAt).format('YYYY-MM-DD hh:mm:ss A'),
+        ];

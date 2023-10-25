@@ -1,5 +1,4 @@
 /**
-// Temp comment
  * @description Uses passport.js to authenticate a user
  */
 
@@ -35,7 +34,6 @@ passport.use(
 /** Define how Passport should serialize a user */
 passport.serializeUser((user, done) => {
   done(null, user.id);
-});
 
 /** Define how Passport should deserialize a user */
 passport.deserializeUser(async (id, done) => {
@@ -56,3 +54,4 @@ passport.deserializeUser(async (id, done) => {
  *
  * @param {Express} app The main Express app.
  */
+const initialize = app => {

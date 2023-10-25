@@ -27,6 +27,7 @@ import 'toastr/build/toastr.min.css';
 Vue.config.productionTip = false;
 
 toastr.options = { maxOpened: 1 };
+Vue.prototype.$toastr = toastr;
 
 Vue.use(VueGoogleMaps, {
   load: {

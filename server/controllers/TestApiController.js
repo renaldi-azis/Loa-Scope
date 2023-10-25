@@ -1,10 +1,10 @@
 /**
  * @description Test API Controller
+// Temp comment
  */
 
 /** Dependencies */
 const { Op } = require('sequelize');
-// Temp comment
 const { Test } = require('../database/models');
 
 /**
@@ -60,3 +60,4 @@ const getTestVideos = async (req, res) => {
   const { videos } = req.entities;
 
   return res.status(200).json(videos);
+};

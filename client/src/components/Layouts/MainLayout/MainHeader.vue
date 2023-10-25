@@ -10,6 +10,7 @@
       <small><i>Automated quantification of filarial infections</i></small>
     </div>
     <v-toolbar-items class="align-center">
+      <v-menu offset-y>
         <template v-slot:activator="{ on }">
           <v-btn text v-on="on">
             <v-avatar :color="getColor(userData.id)" size="40">
@@ -57,3 +58,4 @@ export default {
   transform: translate(-50%, -50%);
   text-align: center;
 }
+.title {

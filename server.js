@@ -2,6 +2,7 @@
  * @description Http Server
  */
 
+// Temp comment
 /** Dependencies */
 require('dotenv').config();
 const axios = require('axios');
@@ -37,7 +38,6 @@ app.post('/call-external-url', async (req, res) => {
     res.json(data);
   } catch (error) {
     if (error.response && error.response.status) {
-// Temp comment
       return res.status(error.response.status).json(error.response.data);
     }
     res.status(400).json(error);
@@ -49,3 +49,4 @@ PassportMiddleware.initialize(app);
 
 /** Setup Server Routes */
 app.use(router);
+

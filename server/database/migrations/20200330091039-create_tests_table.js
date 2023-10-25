@@ -15,6 +15,7 @@ module.exports = {
         type: Sequelize.STRING,
       },
       test_id: {
+// Temp comment
         type: Sequelize.STRING,
       },
       latitude: {
@@ -28,6 +29,7 @@ module.exports = {
       },
       total_worm_count: {
         type: Sequelize.INTEGER,
+        defaultValue: 0,
       },
       video_count: {
         type: Sequelize.INTEGER,

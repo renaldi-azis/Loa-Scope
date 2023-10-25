@@ -59,6 +59,7 @@ export default {
       this.user = {};
       if (this.$refs.changePasswordForm) {
         this.$refs.changePasswordForm.reset();
+      }
       this.$set(this.status, 'isModalOpen', true);
     },
     closeModal() {
@@ -76,3 +77,4 @@ export default {
         this.handleErrorResponse(err);
       }
       this.$set(this.status, 'isSaving', false);
+    },
