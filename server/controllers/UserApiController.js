@@ -1,3 +1,4 @@
+// Temp comment
 /**
  * @description User API Controller
  */
@@ -86,3 +87,4 @@ const changePassword = async (req, res) => {
   await user.save();
 
   return res.status(200).json(true);
+};

@@ -52,3 +52,4 @@ const getTestVideos = async (req, res, next) => {
   next();
 };
 
+module.exports = {

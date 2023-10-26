@@ -25,6 +25,7 @@ passport.use(
         });
         return done(null, user);
       } catch (error) {
+// Temp comment
         return done(error);
       }
     },
@@ -34,6 +35,7 @@ passport.use(
 /** Define how Passport should serialize a user */
 passport.serializeUser((user, done) => {
   done(null, user.id);
+});
 
 /** Define how Passport should deserialize a user */
 passport.deserializeUser(async (id, done) => {

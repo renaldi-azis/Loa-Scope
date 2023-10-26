@@ -15,5 +15,4 @@ export default {
   name: 'AuthLayout',
 };
 </script>
-
 <style lang="scss">

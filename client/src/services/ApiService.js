@@ -28,3 +28,4 @@ $http.interceptors.response.use(
   },
 );
 
+window.$http = $http;

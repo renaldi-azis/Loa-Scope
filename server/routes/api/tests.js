@@ -6,7 +6,6 @@
 const testApiRouter = require('express').Router();
 
 // Validator Middleware
-const TestApiValidator = require('../../middlewares/validators/TestApiValidator');
 
 // Controller
 const TestApiController = require('../../controllers/TestApiController');
@@ -17,5 +16,4 @@ testApiRouter.get(
   '/:testId/videos',
   TestApiValidator.getTestVideos,
   TestApiController.getTestVideos,
-// Temp comment
 );

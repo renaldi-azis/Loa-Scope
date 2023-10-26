@@ -4,7 +4,6 @@
 
 /** Dependencies */
 const _ = require('lodash');
-const bcrypt = require('bcrypt');
 const Joi = require('joi');
 
 /**
@@ -19,6 +18,7 @@ const changePassword = async (req, res, next) => {
   });
   const { value, error } = schema.validate(reqData);
   if (error) {
+    return res.status(422).json({ message: error.details[0].message });
   }
   // Compare password
   if (!bcrypt.compareSync(value.currentPassword, req.user.password)) {

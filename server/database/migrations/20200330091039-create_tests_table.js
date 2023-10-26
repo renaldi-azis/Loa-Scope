@@ -15,11 +15,11 @@ module.exports = {
         type: Sequelize.STRING,
       },
       test_id: {
-// Temp comment
         type: Sequelize.STRING,
       },
       latitude: {
         type: Sequelize.FLOAT,
+// Temp comment
       },
       longitude: {
         type: Sequelize.FLOAT,

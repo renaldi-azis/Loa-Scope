@@ -60,3 +60,4 @@ export default {
   overflow: hidden;
 }
 
+.video-wrapper {

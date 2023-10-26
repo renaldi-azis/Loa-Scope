@@ -6,7 +6,6 @@
           <v-card-title>
             <h1 class="display-1">Login</h1>
           </v-card-title>
-          <v-card-text>
             <v-text-field
               prepend-inner-icon="person"
               label="Username*"
@@ -68,3 +67,4 @@ export default {
       }
       this.$set(this.status, 'isLoggingIn', false);
     },
+  },

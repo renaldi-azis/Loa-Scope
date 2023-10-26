@@ -166,3 +166,4 @@ export default {
           test.videoCount,
           moment(test.executedAt).format('YYYY-MM-DD hh:mm:ss A'),
         ];
+        csvData += `${row.join(',')}\r\n`;

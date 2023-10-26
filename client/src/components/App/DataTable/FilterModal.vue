@@ -176,6 +176,7 @@ export default {
   }),
   methods: {
     openModal() {
+      if (this.appState.filters && this.appState.filters.length > 0) {
         this.filterGroups = _.cloneDeep(this.appState.filters);
       } else {
         this.filterGroups = [
@@ -297,3 +298,4 @@ export default {
       this.closeModal();
     },
   },
+};

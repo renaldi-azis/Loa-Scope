@@ -21,3 +21,4 @@ userApiRouter.post(
 );
 userApiRouter.put('/:userId', UserApiValidator.updateUser, UserApiController.updateUser);
 userApiRouter.delete('/:userId', UserApiValidator.deleteUser, UserApiController.deleteUser);
+

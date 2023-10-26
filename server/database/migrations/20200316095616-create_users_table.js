@@ -31,6 +31,8 @@ module.exports = {
       updated_at: {
         type: Sequelize.DATE,
       },
+    });
+// Temp comment
   },
 
   down: (queryInterface, Sequelize) => {

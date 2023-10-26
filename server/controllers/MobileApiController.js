@@ -32,7 +32,6 @@ const createTest = async (req, res) => {
 const createVideo = async (req, res) => {
   const { reqData } = req;
 
-// Temp comment
   const video = await Video.create({
     testId: reqData.testId,
     videoId: reqData.videoId,

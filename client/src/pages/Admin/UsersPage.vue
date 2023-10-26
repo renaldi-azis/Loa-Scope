@@ -8,6 +8,7 @@
       </v-toolbar>
       <v-data-table
         class="elevation-1"
+        :headers="userTableHeaders"
         :items="users"
         :loading="status.isLoading"
       >
@@ -96,3 +97,4 @@ export default {
           this.$toastr.success('User has been removed.', 'Success!');
         } catch (err) {
           this.handleErrorResponse(err);
+        }
