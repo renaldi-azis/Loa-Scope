@@ -18,7 +18,6 @@ module.exports = {
         type: Sequelize.INTEGER,
       },
       video_path: {
-        type: Sequelize.STRING,
       },
       video_url: {
         type: Sequelize.STRING,

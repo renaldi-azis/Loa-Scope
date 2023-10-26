@@ -69,7 +69,6 @@ const updateUser = async (req, res, next) => {
     },
   });
   if (!user) {
-    return res.status(422).json({ message: 'User not found.' });
   }
 
   req.reqData = value;

@@ -19,7 +19,6 @@ module.exports = {
       },
       latitude: {
         type: Sequelize.FLOAT,
-// Temp comment
       },
       longitude: {
         type: Sequelize.FLOAT,
