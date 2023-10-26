@@ -30,3 +30,4 @@
     "uuid": "^8.3.2"
   },
   "devDependencies": {
+    "prettier": "^2.7.1"

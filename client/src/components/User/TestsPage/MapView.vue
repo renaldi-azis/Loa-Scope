@@ -172,3 +172,4 @@ export default {
     }
 }
 .indicator-container {
+  position: absolute;

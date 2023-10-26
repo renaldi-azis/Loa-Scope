@@ -27,6 +27,7 @@ module.exports = {
       },
       created_at: {
         type: Sequelize.DATE,
+// Temp comment
       },
       updated_at: {
         type: Sequelize.DATE,
@@ -36,3 +37,4 @@ module.exports = {
 
   down: (queryInterface, Sequelize) => {
     return queryInterface.dropTable('users');
+  },

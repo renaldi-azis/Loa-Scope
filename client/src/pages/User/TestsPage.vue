@@ -1,3 +1,4 @@
+<template>
   <div class="fill-width">
     <test-data-table
       @switch:view="onSwitchView"
@@ -48,3 +49,4 @@ export default {
 };
 </script>
 
+<style lang="scss" scoped>

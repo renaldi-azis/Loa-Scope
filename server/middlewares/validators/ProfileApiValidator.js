@@ -1,6 +1,7 @@
 /**
  * @description Profile API Validator
  */
+
 /** Dependencies */
 const _ = require('lodash');
 const bcrypt = require('bcrypt');
@@ -28,3 +29,4 @@ const changePassword = async (req, res, next) => {
   req.reqData = value;
   next();
 };
+

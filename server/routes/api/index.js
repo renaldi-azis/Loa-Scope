@@ -11,7 +11,6 @@ const { isAuthorizedMobile, isAdmin } = require('../../middlewares/AppMiddleware
 const apiRouter = require('express').Router();
 
 // Import Sub API Routers
-const authApiRouter = require('./auth');
 const mobileApiRouter = require('./mobile');
 const profileApiRouter = require('./profile');
 const testApiRouter = require('./tests');
@@ -30,3 +29,4 @@ apiRouter.use('/tests', testApiRouter);
 /** Add Admin Middleware */
 apiRouter.use(isAdmin);
 
+apiRouter.use('/users', userApiRouter);

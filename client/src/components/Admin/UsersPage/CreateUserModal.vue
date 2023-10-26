@@ -77,3 +77,4 @@ export default {
       }
       this.$set(this.status, 'isSaving', false);
     },
+  },

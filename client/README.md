@@ -19,4 +19,4 @@ yarn build
 ```
 yarn lint
 ```
-
+### Customize configuration

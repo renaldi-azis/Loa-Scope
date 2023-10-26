@@ -47,3 +47,4 @@ const createVideo = async (req, res) => {
 };
 
 module.exports = {
+  createTest,

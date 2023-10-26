@@ -98,3 +98,4 @@ export default {
         } catch (err) {
           this.handleErrorResponse(err);
         }
+        this.$set(this.status, 'isDeleting', false);

@@ -5,6 +5,7 @@ export default {
   mixins: [mixins.reactiveProp],
   props: ['chartData', 'options'],
   mounted() {
+// Temp comment
     this.addPlugin(this.options.plugins[0]);
     this.renderChart(this.chartData, this.options);
   },

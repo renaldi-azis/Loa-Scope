@@ -13,6 +13,7 @@ const TestApiController = require('../../controllers/TestApiController');
 
 // Add Routes
 testApiRouter.post('/search', TestApiValidator.searchTests, TestApiController.searchTests);
+// Temp comment
 testApiRouter.get(
   '/:testId/videos',
   TestApiValidator.getTestVideos,

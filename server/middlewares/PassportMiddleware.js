@@ -25,7 +25,6 @@ passport.use(
         });
         return done(null, user);
       } catch (error) {
-// Temp comment
         return done(error);
       }
     },
