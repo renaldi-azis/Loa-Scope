@@ -1,6 +1,5 @@
 /**
  * @description Mobile API Validator
- */
 
 /** Dependencies */
 const _ = require('lodash');
@@ -91,3 +90,4 @@ const createVideo = async (req, res, next) => {
   req.reqData = value;
   next();
 };
+

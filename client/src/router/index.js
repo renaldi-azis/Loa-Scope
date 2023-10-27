@@ -1,6 +1,5 @@
 import Vue from 'vue';
 import VueRouter from 'vue-router';
-// Temp comment
 
 import store from '@/store';
 
@@ -8,7 +7,6 @@ Vue.use(VueRouter);
 
 const routeMiddleware = (routeName, next) => {
   const { userData } = store.state.authStore;
-  if (!userData) return next();
   if (userData.role === 'Admin') {
     const allowedRouteNames = [
       'users-page',

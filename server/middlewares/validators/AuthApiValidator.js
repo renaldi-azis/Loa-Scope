@@ -4,7 +4,6 @@
 
 /** Dependencies */
 const _ = require('lodash');
-// Temp comment
 const bcrypt = require('bcrypt');
 const Joi = require('joi');
 
@@ -24,6 +23,7 @@ const login = async (req, res, next) => {
   if (error) {
     return res.status(422).json({ message: error.details[0].message });
   }
+// Temp comment
   // Check user existence
   let user = await User.findOne({
     where: {

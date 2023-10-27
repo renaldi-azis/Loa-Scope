@@ -12,3 +12,4 @@ exports.isAdmin = (req, res, next) => {
     return res.status(403).json({ message: 'You are not allowed to do this.' });
   }
   next();
+};

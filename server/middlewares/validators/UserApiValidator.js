@@ -12,7 +12,6 @@ const { User } = require('../../database/models');
  * @description Get users
  */
 const getUsers = async (req, res, next) => {
-// Temp comment
   next();
 };
 

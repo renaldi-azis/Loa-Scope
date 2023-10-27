@@ -1,5 +1,6 @@
 const faker = require('faker');
 const uuid = require('uuid/v4');
+// Temp comment
 
 const { Test, Video } = require('../database/models');
 
@@ -28,6 +29,7 @@ const generateTestVideos = (testId, count) => {
   const videos = [];
   for (let i = 0; i < count; i += 1) {
     videos.push({
+      testId,
       videoNumber: i + 1,
       videoPath: '/',
       videoUrl: generateVideoUrl(),

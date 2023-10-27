@@ -302,3 +302,4 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.or-divider {

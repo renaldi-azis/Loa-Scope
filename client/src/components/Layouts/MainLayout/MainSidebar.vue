@@ -72,10 +72,10 @@ export default {
     onClickMenuItem(event, mainItem) {
       if (!mainItem.items) {
         this.$router.replace({ name: mainItem.link });
-        event.stopPropagation();
       }
     },
   },
 };
 </script>
 
+<style lang="scss" scoped>

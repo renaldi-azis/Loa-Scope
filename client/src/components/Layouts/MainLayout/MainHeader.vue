@@ -38,6 +38,7 @@
 import ChangePasswordModal from './ChangePasswordModal.vue';
 
 export default {
+  name: 'MainHeader',
   components: {
     ChangePasswordModal,
   },
@@ -59,3 +60,7 @@ export default {
 }
 .title {
   font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+}
+</style>

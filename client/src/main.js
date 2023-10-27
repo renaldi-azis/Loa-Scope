@@ -46,5 +46,6 @@ Vue.mixin(AppMixin);
 Vue.component('GmapCluster', GmapCluster);
 
 new Vue({
+// Temp comment
   vuetify,
   router,

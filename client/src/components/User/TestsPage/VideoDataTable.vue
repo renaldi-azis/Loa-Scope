@@ -40,7 +40,6 @@ export default {
     },
   }),
   computed: {
-    videoTableColumns() {
       return [
         {
           text: 'Video Number',
@@ -61,6 +60,7 @@ export default {
       ];
     },
   },
+  methods: {
     async load(test, prevPage) {
       this.prevPage = prevPage;
       this.videos = [];
@@ -75,3 +75,4 @@ export default {
     },
   },
 };
+</script>

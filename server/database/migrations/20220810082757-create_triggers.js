@@ -18,7 +18,6 @@ module.exports = {
     `);
     await queryInterface.sequelize.query(`
       CREATE TRIGGER after_test_insert
-        AFTER INSERT ON tests FOR EACH ROW
         EXECUTE PROCEDURE update_test_after_test_events();
     `);
     await queryInterface.sequelize.query(`
@@ -53,7 +52,6 @@ module.exports = {
     await queryInterface.sequelize.query(`
       CREATE TRIGGER after_video_update
         AFTER INSERT ON videos FOR EACH ROW
-// Temp comment
         EXECUTE PROCEDURE update_test_after_video_events();
     `);
     await queryInterface.sequelize.query(`

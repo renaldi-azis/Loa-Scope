@@ -12,7 +12,6 @@ window.$helpers = {
     return !!this.getApiToken();
   },
   logout() {
-    localStorage.clear();
     window.location.reload();
   },
 };

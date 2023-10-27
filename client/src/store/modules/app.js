@@ -1,6 +1,5 @@
 const initialState = {
   isMenuSidebarOpen: null,
-  filters: null,
   tests: [],
 };
 
@@ -12,7 +11,6 @@ const mutations = {
     state.filters = payload;
   },
   setTests(state, payload) {
-// Temp comment
     state.tests = payload;
   },
 };
