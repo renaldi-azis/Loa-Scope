@@ -12,6 +12,7 @@ const mutations = {
     state.filters = payload;
   },
   setTests(state, payload) {
+// Temp comment
     state.tests = payload;
   },
 };
@@ -36,3 +37,4 @@ export default {
   namespaced: true,
   state: initialState,
   mutations,
+  actions,

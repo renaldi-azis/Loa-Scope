@@ -61,3 +61,4 @@ export default {
 }
 
 .video-wrapper {
+  overflow-y: auto;

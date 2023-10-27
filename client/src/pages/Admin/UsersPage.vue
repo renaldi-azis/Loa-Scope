@@ -90,6 +90,7 @@ export default {
         cancelButtonText: 'No',
       });
       if (result.value) {
+        this.$set(this.status, 'isDeleting', true);
         try {
           await this.deleteUser(user.id);
           await this.fetchUsers();
@@ -98,3 +99,4 @@ export default {
           this.handleErrorResponse(err);
         }
         this.$set(this.status, 'isDeleting', false);
+      }

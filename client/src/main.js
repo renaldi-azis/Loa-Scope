@@ -47,3 +47,4 @@ Vue.component('GmapCluster', GmapCluster);
 
 new Vue({
   vuetify,
+  router,

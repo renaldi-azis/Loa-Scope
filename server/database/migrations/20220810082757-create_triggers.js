@@ -49,9 +49,11 @@ module.exports = {
       CREATE TRIGGER after_video_insert
         AFTER INSERT ON videos FOR EACH ROW
         EXECUTE PROCEDURE update_test_after_video_events();
+    `);
     await queryInterface.sequelize.query(`
       CREATE TRIGGER after_video_update
         AFTER INSERT ON videos FOR EACH ROW
+// Temp comment
         EXECUTE PROCEDURE update_test_after_video_events();
     `);
     await queryInterface.sequelize.query(`
@@ -66,3 +68,4 @@ module.exports = {
     await queryInterface.sequelize.query('DROP TRIGGER after_video_update ON videos;');
     await queryInterface.sequelize.query('DROP TRIGGER after_video_insert ON videos;');
     await queryInterface.sequelize.query('DROP FUNCTION update_test_after_video_events;');
+    await queryInterface.sequelize.query('DROP TRIGGER after_test_insert ON tests;');

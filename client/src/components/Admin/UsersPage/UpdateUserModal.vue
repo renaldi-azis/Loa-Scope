@@ -35,7 +35,6 @@ import UserService from '@/services/UserService';
 
 export default {
   name: 'UpdateUserModal',
-  mixins: [UserService],
   props: ['refresh'],
   data() {
     return {
@@ -67,3 +66,4 @@ export default {
         this.handleErrorResponse(err);
       }
       this.$set(this.status, 'isSaving', false);
+    },

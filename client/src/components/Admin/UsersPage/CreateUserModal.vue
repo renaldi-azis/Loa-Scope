@@ -61,7 +61,6 @@ export default {
       this.$set(this.status, 'isModalOpen', true);
     },
     closeModal() {
-      this.$set(this.status, 'isModalOpen', false);
     },
     async onCreateUser() {
       if (!this.$refs.createUserForm.validate()) return;
@@ -78,3 +77,4 @@ export default {
       this.$set(this.status, 'isSaving', false);
     },
   },
+};

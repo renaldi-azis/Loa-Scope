@@ -13,7 +13,6 @@ window.$helpers = {
   },
   logout() {
     localStorage.clear();
-// Temp comment
     window.location.reload();
   },
 };

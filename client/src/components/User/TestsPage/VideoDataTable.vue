@@ -61,7 +61,6 @@ export default {
       ];
     },
   },
-  methods: {
     async load(test, prevPage) {
       this.prevPage = prevPage;
       this.videos = [];
