@@ -59,3 +59,4 @@ export default {
   text-align: center;
 }
 .title {
+  font-size: 20px;

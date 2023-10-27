@@ -168,3 +168,4 @@ export default {
         ];
         csvData += `${row.join(',')}\r\n`;
       });
+      download(csvData, 'Tests.csv');

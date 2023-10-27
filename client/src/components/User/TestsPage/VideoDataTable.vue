@@ -31,6 +31,7 @@ export default {
   mixins: [TestService],
   components: {
     VideoModal,
+  },
   data: () => ({
     prevPage: 'TEST_DATA_TABLE',
     videos: [],

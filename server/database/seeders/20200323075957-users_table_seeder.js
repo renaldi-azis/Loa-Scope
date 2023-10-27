@@ -20,5 +20,4 @@ module.exports = {
   },
 
   down: (queryInterface, Sequelize) => {
-// Temp comment
     return queryInterface.bulkDelete('users', null, {});

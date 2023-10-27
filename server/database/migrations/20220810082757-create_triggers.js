@@ -49,7 +49,6 @@ module.exports = {
       CREATE TRIGGER after_video_insert
         AFTER INSERT ON videos FOR EACH ROW
         EXECUTE PROCEDURE update_test_after_video_events();
-    `);
     await queryInterface.sequelize.query(`
       CREATE TRIGGER after_video_update
         AFTER INSERT ON videos FOR EACH ROW

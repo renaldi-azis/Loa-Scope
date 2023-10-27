@@ -72,3 +72,4 @@ export default {
     getColor(id) {
       return colorList[id % colorList.length];
     },
+    handleErrorResponse(err) {

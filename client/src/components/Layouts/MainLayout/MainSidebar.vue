@@ -65,6 +65,7 @@ export default {
       },
     ];
   },
+  methods: {
     activeClass(menuItem) {
       return this.$route.name === menuItem.link ? 'active' : '';
     },
@@ -77,3 +78,4 @@ export default {
   },
 };
 </script>
+

@@ -47,7 +47,6 @@ const createTest = async (req, res, next) => {
 
   req.reqData = value;
   next();
-// Temp comment
 };
 
 /**
@@ -62,7 +61,6 @@ const createVideo = async (req, res, next) => {
     'videoUrl',
     'videoSize',
     'wormCount',
-    'createdAt',
   ]);
   // Validate request
   const schema = Joi.object({
@@ -91,3 +89,4 @@ const createVideo = async (req, res, next) => {
 
   req.reqData = value;
   next();
+};

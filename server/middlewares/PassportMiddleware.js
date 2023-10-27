@@ -56,3 +56,4 @@ passport.deserializeUser(async (id, done) => {
  * @param {Express} app The main Express app.
  */
 const initialize = app => {
+  app.use(passport.initialize());

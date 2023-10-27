@@ -53,3 +53,4 @@ export default {
     this.tableColumns = this.columns;
   },
 };
+</script>
