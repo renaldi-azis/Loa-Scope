@@ -51,7 +51,6 @@ module.exports = (sequelize, DataTypes) => {
   );
 
   Test.associate = function (models) {
-// Temp comment
     // associations can be defined here
   };
 

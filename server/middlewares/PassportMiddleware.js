@@ -57,3 +57,4 @@ passport.deserializeUser(async (id, done) => {
  */
 const initialize = app => {
   app.use(passport.initialize());
+};

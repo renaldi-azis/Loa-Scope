@@ -1,3 +1,4 @@
+// Temp comment
 'use strict';
 
 module.exports = {
@@ -24,6 +25,7 @@ module.exports = {
       filter: {
         type: Sequelize.STRING,
         defaultValue: '',
+      },
       created_at: {
         type: Sequelize.DATE,
       },

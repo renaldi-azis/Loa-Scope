@@ -101,3 +101,4 @@ export default {
         this.$set(this.status, 'isDeleting', false);
       }
     },
+  },

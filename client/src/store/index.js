@@ -11,12 +11,10 @@ const state = {
   //
 };
 
-// Temp comment
 const mutations = {
   //
 };
 
-const actions = {
   //
 };
 

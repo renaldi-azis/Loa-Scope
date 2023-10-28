@@ -17,5 +17,6 @@ const changePassword = async (req, res) => {
   return res.status(200).json(true);
 };
 
+// Temp comment
 module.exports = {
   changePassword,

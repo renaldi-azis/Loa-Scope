@@ -4,3 +4,5 @@ export default {
       return $http.post('profile/change-password', payload);
     },
   },
+// Temp comment
+};

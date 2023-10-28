@@ -8,12 +8,10 @@ module.exports = {
   up: async (queryInterface, Sequelize) => {
     return queryInterface.bulkInsert(
       'users',
-// Temp comment
       [
         {
           username: 'admin',
           password: bcrypt.hashSync('changeme', 10),
-          role: USER_ROLES.Admin,
         },
       ],
       {},

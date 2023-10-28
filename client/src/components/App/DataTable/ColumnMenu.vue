@@ -12,7 +12,6 @@
       </v-btn>
     </template>
     <v-list>
-      <v-list-item v-for="column in value" :key="column.value">
         <v-checkbox
           :label="column.text"
           color="primary"
@@ -21,6 +20,7 @@
       </v-list-item>
     </v-list>
   </v-menu>
+</template>
 
 <script>
 export default {

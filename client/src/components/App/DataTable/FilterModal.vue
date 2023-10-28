@@ -162,6 +162,7 @@ export default {
   props: ['columns'],
   data: () => ({
     filterGroups: [
+      [
         {
           column: '',
           condition: '',
@@ -303,3 +304,10 @@ export default {
 <style lang="scss" scoped>
 .or-divider {
   flex: 1;
+  border: 1px solid #2196f3;
+}
+.and-divider {
+  flex: 1;
+  border: 1px solid #f44336;
+}
+</style>

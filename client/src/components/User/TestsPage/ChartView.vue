@@ -120,6 +120,7 @@ export default {
               labelString: 'Worm Count',
               fontSize: 16,
             },
+          }],
           yAxes: [{
             scaleLabel: {
               display: true,
@@ -178,3 +179,4 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.legend {
