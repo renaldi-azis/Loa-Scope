@@ -23,7 +23,6 @@ const login = async (req, res, next) => {
   if (error) {
     return res.status(422).json({ message: error.details[0].message });
   }
-// Temp comment
   // Check user existence
   let user = await User.findOne({
     where: {
@@ -40,7 +39,6 @@ const login = async (req, res, next) => {
 
   req.reqData = value;
   req.user = user;
-  next();
 };
 
 module.exports = {

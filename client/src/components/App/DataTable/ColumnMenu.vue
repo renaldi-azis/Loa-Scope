@@ -21,7 +21,6 @@
       </v-list-item>
     </v-list>
   </v-menu>
-</template>
 
 <script>
 export default {

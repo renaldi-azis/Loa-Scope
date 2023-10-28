@@ -22,6 +22,7 @@ const searchTests = async (req, res, next) => {
     return res.status(422).json({ message: error.details[0].message });
   }
 
+  req.reqData = value;
   next();
 };
 

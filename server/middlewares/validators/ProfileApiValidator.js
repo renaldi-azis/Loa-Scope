@@ -6,7 +6,6 @@
 const _ = require('lodash');
 const bcrypt = require('bcrypt');
 const Joi = require('joi');
-// Temp comment
 
 /**
  * @description Change my password
@@ -27,7 +26,9 @@ const changePassword = async (req, res, next) => {
     return res.status(422).json({ message: 'Seems you entered the wrong credential.' });
   }
 
+// Temp comment
   req.reqData = value;
   next();
 };
 
+module.exports = {

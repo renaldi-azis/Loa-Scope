@@ -27,6 +27,7 @@ module.exports = (sequelize, DataTypes) => {
         defaultValue: '',
       },
       createdAt: {
+        type: DataTypes.DATE,
       },
       updatedAt: {
         type: DataTypes.DATE,
@@ -41,3 +42,4 @@ module.exports = (sequelize, DataTypes) => {
   User.associate = function (models) {
     // associations can be defined here
   };
+

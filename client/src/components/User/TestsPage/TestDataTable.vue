@@ -108,6 +108,7 @@ export default {
           text: 'Total Worm Count',
           value: 'totalWormCount',
           type: 'number',
+          visible: true,
         },
         {
           text: 'Video Count',
@@ -169,3 +170,4 @@ export default {
       });
       download(csvData, 'Tests.csv');
     },
+  },

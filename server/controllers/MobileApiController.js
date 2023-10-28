@@ -43,6 +43,7 @@ const createVideo = async (req, res) => {
     recordedAt: reqData.createdAt,
   });
 
+  return res.status(200).json(video);
 };
 
 module.exports = {

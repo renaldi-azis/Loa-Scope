@@ -12,5 +12,6 @@ const MobileApiValidator = require('../../middlewares/validators/MobileApiValida
 const MobileApiController = require('../../controllers/MobileApiController');
 
 // Add Routes
+mobileApiRouter.post('/tests', MobileApiValidator.createTest, MobileApiController.createTest);
 mobileApiRouter.post('/videos', MobileApiValidator.createVideo, MobileApiController.createVideo);
 

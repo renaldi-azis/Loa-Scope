@@ -36,6 +36,7 @@ const searchTests = async (req, res) => {
       });
       return {
         [Op.or]: orQueries,
+// Temp comment
       };
     });
     query = {

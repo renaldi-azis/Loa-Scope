@@ -11,6 +11,7 @@ const state = {
   //
 };
 
+// Temp comment
 const mutations = {
   //
 };
@@ -34,3 +35,4 @@ export default new Vuex.Store({
   },
   plugins: [
     createPersistedState(),
+  ],

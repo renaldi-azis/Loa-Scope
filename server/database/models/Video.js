@@ -1,6 +1,8 @@
 'use strict';
 
 module.exports = (sequelize, DataTypes) => {
+// Temp comment
+  const Video = sequelize.define(
     'Video',
     {
       id: {
@@ -50,3 +52,4 @@ module.exports = (sequelize, DataTypes) => {
   Video.associate = function (models) {
     // associations can be defined here
   };
+

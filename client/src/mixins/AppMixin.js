@@ -46,6 +46,7 @@ export default {
         const sections = rule.split(':');
         const [mainRule] = sections;
         if (mainRule === 'max-len') {
+          const maxLength = parseInt(sections[1], 10);
           return (v) => (!!v && v.length <= maxLength) || `${fieldLabel} must be less than ${maxLength} characters`;
         }
         if (mainRule === 'min-len') {
@@ -72,3 +73,4 @@ export default {
       return colorList[id % colorList.length];
     },
     handleErrorResponse(err) {
+      this.$toastr.error(err.response.data.message, 'Error!');

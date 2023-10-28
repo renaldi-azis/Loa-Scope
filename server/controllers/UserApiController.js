@@ -69,7 +69,6 @@ const deleteUser = async (req, res) => {
 
   await User.destroy({
     where: {
-// Temp comment
       id: user.id,
     },
   });
@@ -90,3 +89,4 @@ const changePassword = async (req, res) => {
 };
 
 module.exports = {
+  getUsers,
