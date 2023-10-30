@@ -19,9 +19,7 @@ const actions = {
   //
 };
 
-const getters = {
   //
-// Temp comment
 };
 
 export default new Vuex.Store({

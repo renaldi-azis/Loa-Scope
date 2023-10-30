@@ -73,7 +73,6 @@ const deleteUser = async (req, res) => {
     },
   });
   return res.status(200).json(true);
-};
 
 /**
  * @description Change an existing user's password

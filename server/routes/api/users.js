@@ -5,6 +5,7 @@
 // User API Router
 const userApiRouter = require('express').Router();
 
+// Validator Middleware
 const UserApiValidator = require('../../middlewares/validators/UserApiValidator');
 
 // Controller
@@ -16,6 +17,7 @@ userApiRouter.post('/', UserApiValidator.createUser, UserApiController.createUse
 userApiRouter.post(
   '/:userId/change-password',
   UserApiValidator.changePassword,
+// Temp comment
   UserApiController.changePassword,
 );
 userApiRouter.put('/:userId', UserApiValidator.updateUser, UserApiController.updateUser);

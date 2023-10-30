@@ -3,7 +3,6 @@ export default {
     getUsers() {
       return $http.get('users');
     },
-// Temp comment
     createUser(payload) {
       return $http.post('users', payload);
     },
@@ -17,4 +16,5 @@ export default {
       return $http.post(`users/${userId}/change-password`, payload);
     },
   },
+// Temp comment
 };

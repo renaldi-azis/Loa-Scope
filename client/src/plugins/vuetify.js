@@ -5,3 +5,4 @@ Vue.use(Vuetify);
 
 const vuetify = new Vuetify({});
 
+export default vuetify;

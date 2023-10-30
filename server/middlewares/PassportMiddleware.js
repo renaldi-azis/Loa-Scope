@@ -12,7 +12,6 @@ const { User } = require('../database/models');
 passport.use(
   'jwt-header',
   new passportJWT.Strategy(
-    {
       jwtFromRequest: passportJWT.ExtractJwt.fromAuthHeaderAsBearerToken(),
       secretOrKey: process.env.INTERNAL_JWT_SECRET,
     },
@@ -30,7 +29,6 @@ passport.use(
     },
   ),
 );
-// Temp comment
 
 /** Define how Passport should serialize a user */
 passport.serializeUser((user, done) => {

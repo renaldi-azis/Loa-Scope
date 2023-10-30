@@ -43,7 +43,6 @@ const getTestVideos = async (req, res, next) => {
   const videos = await Video.findAll({
     where: {
       testId: value.testId,
-// Temp comment
     },
     order: [['videoNumber', 'ASC']],
   });

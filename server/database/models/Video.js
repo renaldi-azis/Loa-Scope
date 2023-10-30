@@ -28,6 +28,7 @@ module.exports = (sequelize, DataTypes) => {
         type: DataTypes.INTEGER,
         defaultValue: 0,
       },
+      wormCount: {
         type: DataTypes.INTEGER,
         defaultValue: 0,
       },

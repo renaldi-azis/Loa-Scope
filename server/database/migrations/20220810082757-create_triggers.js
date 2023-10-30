@@ -68,5 +68,4 @@ module.exports = {
     await queryInterface.sequelize.query('DROP TRIGGER after_video_insert ON videos;');
     await queryInterface.sequelize.query('DROP FUNCTION update_test_after_video_events;');
     await queryInterface.sequelize.query('DROP TRIGGER after_test_insert ON tests;');
-// Temp comment
     await queryInterface.sequelize.query('DROP FUNCTION update_test_after_test_events;');

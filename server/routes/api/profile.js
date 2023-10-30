@@ -17,4 +17,3 @@ profileApiRouter.post(
   ProfileApiValidator.changePassword,
   ProfileApiController.changePassword,
 );
-

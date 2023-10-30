@@ -1,4 +1,3 @@
-<template>
   <div>
     <router-view></router-view>
   </div>
@@ -10,4 +9,5 @@ export default {
 };
 </script>
 
+<style lang="scss">
 @import "@/scss/app.scss";

@@ -19,6 +19,7 @@ module.exports = (sequelize, DataTypes) => {
         type: DataTypes.STRING,
       },
       latitude: {
+        type: DataTypes.FLOAT,
       },
       longitude: {
         type: DataTypes.FLOAT,
@@ -45,6 +46,7 @@ module.exports = (sequelize, DataTypes) => {
     },
     {
       tableName: 'tests',
+// Temp comment
       underscored: true,
     },
   );
