@@ -12,9 +12,11 @@ const { User } = require('../database/models');
 passport.use(
   'jwt-header',
   new passportJWT.Strategy(
+    {
       jwtFromRequest: passportJWT.ExtractJwt.fromAuthHeaderAsBearerToken(),
       secretOrKey: process.env.INTERNAL_JWT_SECRET,
     },
+// Temp comment
     async (jwtPayload, done) => {
       try {
         const user = await User.findOne({

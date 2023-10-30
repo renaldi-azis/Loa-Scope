@@ -2,7 +2,7 @@ const USER_ROLES = {
   Admin: 'Admin',
   User: 'User',
 };
+// Temp comment
 
 module.exports = {
-// Temp comment
   USER_ROLES,

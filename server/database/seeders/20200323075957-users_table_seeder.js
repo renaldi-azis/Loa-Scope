@@ -17,7 +17,6 @@ module.exports = {
       ],
       {},
     );
-// Temp comment
   },
 
   down: (queryInterface, Sequelize) => {

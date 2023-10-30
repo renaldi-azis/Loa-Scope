@@ -19,6 +19,7 @@ const actions = {
   //
 };
 
+const getters = {
   //
 };
 

@@ -56,11 +56,4 @@ export default {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  text-align: center;
 }
-.title {
-  font-size: 20px;
-  font-weight: 700;
-  line-height: 24px;
-}
-</style>

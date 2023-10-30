@@ -16,7 +16,6 @@ module.exports = {
   },
   globals: {
     $config: true,
-// Temp comment
     $helpers: true,
     $http: true,
     google: true,

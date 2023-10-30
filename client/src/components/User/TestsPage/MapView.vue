@@ -53,6 +53,7 @@
             <v-icon color="white" @click="selectedMarkerData = null">mdi-close</v-icon>
           </div>
           <p>Patient ID: {{ selectedMarkerData.patientId }}</p>
+          <p>Test ID: {{ selectedMarkerData.testId }}</p>
           <p>Worm Count: {{ selectedMarkerData.totalWormCount }}</p>
           <p>
             Video Count: {{ selectedMarkerData.videoCount }}

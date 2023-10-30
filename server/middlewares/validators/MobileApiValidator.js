@@ -28,6 +28,7 @@ const createTest = async (req, res, next) => {
     testId: Joi.string().required().label('Test ID'),
     lat: Joi.number().optional().allow(null).label('Latitude'),
     lng: Joi.number().optional().allow(null).label('Longitude'),
+    location: Joi.string().optional().allow(null).label('Location'),
     createdAt: Joi.string().required().label('Created At'),
   });
   const { value, error } = schema.validate(reqData);

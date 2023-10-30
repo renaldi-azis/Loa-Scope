@@ -13,7 +13,6 @@ module.exports = {
         allowNull: false,
         unique: true,
       },
-      password: {
         type: Sequelize.STRING,
         allowNull: false,
       },
@@ -33,6 +32,7 @@ module.exports = {
       },
     });
   },
+
   down: (queryInterface, Sequelize) => {
     return queryInterface.dropTable('users');
   },

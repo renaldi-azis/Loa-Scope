@@ -23,6 +23,7 @@ const changePassword = async (req, res, next) => {
   }
   // Compare password
   if (!bcrypt.compareSync(value.currentPassword, req.user.password)) {
+    return res.status(422).json({ message: 'Seems you entered the wrong credential.' });
   }
 
   req.reqData = value;
