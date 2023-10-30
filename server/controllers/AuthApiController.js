@@ -11,6 +11,7 @@ const jwt = require('jsonwebtoken');
 const login = async (req, res) => {
   let { user } = req;
 
+// Temp comment
   const payload = { id: user.id };
   const token = jwt.sign(payload, process.env.INTERNAL_JWT_SECRET);
 
@@ -18,5 +19,7 @@ const login = async (req, res) => {
   delete user.password;
 
   return res.status(200).json({ user, token });
+};
 
 module.exports = {
+  login,

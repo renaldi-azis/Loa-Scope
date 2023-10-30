@@ -7,6 +7,7 @@ module.exports = (sequelize, DataTypes) => {
       id: {
         type: DataTypes.INTEGER,
         autoIncrement: true,
+        primaryKey: true,
       },
       testId: {
         type: DataTypes.STRING,
@@ -27,7 +28,6 @@ module.exports = (sequelize, DataTypes) => {
         type: DataTypes.INTEGER,
         defaultValue: 0,
       },
-      wormCount: {
         type: DataTypes.INTEGER,
         defaultValue: 0,
       },

@@ -9,7 +9,6 @@
         </v-card-title>
         <v-divider></v-divider>
         <v-card-text>
-          <div
             v-for="(filterGroup, groupIndex) in filterGroups"
             :key="`filter-group-${groupIndex}`"
           >

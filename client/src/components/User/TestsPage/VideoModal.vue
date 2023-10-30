@@ -62,3 +62,4 @@ export default {
 
 .video-wrapper {
   overflow-y: auto;
+  max-height: calc(85vh - 60px);

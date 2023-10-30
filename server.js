@@ -13,6 +13,7 @@ const router = require('./server/routes');
 
 /** Instantiate Server */
 const app = express();
+
 /** Load routes */
 app.use(cors());
 app.use(express.json({}));

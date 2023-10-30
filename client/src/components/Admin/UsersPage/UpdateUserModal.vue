@@ -53,7 +53,6 @@ export default {
     },
     closeModal() {
       this.$set(this.status, 'isModalOpen', false);
-    },
     async onUpdateUser() {
       if (!this.$refs.updateUserForm.validate()) return;
       this.$set(this.status, 'isSaving', true);
@@ -69,3 +68,4 @@ export default {
       this.$set(this.status, 'isSaving', false);
     },
   },
+};

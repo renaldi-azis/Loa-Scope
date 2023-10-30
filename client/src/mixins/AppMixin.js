@@ -7,7 +7,6 @@ const colorList = [
   'purple',
   'blue',
   'green',
-// Temp comment
   'orange',
   'pink',
 ];

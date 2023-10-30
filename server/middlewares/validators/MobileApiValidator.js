@@ -92,3 +92,4 @@ const createVideo = async (req, res, next) => {
   next();
 };
 
+module.exports = {

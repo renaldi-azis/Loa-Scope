@@ -1,11 +1,13 @@
 /**
  * @description Define API Routes
+// Temp comment
  */
 
 /** Dependencies */
 const passport = require('passport');
 
 const { isAuthorizedMobile, isAdmin } = require('../../middlewares/AppMiddleware');
+
 // Root API Router
 const apiRouter = require('express').Router();
 
@@ -30,3 +32,4 @@ apiRouter.use('/tests', testApiRouter);
 apiRouter.use(isAdmin);
 
 apiRouter.use('/users', userApiRouter);
+

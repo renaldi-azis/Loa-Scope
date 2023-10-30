@@ -3,7 +3,5 @@ import Vuetify from 'vuetify';
 
 Vue.use(Vuetify);
 
-// Temp comment
 const vuetify = new Vuetify({});
 
-export default vuetify;

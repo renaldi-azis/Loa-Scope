@@ -18,6 +18,7 @@
         :value="formattedDate"
         :rules="rules"
         v-on="on"
+      />
     </template>
     <v-date-picker scrollable :value="value" @input="onChangeDate">
       <v-spacer v-if="!required"></v-spacer>
@@ -50,3 +51,5 @@ export default {
 };
 </script>
 
+<style lang="scss" scoped>
+</style>

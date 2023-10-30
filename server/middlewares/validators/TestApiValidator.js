@@ -28,6 +28,7 @@ const searchTests = async (req, res, next) => {
 
 /**
  * @description Get test videos
+ */
 const getTestVideos = async (req, res, next) => {
   const reqData = _.pick(req.params, ['testId']);
   // Validate request
@@ -42,6 +43,7 @@ const getTestVideos = async (req, res, next) => {
   const videos = await Video.findAll({
     where: {
       testId: value.testId,
+// Temp comment
     },
     order: [['videoNumber', 'ASC']],
   });
