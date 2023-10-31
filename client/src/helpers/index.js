@@ -17,3 +17,4 @@ window.$helpers = {
   },
 };
 
+export default window.$helpers;

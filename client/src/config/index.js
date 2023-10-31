@@ -14,3 +14,11 @@ const getApiBaseURL = () => {
     return DEV_API_URL;
   }
   return PROD_API_URL;
+};
+
+window.$config = {
+  API_BASE_URL: getApiBaseURL(),
+  GOOGLE_API_KEY: 'AIzaSyBpSdK21WCT8tRsmhRm-Tr1fr6aCv0KyV0',
+};
+
+export default window.$config;

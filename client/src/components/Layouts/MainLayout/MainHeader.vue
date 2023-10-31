@@ -51,6 +51,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.title-wrapper {
   position: absolute;
   left: 50%;
   top: 50%;
@@ -58,3 +59,8 @@ export default {
   text-align: center;
 }
 .title {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+}
+</style>

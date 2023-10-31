@@ -181,3 +181,8 @@ export default {
 <style lang="scss" scoped>
 .legend {
   padding: 8px 15px;
+  border-radius: 8px;
+  background: rgba(0,0,0,0.8);
+  color: #FFF;
+}
+</style>

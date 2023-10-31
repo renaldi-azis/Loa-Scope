@@ -15,6 +15,7 @@ const generateVideoUrl = () => {
     'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/Sintel.mp4',
     'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/SubaruOutbackOnStreetAndDirt.mp4',
     'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/TearsOfSteel.mp4',
+    'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/VolkswagenGTIReview.mp4',
     'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/WeAreGoingOnBullrun.mp4',
     'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/WhatCarCanYouGetForAGrand.mp4',
   ];
@@ -36,3 +37,35 @@ const generateTestVideos = (testId, count) => {
     });
   }
   return videos;
+};
+
+const generateTest = () => {
+  const test = {
+    deviceId: uuid(),
+    patientId: uuid(),
+    testId: uuid(),
+    latitude: faker.address.latitude(),
+    longitude: faker.address.longitude(),
+    executedAt: faker.date.past(),
+    videoCount: 7,
+  };
+  const videos = generateTestVideos(test.testId, 7);
+  test.totalWormCount = videos.reduce((sum, video) => sum + video.wormCount, 0);
+
+  return {
+    test,
+    videos,
+  };
+};
+
+const run = async () => {
+  for (let i = 0; i < 1000; i += 1) {
+    const { test, videos } = generateTest();
+    await Test.create(test);
+    for (let video of videos) {
+      await Video.create(video);
+    }
+  }
+};
+
+run();

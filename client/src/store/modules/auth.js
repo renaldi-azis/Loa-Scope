@@ -16,6 +16,7 @@ const actions = {
 
 const getters = {
   //
+};
 
 export default {
   namespaced: true,
@@ -23,3 +24,4 @@ export default {
   mutations,
   actions,
   getters,
+};

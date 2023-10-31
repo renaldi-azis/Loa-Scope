@@ -2,6 +2,7 @@
   "name": "cellscope_web",
   "version": "1.0.0",
   "description": "Cellscope Web",
+  "main": "server.js",
   "scripts": {
     "start": "node server.js",
     "prettier": "prettier --write server server.js"
@@ -31,3 +32,4 @@
   "devDependencies": {
     "prettier": "^2.7.1"
   }
+}

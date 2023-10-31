@@ -34,6 +34,7 @@
 import ColumnMenu from './ColumnMenu.vue';
 import FilterModal from './FilterModal.vue';
 
+export default {
   name: 'DataTable',
   components: {
     ColumnMenu,
@@ -54,3 +55,5 @@ import FilterModal from './FilterModal.vue';
 };
 </script>
 
+<style lang="scss" scoped>
+</style>

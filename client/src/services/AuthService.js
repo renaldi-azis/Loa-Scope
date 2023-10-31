@@ -4,3 +4,4 @@ export default {
       return $http.post('auth/login', payload);
     },
   },
+};

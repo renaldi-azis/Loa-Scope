@@ -91,3 +91,7 @@ const changePassword = async (req, res) => {
 module.exports = {
   getUsers,
   createUser,
+  updateUser,
+  deleteUser,
+  changePassword,
+};

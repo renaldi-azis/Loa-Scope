@@ -29,5 +29,7 @@ apiRouter.use('/tests', testApiRouter);
 
 /** Add Admin Middleware */
 apiRouter.use(isAdmin);
+
 apiRouter.use('/users', userApiRouter);
 
+module.exports = apiRouter;

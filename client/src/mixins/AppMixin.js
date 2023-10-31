@@ -42,6 +42,7 @@ export default {
         }
         if (rule === 'email') {
           return (v) => /^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w{2,3})+$/.test(v) || `${fieldLabel} must be valid`;
+        }
         const sections = rule.split(':');
         const [mainRule] = sections;
         if (mainRule === 'max-len') {
@@ -73,3 +74,6 @@ export default {
     },
     handleErrorResponse(err) {
       this.$toastr.error(err.response.data.message, 'Error!');
+    },
+  },
+};

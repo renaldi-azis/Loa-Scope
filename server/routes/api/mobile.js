@@ -13,6 +13,6 @@ const MobileApiController = require('../../controllers/MobileApiController');
 
 // Add Routes
 mobileApiRouter.post('/tests', MobileApiValidator.createTest, MobileApiController.createTest);
-// Temp comment
 mobileApiRouter.post('/videos', MobileApiValidator.createVideo, MobileApiController.createVideo);
 
+module.exports = mobileApiRouter;

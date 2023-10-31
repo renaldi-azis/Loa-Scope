@@ -21,6 +21,7 @@ module.exports = (sequelize, DataTypes) => {
       role: {
         type: DataTypes.STRING,
         allowNull: false,
+      },
       filter: {
         type: DataTypes.STRING,
         defaultValue: '',
@@ -42,3 +43,5 @@ module.exports = (sequelize, DataTypes) => {
     // associations can be defined here
   };
 
+  return User;
+};

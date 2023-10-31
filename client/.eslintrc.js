@@ -16,6 +16,7 @@ module.exports = {
   },
   globals: {
     $config: true,
+    $helpers: true,
     $http: true,
     google: true,
   },

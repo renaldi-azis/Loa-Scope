@@ -54,3 +54,5 @@ const getTestVideos = async (req, res, next) => {
 
 module.exports = {
   searchTests,
+  getTestVideos,
+};

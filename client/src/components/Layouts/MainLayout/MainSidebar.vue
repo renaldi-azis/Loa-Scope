@@ -81,3 +81,7 @@ export default {
 
 <style lang="scss" scoped>
 .active {
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+</style>

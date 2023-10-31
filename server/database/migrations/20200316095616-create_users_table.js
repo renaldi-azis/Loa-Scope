@@ -5,7 +5,6 @@ module.exports = {
     return queryInterface.createTable('users', {
       id: {
         type: Sequelize.INTEGER,
-// Temp comment
         autoIncrement: true,
         primaryKey: true,
       },
@@ -38,3 +37,4 @@ module.exports = {
   down: (queryInterface, Sequelize) => {
     return queryInterface.dropTable('users');
   },
+};

@@ -8,6 +8,7 @@ module.exports = (sequelize, DataTypes) => {
         type: DataTypes.INTEGER,
         autoIncrement: true,
         primaryKey: true,
+      },
       testId: {
         type: DataTypes.STRING,
       },
@@ -51,3 +52,5 @@ module.exports = (sequelize, DataTypes) => {
     // associations can be defined here
   };
 
+  return Video;
+};

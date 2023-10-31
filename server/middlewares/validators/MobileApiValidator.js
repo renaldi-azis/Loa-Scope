@@ -93,3 +93,6 @@ const createVideo = async (req, res, next) => {
 };
 
 module.exports = {
+  createTest,
+  createVideo,
+};

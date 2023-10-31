@@ -14,3 +14,4 @@ const AuthApiController = require('../../controllers/AuthApiController');
 // Add Routes
 authApiRouter.post('/login', AuthApiValidator.login, AuthApiController.login);
 
+module.exports = authApiRouter;
