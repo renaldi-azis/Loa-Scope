@@ -130,7 +130,6 @@ export default {
     onClickMapMarker(position, index) {
       this.geocoder.geocode({ location: position }, (results, status) => {
         this.selectedMarkerData = _.cloneDeep(this.filteredData[index]);
-        if (status === 'OK') {
           this.selectedMarkerData.address = results[0].formatted_address;
         } else {
           this.selectedMarkerData.address = '';
@@ -177,3 +176,4 @@ export default {
   top: 0;
   right: 0;
   bottom: 0;
+  display: flex;

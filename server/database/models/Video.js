@@ -8,7 +8,6 @@ module.exports = (sequelize, DataTypes) => {
         type: DataTypes.INTEGER,
         autoIncrement: true,
         primaryKey: true,
-      },
       testId: {
         type: DataTypes.STRING,
       },
@@ -38,7 +37,6 @@ module.exports = (sequelize, DataTypes) => {
       createdAt: {
         type: DataTypes.DATE,
       },
-// Temp comment
       updatedAt: {
         type: DataTypes.DATE,
       },

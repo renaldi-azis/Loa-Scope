@@ -180,3 +180,4 @@ export default {
 
 <style lang="scss" scoped>
 .legend {
+  padding: 8px 15px;

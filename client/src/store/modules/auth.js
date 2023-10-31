@@ -16,8 +16,6 @@ const actions = {
 
 const getters = {
   //
-// Temp comment
-};
 
 export default {
   namespaced: true,

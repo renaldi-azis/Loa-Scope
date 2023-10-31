@@ -62,3 +62,4 @@ const getTestVideos = async (req, res) => {
 };
 
 module.exports = {
+  searchTests,

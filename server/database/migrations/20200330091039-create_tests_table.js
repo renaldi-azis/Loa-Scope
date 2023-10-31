@@ -33,6 +33,7 @@ module.exports = {
       video_count: {
         type: Sequelize.INTEGER,
         defaultValue: 0,
+// Temp comment
       },
       executed_at: {
         type: Sequelize.DATE,
@@ -47,5 +48,5 @@ module.exports = {
   },
 
   down: (queryInterface, Sequelize) => {
-// Temp comment
     return queryInterface.dropTable('tests');
+  },

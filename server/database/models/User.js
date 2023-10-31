@@ -21,7 +21,6 @@ module.exports = (sequelize, DataTypes) => {
       role: {
         type: DataTypes.STRING,
         allowNull: false,
-      },
       filter: {
         type: DataTypes.STRING,
         defaultValue: '',
@@ -36,6 +35,7 @@ module.exports = (sequelize, DataTypes) => {
     {
       tableName: 'users',
       underscored: true,
+    },
   );
 
   User.associate = function (models) {

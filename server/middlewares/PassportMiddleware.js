@@ -16,7 +16,6 @@ passport.use(
       jwtFromRequest: passportJWT.ExtractJwt.fromAuthHeaderAsBearerToken(),
       secretOrKey: process.env.INTERNAL_JWT_SECRET,
     },
-// Temp comment
     async (jwtPayload, done) => {
       try {
         const user = await User.findOne({
@@ -45,7 +44,6 @@ passport.deserializeUser(async (id, done) => {
         id,
       },
     });
-    done(null, user);
   } catch (error) {
     done(error);
   }

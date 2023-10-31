@@ -32,6 +32,7 @@ Vue.prototype.$toastr = toastr;
 Vue.use(VueGoogleMaps, {
   load: {
     key: $config.GOOGLE_API_KEY,
+// Temp comment
     libraries: 'places',
   },
 });

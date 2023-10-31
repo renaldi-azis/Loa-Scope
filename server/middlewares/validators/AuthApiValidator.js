@@ -16,6 +16,7 @@ const login = async (req, res, next) => {
   const reqData = _.pick(req.body, ['username', 'password']);
   // Validate request
   const schema = Joi.object({
+// Temp comment
     username: Joi.string().required().label('Username'),
     password: Joi.string().required().label('Password'),
   });
